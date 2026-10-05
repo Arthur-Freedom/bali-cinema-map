@@ -16,7 +16,9 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Cinema details stay in the map popup; selecting a pin keeps the left panel and its scroll position steady. Click the map background to close the popup.
 - Your starting point stays in your browser's local storage; it is not included in this public repository.
 - Open **Compare movies**, pick a film, and see venues, studio formats, listed ticket prices and showtimes together. Listings sort by lowest price; filter to a studio format to compare equivalent screenings. You can also sort by name or distance after setting a starting point.
-- **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter.
+- Choose **Soonest showtime** to put the next upcoming screening first in Bali time (WITA). The next session is highlighted; started sessions are muted and rows with no remaining sessions appear last. Ordering refreshes while this view is open and uses the snapshot’s date, so old schedules never masquerade as upcoming sessions.
+- Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
+- **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter. The `experience` and `sort` parameters preserve the movie-type filter and sorting choice.
 
 ## Data
 
@@ -36,4 +38,4 @@ Serve this directory with a static server, for example `python -m http.server 80
 
 GitHub Pages uses the **GitHub Actions** publishing source and `.github/workflows/pages.yml`. Update `cinemas.json` to edit locations; coordinates are `[longitude, latitude]`. Keep each source and the checked date current.
 
-To refresh listings locally, install `beautifulsoup4==4.13.3` and run `python scripts/refresh_showtimes.py`. Run parser checks with `python -m unittest discover -s scripts -p 'test_*.py'`. For saved source verification, the refresh script also accepts `--source-dir DIRECTORY --date YYYY-MM-DD`.
+To refresh listings locally, install `beautifulsoup4==4.13.3` and run `python scripts/refresh_showtimes.py`. Run parser checks with `python -m unittest discover -s scripts -p 'test_*.py'` and time/format checks with `node --test scripts/test_showtime_utils.cjs`. For saved source verification, the refresh script also accepts `--source-dir DIRECTORY --date YYYY-MM-DD`.

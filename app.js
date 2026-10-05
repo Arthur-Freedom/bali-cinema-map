@@ -13,6 +13,7 @@
   const pointHint = document.getElementById('point-hint');
   const app = document.querySelector('.app');
   const movieSelect = document.getElementById('movie-select');
+  const movieType = document.getElementById('movie-type');
   const formatSelect = document.getElementById('format-select');
   const priceSort = document.getElementById('price-sort');
   const movieDataStatus = document.getElementById('movie-data-status');
@@ -34,6 +35,11 @@
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const rupiah = price => `Rp${new Intl.NumberFormat('id-ID').format(price)}`;
   const requestedMovie = new URL(window.location.href).searchParams.get('movie');
+  const requestedExperience = new URL(window.location.href).searchParams.get('experience');
+  const requestedSort = new URL(window.location.href).searchParams.get('sort');
+  const {nextShowtime, matchesMovieType} = window.CinemaShowtimes;
+  if (['premium','premiere','vip','imax'].includes(requestedExperience)) movieType.value = requestedExperience;
+  if (['price','time','distance','name'].includes(requestedSort)) priceSort.value = requestedSort;
 
   function setView(value) {
     comparing = value === 'movies';
@@ -51,19 +57,34 @@
     const url = new URL(window.location.href);
     if (comparing && movieSelect.value) url.searchParams.set('movie', movieSelect.value);
     else url.searchParams.delete('movie');
+    if (comparing && movieType.value) url.searchParams.set('experience', movieType.value);
+    else url.searchParams.delete('experience');
+    if (comparing && priceSort.value !== 'price') url.searchParams.set('sort', priceSort.value);
+    else url.searchParams.delete('sort');
     window.history.replaceState(null, '', url);
   }
   function movieOffers() {
     return (showtimes?.screenings || []).filter(s => s.movieId === movieSelect.value);
   }
+  function updateMovieChoices(preferred = movieSelect.value) {
+    const matchingIds = new Set(showtimes.screenings.filter(s => matchesMovieType(s.format, movieType.value)).map(s => s.movieId));
+    const movies = showtimes.movies.filter(m => matchingIds.has(m.id));
+    movieSelect.replaceChildren(new Option(movies.length ? 'Choose a movie…' : 'None listed in this format', ''));
+    movies.forEach(movie => movieSelect.add(new Option(movie.title, movie.id)));
+    movieSelect.value = matchingIds.has(preferred) ? preferred : '';
+    movieSelect.disabled = !movies.length;
+    const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
+    movieDataStatus.textContent = `${movies.length} ${movies.length === 1 ? 'movie' : 'movies'} · listings for ${dateText}`;
+  }
   function buildFormats() {
     const previous = formatSelect.value;
-    formatSelect.replaceChildren(new Option('All formats', ''));
-    [...new Set(movieOffers().map(s => s.format))].sort().forEach(format => formatSelect.add(new Option(format, format)));
+    formatSelect.replaceChildren(new Option(movieType.value ? 'All matching formats' : 'All formats', ''));
+    [...new Set(movieOffers().filter(s => matchesMovieType(s.format, movieType.value)).map(s => s.format))].sort().forEach(format => formatSelect.add(new Option(format, format)));
     formatSelect.value = [...formatSelect.options].some(o => o.value === previous) ? previous : '';
     formatSelect.disabled = !movieSelect.value;
   }
   function renderComparison() {
+    document.getElementById('time-sort-note').hidden = priceSort.value !== 'time';
     priceSort.querySelector('option[value="distance"]').disabled = !origin;
     if (!origin && priceSort.value === 'distance') priceSort.value = 'price';
     const movie = showtimes?.movies.find(m => m.id === movieSelect.value);
@@ -71,24 +92,27 @@
     document.getElementById('comparison-results').hidden = !movie;
     movieSource.hidden = !movie;
     if (!movie) {
-      document.getElementById('comparison-summary').textContent = 'See each venue, studio format, ticket price and showtime in one overview.';
+      document.getElementById('comparison-summary').textContent = showtimes && movieSelect.disabled ? 'No movies are listed in this format. Choose another format to browse.' : 'See each venue, studio format, ticket price and showtime in one overview.';
       return;
     }
     movieSource.href = `${movie.url.replace(/\/$/, '')}/di-bali/`;
     const all = movieOffers();
-    const offers = all.filter(s => !formatSelect.value || s.format === formatSelect.value)
-      .map(s => ({...s, cinema: cinemas.find(c => c.id === s.cinemaId)})).filter(s => s.cinema);
+    const now = Date.now();
+    const offers = all.filter(s => matchesMovieType(s.format, movieType.value) && (!formatSelect.value || s.format === formatSelect.value))
+      .map(s => ({...s, next:nextShowtime(showtimes.date, s.times, now), cinema: cinemas.find(c => c.id === s.cinemaId)})).filter(s => s.cinema);
     const priced = offers.filter(s => Number.isFinite(s.price));
     const minimum = priced.length ? Math.min(...priced.map(s => s.price)) : null;
     const maximum = priced.length ? Math.max(...priced.map(s => s.price)) : null;
     offers.sort((a, b) => {
+      if (priceSort.value === 'time') return (a.next?.start ?? Infinity) - (b.next?.start ?? Infinity) || (a.price ?? Infinity) - (b.price ?? Infinity) || a.cinema.name.localeCompare(b.cinema.name) || a.format.localeCompare(b.format);
       if (priceSort.value === 'distance' && origin) return distance(a.cinema) - distance(b.cinema) || (a.price ?? Infinity) - (b.price ?? Infinity);
       if (priceSort.value === 'name') return a.cinema.name.localeCompare(b.cinema.name) || (a.price ?? Infinity) - (b.price ?? Infinity);
       return (a.price ?? Infinity) - (b.price ?? Infinity) || a.cinema.name.localeCompare(b.cinema.name) || a.format.localeCompare(b.format);
     });
     const venueCount = new Set(offers.map(s => s.cinemaId)).size;
     const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
-    document.getElementById('comparison-summary').textContent = `${dateText} · ${venueCount} ${venueCount === 1 ? 'venue' : 'venues'}${minimum !== null ? ' · ' + rupiah(minimum) + (maximum !== minimum ? '–' + rupiah(maximum) : '') : ''}${formatSelect.value ? ' · ' + formatSelect.value : ' · all formats'}`;
+    const formatLabel = formatSelect.value || (movieType.value ? movieType.selectedOptions[0].textContent : 'all formats');
+    document.getElementById('comparison-summary').textContent = `${dateText} · ${venueCount} ${venueCount === 1 ? 'venue' : 'venues'}${minimum !== null ? ' · ' + rupiah(minimum) + (maximum !== minimum ? '–' + rupiah(maximum) : '') : ''} · ${formatLabel}${priceSort.value === 'time' ? ' · soonest upcoming first' : ''}`;
     comparisonRows.replaceChildren();
     offers.forEach(offer => {
       const c = offer.cinema;
@@ -116,15 +140,26 @@
         const badge = document.createElement('span'); badge.className = 'lowest-price'; badge.textContent = 'Lowest listed'; price.append(badge);
       }
       const times = document.createElement('td'); times.dataset.label = 'Showtimes · WITA'; times.className = 'showtimes';
-      offer.times.forEach(time => {const span = document.createElement('span'); span.textContent = time; times.append(span);});
+      offer.times.forEach(time => {
+        const span = document.createElement('span');
+        const started = Date.parse(`${showtimes.date}T${time}:00+08:00`) <= now;
+        span.textContent = time;
+        if (started) {span.className = 'past-showtime'; span.title = 'Already started';}
+        if (offer.next?.time === time) {span.className = 'next-showtime'; span.textContent = `Next · ${time}`;}
+        times.append(span);
+      });
+      if (!offer.next && priceSort.value === 'time') {
+        const ended = document.createElement('small'); ended.className = 'showtime-ended'; ended.textContent = 'No upcoming sessions in this schedule'; times.append(ended);
+      }
       row.append(venue, format, price, times); comparisonRows.append(row);
     });
     document.getElementById('comparison-empty').hidden = offers.length > 0;
-    const listedIds = new Set(all.map(s => s.cinemaId));
+    const filteringFormats = Boolean(movieType.value || formatSelect.value);
+    const listedIds = new Set((filteringFormats ? offers : all).map(s => s.cinemaId));
     const unlisted = cinemas.filter(c => !listedIds.has(c.id));
     document.getElementById('unlisted-venues').hidden = !unlisted.length;
-    document.getElementById('unlisted-summary').textContent = `${unlisted.length} ${unlisted.length === 1 ? 'cinema has' : 'cinemas have'} no listing for this movie`;
-    document.getElementById('unlisted-names').textContent = `${unlisted.map(c => c.name).join(' · ')}. No listing in the saved schedule; this does not confirm the film is unavailable.`;
+    document.getElementById('unlisted-summary').textContent = `${unlisted.length} ${unlisted.length === 1 ? 'cinema has' : 'cinemas have'} no ${filteringFormats ? 'matching studio' : 'movie'} listing`;
+    document.getElementById('unlisted-names').textContent = `${unlisted.map(c => c.name).join(' · ')}. ${filteringFormats ? 'No matching studio listing in the saved schedule; the film may play in another format.' : 'No listing in the saved schedule; this does not confirm the film is unavailable.'}`;
     const refreshed = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Makassar'}).format(new Date(showtimes.refreshedAt));
     document.getElementById('comparison-updated').textContent = `Source: JadwalNonton · ${showtimes.sources.length} cinema schedules checked · refreshed ${refreshed} WITA. Listed prices may differ from the final booking total.`;
   }
@@ -135,17 +170,14 @@
     }).then(data => {
       if (!Array.isArray(data.movies) || !data.movies.length || !Array.isArray(data.screenings)) throw new Error('Invalid movie listings');
       showtimes = data;
-      movieSelect.replaceChildren(new Option('Choose a movie…', ''));
-      data.movies.forEach(movie => movieSelect.add(new Option(movie.title, movie.id)));
-      movieSelect.disabled = false;
+      movieType.disabled = false;
+      updateMovieChoices(requestedMovie || '');
       const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${data.date}T12:00:00+08:00`));
-      movieDataStatus.textContent = `${data.movies.length} movies · listings for ${dateText}`;
       const today = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Makassar', year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date());
       const warning = document.getElementById('snapshot-warning');
       warning.hidden = data.date === today;
       warning.textContent = `These are saved listings for ${dateText}, not today’s schedule. Open the source listing for current prices and showtimes.`;
-      if (requestedMovie && data.movies.some(m => m.id === requestedMovie)) movieSelect.value = requestedMovie;
-      else if (requestedMovie) movieDataStatus.textContent += ' · The linked movie is no longer in this snapshot. Choose another movie.';
+      if (requestedMovie && !movieSelect.value) movieDataStatus.textContent += ' · The linked movie has no matching listing. Choose another movie or format.';
       buildFormats(); renderComparison(); updateMovieUrl();
     }).catch(() => {
       movieSelect.replaceChildren(new Option('Movies unavailable', ''));
@@ -157,10 +189,17 @@
   }
   document.getElementById('view-map').addEventListener('click', () => setView('map'));
   document.getElementById('view-movies').addEventListener('click', () => setView('movies'));
+  movieType.addEventListener('change', () => {updateMovieChoices(); formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
   movieSelect.addEventListener('change', () => {formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
   formatSelect.addEventListener('change', renderComparison);
-  priceSort.addEventListener('change', renderComparison);
-  if (requestedMovie) setView('movies');
+  priceSort.addEventListener('change', () => {renderComparison(); updateMovieUrl();});
+  // Keep next-session ordering current while preserving focus on any row action.
+  function refreshUpcoming() {
+    if (comparing && priceSort.value === 'time' && !document.hidden && !comparisonRows.contains(document.activeElement)) renderComparison();
+  }
+  window.setInterval(refreshUpcoming, 30000);
+  document.addEventListener('visibilitychange', refreshUpcoming);
+  if (requestedMovie || requestedExperience || requestedSort) setView('movies');
 
   function cinemaIcon() {
     const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');

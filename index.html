@@ -11,9 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=movie-compare-2">
+  <link rel="stylesheet" href="style.css?v=movie-time-1">
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="app.js?v=movie-compare-2"></script>
+  <script defer src="showtime-utils.js?v=movie-time-1"></script>
+  <script defer src="app.js?v=movie-time-1"></script>
 </head>
 <body>
   <main class="app">
@@ -45,13 +46,16 @@
         <div id="empty" class="empty" hidden>No cinema matches your search.<button id="clear-search" type="button">Show all cinemas</button></div>
       </div>
       <section id="movie-finder" class="movie-finder" aria-label="Movie comparison controls" hidden>
+        <label for="movie-type">Find movies with</label>
+        <select id="movie-type" disabled aria-controls="movie-select comparison-rows"><option value="">Any studio format</option><option value="premium">Premiere, VIP or IMAX</option><option value="premiere">Premiere</option><option value="vip">VIP</option><option value="imax">IMAX</option></select>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
         <div class="comparison-filters">
           <div><label for="format-select">Studio format</label><select id="format-select" disabled aria-controls="comparison-rows"><option value="">All formats</option></select></div>
-          <div><label for="price-sort">Sort venues</label><select id="price-sort" aria-controls="comparison-rows"><option value="price">Lowest price</option><option value="distance" disabled>Nearest to me</option><option value="name">Cinema name</option></select></div>
+          <div><label for="price-sort">Sort venues</label><select id="price-sort" aria-controls="comparison-rows"><option value="price">Lowest price</option><option value="time">Soonest showtime</option><option value="distance" disabled>Nearest to me</option><option value="name">Cinema name</option></select></div>
         </div>
+        <p id="time-sort-note" class="time-sort-note" hidden>Next upcoming screening first · Bali time (WITA). Venues with no remaining sessions appear last.</p>
         <details class="price-explainer">
           <summary>Why do prices differ?</summary>
           <p>The same film can cost more at a different branch, even in Regular 2D. Prices also change by screening day and studio format.</p>
