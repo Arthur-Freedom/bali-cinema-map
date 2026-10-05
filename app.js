@@ -37,7 +37,7 @@
 
   function setView(value) {
     comparing = value === 'movies';
-    if (comparing) { setChoosing(false); hovered = null; focused = null; if (labelPopup) labelPopup.remove(); }
+    if (comparing) { setChoosing(false); window.clearTimeout(labelExitTimer); hovered = null; focused = null; if (labelPopup) labelPopup.remove(); }
     app.classList.toggle('is-comparing', comparing);
     document.getElementById('view-map').setAttribute('aria-pressed', String(!comparing));
     document.getElementById('view-movies').setAttribute('aria-pressed', String(comparing));
@@ -45,7 +45,7 @@
     document.getElementById('comparison').hidden = !comparing;
     document.getElementById('map-view').hidden = comparing;
     updateMovieUrl();
-    if (!comparing && map) requestAnimationFrame(() => map.resize());
+    if (!comparing && map) requestAnimationFrame(() => { map.resize(); renderMapLabel(); });
   }
   function updateMovieUrl() {
     const url = new URL(window.location.href);
@@ -185,7 +185,7 @@
   function scheduleLabelExit(id) {
     window.clearTimeout(labelExitTimer);
     labelExitTimer = window.setTimeout(()=>{
-      if(labelPopup?.getElement().contains(document.activeElement)) return;
+      if(labelPopup?.getElement()?.contains(document.activeElement)) return;
       if(hovered===id) hovered=null;
       renderMapLabel();
     },200);
@@ -194,7 +194,7 @@
     const id = hovered || focused || selected;
     const cinema = cinemas.find(c=>c.id===id);
     pins.forEach(pin=>pin.element.removeAttribute('aria-describedby'));
-    if (!map || !cinema || pins.get(id)?.element.style.display === 'none' || choosing) {
+    if (!map || !cinema || pins.get(id)?.element.style.display === 'none' || choosing || comparing) {
       if(labelPopup) labelPopup.remove();
       return;
     }
