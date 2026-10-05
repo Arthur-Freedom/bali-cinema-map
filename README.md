@@ -13,6 +13,7 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Search by cinema name, chain or area. Cinema icons use chain colors; hover or focus a pin to see its name on the map. Select a pin or list row to keep the name visible and open details.
 - Your starting point has a distinct dot labelled **You**.
 - The map popup also offers **Films & prices** and **Directions**, so you can open current screenings, ticket prices or a route directly beside the cinema pin.
+- Cinema details stay in the map popup; selecting a pin keeps the left panel and its scroll position steady. Click the map background to close the popup.
 - Your starting point stays in your browser's local storage; it is not included in this public repository.
 
 ## Data

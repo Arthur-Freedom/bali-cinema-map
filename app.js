@@ -2,7 +2,6 @@
 (() => {
   const search = document.getElementById('search');
   const list = document.getElementById('cinema-list');
-  const detail = document.getElementById('detail');
   const count = document.getElementById('count');
   const empty = document.getElementById('empty');
   const notice = document.getElementById('map-notice');
@@ -65,7 +64,14 @@
     const content = document.createElement('div'); content.id = 'cinema-map-label';
     const name = document.createElement('strong'); name.textContent = cinema.name;
     const area = document.createElement('span'); area.textContent = `${cinema.area} · ${cinema.chain}${origin ? ' · '+distanceText(cinema) : ''}`;
-    content.append(name,area,cinemaActions(cinema));
+    const address = document.createElement('p'); address.className = 'cinema-address'; address.textContent = cinema.address;
+    content.append(name,area,address);
+    if(cinema.accuracy !== 'cinema') {
+      const note = document.createElement('p'); note.className = 'location-note';
+      note.textContent = cinema.accuracy === 'approximate' ? 'Approximate pin · use Directions for the venue.' : 'Pin marks the mall location.';
+      content.append(note);
+    }
+    content.append(cinemaActions(cinema));
     content.addEventListener('mouseenter',()=>window.clearTimeout(labelExitTimer));
     content.addEventListener('mouseleave',()=>scheduleLabelExit(cinema.id));
     content.addEventListener('focusin',()=>{window.clearTimeout(labelExitTimer);hovered=cinema.id;});
@@ -141,30 +147,16 @@
   }
   function clearSelection() {
     selected = null;
-    detail.hidden = true;
     rows.forEach(row => row.querySelector('button').setAttribute('aria-pressed','false'));
     pins.forEach(pin => pin.element.setAttribute('aria-pressed','false'));
     renderMapLabel();
   }
-  function showCinema(c, fromPin = false) {
+  function showCinema(c) {
     selected = c.id;
-    detail.replaceChildren();
-    const close = document.createElement('button');
-    close.type = 'button'; close.className = 'detail-close'; close.textContent = '×';
-    close.setAttribute('aria-label','Close cinema details');
-    close.addEventListener('click', () => { clearSelection(); rows.get(c.id).querySelector('button').focus(); });
-    const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = `${c.chain} · ${c.area}`;
-    const heading = document.createElement('h2'); heading.textContent = c.name;
-    const address = document.createElement('p'); address.textContent = c.address;
-    const accuracy = document.createElement('p'); accuracy.className = 'accuracy';
-    accuracy.textContent = (origin ? distanceText(c)+' · straight line. ' : '') + (c.accuracy === 'approximate' ? 'Approximate pin · use Directions to find the venue.' : c.accuracy === 'mall' ? 'Pin marks the mall location.' : 'Pin marks the cinema location.');
-    const actions = cinemaActions(c);
-    detail.append(close,meta,heading,address,accuracy,actions); detail.hidden = false;
     rows.forEach((row,id) => row.querySelector('button').setAttribute('aria-pressed',String(id===selected)));
     pins.forEach((pin,id) => {pin.element.setAttribute('aria-pressed',String(id===selected));pin.element.style.zIndex = id===selected ? '5' : '1';});
     renderMapLabel();
     if (map && ready) map.flyTo({center:c.coordinates,zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
-    if (fromPin) rows.get(c.id).scrollIntoView({block:'nearest',behavior:'auto'});
   }
   function buildList() {
     cinemas.forEach(c => {
@@ -207,7 +199,7 @@
         if(labelPopup?.getElement().contains(event.relatedTarget)){hovered=c.id;return;}
         renderMapLabel();
       });
-      element.addEventListener('click',event => {if(choosing){event.stopPropagation();setOrigin(c.coordinates);}else showCinema(c,true);});
+      element.addEventListener('click',event => {if(choosing){event.stopPropagation();setOrigin(c.coordinates);}else showCinema(c);});
       const marker = new maplibregl.Marker({element}).setLngLat(c.coordinates).addTo(map);
       element.setAttribute('aria-label',`Show ${c.name} on the map`);
       pins.set(c.id,{element,marker});
