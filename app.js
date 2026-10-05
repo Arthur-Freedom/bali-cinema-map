@@ -11,6 +11,14 @@
   const useLocation = document.getElementById('use-location');
   const pointStatus = document.getElementById('point-status');
   const pointHint = document.getElementById('point-hint');
+  const app = document.querySelector('.app');
+  const movieSelect = document.getElementById('movie-select');
+  const formatSelect = document.getElementById('format-select');
+  const priceSort = document.getElementById('price-sort');
+  const movieDataStatus = document.getElementById('movie-data-status');
+  const comparisonRows = document.getElementById('comparison-rows');
+  const movieSource = document.getElementById('movie-source');
+  let showtimes = null, comparing = false;
   const colors = {XXI:'#9a6c19', 'Cinépolis':'#235aa7', Independent:'#a3405b'};
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let cinemas = [], selected = null, map = null, ready = false;
@@ -24,6 +32,135 @@
   const pins = new Map();
   const rows = new Map();
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const rupiah = price => `Rp${new Intl.NumberFormat('id-ID').format(price)}`;
+  const requestedMovie = new URL(window.location.href).searchParams.get('movie');
+
+  function setView(value) {
+    comparing = value === 'movies';
+    if (comparing) { setChoosing(false); hovered = null; focused = null; if (labelPopup) labelPopup.remove(); }
+    app.classList.toggle('is-comparing', comparing);
+    document.getElementById('view-map').setAttribute('aria-pressed', String(!comparing));
+    document.getElementById('view-movies').setAttribute('aria-pressed', String(comparing));
+    document.getElementById('movie-finder').hidden = !comparing;
+    document.getElementById('comparison').hidden = !comparing;
+    document.getElementById('map-view').hidden = comparing;
+    updateMovieUrl();
+    if (!comparing && map) requestAnimationFrame(() => map.resize());
+  }
+  function updateMovieUrl() {
+    const url = new URL(window.location.href);
+    if (comparing && movieSelect.value) url.searchParams.set('movie', movieSelect.value);
+    else url.searchParams.delete('movie');
+    window.history.replaceState(null, '', url);
+  }
+  function movieOffers() {
+    return (showtimes?.screenings || []).filter(s => s.movieId === movieSelect.value);
+  }
+  function buildFormats() {
+    const previous = formatSelect.value;
+    formatSelect.replaceChildren(new Option('All formats', ''));
+    [...new Set(movieOffers().map(s => s.format))].sort().forEach(format => formatSelect.add(new Option(format, format)));
+    formatSelect.value = [...formatSelect.options].some(o => o.value === previous) ? previous : '';
+    formatSelect.disabled = !movieSelect.value;
+  }
+  function renderComparison() {
+    priceSort.querySelector('option[value="distance"]').disabled = !origin;
+    if (!origin && priceSort.value === 'distance') priceSort.value = 'price';
+    const movie = showtimes?.movies.find(m => m.id === movieSelect.value);
+    document.getElementById('comparison-title').textContent = movie?.title || 'Pick a movie to compare';
+    document.getElementById('comparison-results').hidden = !movie;
+    movieSource.hidden = !movie;
+    if (!movie) {
+      document.getElementById('comparison-summary').textContent = 'See each venue, studio format, ticket price and showtime in one overview.';
+      return;
+    }
+    movieSource.href = `${movie.url.replace(/\/$/, '')}/di-bali/`;
+    const all = movieOffers();
+    const offers = all.filter(s => !formatSelect.value || s.format === formatSelect.value)
+      .map(s => ({...s, cinema: cinemas.find(c => c.id === s.cinemaId)})).filter(s => s.cinema);
+    const priced = offers.filter(s => Number.isFinite(s.price));
+    const minimum = priced.length ? Math.min(...priced.map(s => s.price)) : null;
+    const maximum = priced.length ? Math.max(...priced.map(s => s.price)) : null;
+    offers.sort((a, b) => {
+      if (priceSort.value === 'distance' && origin) return distance(a.cinema) - distance(b.cinema) || (a.price ?? Infinity) - (b.price ?? Infinity);
+      if (priceSort.value === 'name') return a.cinema.name.localeCompare(b.cinema.name) || (a.price ?? Infinity) - (b.price ?? Infinity);
+      return (a.price ?? Infinity) - (b.price ?? Infinity) || a.cinema.name.localeCompare(b.cinema.name) || a.format.localeCompare(b.format);
+    });
+    const venueCount = new Set(offers.map(s => s.cinemaId)).size;
+    const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
+    document.getElementById('comparison-summary').textContent = `${dateText} · ${venueCount} ${venueCount === 1 ? 'venue' : 'venues'}${minimum !== null ? ' · ' + rupiah(minimum) + (maximum !== minimum ? '–' + rupiah(maximum) : '') : ''}${formatSelect.value ? ' · ' + formatSelect.value : ' · all formats'}`;
+    comparisonRows.replaceChildren();
+    offers.forEach(offer => {
+      const c = offer.cinema;
+      const row = document.createElement('tr');
+      const venue = document.createElement('th'); venue.scope = 'row';
+      const name = document.createElement('strong'); name.textContent = c.name;
+      const area = document.createElement('span'); area.className = 'venue-meta';
+      area.textContent = `${c.area} · ${c.chain}${origin ? ' · ' + distanceText(c) : ''}`;
+      const links = document.createElement('div'); links.className = 'venue-links';
+      const onMap = document.createElement('button'); onMap.type = 'button'; onMap.textContent = 'Show on map';
+      onMap.setAttribute('aria-label', `Show ${c.name} on map`);
+      onMap.addEventListener('click', () => {
+        search.value = ''; renderSearch(); setView('map'); showCinema(c);
+        pins.get(c.id)?.element.focus({preventScroll:true});
+      });
+      const source = document.createElement('a'); source.textContent = 'Check listing ↗'; source.href = c.scheduleUrl; source.target = '_blank'; source.rel = 'noopener';
+      source.setAttribute('aria-label', `Check ${c.name} listing`);
+      links.append(onMap, source); venue.append(name, area, links);
+      const format = document.createElement('td'); format.dataset.label = 'Studio';
+      const formatTag = document.createElement('span'); formatTag.className = 'format-tag'; formatTag.textContent = offer.format;
+      format.append(formatTag);
+      const price = document.createElement('td'); price.dataset.label = 'Ticket price'; price.className = 'ticket-price';
+      const amount = document.createElement('strong'); amount.textContent = Number.isFinite(offer.price) ? rupiah(offer.price) : 'Not listed'; price.append(amount);
+      if (offer.price !== null && offer.price === minimum) {
+        const badge = document.createElement('span'); badge.className = 'lowest-price'; badge.textContent = 'Lowest listed'; price.append(badge);
+      }
+      const times = document.createElement('td'); times.dataset.label = 'Showtimes · WITA'; times.className = 'showtimes';
+      offer.times.forEach(time => {const span = document.createElement('span'); span.textContent = time; times.append(span);});
+      row.append(venue, format, price, times); comparisonRows.append(row);
+    });
+    document.getElementById('comparison-empty').hidden = offers.length > 0;
+    const listedIds = new Set(all.map(s => s.cinemaId));
+    const unlisted = cinemas.filter(c => !listedIds.has(c.id));
+    document.getElementById('unlisted-venues').hidden = !unlisted.length;
+    document.getElementById('unlisted-summary').textContent = `${unlisted.length} ${unlisted.length === 1 ? 'cinema has' : 'cinemas have'} no listing for this movie`;
+    document.getElementById('unlisted-names').textContent = `${unlisted.map(c => c.name).join(' · ')}. No listing in the saved schedule; this does not confirm the film is unavailable.`;
+    const refreshed = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Makassar'}).format(new Date(showtimes.refreshedAt));
+    document.getElementById('comparison-updated').textContent = `Source: JadwalNonton · ${showtimes.sources.length} cinema schedules checked · refreshed ${refreshed} WITA. Listed prices may differ from the final booking total.`;
+  }
+  function loadMovies() {
+    fetch('./showtimes.json', {cache:'no-store'}).then(response => {
+      if (!response.ok) throw new Error('Movie listings unavailable');
+      return response.json();
+    }).then(data => {
+      if (!Array.isArray(data.movies) || !data.movies.length || !Array.isArray(data.screenings)) throw new Error('Invalid movie listings');
+      showtimes = data;
+      movieSelect.replaceChildren(new Option('Choose a movie…', ''));
+      data.movies.forEach(movie => movieSelect.add(new Option(movie.title, movie.id)));
+      movieSelect.disabled = false;
+      const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${data.date}T12:00:00+08:00`));
+      movieDataStatus.textContent = `${data.movies.length} movies · listings for ${dateText}`;
+      const today = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Makassar', year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date());
+      const warning = document.getElementById('snapshot-warning');
+      warning.hidden = data.date === today;
+      warning.textContent = `These are saved listings for ${dateText}, not today’s schedule. Open the source listing for current prices and showtimes.`;
+      if (requestedMovie && data.movies.some(m => m.id === requestedMovie)) movieSelect.value = requestedMovie;
+      else if (requestedMovie) movieDataStatus.textContent += ' · The linked movie is no longer in this snapshot. Choose another movie.';
+      buildFormats(); renderComparison(); updateMovieUrl();
+    }).catch(() => {
+      movieSelect.replaceChildren(new Option('Movies unavailable', ''));
+      movieDataStatus.replaceChildren();
+      const message = document.createTextNode('Movie listings could not load. ');
+      const source = document.createElement('a'); source.textContent = 'Browse current Bali schedules ↗'; source.href = 'https://jadwalnonton.com/bioskop/di-bali/'; source.target = '_blank'; source.rel = 'noopener';
+      movieDataStatus.append(message, source);
+    });
+  }
+  document.getElementById('view-map').addEventListener('click', () => setView('map'));
+  document.getElementById('view-movies').addEventListener('click', () => setView('movies'));
+  movieSelect.addEventListener('change', () => {formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
+  formatSelect.addEventListener('change', renderComparison);
+  priceSort.addEventListener('change', renderComparison);
+  if (requestedMovie) setView('movies');
 
   function cinemaIcon() {
     const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
@@ -110,6 +247,7 @@
     }
     renderSearch();
     if (selected) showCinema(cinemas.find(c=>c.id===selected));
+    renderComparison();
   }
   function setOrigin(coords) {
     origin = coords; setChoosing(false);
@@ -235,7 +373,7 @@
   });
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){hovered=null;focused=null;clearSelection();setChoosing(false);}});
   fetch('./cinemas.json').then(response=>{if(!response.ok)throw new Error('Data unavailable');return response.json();}).then(data=>{
-    cinemas=data.cinemas;buildList();startMap();renderOrigin();
+    cinemas=data.cinemas;buildList();startMap();renderOrigin();loadMovies();
   }).catch(()=>{
     count.textContent='Unable to load';notice.textContent='Cinema data could not load. Please check your connection and refresh.';
     const error=document.createElement('li');error.className='empty';error.textContent='Cinema data could not load. ';

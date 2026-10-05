@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bali Cinema Map</title>
-  <meta name="description" content="Find Bali cinemas on a simple interactive map. Browse 12 theaters with addresses, directions and links to movie schedules.">
+  <meta name="description" content="Find Bali cinemas and compare ticket prices for a movie across venues, studio formats and showtimes.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316433a'/%3E%3Crect x='7' y='8' width='18' height='16' rx='2' fill='none' stroke='%23f7f9fa' stroke-width='2'/%3E%3Cpath d='M11 8v16M21 8v16M7 13h4M7 19h4M21 13h4M21 19h4' stroke='%23f7f9fa' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=71b9814">
+  <link rel="stylesheet" href="style.css?v=movie-compare-1">
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="app.js?v=71b9814"></script>
+  <script defer src="app.js?v=movie-compare-1"></script>
 </head>
 <body>
   <main class="app">
@@ -21,38 +21,57 @@
       <header class="brand">
         <span class="eyebrow">BALI · CINEMAS</span>
         <h1>Bali cinema map</h1>
-        <p>Find the cinemas closest to home.</p>
+        <p>Find a cinema. Compare a movie’s prices.</p>
       </header>
-      <div class="finder">
+      <nav class="view-switch" aria-label="Browse by">
+        <button id="view-map" type="button" aria-pressed="true" aria-controls="map-view">Cinemas & map</button>
+        <button id="view-movies" type="button" aria-pressed="false" aria-controls="comparison">Compare movies</button>
+      </nav>
+      <div class="finder map-only">
         <label for="search">Find a cinema</label>
         <div class="search-box">
           <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
           <input id="search" type="search" placeholder="Cinema, area or chain…" autocomplete="off" aria-controls="cinema-list">
         </div>
       </div>
-      <section class="starting-point" aria-label="Starting point">
+      <section class="starting-point map-only" aria-label="Starting point">
         <div class="point-heading"><h2>Distances from</h2><button id="clear-point" type="button" hidden>Clear</button></div>
         <div class="point-actions"><button id="choose-point" type="button" aria-pressed="false">Choose on map</button><button id="use-location" type="button">Use my location</button></div>
         <p id="point-status" role="status">Set a starting point to sort cinemas by distance.</p>
       </section>
-      <div class="list-head"><h2>Cinemas</h2><span id="count" role="status">Loading…</span></div>
-      <div class="list-scroll">
+      <div class="list-head map-only"><h2>Cinemas</h2><span id="count" role="status">Loading…</span></div>
+      <div class="list-scroll map-only">
         <ol id="cinema-list" class="cinema-list"></ol>
         <div id="empty" class="empty" hidden>No cinema matches your search.<button id="clear-search" type="button">Show all cinemas</button></div>
       </div>
+      <section id="movie-finder" class="movie-finder" aria-label="Movie comparison controls" hidden>
+        <label for="movie-select">Pick a movie</label>
+        <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
+        <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
+        <div class="comparison-filters">
+          <div><label for="format-select">Studio format</label><select id="format-select" disabled aria-controls="comparison-rows"><option value="">All formats</option></select></div>
+          <div><label for="price-sort">Sort venues</label><select id="price-sort" aria-controls="comparison-rows"><option value="price">Lowest price</option><option value="distance" disabled>Nearest to me</option><option value="name">Cinema name</option></select></div>
+        </div>
+        <details class="price-explainer">
+          <summary>Why do prices differ?</summary>
+          <p>The same film can cost more at a different branch, even in Regular 2D. Prices also change by screening day and studio format.</p>
+          <p>Premiere, VIP and IMAX are different viewing experiences. Compare the same format to see the venue price difference.</p>
+          <p><a href="https://www.cinema21.co.id/faq" target="_blank" rel="noopener">Cinema XXI’s pricing explanation ↗</a></p>
+        </details>
+      </section>
       <footer class="source-note">
         <details>
           <summary>About this map</summary>
           <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>
           <p>Pins use OpenStreetMap cinema or mall locations. Sidewalk Jimbaran’s pin is approximate. Use Directions for the venue’s location.</p>
-          <p>Schedule links open JadwalNonton for the latest films and prices. Confirm availability before traveling.</p>
+          <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules, refreshed daily. Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
           <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
           <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
         </details>
         <span>Locations checked · 5 Oct 2026 · <a href="https://github.com/Arthur-Freedom/bali-cinema-map" target="_blank" rel="noopener">GitHub</a></span>
       </footer>
     </aside>
-    <section class="map-wrap" aria-label="Map of Bali cinemas">
+    <section id="map-view" class="map-wrap" aria-label="Map of Bali cinemas">
       <div id="map"></div>
       <button id="show-all" class="map-home" type="button">All cinemas</button>
       <div class="legend" aria-label="Cinema chains">
@@ -60,6 +79,26 @@
       </div>
       <div id="map-notice" class="map-notice" role="status">Loading map…</div>
       <div id="point-hint" class="map-notice" role="status" hidden>Click your starting point on the map.</div>
+    </section>
+    <section id="comparison" class="comparison" aria-label="Movie venues and ticket prices" hidden>
+      <header class="comparison-heading">
+        <span class="eyebrow">MOVIE · PRICE COMPARISON</span>
+        <h2 id="comparison-title">Pick a movie to compare</h2>
+        <p id="comparison-summary" role="status">See each venue, studio format, ticket price and showtime in one overview.</p>
+        <a id="movie-source" target="_blank" rel="noopener" hidden>Film listing on JadwalNonton ↗</a>
+      </header>
+      <p id="snapshot-warning" class="snapshot-warning" role="status" hidden></p>
+      <div id="comparison-results" hidden>
+        <p class="comparison-note">Listed price per ticket · showtimes in Bali time (WITA). A listing’s price may follow its first showtime; check the final price for your chosen session.</p>
+        <table class="comparison-table">
+          <caption class="sr-only">Cinema venues, studio formats, listed ticket prices and showtimes</caption>
+          <thead><tr><th scope="col">Cinema</th><th scope="col">Studio</th><th scope="col">Ticket price</th><th scope="col">Showtimes · WITA</th></tr></thead>
+          <tbody id="comparison-rows"></tbody>
+        </table>
+        <p id="comparison-empty" class="empty" hidden>No listings for this format. Choose another format to compare.</p>
+        <details id="unlisted-venues" class="unlisted-venues" hidden><summary id="unlisted-summary"></summary><p id="unlisted-names"></p></details>
+        <p id="comparison-updated" class="comparison-updated"></p>
+      </div>
     </section>
   </main>
 </body>
