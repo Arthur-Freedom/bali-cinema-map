@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bali Cinema Map</title>
+  <meta name="description" content="Find Bali cinemas on a simple interactive map. Browse 12 theaters with addresses, directions and links to movie schedules.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316433a'/%3E%3Crect x='7' y='8' width='18' height='16' rx='2' fill='none' stroke='%23f7f9fa' stroke-width='2'/%3E%3Cpath d='M11 8v16M21 8v16M7 13h4M7 19h4M21 13h4M21 19h4' stroke='%23f7f9fa' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <aside class="panel" aria-label="Cinema finder">
+      <header class="brand">
+        <span class="eyebrow">BALI · CINEMAS</span>
+        <h1>Bali cinema map</h1>
+        <p>Find the cinemas closest to home.</p>
+      </header>
+      <div class="finder">
+        <label for="search">Find a cinema</label>
+        <div class="search-box">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <input id="search" type="search" placeholder="Cinema, area or chain…" autocomplete="off" aria-controls="cinema-list">
+        </div>
+      </div>
+      <section class="starting-point" aria-label="Starting point">
+        <div class="point-heading"><h2>Distances from</h2><button id="clear-point" type="button" hidden>Clear</button></div>
+        <div class="point-actions"><button id="choose-point" type="button" aria-pressed="false">Choose on map</button><button id="use-location" type="button">Use my location</button></div>
+        <p id="point-status" role="status">Set a starting point to sort cinemas by distance.</p>
+      </section>
+      <section id="detail" class="detail" hidden aria-label="Selected cinema" aria-live="polite"></section>
+      <div class="list-head"><h2>Cinemas</h2><span id="count" role="status">Loading…</span></div>
+      <div class="list-scroll">
+        <ol id="cinema-list" class="cinema-list"></ol>
+        <div id="empty" class="empty" hidden>No cinema matches your search.<button id="clear-search" type="button">Show all cinemas</button></div>
+      </div>
+      <footer class="source-note">
+        <details>
+          <summary>About this map</summary>
+          <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>
+          <p>Pins use OpenStreetMap cinema or mall locations. Sidewalk Jimbaran’s pin is approximate. Use Directions for the venue’s location.</p>
+          <p>Schedule links open JadwalNonton for the latest films and prices. Confirm availability before traveling.</p>
+          <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
+          <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
+        </details>
+        <span>Locations checked · 5 Oct 2026 · <a href="https://github.com/Arthur-Freedom/bali-cinema-map" target="_blank" rel="noopener">GitHub</a></span>
+      </footer>
+    </aside>
+    <section class="map-wrap" aria-label="Map of Bali cinemas">
+      <div id="map"></div>
+      <button id="show-all" class="map-home" type="button">All cinemas</button>
+      <div class="legend" aria-label="Cinema chains">
+        <span><i class="xxi"></i>XXI</span><span><i class="cinepolis"></i>Cinépolis</span><span><i class="independent"></i>Independent</span>
+      </div>
+      <div id="map-notice" class="map-notice" role="status">Loading map…</div>
+      <div id="point-hint" class="map-notice" role="status" hidden>Click your starting point on the map.</div>
+    </section>
+  </main>
+</body>
+</html>

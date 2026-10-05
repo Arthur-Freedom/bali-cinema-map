@@ -1,0 +1,186 @@
+{
+  "updated": "2026-10-05",
+  "source": "https://jadwalnonton.com/bioskop/di-bali/",
+  "cinemas": [
+    {
+      "id": "beachwalk-xxi",
+      "number": 1,
+      "name": "Beachwalk XXI",
+      "chain": "XXI",
+      "area": "Kuta",
+      "address": "Beach Walk Lantai 2 Jl. Pantai Kuta Denpasar - Bali",
+      "coordinates": [
+        115.1695801,
+        -8.7165481
+      ],
+      "accuracy": "mall",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/way/520645071"
+    },
+    {
+      "id": "cinemaxx-lippo-mall-kuta",
+      "number": 2,
+      "name": "Cinépolis Lippo Mall Kuta",
+      "chain": "Cinépolis",
+      "area": "Kuta",
+      "address": "Jalan Kartika Plaza Lingkar Segara, Kuta, Bali, Unit LG-15. , Denpasar",
+      "coordinates": [
+        115.1661842,
+        -8.735575
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/7022762098"
+    },
+    {
+      "id": "lippo-plaza-sunset",
+      "number": 3,
+      "name": "Cinépolis Lippo Plaza Sunset",
+      "chain": "Cinépolis",
+      "area": "Sunset Road",
+      "address": "Jl. Sunset Road, Kuta, Kabupaten Badung, Bali , Denpasar",
+      "coordinates": [
+        115.1854722,
+        -8.7150527
+      ],
+      "accuracy": "mall",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
+      "locationSource": "https://www.openstreetmap.org/way/416092771"
+    },
+    {
+      "id": "cinemaxx-plaza-renon",
+      "number": 4,
+      "name": "Cinépolis Plaza Renon",
+      "chain": "Cinépolis",
+      "area": "Renon",
+      "address": "Jalan Raya Puputan, Niti Mandala Renon, Desa Sumerta Kelod, Denpasar Timur , Denpasar",
+      "coordinates": [
+        115.2444023,
+        -8.6730177
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/5633966622"
+    },
+    {
+      "id": "cinemaxx-sidewalk-jimbaran",
+      "number": 5,
+      "name": "Cinépolis Sidewalk Jimbaran",
+      "chain": "Cinépolis",
+      "area": "Jimbaran",
+      "address": "Jl Raya Uluwatu, Jimbaran, Kuta Selatan, Badung, Bali , Denpasar",
+      "coordinates": [
+        115.16112309771059,
+        -8.796345623254282
+      ],
+      "accuracy": "approximate",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
+      "locationSource": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html"
+    },
+    {
+      "id": "denpasar-cineplex",
+      "number": 6,
+      "name": "Denpasar Cineplex",
+      "chain": "Independent",
+      "area": "Denpasar",
+      "address": "Jl. M.H. Thamrin No.69, Pemecutan, Denpasar, Bali 10350",
+      "coordinates": [
+        115.2101018,
+        -8.6562476
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/4412608371"
+    },
+    {
+      "id": "galeria-xxi",
+      "number": 7,
+      "name": "Galeria XXI",
+      "chain": "XXI",
+      "area": "Kuta",
+      "address": "DFS GALLERIA Jl. By Pass Ngurah Rai Bali",
+      "coordinates": [
+        115.1831009,
+        -8.7226756
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/4180401426"
+    },
+    {
+      "id": "icon-bali-xxi",
+      "number": 8,
+      "name": "Icon Bali XXI",
+      "chain": "XXI",
+      "area": "Sanur",
+      "address": "Icon Bali Mall XXI. Jl. Danau Tamblingan No.27, Sanur, Denpasar Selatan, Kota Denpasar, Bali 80228",
+      "coordinates": [
+        115.2637053,
+        -8.6864282
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/1153246550"
+    },
+    {
+      "id": "level-21-xxi",
+      "number": 9,
+      "name": "Level 21 XXI",
+      "chain": "XXI",
+      "area": "Denpasar",
+      "address": "Mall Level 21 Lt. 4 Jln. Teuku Umar No. 1 Denpasar - Bali",
+      "coordinates": [
+        115.2139811,
+        -8.6698542
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/4494434428"
+    },
+    {
+      "id": "living-world-denpasar-xxi",
+      "number": 10,
+      "name": "Living World Denpasar XXI",
+      "chain": "XXI",
+      "area": "Denpasar",
+      "address": "Living World, lantai 2, Jl. Gatot Subroto Timur, Tonja, Denpasar Utara, Bali 80235",
+      "coordinates": [
+        115.2324577,
+        -8.6337379
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/12995413544"
+    },
+    {
+      "id": "park-23-xxi",
+      "number": 11,
+      "name": "Park 23 XXI",
+      "chain": "XXI",
+      "area": "Kuta",
+      "address": "Park 23 Lt. 3 Jln. Kediri Circus Water Park Kuta Badung, Bali",
+      "coordinates": [
+        115.1759238,
+        -8.7367596
+      ],
+      "accuracy": "cinema",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/node/4418513516"
+    },
+    {
+      "id": "tsm-xxi",
+      "number": 12,
+      "name": "TSM XXI",
+      "chain": "XXI",
+      "area": "Denpasar",
+      "address": "Trans Studio Mall Bali Lt. 1 Jln. Imam Bonjol No. 440 Denpasar - Bali 80119",
+      "coordinates": [
+        115.1835072,
+        -8.7020484
+      ],
+      "accuracy": "mall",
+      "scheduleUrl": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
+      "locationSource": "https://www.openstreetmap.org/way/1363775659"
+    }
+  ]
+}

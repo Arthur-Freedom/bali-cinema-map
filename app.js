@@ -1,0 +1,180 @@
+'use strict';
+(() => {
+  const search = document.getElementById('search');
+  const list = document.getElementById('cinema-list');
+  const detail = document.getElementById('detail');
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const notice = document.getElementById('map-notice');
+  const home = document.getElementById('show-all');
+  const choosePoint = document.getElementById('choose-point');
+  const clearPoint = document.getElementById('clear-point');
+  const useLocation = document.getElementById('use-location');
+  const pointStatus = document.getElementById('point-status');
+  const pointHint = document.getElementById('point-hint');
+  const colors = {XXI:'#9a6c19', 'Cinépolis':'#235aa7', Independent:'#a3405b'};
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cinemas = [], selected = null, map = null, ready = false;
+  let origin = null, originMarker = null, choosing = false;
+  try {
+    const saved = JSON.parse(localStorage.getItem('bali-cinema-starting-point'));
+    if (Array.isArray(saved) && saved.length === 2 && saved.every(Number.isFinite) && Math.abs(saved[0]) <= 180 && Math.abs(saved[1]) <= 90) origin = saved;
+  } catch {}
+  const pins = new Map();
+  const rows = new Map();
+  const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+  function distance(c) {
+    const radians = degrees => degrees * Math.PI / 180;
+    const [lon1, lat1] = origin.map(radians), [lon2, lat2] = c.coordinates.map(radians);
+    const a = Math.sin((lat2-lat1)/2)**2 + Math.cos(lat1)*Math.cos(lat2)*Math.sin((lon2-lon1)/2)**2;
+    return 6371.0088 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(Math.max(0,1-a)));
+  }
+  function distanceText(c) { return `${distance(c).toFixed(1)} km away`; }
+  function setChoosing(value) {
+    choosing = value; choosePoint.textContent = value ? 'Cancel choosing' : 'Choose on map';
+    choosePoint.setAttribute('aria-pressed',String(value)); pointHint.hidden = !value;
+    if (map) map.getCanvas().style.cursor = value ? 'crosshair' : '';
+  }
+  function renderOrigin() {
+    clearPoint.hidden = !origin;
+    pointStatus.textContent = origin ? 'Nearest first · straight-line distance. Saved in this browser.' : 'Set a starting point to sort cinemas by distance.';
+    if (originMarker) { originMarker.remove(); originMarker = null; }
+    if (origin && map) {
+      const element = document.createElement('div'); element.className = 'origin-pin'; element.textContent = '◎'; element.title = 'Your starting point';
+      originMarker = new maplibregl.Marker({element}).setLngLat(origin).addTo(map);
+      element.setAttribute('aria-label','Your starting point');
+    }
+    renderSearch();
+    if (selected) showCinema(cinemas.find(c=>c.id===selected));
+  }
+  function setOrigin(coords) {
+    origin = coords; setChoosing(false);
+    try { if(origin) localStorage.setItem('bali-cinema-starting-point',JSON.stringify(origin)); else localStorage.removeItem('bali-cinema-starting-point'); } catch {}
+    renderOrigin();
+    if(origin && ready) fit([...(matched().length ? matched() : cinemas), {coordinates:origin}]);
+  }
+
+  function matched() {
+    const query = normalize(search.value.trim());
+    const results = cinemas.filter(c => normalize([c.name,c.area,c.chain,c.address].join(' ')).includes(query));
+    return origin ? results.sort((a,b)=>distance(a)-distance(b) || a.number-b.number) : results;
+  }
+  function bounds(items) {
+    const ext = new maplibregl.LngLatBounds();
+    items.forEach(c => ext.extend(c.coordinates));
+    return ext;
+  }
+  function fit(items = cinemas) {
+    if (!map || !ready || !items.length) return;
+    map.fitBounds(bounds(items), {padding:{top:78,bottom:80,left:56,right:56},maxZoom:12.5,duration:reduceMotion?0:700});
+  }
+  function renderSearch() {
+    const results = matched(), ids = new Set(results.map(c => c.id));
+    results.forEach(c => {
+      const row = rows.get(c.id);
+      if(row) {row.querySelector('small').textContent = `${c.area} · ${c.chain}${origin ? ' · '+distanceText(c) : ''}`; list.append(row);}
+    });
+    rows.forEach((row,id) => row.hidden = !ids.has(id));
+    pins.forEach((pin,id) => pin.element.style.display = ids.has(id) ? '' : 'none');
+    count.textContent = `${ids.size} ${ids.size === 1 ? 'cinema' : 'cinemas'}`;
+    empty.hidden = ids.size > 0;
+    if (selected && !ids.has(selected)) clearSelection();
+  }
+  function clearSelection() {
+    selected = null;
+    detail.hidden = true;
+    rows.forEach(row => row.querySelector('button').setAttribute('aria-pressed','false'));
+    pins.forEach(pin => pin.element.setAttribute('aria-pressed','false'));
+  }
+  function showCinema(c, fromPin = false) {
+    selected = c.id;
+    detail.replaceChildren();
+    const close = document.createElement('button');
+    close.type = 'button'; close.className = 'detail-close'; close.textContent = '×';
+    close.setAttribute('aria-label','Close cinema details');
+    close.addEventListener('click', () => { clearSelection(); rows.get(c.id).querySelector('button').focus(); });
+    const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = `${c.chain} · ${c.area}`;
+    const heading = document.createElement('h2'); heading.textContent = c.name;
+    const address = document.createElement('p'); address.textContent = c.address;
+    const accuracy = document.createElement('p'); accuracy.className = 'accuracy';
+    accuracy.textContent = (origin ? distanceText(c)+' · straight line. ' : '') + (c.accuracy === 'approximate' ? 'Approximate pin · use Directions to find the venue.' : c.accuracy === 'mall' ? 'Pin marks the mall location.' : 'Pin marks the cinema location.');
+    const actions = document.createElement('div'); actions.className = 'actions';
+    [['Films & prices',c.scheduleUrl],['Directions',`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(c.name+' '+c.address)}${origin ? '&origin='+encodeURIComponent(origin[1]+','+origin[0]) : ''}`]].forEach(([text,url])=>{
+      const a = document.createElement('a'); a.textContent=text; a.href=url; a.target='_blank'; a.rel='noopener'; actions.append(a);
+    });
+    detail.append(close,meta,heading,address,accuracy,actions); detail.hidden = false;
+    rows.forEach((row,id) => row.querySelector('button').setAttribute('aria-pressed',String(id===selected)));
+    pins.forEach((pin,id) => {pin.element.setAttribute('aria-pressed',String(id===selected));pin.element.style.zIndex = id===selected ? '5' : '1';});
+    if (map && ready) map.flyTo({center:c.coordinates,zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
+    if (fromPin) rows.get(c.id).scrollIntoView({block:'nearest',behavior:'auto'});
+  }
+  function buildList() {
+    cinemas.forEach(c => {
+      const li = document.createElement('li'); li.dataset.id = c.id;
+      const button = document.createElement('button'); button.type = 'button'; button.className = 'cinema-row';
+      button.setAttribute('aria-pressed','false'); button.setAttribute('aria-label',`${c.name}, ${c.area}`);
+      const number = document.createElement('span'); number.className = 'number'; number.style.setProperty('--pin',colors[c.chain]); number.textContent=c.number;
+      const text = document.createElement('span'); text.className='row-text';
+      const name = document.createElement('strong'); name.textContent=c.name;
+      const meta = document.createElement('small'); meta.textContent=`${c.area} · ${c.chain}`;
+      text.append(name,meta); button.append(number,text); button.addEventListener('click',()=>showCinema(c));
+      li.append(button); list.append(li); rows.set(c.id,li);
+    });
+    renderSearch();
+  }
+  function startMap() {
+    if (!window.maplibregl) {
+      notice.textContent = 'The map is unavailable in this browser. You can still browse cinemas and open Directions.';
+      home.disabled = true; choosePoint.disabled = true; return;
+    }
+    try {
+      map = new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/positron',center:[115.209,-8.715],zoom:10.4,minZoom:7,maxZoom:17,attributionControl:false});
+    } catch (error) {
+      console.error('Unable to initialize the cinema map:', error);
+      notice.textContent = 'The map is unavailable in this browser. You can still browse cinemas and open Directions.';
+      home.disabled = true; choosePoint.disabled = true; return;
+    }
+    map.addControl(new maplibregl.AttributionControl({compact:true}),'bottom-right');
+    map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+    map.dragRotate.disable(); map.touchZoomRotate.disableRotation();
+    cinemas.forEach(c => {
+      const element = document.createElement('button'); element.type='button'; element.className='map-pin';
+      element.textContent=c.number; element.style.setProperty('--pin',colors[c.chain]); element.title=c.name;
+      element.setAttribute('aria-label',`Show ${c.name} on the map`); element.setAttribute('aria-pressed','false');
+      element.addEventListener('click',event => {if(choosing){event.stopPropagation();setOrigin(c.coordinates);}else showCinema(c,true);});
+      const marker = new maplibregl.Marker({element}).setLngLat(c.coordinates).addTo(map);
+      element.setAttribute('aria-label',`Show ${c.name} on the map`);
+      pins.set(c.id,{element,marker});
+    });
+    map.once('load',()=>{ready=true;notice.hidden=true;fit();if(selected)showCinema(cinemas.find(c=>c.id===selected));});
+    map.on('click',event=>{if(choosing)setOrigin([event.lngLat.lng,event.lngLat.lat]);});
+    map.on('error',()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap could not load. Cinema pins and the list are still available; try refreshing.';}});
+    window.setTimeout(()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap is taking longer to load. Cinema pins and the list are still available.';}},12000);
+    renderSearch();
+  }
+  search.addEventListener('input',renderSearch);
+  search.addEventListener('keydown',event=>{
+    if(event.key==='Enter'){const results=matched();if(results.length)showCinema(results[0]);}
+    if(event.key==='Escape'){search.value='';renderSearch();clearSelection();}
+  });
+  document.getElementById('clear-search').addEventListener('click',()=>{search.value='';renderSearch();search.focus();});
+  home.addEventListener('click',()=>{search.value='';clearSelection();renderSearch();fit();});
+  choosePoint.addEventListener('click',()=>setChoosing(!choosing));
+  clearPoint.addEventListener('click',()=>setOrigin(null));
+  useLocation.addEventListener('click',()=>{
+    if(!navigator.geolocation){pointStatus.textContent='Location is unavailable. Choose a point on the map instead.';return;}
+    useLocation.disabled = true; pointStatus.textContent = 'Finding your location…';
+    navigator.geolocation.getCurrentPosition(position=>{
+      useLocation.disabled = false;setOrigin([position.coords.longitude,position.coords.latitude]);
+    },()=>{useLocation.disabled=false;pointStatus.textContent='Location could not be found. Choose a point on the map instead.';},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+  });
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')setChoosing(false);});
+  fetch('./cinemas.json').then(response=>{if(!response.ok)throw new Error('Data unavailable');return response.json();}).then(data=>{
+    cinemas=data.cinemas;buildList();startMap();renderOrigin();
+  }).catch(()=>{
+    count.textContent='Unable to load';notice.textContent='Cinema data could not load. Please check your connection and refresh.';
+    const error=document.createElement('li');error.className='empty';error.textContent='Cinema data could not load. ';
+    const source=document.createElement('a');source.href='https://jadwalnonton.com/bioskop/di-bali/';source.textContent='Open the source listing';error.append(source);list.append(error);home.disabled=true;
+  });
+})();
