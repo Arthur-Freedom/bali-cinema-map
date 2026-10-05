@@ -213,7 +213,14 @@
       pins.set(c.id,{element,marker});
     });
     map.once('load',()=>{ready=true;notice.hidden=true;fit();if(selected)showCinema(cinemas.find(c=>c.id===selected));});
-    map.on('click',event=>{if(choosing)setOrigin([event.lngLat.lng,event.lngLat.lat]);});
+    map.on('click',event=>{
+      const target = event.originalEvent?.target;
+      if(target instanceof Element && target.closest('.map-pin, .cinema-label, .maplibregl-ctrl')) return;
+      if(choosing){setOrigin([event.lngLat.lng,event.lngLat.lat]);return;}
+      window.clearTimeout(labelExitTimer);
+      hovered=null;focused=null;
+      clearSelection();
+    });
     map.on('error',()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap could not load. Cinema pins and the list are still available; try refreshing.';}});
     window.setTimeout(()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap is taking longer to load. Cinema pins and the list are still available.';}},12000);
     renderSearch();
