@@ -10,8 +10,9 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 
 - Choose a starting point on the map, or use your current location, to sort cinemas nearest first.
 - Distances are straight-line estimates in kilometres. Open **Directions** for a road route from your starting point.
-- Search by cinema name, chain or area. Select a numbered pin or list row for details.
-- **Films & prices** opens the cinema's JadwalNonton page for current screenings and ticket prices.
+- Search by cinema name, chain or area. Cinema icons use chain colors; hover or focus a pin to see its name on the map. Select a pin or list row to keep the name visible and open details.
+- Your starting point has a distinct dot labelled **You**.
+- The map popup also offers **Films & prices** and **Directions**, so you can open current screenings, ticket prices or a route directly beside the cinema pin.
 - Your starting point stays in your browser's local storage; it is not included in this public repository.
 
 ## Data

@@ -16,6 +16,8 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let cinemas = [], selected = null, map = null, ready = false;
   let origin = null, originMarker = null, choosing = false;
+  let hovered = null, focused = null, labelPopup = null;
+  let labelExitTimer = null;
   try {
     const saved = JSON.parse(localStorage.getItem('bali-cinema-starting-point'));
     if (Array.isArray(saved) && saved.length === 2 && saved.every(Number.isFinite) && Math.abs(saved[0]) <= 180 && Math.abs(saved[1]) <= 90) origin = saved;
@@ -23,6 +25,57 @@
   const pins = new Map();
   const rows = new Map();
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+  function cinemaIcon() {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.setAttribute('viewBox','0 0 24 24'); svg.setAttribute('aria-hidden','true');
+    svg.setAttribute('fill','none'); svg.setAttribute('stroke','currentColor');
+    svg.setAttribute('stroke-width','1.8'); svg.setAttribute('stroke-linecap','round');
+    svg.setAttribute('stroke-linejoin','round');
+    const frame = document.createElementNS(svg.namespaceURI,'rect');
+    frame.setAttribute('x','3'); frame.setAttribute('y','4'); frame.setAttribute('width','18');
+    frame.setAttribute('height','16'); frame.setAttribute('rx','2');
+    const perforations = document.createElementNS(svg.namespaceURI,'path');
+    perforations.setAttribute('d','M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4');
+    svg.append(frame,perforations); return svg;
+  }
+  function cinemaActions(c) {
+    const actions = document.createElement('div'); actions.className = 'actions';
+    [['Films & prices',c.scheduleUrl],['Directions',`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(c.name+' '+c.address)}${origin ? '&origin='+encodeURIComponent(origin[1]+','+origin[0]) : ''}`]].forEach(([text,url])=>{
+      const a = document.createElement('a'); a.textContent=text; a.href=url; a.target='_blank'; a.rel='noopener'; actions.append(a);
+    });
+    return actions;
+  }
+  function scheduleLabelExit(id) {
+    window.clearTimeout(labelExitTimer);
+    labelExitTimer = window.setTimeout(()=>{
+      if(labelPopup?.getElement().contains(document.activeElement)) return;
+      if(hovered===id) hovered=null;
+      renderMapLabel();
+    },200);
+  }
+  function renderMapLabel() {
+    const id = hovered || focused || selected;
+    const cinema = cinemas.find(c=>c.id===id);
+    pins.forEach(pin=>pin.element.removeAttribute('aria-describedby'));
+    if (!map || !cinema || pins.get(id)?.element.style.display === 'none' || choosing) {
+      if(labelPopup) labelPopup.remove();
+      return;
+    }
+    const content = document.createElement('div'); content.id = 'cinema-map-label';
+    const name = document.createElement('strong'); name.textContent = cinema.name;
+    const area = document.createElement('span'); area.textContent = `${cinema.area} · ${cinema.chain}${origin ? ' · '+distanceText(cinema) : ''}`;
+    content.append(name,area,cinemaActions(cinema));
+    content.addEventListener('mouseenter',()=>window.clearTimeout(labelExitTimer));
+    content.addEventListener('mouseleave',()=>scheduleLabelExit(cinema.id));
+    content.addEventListener('focusin',()=>{window.clearTimeout(labelExitTimer);hovered=cinema.id;});
+    content.addEventListener('focusout',event=>{if(!content.contains(event.relatedTarget))scheduleLabelExit(cinema.id);});
+    if(!labelPopup) labelPopup = new maplibregl.Popup({closeButton:false,closeOnClick:false,focusAfterOpen:false,offset:24,maxWidth:'270px',className:'cinema-label'});
+    labelPopup.setLngLat(cinema.coordinates).setDOMContent(content).addTo(map);
+    labelPopup.getElement().setAttribute('role','group');
+    labelPopup.getElement().setAttribute('aria-label',cinema.name);
+    pins.get(id).element.setAttribute('aria-describedby',content.id);
+  }
 
   function distance(c) {
     const radians = degrees => degrees * Math.PI / 180;
@@ -35,15 +88,19 @@
     choosing = value; choosePoint.textContent = value ? 'Cancel choosing' : 'Choose on map';
     choosePoint.setAttribute('aria-pressed',String(value)); pointHint.hidden = !value;
     if (map) map.getCanvas().style.cursor = value ? 'crosshair' : '';
+    renderMapLabel();
   }
   function renderOrigin() {
     clearPoint.hidden = !origin;
     pointStatus.textContent = origin ? 'Nearest first · straight-line distance. Saved in this browser.' : 'Set a starting point to sort cinemas by distance.';
     if (originMarker) { originMarker.remove(); originMarker = null; }
     if (origin && map) {
-      const element = document.createElement('div'); element.className = 'origin-pin'; element.textContent = '◎'; element.title = 'Your starting point';
+      const element = document.createElement('div'); element.className = 'origin-pin'; element.title = 'You · starting point';
+      const dot = document.createElement('span'); dot.className = 'origin-dot';
+      const label = document.createElement('span'); label.className = 'origin-label'; label.textContent = 'You';
+      element.append(dot,label);
       originMarker = new maplibregl.Marker({element}).setLngLat(origin).addTo(map);
-      element.setAttribute('aria-label','Your starting point');
+      element.setAttribute('aria-label','You · starting point');
     }
     renderSearch();
     if (selected) showCinema(cinemas.find(c=>c.id===selected));
@@ -80,12 +137,14 @@
     count.textContent = `${ids.size} ${ids.size === 1 ? 'cinema' : 'cinemas'}`;
     empty.hidden = ids.size > 0;
     if (selected && !ids.has(selected)) clearSelection();
+    renderMapLabel();
   }
   function clearSelection() {
     selected = null;
     detail.hidden = true;
     rows.forEach(row => row.querySelector('button').setAttribute('aria-pressed','false'));
     pins.forEach(pin => pin.element.setAttribute('aria-pressed','false'));
+    renderMapLabel();
   }
   function showCinema(c, fromPin = false) {
     selected = c.id;
@@ -99,13 +158,11 @@
     const address = document.createElement('p'); address.textContent = c.address;
     const accuracy = document.createElement('p'); accuracy.className = 'accuracy';
     accuracy.textContent = (origin ? distanceText(c)+' · straight line. ' : '') + (c.accuracy === 'approximate' ? 'Approximate pin · use Directions to find the venue.' : c.accuracy === 'mall' ? 'Pin marks the mall location.' : 'Pin marks the cinema location.');
-    const actions = document.createElement('div'); actions.className = 'actions';
-    [['Films & prices',c.scheduleUrl],['Directions',`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(c.name+' '+c.address)}${origin ? '&origin='+encodeURIComponent(origin[1]+','+origin[0]) : ''}`]].forEach(([text,url])=>{
-      const a = document.createElement('a'); a.textContent=text; a.href=url; a.target='_blank'; a.rel='noopener'; actions.append(a);
-    });
+    const actions = cinemaActions(c);
     detail.append(close,meta,heading,address,accuracy,actions); detail.hidden = false;
     rows.forEach((row,id) => row.querySelector('button').setAttribute('aria-pressed',String(id===selected)));
     pins.forEach((pin,id) => {pin.element.setAttribute('aria-pressed',String(id===selected));pin.element.style.zIndex = id===selected ? '5' : '1';});
+    renderMapLabel();
     if (map && ready) map.flyTo({center:c.coordinates,zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
     if (fromPin) rows.get(c.id).scrollIntoView({block:'nearest',behavior:'auto'});
   }
@@ -114,11 +171,11 @@
       const li = document.createElement('li'); li.dataset.id = c.id;
       const button = document.createElement('button'); button.type = 'button'; button.className = 'cinema-row';
       button.setAttribute('aria-pressed','false'); button.setAttribute('aria-label',`${c.name}, ${c.area}`);
-      const number = document.createElement('span'); number.className = 'number'; number.style.setProperty('--pin',colors[c.chain]); number.textContent=c.number;
+      const symbol = document.createElement('span'); symbol.className = 'cinema-symbol'; symbol.style.setProperty('--pin',colors[c.chain]); symbol.append(cinemaIcon());
       const text = document.createElement('span'); text.className='row-text';
       const name = document.createElement('strong'); name.textContent=c.name;
       const meta = document.createElement('small'); meta.textContent=`${c.area} · ${c.chain}`;
-      text.append(name,meta); button.append(number,text); button.addEventListener('click',()=>showCinema(c));
+      text.append(name,meta); button.append(symbol,text); button.addEventListener('click',()=>showCinema(c));
       li.append(button); list.append(li); rows.set(c.id,li);
     });
     renderSearch();
@@ -140,8 +197,16 @@
     map.dragRotate.disable(); map.touchZoomRotate.disableRotation();
     cinemas.forEach(c => {
       const element = document.createElement('button'); element.type='button'; element.className='map-pin';
-      element.textContent=c.number; element.style.setProperty('--pin',colors[c.chain]); element.title=c.name;
+      element.append(cinemaIcon()); element.style.setProperty('--pin',colors[c.chain]);
       element.setAttribute('aria-label',`Show ${c.name} on the map`); element.setAttribute('aria-pressed','false');
+      element.addEventListener('mouseenter',()=>{window.clearTimeout(labelExitTimer);hovered=c.id;renderMapLabel();});
+      element.addEventListener('mouseleave',()=>scheduleLabelExit(c.id));
+      element.addEventListener('focus',()=>{focused=c.id;hovered=null;renderMapLabel();});
+      element.addEventListener('blur',event=>{
+        if(focused===c.id)focused=null;
+        if(labelPopup?.getElement().contains(event.relatedTarget)){hovered=c.id;return;}
+        renderMapLabel();
+      });
       element.addEventListener('click',event => {if(choosing){event.stopPropagation();setOrigin(c.coordinates);}else showCinema(c,true);});
       const marker = new maplibregl.Marker({element}).setLngLat(c.coordinates).addTo(map);
       element.setAttribute('aria-label',`Show ${c.name} on the map`);
@@ -169,7 +234,7 @@
       useLocation.disabled = false;setOrigin([position.coords.longitude,position.coords.latitude]);
     },()=>{useLocation.disabled=false;pointStatus.textContent='Location could not be found. Choose a point on the map instead.';},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
   });
-  document.addEventListener('keydown',event=>{if(event.key==='Escape')setChoosing(false);});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){hovered=null;focused=null;clearSelection();setChoosing(false);}});
   fetch('./cinemas.json').then(response=>{if(!response.ok)throw new Error('Data unavailable');return response.json();}).then(data=>{
     cinemas=data.cinemas;buildList();startMap();renderOrigin();
   }).catch(()=>{
