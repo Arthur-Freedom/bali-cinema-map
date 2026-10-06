@@ -14,10 +14,10 @@
   const app = document.querySelector('.app');
   const movieSelect = document.getElementById('movie-select');
   const movieType = document.getElementById('movie-type');
-  const selectedExperience = () => movieType.querySelector('input:checked');
+  const selectedExperience = () => movieType.selectedOptions[0];
   const movieExperience = () => selectedExperience().value;
   function setMovieExperience(value) {
-    for (const input of movieType.querySelectorAll('input')) input.checked = input.value === value;
+    movieType.value = value;
   }
   const priceSort = document.getElementById('price-sort');
   const movieDataStatus = document.getElementById('movie-data-status');
@@ -133,7 +133,7 @@
     });
     const venueCount = new Set(offers.map(s => s.cinemaId)).size;
     const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
-    const formatLabel = movieExperience() ? selectedExperience().nextElementSibling.textContent : 'all formats';
+    const formatLabel = movieExperience() ? selectedExperience().textContent : 'all formats';
     document.getElementById('comparison-summary').textContent = `${dateText} · ${venueCount} ${venueCount === 1 ? 'venue' : 'venues'}${minimum !== null ? ' · ' + rupiah(minimum) + (maximum !== minimum ? '–' + rupiah(maximum) : '') : ''} · ${formatLabel}${priceSort.value === 'time' ? ' · soonest upcoming first' : ''}`;
     comparisonRows.replaceChildren();
     offers.forEach(offer => {
