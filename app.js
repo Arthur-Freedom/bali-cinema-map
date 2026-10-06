@@ -398,7 +398,7 @@
       notice.textContent = 'The map is unavailable in this browser. You can still browse cinemas and open Directions.';
       home.disabled = true; choosePoint.disabled = true; return;
     }
-    map.addControl(new maplibregl.AttributionControl({compact:true}),'bottom-right');
+    map.addControl(new maplibregl.AttributionControl({compact:false}),'bottom-right');
     map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
     map.dragRotate.disable(); map.touchZoomRotate.disableRotation();
     cinemas.forEach(c => {
@@ -418,7 +418,24 @@
       element.setAttribute('aria-label',`Show ${c.name} on the map`);
       pins.set(c.id,{element,marker});
     });
-    map.once('load',()=>{ready=true;notice.hidden=true;fit();if(selected)showCinema(cinemas.find(c=>c.id===selected));});
+    let usingBackup=false, mapTimer;
+    const retryMap=document.getElementById('retry-map');
+    function backupMap() {
+      if(ready || usingBackup) return;
+      usingBackup=true;
+      clearTimeout(mapTimer);
+      notice.hidden=false; notice.textContent='Loading the backup map…';
+      // Raster tiles do not depend on the font/sprite requests that can stall
+      // the vector map on mobile connections. Normal browser caching applies.
+      map.setStyle({version:8,sources:{backup:{type:'raster',
+        tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,maxzoom:19,
+        attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}},
+        layers:[{id:'backup',type:'raster',source:'backup'}]},{diff:false});
+      mapTimer=setTimeout(()=>{
+        if(!ready) {notice.textContent='The map could not connect. Check your connection, then retry.';retryMap.hidden=false;}
+      },12000);
+    }
+    map.once('load',()=>{ready=true;clearTimeout(mapTimer);notice.hidden=true;retryMap.hidden=true;fit();if(selected)showCinema(cinemas.find(c=>c.id===selected));});
     map.on('click',event=>{
       const target = event.originalEvent?.target;
       if(target instanceof Element && target.closest('.map-pin, .cinema-label, .maplibregl-ctrl')) return;
@@ -427,8 +444,14 @@
       hovered=null;focused=null;
       clearSelection();
     });
-    map.on('error',()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap could not load. Cinema pins and the list are still available; try refreshing.';}});
-    window.setTimeout(()=>{if(!ready){notice.hidden=false;notice.textContent='The basemap is taking longer to load. Cinema pins and the list are still available.';}},12000);
+    map.on('error',()=>{if(!ready && !usingBackup) backupMap();});
+    mapTimer=setTimeout(backupMap,12000);
+    retryMap.addEventListener('click',()=>{
+      retryMap.hidden=true; usingBackup=false; backupMap();
+    });
+    // Android's installed app and Chrome have different viewport heights.
+    new ResizeObserver(()=>map.resize()).observe(document.getElementById('map'));
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden) map.resize();});
     renderSearch();
   }
   search.addEventListener('input',renderSearch);

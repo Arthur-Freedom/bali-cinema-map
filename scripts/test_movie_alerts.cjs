@@ -14,11 +14,25 @@ test('service worker restricts notification navigation to this project',async()=
   const vm=require('node:vm'), fs=require('node:fs');
   const handlers={}, shown=[];
   const scope='https://arthur-freedom.github.io/bali-cinema-map/';
-  const self={registration:{scope,showNotification:async(...args)=>shown.push(args)},addEventListener:(type,fn)=>handlers[type]=fn};
+  const messages=[];
+  const self={registration:{scope,showNotification:async(...args)=>shown.push(args)},
+    clients:{matchAll:async()=>[{url:scope,postMessage:d=>messages.push(d)},
+      {url:'https://arthur-freedom.github.io/another-project/',postMessage:()=>assert.fail('unrelated page')} ]},
+    addEventListener:(type,fn)=>handlers[type]=fn};
   vm.runInNewContext(fs.readFileSync(require.resolve('../sw.js'),'utf8'),{self,URL});
-  await handlers.push({data:{json:()=>({title:'Test',url:'https://evil.example/'})},waitUntil:p=>p});
+  let completion;
+  handlers.push({data:{json:()=>({title:'Test',url:'https://evil.example/'})},waitUntil:p=>completion=p});
+  await completion;
   assert.equal(shown[0][1].data.url,scope);
-  await handlers.push({data:{json:()=>({url:scope+'?movie=new'})},waitUntil:p=>p});
+  handlers.push({data:{json:()=>({url:scope+'?movie=new',test:true})},waitUntil:p=>completion=p});
+  await completion;
   assert.equal(shown[1][1].data.url,scope+'?movie=new');
+  assert.equal(shown[1][1].requireInteraction,true);
+  assert.equal(messages[1].test,true);
+  assert.equal(typeof messages[1].receivedAt,'number');
+  self.registration.showNotification=async()=>{throw Error('OS refused');};
+  handlers.push({data:{json:()=>({test:true})},waitUntil:p=>completion=p});
+  await assert.rejects(completion,/OS refused/);
+  assert.equal(messages.length,2,'do not acknowledge when notification creation fails');
   assert.equal(handlers.fetch,undefined);
 });

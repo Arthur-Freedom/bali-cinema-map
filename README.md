@@ -47,6 +47,10 @@ Pins use OpenStreetMap cinema nodes or mall centroids; each record in `cinemas.j
 
 MapLibre GL JS displays OpenFreeMap's Positron basemap with attribution. No API key, backend or build step is required.
 
+If the vector map fails or takes over 12 seconds to load, the page switches to OpenStreetMap's standard raster tiles, with visible attribution and normal browser caching. It only loads the visible map; there is no offline tile cache or bulk download. This avoids a missing font request leaving Android's map blank. A retry button appears if the backup also cannot connect.
+
+The push test reports **Test reached this browser** only after its service worker receives the message and creates the notification. This cannot prove an OS banner appeared: Windows may disable Chrome notifications, and Android's Chrome site channel may have banners off. The status includes instructions for those settings. Each test uses a unique tag so another test doesn't silently replace the first.
+
 ## Develop and publish
 
 Serve this directory with a static server, for example `python -m http.server 8000`.

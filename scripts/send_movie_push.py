@@ -4,6 +4,7 @@ from datetime import datetime
 import hashlib
 import json
 import os
+import uuid
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
@@ -55,9 +56,10 @@ def send_notifications(snapshot, devices, send, acknowledge, test_id=None):
         movies = eligible_movies(snapshot, device['cursor']) if not test_id else []
         if not movies and not test_id:
             continue  # Keep the cursor unchanged until an alert is accepted; retry failures next refresh.
-        payload = ({'title': 'Bali cinema alerts are ready',
-                    'body': 'This device can receive new-movie alerts, even when the site is closed.',
-                    'url': SITE, 'tag': 'bali-cinema-test'} if test_id else payload_for(movies))
+        payload = ({'title': 'Bali cinema test notification',
+                    'body': 'Your test reached this device. New-movie alerts will appear here too.',
+                    'url': SITE, 'tag': 'bali-cinema-test-' + uuid.uuid4().hex,
+                    'test': True} if test_id else payload_for(movies))
         try:
             status = send(subscription, payload)
             if status in (404, 410):
@@ -103,7 +105,7 @@ def main():
         try:
             response = webpush(subscription_info=subscription, data=json.dumps(payload),
                                vapid_private_key=private_key, vapid_claims={'sub': VAPID_SUBJECT}, ttl=86400, timeout=30,
-                               headers={'Urgency': 'normal'})
+                               headers={'Urgency': 'high' if payload.get('test') else 'normal'})
             return response.status_code
         except WebPushException as error:
             # Exception text may contain a private endpoint; never log it.

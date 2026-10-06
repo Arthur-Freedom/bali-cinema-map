@@ -8,22 +8,31 @@
   const receiptKey='bali-cinema-push-device';
   let registration=null, subscription=null, publicKey=null, signedIn=false, busy=false, deviceId='';
   let registrationTask=null;
+  let testRequestedAt=0, testTimer=null, lastReceipt=null;
+  const desktop=/Windows/.test(navigator.userAgent);
+  const notificationHelp=desktop
+    ? 'No pop-up? In Windows Settings → System → Notifications, turn on Google Chrome and notification banners. Also check Do not disturb.'
+    : /Android/.test(navigator.userAgent)
+      ? 'No pop-up? In Android Settings → Apps → Chrome → Notifications, allow site notifications and banners. Also check Do not disturb.'
+      : 'No pop-up? Check notification banners for this browser or app in your device settings, and check Do not disturb.';
   try { deviceId=localStorage.getItem(receiptKey)||''; } catch {}
   const ios=/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
   const standalone=matchMedia('(display-mode: standalone)').matches || navigator.standalone===true;
   const supported='serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
   function receipt(value) { deviceId=value; try { if(value) localStorage.setItem(receiptKey,value); else localStorage.removeItem(receiptKey); } catch {} }
   function render(message) {
-    const active=Boolean(subscription && deviceId && Notification.permission==='granted');
+    const permission=supported ? Notification.permission : 'default';
+    const active=Boolean(subscription && deviceId && permission==='granted');
     enable.hidden=!supported || (ios&&!standalone) || active || !signedIn;
-    enable.disabled=busy || !publicKey || Notification.permission==='denied';
+    enable.disabled=busy || !publicKey || permission==='denied';
     disable.hidden=!active; disable.disabled=busy;
     test.hidden=!active || !signedIn || !deviceId; test.disabled=busy;
     login.hidden=active || signedIn || !supported || (ios&&!standalone);
     if(message) status.textContent=message;
     else if(ios&&!standalone) status.textContent='On iPhone: open this site in Safari, tap Share → Add to Home Screen, then open it from that icon.';
     else if(!supported) status.textContent='This browser cannot receive website notifications. On Android, open this site in Chrome.';
-    else if(Notification.permission==='denied') status.textContent='Notifications are blocked. Allow them in this browser’s site settings, then reload.';
+    else if(permission==='denied') status.textContent='Notifications are blocked. Allow them in this browser’s site settings, then reload.';
+    else if(active && lastReceipt) status.textContent=lastReceipt;
     else if(active) status.textContent='Alerts are on for this device. New titles arrive after a successful movie refresh.';
     else if(!signedIn) status.textContent='Personal alerts for Arthur-Freedom. Sign in, then enable them on this device.';
     else if(!publicKey) status.textContent='Connecting to movie alerts…';
@@ -38,6 +47,7 @@
       subscription=await registration.pushManager.getSubscription();
       if(!subscription) receipt('');
       render();
+      await checkReceived();
     } catch { render('Movie alerts could not start. Reload the page and try again.'); }
   }
   async function ownerChanged() {
@@ -87,12 +97,35 @@
     } catch(error) { render(error.message); }
     finally { busy=false; render(status.textContent); }
   });
+  function received(data) {
+    if(data?.type!=='cinema:push-received' || data.test!==true || !Number.isFinite(data.receivedAt)) return;
+    if(testRequestedAt && data.receivedAt<testRequestedAt) return;
+    clearTimeout(testTimer);
+    const time=new Date(data.receivedAt).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+    lastReceipt=`Test reached this browser at ${time}. ${notificationHelp}`;
+    render(lastReceipt);
+  }
+  async function checkReceived() {
+    if(!registration) return;
+    const notifications=await registration.getNotifications().catch(()=>[]);
+    const latest=notifications.map(n=>n.data).filter(d=>d?.test && d.receivedAt)
+      .sort((a,b)=>b.receivedAt-a.receivedAt)[0];
+    if(latest) received(latest);
+  }
+  if(supported) navigator.serviceWorker.addEventListener('message',event=>received(event.data));
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden) checkReceived();});
   test.addEventListener('click',async()=>{
     if(busy || !deviceId) return;
-    busy=true; render('Queuing a test notification…');
+    busy=true; lastReceipt=null; testRequestedAt=Date.now(); clearTimeout(testTimer);
+    render('Queuing a test notification…');
     try {
       await window.CinemaOwner.api('/api/push/test','POST',{id:deviceId});
-      render('Test queued. A notification should arrive in about a minute. Check Android’s site and app notification settings if it doesn’t.');
+      if(!lastReceipt) {
+        render('Test queued. Waiting for this browser to receive it… This can take a minute or two.');
+        testTimer=setTimeout(()=>{
+          if(!lastReceipt) render(`No receipt confirmed yet. Keep your internet connection on and try again shortly. ${notificationHelp}`);
+        },120000);
+      }
     } catch(error) { render(error.message); }
     finally { busy=false; render(status.textContent); }
   });

@@ -33,7 +33,10 @@ class PushTests(unittest.TestCase):
         sent=[]
         self.assertEqual(send_notifications(None,[self.device],lambda s,p:sent.append(p) or 201,
                          lambda _:self.fail('test must not advance cursor'),'a'*64),1)
-        self.assertIn('ready',sent[0]['title'])
+        self.assertTrue(sent[0]['test'])
+        send_notifications(None,[self.device],lambda s,p:sent.append(p) or 201,
+                           lambda _:self.fail('test must not advance cursor'),'a'*64)
+        self.assertNotEqual(sent[0]['tag'],sent[1]['tag'])
 
     def test_one_failing_device_does_not_block_another(self):
         acks=[]

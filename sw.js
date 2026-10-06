@@ -8,13 +8,20 @@ self.addEventListener('push',event=>{
   const base=new URL(self.registration.scope);
   let url=base.href;
   try { const candidate=new URL(data.url,base); if(candidate.origin===base.origin && candidate.pathname===base.pathname) url=candidate.href; } catch {}
-  event.waitUntil(self.registration.showNotification(String(data.title || 'New movies in Bali').slice(0,120),{
+  const receipt={type:'cinema:push-received',test:data.test===true,receivedAt:Date.now()};
+  event.waitUntil((async()=>{
+    await self.registration.showNotification(String(data.title || 'New movies in Bali').slice(0,120),{
     body:String(data.body || 'Open Bali cinema map to see the latest listings.').slice(0,300),
     icon:new URL('icons/icon-192.png',base).href,
     badge:new URL('icons/badge-96.png',base).href,
     tag:String(data.tag || 'bali-new-movies').slice(0,100),renotify:false,
-    data:{url}
-  }));
+    requireInteraction:data.test===true,
+    data:{url,...receipt}
+    });
+    // This acknowledges browser receipt, not whether the OS showed a banner.
+    const clients=await self.clients.matchAll({type:'window',includeUncontrolled:true});
+    clients.filter(client=>client.url.startsWith(base.href)).forEach(client=>client.postMessage(receipt));
+  })());
 });
 self.addEventListener('notificationclick',event=>{
   event.notification.close();
