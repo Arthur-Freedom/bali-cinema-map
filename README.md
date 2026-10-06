@@ -19,7 +19,7 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Choose **Soonest showtime** to put the next upcoming screening first in Bali time (WITA). The next session is highlighted; started sessions are muted and rows with no remaining sessions appear last. Ordering refreshes while this view is open and uses the snapshot’s date, so old schedules never masquerade as upcoming sessions.
 - Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
 - Open **Premiere, VIP or IMAX?** beside that filter for the format guide and source descriptions. Premiere (Cinema XXI) and VIP (Cinépolis) focus on comfort and service; IMAX focuses on the screen, projection and sound.
-- Open **Watch trailer** above a movie’s venue comparison to play the same YouTube trailer linked by JadwalNonton. The player loads on demand and stops when collapsed, when switching films, or when returning to the map. A YouTube link is available if embedding is unavailable.
+- Play the compact trailer beside the movie title to watch the same YouTube video linked by JadwalNonton. It does not autoplay and stops when switching films or returning to the map. On narrow screens it sits below the title. There is no separate external YouTube link.
 - **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter. The `experience` and `sort` parameters preserve the movie-type filter and sorting choice.
 
 ## Data

@@ -21,8 +21,8 @@
   const movieSource = document.getElementById('movie-source');
   const movieTrailer = document.getElementById('movie-trailer');
   const trailerPlayer = document.getElementById('trailer-player');
-  const trailerExternal = document.getElementById('trailer-external');
-  let trailerKey = '', trailerMovie = null;
+  const comparisonHeading = document.querySelector('.comparison-heading');
+  let trailerKey = '';
   let showtimes = null, comparing = false;
   const colors = {XXI:'#9a6c19', 'Cinépolis':'#235aa7', Independent:'#a3405b'};
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -47,7 +47,7 @@
 
   function setView(value) {
     comparing = value === 'movies';
-    if (!comparing) { movieTrailer.open = false; trailerPlayer.replaceChildren(); }
+    updateTrailer(showtimes?.movies.find(movie => movie.id === movieSelect.value));
     if (comparing) { setChoosing(false); window.clearTimeout(labelExitTimer); hovered = null; focused = null; if (labelPopup) labelPopup.remove(); }
     app.classList.toggle('is-comparing', comparing);
     document.getElementById('view-map').setAttribute('aria-pressed', String(!comparing));
@@ -89,28 +89,23 @@
     formatSelect.disabled = !movieSelect.value;
   }
   function updateTrailer(movie) {
-    const videoId = /^[A-Za-z0-9_-]{11}$/.test(movie?.trailerYouTubeId || '') ? movie.trailerYouTubeId : '';
+    const videoId = comparing && /^[A-Za-z0-9_-]{11}$/.test(movie?.trailerYouTubeId || '') ? movie.trailerYouTubeId : '';
     const key = videoId ? `${movie.id}:${videoId}` : '';
     if (key === trailerKey) return;
     trailerKey = key;
-    trailerMovie = videoId ? movie : null;
-    movieTrailer.open = false;
     trailerPlayer.replaceChildren();
     movieTrailer.hidden = !videoId;
-    if (videoId) trailerExternal.href = `https://www.youtube.com/watch?v=${videoId}`;
-    else trailerExternal.removeAttribute('href');
-  }
-  movieTrailer.addEventListener('toggle', () => {
-    trailerPlayer.replaceChildren();
-    if (!movieTrailer.open || !trailerMovie) return;
+    comparisonHeading.classList.toggle('has-trailer', Boolean(videoId));
+    if (!videoId) return;
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/${trailerMovie.trailerYouTubeId}?rel=0`;
-    iframe.title = `${trailerMovie.title} trailer`;
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0`;
+    iframe.title = `${movie.title} trailer`;
+    iframe.loading = 'lazy';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.allowFullscreen = true;
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     trailerPlayer.append(iframe);
-  });
+  }
   function renderComparison() {
     document.getElementById('time-sort-note').hidden = priceSort.value !== 'time';
     priceSort.querySelector('option[value="distance"]').disabled = !origin;
