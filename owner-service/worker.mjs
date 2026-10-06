@@ -59,7 +59,8 @@ const clearCookie = `${cookieName}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max
 export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = {}) {
   async function github(path, token, options = {}) {
     const response = await send(`${apiRoot}${path}`, {
-      ...options, redirect:'error',
+      // Workers supports manual redirects; reject every non-2xx response below.
+      ...options, redirect:'manual',
       headers:{Accept:'application/vnd.github+json', 'X-GitHub-Api-Version':apiVersion,
         'User-Agent':'BaliCinemaMap-OwnerRefresh', Authorization:`Bearer ${token}`, ...options.headers}
     });
@@ -107,7 +108,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
         const code = url.searchParams.get('code');
         if (!code || code.length > 512) throw new PublicError(401, 'Sign-in could not be verified.');
         const exchange = await send('https://github.com/login/oauth/access_token', {
-          method:'POST', redirect:'error', headers:{Accept:'application/json', 'Content-Type':'application/json'},
+          method:'POST', redirect:'manual', headers:{Accept:'application/json', 'Content-Type':'application/json'},
           body:JSON.stringify({client_id:env.GITHUB_CLIENT_ID, client_secret:env.GITHUB_CLIENT_SECRET,
             code, redirect_uri:callback, code_verifier:login.verifier, repository_id:env.REPO_ID})
         });
@@ -140,7 +141,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
     }
     if (url.pathname === '/api/logout' && request.method === 'POST') {
       const response = await send(`${apiRoot}/applications/${env.GITHUB_CLIENT_ID}/token`, {
-        method:'DELETE', redirect:'error', headers:{Accept:'application/vnd.github+json', 'Content-Type':'application/json',
+        method:'DELETE', redirect:'manual', headers:{Accept:'application/vnd.github+json', 'Content-Type':'application/json',
           'User-Agent':'BaliCinemaMap-OwnerRefresh', 'X-GitHub-Api-Version':apiVersion,
           Authorization:`Basic ${btoa(`${env.GITHUB_CLIENT_ID}:${env.GITHUB_CLIENT_SECRET}`)}`},
         body:JSON.stringify({access_token:session.token})

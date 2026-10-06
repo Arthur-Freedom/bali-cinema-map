@@ -10,12 +10,14 @@ const origin = new URL(env.SITE_URL).origin;
 const start = Date.parse('2026-10-06T07:00:00Z');
 const response = (data, status=200) => new Response(JSON.stringify(data), {status, headers:{'Content-Type':'application/json'}});
 
-function setup({owner=env.OWNER_ID, upstream} = {}) {
+function setup({owner=env.OWNER_ID, upstream, tokenResponse} = {}) {
   let time = start;
   const calls = [];
   const handler = createHandler({now:()=>time, fetch:async(url, options)=>{
+    // Match workerd: Node's fetch accepts this mode, but Workers throws before sending.
+    if (options.redirect === 'error') throw new TypeError('Invalid redirect value: error');
     calls.push({url, options});
-    if (url === 'https://github.com/login/oauth/access_token') return response({access_token:'ghu_test', expires_in:28800, refresh_token:'never-store-me'});
+    if (url === 'https://github.com/login/oauth/access_token') return tokenResponse ? tokenResponse() : response({access_token:'ghu_test', expires_in:28800, refresh_token:'never-store-me'});
     if (url === 'https://api.github.com/user') return response({id:Number(owner), login:'name-can-change'});
     if (upstream) return upstream(url, options);
     throw new Error(`Unexpected endpoint ${url}`);
@@ -114,4 +116,20 @@ test('CORS is limited to the site origin and sign-out revokes the GitHub token',
   const revoke=s.calls.at(-1);
   assert.equal(revoke.url,'https://api.github.com/applications/test-client/token');
   assert.equal(revoke.options.method,'DELETE');
+});
+test('rejects upstream redirects without forwarding credentials at exchange, API and revocation endpoints', async()=>{
+  const redirect=()=>new Response(null,{status:307,headers:{Location:'https://unexpected.example/'}});
+  const blocked=setup({tokenResponse:redirect});
+  const login=await blocked.login();
+  assert.equal(login.session,null);
+  assert.match(decodeURIComponent(login.target.hash).replaceAll('+',' '),/GitHub sign-in is temporarily unavailable/);
+  assert.equal(blocked.calls.length,1);
+  const s=setup({upstream:redirect});
+  const {session}=await s.login();
+  assert.equal((await s.api('/api/refresh',session,'POST')).status,502);
+  assert.equal((await s.api('/api/logout',session,'POST')).status,502);
+  for (const call of [...blocked.calls,...s.calls]) {
+    assert.equal(call.options.redirect,'manual');
+    assert.ok(['https://github.com','https://api.github.com'].includes(new URL(call.url).origin));
+  }
 });
