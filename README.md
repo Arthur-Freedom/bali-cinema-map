@@ -18,6 +18,7 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Open **Compare movies**, pick a film, and see venues, studio formats, listed ticket prices and showtimes together. Listings sort by lowest price; filter to a studio format to compare equivalent screenings. You can also sort by name or distance after setting a starting point.
 - Choose **Soonest showtime** to put the next upcoming screening first in Bali time (WITA). The next session is highlighted; started sessions are muted and rows with no remaining sessions appear last. Ordering refreshes while this view is open and uses the snapshot’s date, so old schedules never masquerade as upcoming sessions.
 - Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
+- Open **Premiere, VIP or IMAX?** beside that filter for the format guide and source descriptions. Premiere (Cinema XXI) and VIP (Cinépolis) focus on comfort and service; IMAX focuses on the screen, projection and sound.
 - **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter. The `experience` and `sort` parameters preserve the movie-type filter and sorting choice.
 
 ## Data
@@ -27,6 +28,8 @@ The 12 theaters in [JadwalNonton's Bali listing](https://jadwalnonton.com/biosko
 Movie comparisons load `showtimes.json`, a dated snapshot of those cinema schedules. Each studio format keeps its own price and showtimes. JadwalNonton warns that listed prices may follow the first showtime, and later sessions may differ; they are not a guaranteed final booking total. An absent listing is not proof that a film is unavailable.
 
 GitHub Actions refreshes all 12 schedules and publishes the site on pushes and twice daily (scheduled for 07:17 and 13:17 WITA; runs can be delayed). Every source must have the current Bali date and a valid schedule before publication. A failed refresh leaves the previously published site in place. The UI warns when the snapshot is from another day. Scheduled snapshots are published as Pages artifacts; the committed JSON is a fallback for local development. No browser scraping, API key or persistent backend is needed.
+
+For a manual refresh, open **About this map → Refresh listings (owner)**, sign into the repository owner's GitHub account, and choose **Run workflow** on `main`. GitHub requires repository write access, and the workflow permits manual refresh builds only when the actor is the repository owner. Recent complete runs took 45–75 seconds, excluding any queue delay. Reload the website after a successful run to load the new snapshot; reloading the page itself does not rebuild the data. Movies are added and removed according to that day's source listings, with no fixed expiry in the app.
 
 Pins use OpenStreetMap cinema nodes or mall centroids; each record in `cinemas.json` links its location source. Sidewalk Jimbaran's pin is approximate and labelled accordingly. Location data © OpenStreetMap contributors, licensed under ODbL.
 

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=movie-time-1">
+  <link rel="stylesheet" href="style.css?v=format-guide-1">
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=movie-time-1"></script>
   <script defer src="app.js?v=movie-time-1"></script>
@@ -48,6 +48,19 @@
       <section id="movie-finder" class="movie-finder" aria-label="Movie comparison controls" hidden>
         <label for="movie-type">Find movies with</label>
         <select id="movie-type" disabled aria-controls="movie-select comparison-rows"><option value="">Any studio format</option><option value="premium">Premiere, VIP or IMAX</option><option value="premiere">Premiere</option><option value="vip">VIP</option><option value="imax">IMAX</option></select>
+        <details class="format-guide">
+          <summary>Premiere, VIP or IMAX?</summary>
+          <p>Premiere and VIP are similar luxury options from different cinema chains. IMAX focuses on the screen, picture and sound.</p>
+          <dl>
+            <dt><a href="https://www.cinema21.co.id/products-services/cinema/the-premiere" target="_blank" rel="noopener">Premiere · Cinema XXI ↗</a></dt>
+            <dd>Reclining seats, a more private auditorium and butler service. Food and drinks cost extra.</dd>
+            <dt><a href="https://mmaglobal.com/members/cinepolis-cinemas-indonesia" target="_blank" rel="noopener">VIP · Cinépolis ↗</a></dt>
+            <dd>Reclining seats with food and drinks served by attendants. A comparable comfort-focused experience; seats, menus and service can vary by venue.</dd>
+            <dt><a href="https://www.cinema21.co.id/products-services/cinema/imax" target="_blank" rel="noopener">IMAX ↗</a></dt>
+            <dd>A large, immersive screen with specialised projection and sound. IMAX 2D needs no 3D glasses.</dd>
+          </dl>
+          <p class="format-guide-tip">For comfort, look for Premiere or VIP. For a big-screen experience, look for IMAX.</p>
+        </details>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
@@ -59,7 +72,7 @@
         <details class="price-explainer">
           <summary>Why do prices differ?</summary>
           <p>The same film can cost more at a different branch, even in Regular 2D. Prices also change by screening day and studio format.</p>
-          <p>Premiere, VIP and IMAX are different viewing experiences. Compare the same format to see the venue price difference.</p>
+          <p>Compare the same studio format to see the venue price difference. Premiere and VIP add comfort and service; IMAX adds a specialised screen and sound experience.</p>
           <p><a href="https://www.cinema21.co.id/faq" target="_blank" rel="noopener">Cinema XXI’s pricing explanation ↗</a></p>
         </details>
       </section>
@@ -68,7 +81,9 @@
           <summary>About this map</summary>
           <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>
           <p>Pins use OpenStreetMap cinema or mall locations. Sidewalk Jimbaran’s pin is approximate. Use Directions for the venue’s location.</p>
-          <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules, refreshed daily. Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
+          <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules. Automatic refreshes are scheduled around 07:17 and 13:17 Bali time (WITA), though they may run later. Movies appear or disappear as cinemas change that day’s listings.</p>
+          <p><a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">Refresh listings (owner) ↗</a> — sign in to the repository owner’s GitHub account and choose “Run workflow” on main. Recent refreshes took about a minute; reload this page after the run finishes. Reloading alone loads the latest saved snapshot.</p>
+          <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
           <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
           <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
         </details>
