@@ -8,6 +8,9 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 
 ## Use
 
+- On phones, the map and cinema list form one continuous page. The **Cinemas & map / Compare movies** switch stays available while scrolling. Use two fingers to move the map; one finger scrolls the page.
+- **Settings** beside the title opens one menu for movie alerts, owner sign-in and refresh, pricing and studio-format explanations, and about information. These controls stay out of the comparison results.
+
 - Choose a starting point on the map, or use your current location, to sort cinemas nearest first.
 - Distances are straight-line estimates in kilometres. Open **Directions** for a road route from your starting point.
 - Search by cinema name, chain or area. Cinema icons use chain colors; hover or focus a pin to see its name on the map. Select a pin or list row to keep the name visible and open details.

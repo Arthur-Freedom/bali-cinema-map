@@ -6,6 +6,7 @@
   const fragment = new URLSearchParams(window.location.hash.slice(1));
   let session = fragment.get('owner-session') || '';
   const loginError = fragment.get('owner-error');
+  const returningFromLogin = fragment.has('owner-session') || fragment.has('owner-error');
   if (fragment.has('owner-session') || fragment.has('owner-error')) {
     window.history.replaceState(null, '', window.location.pathname + window.location.search);
   }
@@ -21,6 +22,8 @@
   const check = document.getElementById('owner-check');
   const status = document.getElementById('owner-status');
   const runLink = document.getElementById('owner-run');
+  // Only a sign-in return opens the menu automatically; ordinary browsing stays clear.
+  if(returningFromLogin) document.getElementById('settings-menu')?.showPopover?.();
   let service = '', currentRun = null, busy = false, generation = 0;
   let authenticated = false;
   window.CinemaOwner = Object.freeze({api,

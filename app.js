@@ -224,8 +224,12 @@
     buildFormats(); renderComparison(); setView('movies');
     document.getElementById('comparison-title').scrollIntoView({behavior:reduceMotion?'instant':'smooth',block:'start'});
   });
-  document.getElementById('view-map').addEventListener('click', () => setView('map'));
-  document.getElementById('view-movies').addEventListener('click', () => setView('movies'));
+  function switchView(view) {
+    setView(view);
+    if(matchMedia('(max-width:860px)').matches) window.scrollTo(0,0);
+  }
+  document.getElementById('view-map').addEventListener('click', () => switchView('map'));
+  document.getElementById('view-movies').addEventListener('click', () => switchView('movies'));
   movieType.addEventListener('change', () => {updateMovieChoices(); formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
   movieSelect.addEventListener('change', () => {formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
   formatSelect.addEventListener('change', renderComparison);
@@ -371,6 +375,10 @@
     pins.forEach((pin,id) => {pin.element.setAttribute('aria-pressed',String(id===selected));pin.element.style.zIndex = id===selected ? '5' : '1';});
     renderMapLabel();
     if (map && ready) map.flyTo({center:c.coordinates,zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
+    if(matchMedia('(max-width:860px)').matches) {
+      const view=document.getElementById('map-view'), bounds=view.getBoundingClientRect();
+      if(bounds.top<64 || bounds.bottom>innerHeight) view.scrollIntoView({block:'start',behavior:reduceMotion?'instant':'smooth'});
+    }
   }
   function buildList() {
     cinemas.forEach(c => {
@@ -392,7 +400,7 @@
       home.disabled = true; choosePoint.disabled = true; return;
     }
     try {
-      map = new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/positron',center:[115.209,-8.715],zoom:10.4,minZoom:7,maxZoom:17,attributionControl:false});
+      map = new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/positron',center:[115.209,-8.715],zoom:10.4,minZoom:7,maxZoom:17,attributionControl:false,cooperativeGestures:matchMedia('(pointer:coarse)').matches});
     } catch (error) {
       console.error('Unable to initialize the cinema map:', error);
       notice.textContent = 'The map is unavailable in this browser. You can still browse cinemas and open Directions.';
@@ -461,7 +469,10 @@
   });
   document.getElementById('clear-search').addEventListener('click',()=>{search.value='';renderSearch();search.focus();});
   home.addEventListener('click',()=>{search.value='';clearSelection();renderSearch();fit();});
-  choosePoint.addEventListener('click',()=>setChoosing(!choosing));
+  choosePoint.addEventListener('click',()=>{
+    setChoosing(!choosing);
+    if(choosing && matchMedia('(max-width:860px)').matches) document.getElementById('map-view').scrollIntoView({block:'start',behavior:reduceMotion?'instant':'smooth'});
+  });
   clearPoint.addEventListener('click',()=>setOrigin(null));
   useLocation.addEventListener('click',()=>{
     if(!navigator.geolocation){pointStatus.textContent='Location is unavailable. Choose a point on the map instead.';return;}

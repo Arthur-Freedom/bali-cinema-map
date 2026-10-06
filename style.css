@@ -33,3 +33,57 @@
 .owner-controls{margin-bottom:10px}.owner-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:10px 0}.owner-actions button,.owner-actions a{font:inherit;min-height:36px;padding:8px 10px;border:1px solid var(--brand);border-radius:5px;background:transparent;color:var(--brand);cursor:pointer;text-decoration:none}.owner-actions #owner-refresh,.owner-actions #owner-login{background:var(--brand);color:#fff}.owner-actions #owner-signout{border-color:transparent;text-decoration:underline}.owner-actions button:disabled{opacity:.6;cursor:wait}.owner-controls #owner-status{margin:8px 0}
 
 .new-movies{margin:0;padding:12px 22px;background:#f6f3ea;border-bottom:1px solid #e6dfcf;font-size:13px;line-height:1.5}.new-movies summary{color:var(--brand);font-weight:650;cursor:pointer;min-height:28px}.new-movies ul{list-style:none;margin:7px 0;padding:0}.new-movies button{font:inherit;border:0;background:none;color:var(--brand);padding:7px 0;text-align:left;text-decoration:underline;text-underline-offset:3px;min-height:36px}.new-movies #new-movies-dismiss{font-size:12px;color:var(--muted)}.new-movies[open]{max-height:200px;overflow:auto}.push-controls{margin-bottom:8px}.push-controls .owner-actions{margin-bottom:5px}@media(max-width:860px){.new-movies{padding:8px 20px}.app:not(.is-comparing) .panel{overflow-y:auto}.app:not(.is-comparing) .list-scroll{min-height:150px;flex-shrink:0}}
+
+/* Secondary controls stay in one menu, outside the browsing layout. */
+:root{--layer-navigation:10;--space-page:20px}
+.brand{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.brand-copy{min-width:0}.brand h1{font-size:23px}
+.settings-toggle{display:flex;align-items:center;gap:6px;flex-shrink:0;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--brand);font-size:12px;font-weight:650}
+.settings-toggle:hover{background:var(--soft)}
+.settings-menu{position:fixed;inset:16px auto auto 16px;margin:0;width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0 24px 20px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);box-shadow:0 12px 48px #12202f26;overflow-y:auto;overscroll-behavior:contain;font-size:14px}
+.settings-menu::backdrop{background:#102a231f}
+.settings-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;background:var(--paper);padding:16px 0 12px;z-index:1}
+.settings-heading h2{font-family:"Space Grotesk",sans-serif;font-size:21px;letter-spacing:-.025em}
+.settings-heading button{width:44px;min-height:44px;border:0;border-radius:8px;background:var(--soft);color:var(--ink);font-size:18px}
+.settings-menu details,.settings-menu .format-guide,.settings-menu .price-explainer{margin:0;padding:0;border:0;border-top:1px solid var(--line);font-size:14px;line-height:1.6}
+.settings-menu details[open]{max-height:none;overflow:visible;padding-bottom:16px}
+.settings-menu summary{width:auto;min-height:52px;padding:16px 0;font-size:14px;color:var(--ink);font-weight:650}
+.settings-menu details p{margin:0 0 12px;color:var(--muted)}
+.settings-menu .owner-actions button,.settings-menu .owner-actions a{min-height:44px}
+.settings-menu>span{display:block;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+#movie-type{margin-bottom:0}
+
+/* On a phone there is one document scroll, with the map between search and list. */
+@media(max-width:860px){
+  .app,.app.is-comparing,.app:not(.is-comparing){display:flex;flex-direction:column;height:auto;min-height:100svh;background:var(--paper)}
+  .panel,.app:not(.is-comparing) .panel,.is-comparing .panel{display:contents}
+  .brand,.is-comparing .brand{order:0;padding:20px var(--space-page) 16px;border-bottom:0;align-items:center}
+  .brand .eyebrow{display:none}.brand h1{font-size:23px;margin:0}.brand p{display:none}
+  .settings-toggle{padding:8px;font-size:12px}
+  .view-switch{order:1;position:sticky;top:0;z-index:var(--layer-navigation);padding:8px var(--space-page) 12px;background:var(--paper);border-bottom:1px solid var(--line)}
+  .view-switch button{min-height:44px;font-size:14px}
+  .new-movies{order:2;padding:12px var(--space-page)}
+  .finder{order:3;padding:16px var(--space-page)}
+  .search-box input{height:44px;font-size:16px}
+  .map-wrap{order:4;flex:none;height:clamp(280px,44svh,400px);min-height:280px;margin:0 var(--space-page);border:1px solid var(--line);border-radius:12px;overflow:hidden;scroll-margin-top:76px}
+  .map-home{top:12px;left:12px;min-height:40px;padding:8px 12px;font-size:13px}
+  .legend{left:8px;bottom:40px;gap:12px;padding:8px;font-size:11px;box-shadow:none;border:0;border-radius:6px}
+  .maplibregl-ctrl-attrib{font-size:9px;line-height:16px}
+  .starting-point{order:5;padding:20px var(--space-page) 16px}
+  .point-actions button{min-height:44px}.point-heading{margin-bottom:8px}
+  .starting-point p{margin-top:8px}
+  .list-head{order:6;padding:16px var(--space-page) 8px;border-top:1px solid var(--line)}
+  .list-head h2{font-size:16px;color:var(--ink)}
+  .list-scroll,.app:not(.is-comparing) .list-scroll{order:7;flex:none;min-height:0;overflow:visible;padding:0 12px 24px}
+  .cinema-row{padding:16px 8px;min-height:76px}.row-text strong{font-size:16px}
+  .movie-finder{order:3;flex:none;padding:20px var(--space-page) 16px;overflow:visible}
+  .movie-finder select{font-size:16px;min-height:44px}
+  .comparison-filters{grid-template-columns:1fr 1fr;gap:12px}
+  .comparison-filters>div:first-child{grid-column:1 / -1}
+  #movie-data-status{margin:8px 0 20px}
+  .comparison{order:4;flex:none;overflow:visible;padding:24px var(--space-page) 32px;border-top:1px solid var(--line)}
+  .comparison-heading h2{font-size:26px}.comparison-heading .eyebrow{font-size:10px}
+  .comparison-heading.has-trailer{gap:16px}
+  .comparison-heading{margin-bottom:20px}
+  .settings-menu{inset:12px auto auto 12px;width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding-right:20px;padding-left:20px}
+}

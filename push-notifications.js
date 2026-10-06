@@ -9,15 +9,15 @@
   let registration=null, subscription=null, publicKey=null, signedIn=false, busy=false, deviceId='';
   let registrationTask=null;
   let testRequestedAt=0, testTimer=null, lastReceipt=null;
+  const standalone=matchMedia('(display-mode: standalone)').matches || navigator.standalone===true;
   const desktop=/Windows/.test(navigator.userAgent);
   const notificationHelp=desktop
     ? 'No pop-up? In Windows Settings → System → Notifications, turn on Google Chrome and notification banners. Also check Do not disturb.'
     : /Android/.test(navigator.userAgent)
-      ? 'No pop-up? In Android Settings → Apps → Chrome → Notifications, allow site notifications and banners. Also check Do not disturb.'
+      ? `No pop-up? In Android Settings → Apps → ${standalone ? 'Bali Cinema' : 'Chrome'} → Notifications, enable banners for ${standalone ? 'General' : 'Sites'}. Also check Do not disturb.`
       : 'No pop-up? Check notification banners for this browser or app in your device settings, and check Do not disturb.';
   try { deviceId=localStorage.getItem(receiptKey)||''; } catch {}
   const ios=/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
-  const standalone=matchMedia('(display-mode: standalone)').matches || navigator.standalone===true;
   const supported='serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
   function receipt(value) { deviceId=value; try { if(value) localStorage.setItem(receiptKey,value); else localStorage.removeItem(receiptKey); } catch {} }
   function render(message) {

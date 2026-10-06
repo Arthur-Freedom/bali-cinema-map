@@ -14,21 +14,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=delivery-map-fix-2">
-  <script defer src="owner-refresh.js?v=movie-alerts-1"></script>
+  <link rel="stylesheet" href="style.css?v=mobile-layout-3">
+  <script defer src="owner-refresh.js?v=mobile-layout-3"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
-  <script defer src="push-notifications.js?v=delivery-map-fix-2"></script>
+  <script defer src="push-notifications.js?v=mobile-layout-3"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=movie-time-1"></script>
-  <script defer src="app.js?v=delivery-map-fix-2"></script>
+  <script defer src="app.js?v=mobile-layout-3"></script>
 </head>
 <body>
   <main class="app">
     <aside class="panel" aria-label="Cinema finder">
       <header class="brand">
+        <div class="brand-copy">
         <span class="eyebrow">BALI · CINEMAS</span>
         <h1>Bali cinema map</h1>
         <p>Find a cinema. Compare a movie’s prices.</p>
+        </div>
+        <button id="settings-toggle" class="settings-toggle" type="button" popovertarget="settings-menu" aria-label="Settings and help"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="currentColor" stroke="none"/><circle cx="15" cy="17" r="3" fill="currentColor" stroke="none"/></svg><span>Settings</span></button>
       </header>
       <details id="new-movies" class="new-movies" hidden>
         <summary id="new-movies-summary"></summary>
@@ -57,71 +60,21 @@
         <div id="empty" class="empty" hidden>No cinema matches your search.<button id="clear-search" type="button">Show all cinemas</button></div>
       </div>
       <section id="movie-finder" class="movie-finder" aria-label="Movie comparison controls" hidden>
-        <label for="movie-type">Find movies with</label>
-        <select id="movie-type" disabled aria-controls="movie-select comparison-rows"><option value="">Any studio format</option><option value="premium">Premiere, VIP or IMAX</option><option value="premiere">Premiere</option><option value="vip">VIP</option><option value="imax">IMAX</option></select>
-        <details class="format-guide">
-          <summary>Premiere, VIP or IMAX?</summary>
-          <p>Premiere and VIP are similar luxury options from different cinema chains. IMAX focuses on the screen, picture and sound.</p>
-          <dl>
-            <dt><a href="https://www.cinema21.co.id/products-services/cinema/the-premiere" target="_blank" rel="noopener">Premiere · Cinema XXI ↗</a></dt>
-            <dd>Reclining seats, a more private auditorium and butler service. Food and drinks cost extra.</dd>
-            <dt><a href="https://www.cinepolis.co.id/cinema-class/vip" target="_blank" rel="noopener">VIP · Cinépolis · photos ↗</a></dt>
-            <dd>Reclining seats with food and drinks served by attendants. A comparable comfort-focused experience; seats, menus and service can vary by venue.</dd>
-            <dt><a href="https://www.cinema21.co.id/products-services/cinema/imax" target="_blank" rel="noopener">IMAX ↗</a></dt>
-            <dd>A large, immersive screen with specialised projection and sound. IMAX 2D needs no 3D glasses.</dd>
-          </dl>
-          <p class="format-guide-tip">For comfort, look for Premiere or VIP. For a big-screen experience, look for IMAX.</p>
-        </details>
+
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
         <div class="comparison-filters">
-          <div><label for="format-select">Studio format</label><select id="format-select" disabled aria-controls="comparison-rows"><option value="">All formats</option></select></div>
           <div><label for="price-sort">Sort venues</label><select id="price-sort" aria-controls="comparison-rows"><option value="price">Lowest price</option><option value="time">Soonest showtime</option><option value="distance" disabled>Nearest to me</option><option value="name">Cinema name</option></select></div>
+          <div><label for="movie-type">Movie experience</label>
+        <select id="movie-type" disabled aria-controls="movie-select comparison-rows"><option value="">Any experience</option><option value="premium">Premiere, VIP or IMAX</option><option value="premiere">Premiere</option><option value="vip">VIP</option><option value="imax">IMAX</option></select></div>
+          <div><label for="format-select">Studio format</label><select id="format-select" disabled aria-controls="comparison-rows"><option value="">All formats</option></select></div>
+
         </div>
         <p id="time-sort-note" class="time-sort-note" hidden>Next upcoming screening first · Bali time (WITA). Venues with no remaining sessions appear last.</p>
-        <details class="price-explainer">
-          <summary>Why do prices differ?</summary>
-          <p>The same film can cost more at a different branch, even in Regular 2D. Prices also change by screening day and studio format.</p>
-          <p>Compare the same studio format to see the venue price difference. Premiere and VIP add comfort and service; IMAX adds a specialised screen and sound experience.</p>
-          <p><a href="https://www.cinema21.co.id/faq" target="_blank" rel="noopener">Cinema XXI’s pricing explanation ↗</a></p>
-        </details>
+
       </section>
-      <footer class="source-note">
-        <details id="push-controls" class="push-controls">
-          <summary>New-movie alerts</summary>
-          <p id="push-status" role="status" aria-live="polite">Checking notification support…</p>
-          <div class="owner-actions">
-            <a id="push-login" href="#owner-controls" hidden>Sign in to enable alerts</a>
-            <button id="push-enable" type="button" hidden>Enable movie alerts</button>
-            <button id="push-test" type="button" hidden>Send test</button>
-            <button id="push-disable" type="button" hidden>Turn off on this device</button>
-          </div>
-        </details>
-        <details id="owner-controls" class="owner-controls" open hidden>
-          <summary>Refresh movie data</summary>
-          <p id="owner-status" role="status" aria-live="polite">Only Arthur-Freedom can start a refresh.</p>
-          <div class="owner-actions">
-            <a id="owner-login">Sign in with GitHub</a>
-            <button id="owner-refresh" type="button" hidden>Refresh movie data</button>
-            <button id="owner-check" type="button" hidden>Check progress</button>
-            <button id="owner-signout" type="button" hidden>Sign out</button>
-          </div>
-          <a id="owner-run" target="_blank" rel="noopener" hidden>Open GitHub run ↗</a>
-        </details>
-        <details>
-          <summary>About this map</summary>
-          <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>
-          <p>Pins use OpenStreetMap cinema or mall locations. Sidewalk Jimbaran’s pin is approximate. Use Directions for the venue’s location.</p>
-          <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules. Automatic refreshes are scheduled around 07:17 and 13:17 Bali time (WITA), though they may run later. Movies appear or disappear as cinemas change that day’s listings.</p>
-          <p>Use “Sign in with GitHub” above, then “Refresh movie data” to update the listings. Only Arthur-Freedom can start a refresh. It usually takes about a minute, and the new listings load automatically. You can also <a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">run a refresh on GitHub ↗</a>. Reloading alone loads the latest saved snapshot.</p>
-          <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
-          <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
-          <p>New-movie notices are remembered in this browser. Personal push alerts are optional for Arthur-Freedom; the device’s push address is stored privately and is never published on GitHub. Turn alerts off above or in your browser settings. Alerts follow successful refreshes, not live cinema updates.</p>
-          <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
-        </details>
-        <span>Locations checked · 5 Oct 2026 · <a href="https://github.com/Arthur-Freedom/bali-cinema-map" target="_blank" rel="noopener">GitHub</a></span>
-      </footer>
+
     </aside>
     <section id="map-view" class="map-wrap" aria-label="Map of Bali cinemas">
       <div id="map"></div>
@@ -159,5 +112,60 @@
       </div>
     </section>
   </main>
+  <section id="settings-menu" class="settings-menu source-note" popover aria-labelledby="settings-title">
+    <header class="settings-heading"><h2 id="settings-title">Settings &amp; help</h2><button type="button" popovertarget="settings-menu" popovertargetaction="hide" aria-label="Close settings">✕</button></header>
+        <details id="push-controls" class="push-controls">
+          <summary>New-movie alerts</summary>
+          <p id="push-status" role="status" aria-live="polite">Checking notification support…</p>
+          <div class="owner-actions">
+            <a id="push-login" href="#owner-controls" hidden>Sign in to enable alerts</a>
+            <button id="push-enable" type="button" hidden>Enable movie alerts</button>
+            <button id="push-test" type="button" hidden>Send test</button>
+            <button id="push-disable" type="button" hidden>Turn off on this device</button>
+          </div>
+        </details>
+        <details id="owner-controls" class="owner-controls" hidden>
+          <summary>Refresh movie data</summary>
+          <p id="owner-status" role="status" aria-live="polite">Only Arthur-Freedom can start a refresh.</p>
+          <div class="owner-actions">
+            <a id="owner-login">Sign in with GitHub</a>
+            <button id="owner-refresh" type="button" hidden>Refresh movie data</button>
+            <button id="owner-check" type="button" hidden>Check progress</button>
+            <button id="owner-signout" type="button" hidden>Sign out</button>
+          </div>
+          <a id="owner-run" target="_blank" rel="noopener" hidden>Open GitHub run ↗</a>
+        </details>
+        <details class="price-explainer">
+          <summary>Why do prices differ?</summary>
+          <p>The same film can cost more at a different branch, even in Regular 2D. Prices also change by screening day and studio format.</p>
+          <p>Compare the same studio format to see the venue price difference. Premiere and VIP add comfort and service; IMAX adds a specialised screen and sound experience.</p>
+          <p><a href="https://www.cinema21.co.id/faq" target="_blank" rel="noopener">Cinema XXI’s pricing explanation ↗</a></p>
+        </details>
+        <details class="format-guide">
+          <summary>Premiere, VIP or IMAX?</summary>
+          <p>Premiere and VIP are similar luxury options from different cinema chains. IMAX focuses on the screen, picture and sound.</p>
+          <dl>
+            <dt><a href="https://www.cinema21.co.id/products-services/cinema/the-premiere" target="_blank" rel="noopener">Premiere · Cinema XXI ↗</a></dt>
+            <dd>Reclining seats, a more private auditorium and butler service. Food and drinks cost extra.</dd>
+            <dt><a href="https://www.cinepolis.co.id/cinema-class/vip" target="_blank" rel="noopener">VIP · Cinépolis · photos ↗</a></dt>
+            <dd>Reclining seats with food and drinks served by attendants. A comparable comfort-focused experience; seats, menus and service can vary by venue.</dd>
+            <dt><a href="https://www.cinema21.co.id/products-services/cinema/imax" target="_blank" rel="noopener">IMAX ↗</a></dt>
+            <dd>A large, immersive screen with specialised projection and sound. IMAX 2D needs no 3D glasses.</dd>
+          </dl>
+          <p class="format-guide-tip">For comfort, look for Premiere or VIP. For a big-screen experience, look for IMAX.</p>
+        </details>
+        <details>
+          <summary>About this map</summary>
+          <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>
+          <p>Pins use OpenStreetMap cinema or mall locations. Sidewalk Jimbaran’s pin is approximate. Use Directions for the venue’s location.</p>
+          <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules. Automatic refreshes are scheduled around 07:17 and 13:17 Bali time (WITA), though they may run later. Movies appear or disappear as cinemas change that day’s listings.</p>
+          <p>Use “Sign in with GitHub” above, then “Refresh movie data” to update the listings. Only Arthur-Freedom can start a refresh. It usually takes about a minute, and the new listings load automatically. You can also <a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">run a refresh on GitHub ↗</a>. Reloading alone loads the latest saved snapshot.</p>
+          <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
+          <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
+          <p>New-movie notices are remembered in this browser. Personal push alerts are optional for Arthur-Freedom; the device’s push address is stored privately and is never published on GitHub. Turn alerts off above or in your browser settings. Alerts follow successful refreshes, not live cinema updates.</p>
+          <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
+        </details>
+        <span>Locations checked · 5 Oct 2026 · <a href="https://github.com/Arthur-Freedom/bali-cinema-map" target="_blank" rel="noopener">GitHub</a></span>
+  </section>
 </body>
 </html>
