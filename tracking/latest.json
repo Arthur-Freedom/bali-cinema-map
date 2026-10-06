@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "runId": "37504941371",
-  "startedAt": "2026-10-07T01:37:26+08:00",
+  "runId": "37505164177",
+  "startedAt": "2026-10-07T01:39:07+08:00",
   "scheduleDate": "2026-10-07",
   "status": "failed",
   "scheduleChecks": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:26+08:00",
+      "checkedAt": "2026-10-07T01:39:07+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -17,7 +17,7 @@
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "checkedAt": "2026-10-07T01:37:27+08:00",
+      "checkedAt": "2026-10-07T01:39:09+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -26,7 +26,7 @@
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "checkedAt": "2026-10-07T01:37:29+08:00",
+      "checkedAt": "2026-10-07T01:39:10+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -35,7 +35,7 @@
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "checkedAt": "2026-10-07T01:37:31+08:00",
+      "checkedAt": "2026-10-07T01:39:12+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -44,7 +44,7 @@
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "checkedAt": "2026-10-07T01:37:32+08:00",
+      "checkedAt": "2026-10-07T01:39:14+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -53,7 +53,7 @@
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "checkedAt": "2026-10-07T01:37:34+08:00",
+      "checkedAt": "2026-10-07T01:39:15+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -62,7 +62,7 @@
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:35+08:00",
+      "checkedAt": "2026-10-07T01:39:17+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -71,7 +71,7 @@
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:37+08:00",
+      "checkedAt": "2026-10-07T01:39:18+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -80,7 +80,7 @@
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:39+08:00",
+      "checkedAt": "2026-10-07T01:39:20+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -89,7 +89,7 @@
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:40+08:00",
+      "checkedAt": "2026-10-07T01:39:22+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -98,7 +98,7 @@
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:42+08:00",
+      "checkedAt": "2026-10-07T01:39:23+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -107,7 +107,7 @@
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "checkedAt": "2026-10-07T01:37:43+08:00",
+      "checkedAt": "2026-10-07T01:39:25+08:00",
       "status": "outdated",
       "reason": "outdated_schedule",
       "sourceDate": "2026-10-06",
@@ -116,5 +116,5 @@
   ],
   "movieChecks": [],
   "changes": null,
-  "completedAt": "2026-10-07T01:37:45+08:00"
+  "completedAt": "2026-10-07T01:39:26+08:00"
 }
