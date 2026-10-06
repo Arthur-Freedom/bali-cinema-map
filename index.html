@@ -14,13 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=mobile-layout-3">
+  <link rel="stylesheet" href="style.css?v=movie-controls-4">
   <script defer src="owner-refresh.js?v=mobile-layout-3"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
   <script defer src="push-notifications.js?v=mobile-layout-3"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="showtime-utils.js?v=movie-time-1"></script>
-  <script defer src="app.js?v=mobile-layout-3"></script>
+  <script defer src="showtime-utils.js?v=movie-controls-4"></script>
+  <script defer src="app.js?v=movie-controls-4"></script>
 </head>
 <body>
   <main class="app">
@@ -60,15 +60,24 @@
         <div id="empty" class="empty" hidden>No cinema matches your search.<button id="clear-search" type="button">Show all cinemas</button></div>
       </div>
       <section id="movie-finder" class="movie-finder" aria-label="Movie comparison controls" hidden>
-
+        <fieldset id="movie-type" class="experience-filter" disabled>
+          <legend>Cinema format</legend>
+          <div class="experience-options">
+            <label><input class="sr-only" type="radio" name="experience" value="" checked aria-controls="movie-select comparison-rows"><span>Any</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="premiere" aria-controls="movie-select comparison-rows"><span>Premiere</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="vip" aria-controls="movie-select comparison-rows"><span>VIP</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="imax" aria-controls="movie-select comparison-rows"><span>IMAX</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="regular" aria-controls="movie-select comparison-rows"><span>Regular</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="deluxe" aria-controls="movie-select comparison-rows"><span>Deluxe</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="executive" aria-controls="movie-select comparison-rows"><span>Executive</span></label>
+            <label><input class="sr-only" type="radio" name="experience" value="premium" aria-controls="movie-select comparison-rows"><span>Premiere, VIP or IMAX</span></label>
+          </div>
+        </fieldset>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
         <div class="comparison-filters">
           <div><label for="price-sort">Sort venues</label><select id="price-sort" aria-controls="comparison-rows"><option value="price">Lowest price</option><option value="time">Soonest showtime</option><option value="distance" disabled>Nearest to me</option><option value="name">Cinema name</option></select></div>
-          <div><label for="movie-type">Movie experience</label>
-        <select id="movie-type" disabled aria-controls="movie-select comparison-rows"><option value="">Any experience</option><option value="premium">Premiere, VIP or IMAX</option><option value="premiere">Premiere</option><option value="vip">VIP</option><option value="imax">IMAX</option></select></div>
-          <div><label for="format-select">Studio format</label><select id="format-select" disabled aria-controls="comparison-rows"><option value="">All formats</option></select></div>
 
         </div>
         <p id="time-sort-note" class="time-sort-note" hidden>Next upcoming screening first · Bali time (WITA). Venues with no remaining sessions appear last.</p>

@@ -12,15 +12,16 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - **Settings** beside the title opens one menu for movie alerts, owner sign-in and refresh, pricing and studio-format explanations, and about information. These controls stay out of the comparison results.
 
 - Choose a starting point on the map, or use your current location, to sort cinemas nearest first.
+- Location can use an approximate position supplied by the browser. If the device's Location setting is off or access is blocked, the page explains how to enable it and offers a retry; choosing a point on the map remains available.
 - Distances are straight-line estimates in kilometres. Open **Directions** for a road route from your starting point.
 - Search by cinema name, chain or area. Cinema icons use chain colors; hover or focus a pin to see its name on the map. Select a pin or list row to keep the name visible and open details.
 - Your starting point has a distinct dot labelled **You**.
 - The map popup also offers **Films & prices** and **Directions**, so you can open current screenings, ticket prices or a route directly beside the cinema pin.
-- Cinema details stay in the map popup; selecting a pin keeps the left panel and its scroll position steady. Click the map background to close the popup.
+- Selecting a cinema positions the whole popup inside the map, with room for its action buttons. On phones, the map scrolls into view. Click the map background to close the popup.
 - Your starting point stays in your browser's local storage; it is not included in this public repository.
 - Open **Compare movies**, pick a film, and see venues, studio formats, listed ticket prices and showtimes together. Listings sort by lowest price; filter to a studio format to compare equivalent screenings. You can also sort by name or distance after setting a starting point.
 - Choose **Soonest showtime** to put the next upcoming screening first in Bali time (WITA). The next session is highlighted; started sessions are muted and rows with no remaining sessions appear last. Ordering refreshes while this view is open and uses the snapshot’s date, so old schedules never masquerade as upcoming sessions.
-- Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
+- The visible **Cinema format** buttons above the movie picker filter both movies and venue listings. Choose Premiere, VIP, IMAX, Regular, Deluxe, Executive, or the combined Premiere/VIP/IMAX option. **Any** shows everything. Each venue still displays its exact studio label, such as IMAX 2D.
 - Open **Premiere, VIP or IMAX?** beside that filter for the format guide and source descriptions. Premiere (Cinema XXI) and VIP (Cinépolis) focus on comfort and service; IMAX focuses on the screen, projection and sound.
 - Play the compact trailer beside the movie title to watch the same YouTube video linked by JadwalNonton. It does not autoplay and stops when switching films or returning to the map. On narrow screens it sits below the title. There is no separate external YouTube link.
 - Trailers use the standard `youtube.com` player so YouTube can recognize an existing Premium sign-in when browser cookie settings allow it. Premium viewers need to be signed in to YouTube in the same browser; [YouTube’s embedded-player troubleshooting](https://support.google.com/youtube/answer/7437519?hl=en) explains cookie and account requirements.

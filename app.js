@@ -14,7 +14,11 @@
   const app = document.querySelector('.app');
   const movieSelect = document.getElementById('movie-select');
   const movieType = document.getElementById('movie-type');
-  const formatSelect = document.getElementById('format-select');
+  const selectedExperience = () => movieType.querySelector('input:checked');
+  const movieExperience = () => selectedExperience().value;
+  function setMovieExperience(value) {
+    for (const input of movieType.querySelectorAll('input')) input.checked = input.value === value;
+  }
   const priceSort = document.getElementById('price-sort');
   const movieDataStatus = document.getElementById('movie-data-status');
   const comparisonRows = document.getElementById('comparison-rows');
@@ -29,6 +33,7 @@
   let cinemas = [], selected = null, map = null, ready = false;
   let origin = null, originMarker = null, choosing = false;
   let hovered = null, focused = null, labelPopup = null;
+  let labelAnchor;
   let labelExitTimer = null;
   try {
     const saved = JSON.parse(localStorage.getItem('bali-cinema-starting-point'));
@@ -42,7 +47,7 @@
   const requestedExperience = new URL(window.location.href).searchParams.get('experience');
   const requestedSort = new URL(window.location.href).searchParams.get('sort');
   const {nextShowtime, matchesMovieType} = window.CinemaShowtimes;
-  if (['premium','premiere','vip','imax'].includes(requestedExperience)) movieType.value = requestedExperience;
+  if (['premium','premiere','vip','imax','regular','deluxe','executive'].includes(requestedExperience)) setMovieExperience(requestedExperience);
   if (['price','time','distance','name'].includes(requestedSort)) priceSort.value = requestedSort;
 
   function setView(value) {
@@ -62,7 +67,7 @@
     const url = new URL(window.location.href);
     if (comparing && movieSelect.value) url.searchParams.set('movie', movieSelect.value);
     else url.searchParams.delete('movie');
-    if (comparing && movieType.value) url.searchParams.set('experience', movieType.value);
+    if (comparing && movieExperience()) url.searchParams.set('experience', movieExperience());
     else url.searchParams.delete('experience');
     if (comparing && priceSort.value !== 'price') url.searchParams.set('sort', priceSort.value);
     else url.searchParams.delete('sort');
@@ -72,7 +77,7 @@
     return (showtimes?.screenings || []).filter(s => s.movieId === movieSelect.value);
   }
   function updateMovieChoices(preferred = movieSelect.value) {
-    const matchingIds = new Set(showtimes.screenings.filter(s => matchesMovieType(s.format, movieType.value)).map(s => s.movieId));
+    const matchingIds = new Set(showtimes.screenings.filter(s => matchesMovieType(s.format, movieExperience())).map(s => s.movieId));
     const movies = showtimes.movies.filter(m => matchingIds.has(m.id));
     movieSelect.replaceChildren(new Option(movies.length ? 'Choose a movie…' : 'None listed in this format', ''));
     movies.forEach(movie => movieSelect.add(new Option(movie.title, movie.id)));
@@ -80,13 +85,6 @@
     movieSelect.disabled = !movies.length;
     const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
     movieDataStatus.textContent = `${movies.length} ${movies.length === 1 ? 'movie' : 'movies'} · listings for ${dateText}`;
-  }
-  function buildFormats() {
-    const previous = formatSelect.value;
-    formatSelect.replaceChildren(new Option(movieType.value ? 'All matching formats' : 'All formats', ''));
-    [...new Set(movieOffers().filter(s => matchesMovieType(s.format, movieType.value)).map(s => s.format))].sort().forEach(format => formatSelect.add(new Option(format, format)));
-    formatSelect.value = [...formatSelect.options].some(o => o.value === previous) ? previous : '';
-    formatSelect.disabled = !movieSelect.value;
   }
   function updateTrailer(movie) {
     const videoId = comparing && /^[A-Za-z0-9_-]{11}$/.test(movie?.trailerYouTubeId || '') ? movie.trailerYouTubeId : '';
@@ -122,7 +120,7 @@
     movieSource.href = `${movie.url.replace(/\/$/, '')}/di-bali/`;
     const all = movieOffers();
     const now = Date.now();
-    const offers = all.filter(s => matchesMovieType(s.format, movieType.value) && (!formatSelect.value || s.format === formatSelect.value))
+    const offers = all.filter(s => matchesMovieType(s.format, movieExperience()))
       .map(s => ({...s, next:nextShowtime(showtimes.date, s.times, now), cinema: cinemas.find(c => c.id === s.cinemaId)})).filter(s => s.cinema);
     const priced = offers.filter(s => Number.isFinite(s.price));
     const minimum = priced.length ? Math.min(...priced.map(s => s.price)) : null;
@@ -135,7 +133,7 @@
     });
     const venueCount = new Set(offers.map(s => s.cinemaId)).size;
     const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'Asia/Makassar'}).format(new Date(`${showtimes.date}T12:00:00+08:00`));
-    const formatLabel = formatSelect.value || (movieType.value ? movieType.selectedOptions[0].textContent : 'all formats');
+    const formatLabel = movieExperience() ? selectedExperience().nextElementSibling.textContent : 'all formats';
     document.getElementById('comparison-summary').textContent = `${dateText} · ${venueCount} ${venueCount === 1 ? 'venue' : 'venues'}${minimum !== null ? ' · ' + rupiah(minimum) + (maximum !== minimum ? '–' + rupiah(maximum) : '') : ''} · ${formatLabel}${priceSort.value === 'time' ? ' · soonest upcoming first' : ''}`;
     comparisonRows.replaceChildren();
     offers.forEach(offer => {
@@ -178,7 +176,7 @@
       row.append(venue, format, price, times); comparisonRows.append(row);
     });
     document.getElementById('comparison-empty').hidden = offers.length > 0;
-    const filteringFormats = Boolean(movieType.value || formatSelect.value);
+    const filteringFormats = Boolean(movieExperience());
     const listedIds = new Set((filteringFormats ? offers : all).map(s => s.cinemaId));
     const unlisted = cinemas.filter(c => !listedIds.has(c.id));
     document.getElementById('unlisted-venues').hidden = !unlisted.length;
@@ -206,7 +204,7 @@
       warning.hidden = data.date === today;
       warning.textContent = `These are saved listings for ${dateText}, not today’s schedule. Open the source listing for current prices and showtimes.`;
       if (preferred && !movieSelect.value) movieDataStatus.textContent += ' · The selected movie has no matching listing. Choose another movie or format.';
-      buildFormats(); renderComparison(); updateMovieUrl();
+      renderComparison(); updateMovieUrl();
       return {refreshedAt:data.refreshedAt};
     } catch (error) {
       if (since || showtimes) throw error;
@@ -220,8 +218,8 @@
   window.CinemaData = Object.freeze({reload:loadMovies});
   window.addEventListener('cinema:choose-movie',event=>{
     if(!showtimes?.movies.some(movie=>movie.id===event.detail)) return;
-    movieType.value=''; formatSelect.value=''; updateMovieChoices(event.detail);
-    buildFormats(); renderComparison(); setView('movies');
+    setMovieExperience(''); updateMovieChoices(event.detail);
+    renderComparison(); setView('movies');
     document.getElementById('comparison-title').scrollIntoView({behavior:reduceMotion?'instant':'smooth',block:'start'});
   });
   function switchView(view) {
@@ -230,9 +228,8 @@
   }
   document.getElementById('view-map').addEventListener('click', () => switchView('map'));
   document.getElementById('view-movies').addEventListener('click', () => switchView('movies'));
-  movieType.addEventListener('change', () => {updateMovieChoices(); formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
-  movieSelect.addEventListener('change', () => {formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});
-  formatSelect.addEventListener('change', renderComparison);
+  movieType.addEventListener('change', () => {updateMovieChoices(); renderComparison(); updateMovieUrl();});
+  movieSelect.addEventListener('change', () => {renderComparison(); updateMovieUrl();});
   priceSort.addEventListener('change', () => {renderComparison(); updateMovieUrl();});
   // Keep next-session ordering current while preserving focus on any row action.
   function refreshUpcoming() {
@@ -293,8 +290,15 @@
     content.addEventListener('mouseleave',()=>scheduleLabelExit(cinema.id));
     content.addEventListener('focusin',()=>{window.clearTimeout(labelExitTimer);hovered=cinema.id;});
     content.addEventListener('focusout',event=>{if(!content.contains(event.relatedTarget))scheduleLabelExit(cinema.id);});
-    if(!labelPopup) labelPopup = new maplibregl.Popup({closeButton:false,closeOnClick:false,focusAfterOpen:false,offset:24,maxWidth:'270px',className:'cinema-label'});
+    const anchor = id === selected ? 'bottom' : undefined;
+    if(!labelPopup || labelAnchor !== anchor) {
+      labelPopup?.remove(); labelAnchor = anchor;
+      labelPopup = new maplibregl.Popup({closeButton:false,closeOnClick:false,focusAfterOpen:false,anchor,offset:24,maxWidth:'270px',className:'cinema-label'});
+    }
+    const mapBox = map.getContainer();
+    labelPopup.setMaxWidth(`${Math.min(270, mapBox.clientWidth - 24)}px`);
     labelPopup.setLngLat(cinema.coordinates).setDOMContent(content).addTo(map);
+    labelPopup.getElement().style.setProperty('--popup-max-height', `${Math.max(100, mapBox.clientHeight - 76)}px`);
     labelPopup.getElement().setAttribute('role','group');
     labelPopup.getElement().setAttribute('aria-label',cinema.name);
     pins.get(id).element.setAttribute('aria-describedby',content.id);
@@ -371,10 +375,16 @@
   }
   function showCinema(c) {
     selected = c.id;
+    hovered = null; focused = null;
     rows.forEach((row,id) => row.querySelector('button').setAttribute('aria-pressed',String(id===selected)));
     pins.forEach((pin,id) => {pin.element.setAttribute('aria-pressed',String(id===selected));pin.element.style.zIndex = id===selected ? '5' : '1';});
     renderMapLabel();
-    if (map && ready) map.flyTo({center:c.coordinates,zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
+    if (map) {
+      // Put the entire popup above the pin, rather than centering only the pin.
+      const popupHeight = labelPopup?.getElement().offsetHeight || 0;
+      const offsetY = Math.max(0, popupHeight + 24 + 16 - map.getContainer().clientHeight / 2);
+      map.flyTo({center:c.coordinates,offset:[0,offsetY],zoom:Math.max(12.5,map.getZoom()),duration:reduceMotion?0:800});
+    }
     if(matchMedia('(max-width:860px)').matches) {
       const view=document.getElementById('map-view'), bounds=view.getBoundingClientRect();
       if(bounds.top<64 || bounds.bottom>innerHeight) view.scrollIntoView({block:'start',behavior:reduceMotion?'instant':'smooth'});
@@ -458,7 +468,10 @@
       retryMap.hidden=true; usingBackup=false; backupMap();
     });
     // Android's installed app and Chrome have different viewport heights.
-    new ResizeObserver(()=>map.resize()).observe(document.getElementById('map'));
+    new ResizeObserver(()=>{
+      map.resize();
+      if(selected && !comparing) showCinema(cinemas.find(c=>c.id===selected));
+    }).observe(document.getElementById('map'));
     document.addEventListener('visibilitychange',()=>{if(!document.hidden) map.resize();});
     renderSearch();
   }
@@ -476,10 +489,20 @@
   clearPoint.addEventListener('click',()=>setOrigin(null));
   useLocation.addEventListener('click',()=>{
     if(!navigator.geolocation){pointStatus.textContent='Location is unavailable. Choose a point on the map instead.';return;}
-    useLocation.disabled = true; pointStatus.textContent = 'Finding your location…';
+    useLocation.disabled = true; useLocation.textContent = 'Finding location…'; pointStatus.textContent = 'Allow location access if your browser asks.';
     navigator.geolocation.getCurrentPosition(position=>{
-      useLocation.disabled = false;setOrigin([position.coords.longitude,position.coords.latitude]);
-    },()=>{useLocation.disabled=false;pointStatus.textContent='Location could not be found. Choose a point on the map instead.';},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+      useLocation.disabled = false; useLocation.textContent = 'Use my location';
+      setOrigin([position.coords.longitude,position.coords.latitude]);
+      if(position.coords.accuracy > 1000) pointStatus.textContent = 'Approximate location · distances may be less accurate. Choose on map to adjust.';
+    },error=>{
+      useLocation.disabled = false; useLocation.textContent = 'Try location again';
+      const android = /Android/i.test(navigator.userAgent);
+      const help = android
+        ? 'On your phone, swipe down and turn on Location (GPS), then allow location for Chrome or this app. Tap Try location again, or Choose on map.'
+        : 'Turn on your device’s Location setting and allow location for this site, then try again. You can also Choose on map.';
+      const reason = error.code === 1 ? 'Location access is off or blocked.' : error.code === 3 ? 'Finding your location took too long.' : 'Your location is unavailable.';
+      pointStatus.textContent = `${reason} ${help}`;
+    },{enableHighAccuracy:false,timeout:15000,maximumAge:60000});
   });
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){hovered=null;focused=null;clearSelection();setChoosing(false);}});
   fetch('./cinemas.json').then(response=>{if(!response.ok)throw new Error('Data unavailable');return response.json();}).then(data=>{

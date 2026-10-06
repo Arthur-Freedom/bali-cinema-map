@@ -31,3 +31,12 @@ test('finds Premiere, VIP and IMAX variants without classifying other formats as
   assert.equal(matchesMovieType('Premiere', 'imax'), false);
   assert.equal(matchesMovieType('Regular 2D', ''), true);
 });
+
+test('filters the other studio experiences without treating them as premium', () => {
+  for (const [format, category] of [['Regular 2D', 'regular'], ['Deluxe', 'deluxe'], ['Executive', 'executive']]) {
+    assert.equal(matchesMovieType(format, category), true);
+    assert.equal(matchesMovieType(format, 'premium'), false);
+    assert.equal(matchesMovieType('IMAX 2D', category), false);
+  }
+  assert.equal(matchesMovieType('Deluxe', 'executive'), false);
+});
