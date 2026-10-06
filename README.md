@@ -25,6 +25,10 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 
 ## Data
 
+**New-movie alerts:** a compact notice lists films first discovered after the visitor's last acknowledgement. It is remembered only in that browser and does not announce the existing catalogue on first use. Personal phone alerts are available under **New-movie alerts** after owner sign-in. On Android, allow notifications in Chrome, then use **Send test** to verify delivery. Alerts are grouped after successful refreshes, continue with the site closed, and can be disabled per device. The private push subscription is stored in Cloudflare KV Free, never in the public repository. Only movie discovery timestamps are added to public listings; the full tracking archive remains excluded. See [notification setup](owner-service/README.md#personal-movie-notifications).
+
+Code pushes may publish interface changes using the last valid saved snapshot when the source has not yet updated its schedule (for example, just after midnight). Its original date is preserved and the site shows the existing stale-date warning. These runs archive the source diagnostics and check notification configuration without sending movie alerts. Manual and scheduled refreshes still fail without publication when any source is invalid or outdated.
+
 The 12 theaters in [JadwalNonton's Bali listing](https://jadwalnonton.com/bioskop/di-bali/), checked 5 October 2026. This is a location snapshot and may omit independent screening venues.
 
 Movie comparisons load `showtimes.json`, a dated snapshot of those cinema schedules. Each studio format keeps its own price and showtimes. JadwalNonton warns that listed prices may follow the first showtime, and later sessions may differ; they are not a guaranteed final booking total. An absent listing is not proof that a film is unavailable.

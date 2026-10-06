@@ -9,6 +9,7 @@ preview_urls = false
 enabled = false
 
 [vars]
+VAPID_PUBLIC_KEY = "BOfwFuaxKv2YJCaJmYrOb1CXtmJ39R6bq-FGvSspU9GwNYwqs9OQX7jZPy2gVFCg6KTY6MWRe3ceVsh0jEwI3zg"
 SITE_URL = "https://arthur-freedom.github.io/bali-cinema-map/"
 SERVICE_ORIGIN = "https://bali-cinema-owner-refresh.honeymooninbali.workers.dev"
 OWNER_LOGIN = "Arthur-Freedom"
@@ -21,4 +22,9 @@ REF = "main"
 # Secrets, entered with wrangler secret put: GITHUB_CLIENT_ID,
 # GITHUB_CLIENT_SECRET, SESSION_SECRET (at least 32 random bytes, base64url).
 # Deploy only after confirming this account uses Workers Free.
-# No paid bindings, storage, custom domains, or observability are enabled.
+# One dedicated KV namespace uses Workers Free quotas. No paid plan,
+# custom domain, or observability is enabled. Quota exhaustion fails closed.
+
+[[kv_namespaces]]
+binding = "PUSH_DEVICES"
+id = "2fb20ed5cf2a484894be8ac56986f445"

@@ -22,15 +22,22 @@
   const status = document.getElementById('owner-status');
   const runLink = document.getElementById('owner-run');
   let service = '', currentRun = null, busy = false, generation = 0;
+  let authenticated = false;
+  window.CinemaOwner = Object.freeze({api,
+    get signedIn() { return authenticated; },
+    get loginUrl() { const url=new URL('/auth/login', service || location.origin); url.searchParams.set('return',location.href.split('#')[0]); return url.href; }
+  });
   function saveRun(run) {
     currentRun = run;
     try { if (run) sessionStorage.setItem(runKey, JSON.stringify(run)); else sessionStorage.removeItem(runKey); } catch {}
   }
   function signedIn(value) {
+    authenticated = value;
     login.hidden = value;
     refresh.hidden = !value;
     signout.hidden = !value;
     if (!value) check.hidden = true;
+    window.dispatchEvent(new Event('cinema:owner-changed'));
   }
   function forgetSession() {
     session = '';
@@ -43,9 +50,9 @@
     runLink.href = `https://github.com/Arthur-Freedom/bali-cinema-map/actions/runs/${run.id}`;
     runLink.hidden = false;
   }
-  async function api(path, method='GET') {
+  async function api(path, method='GET', body) {
     const response = await fetch(service+path, {method, cache:'no-store', credentials:'omit',
-      signal:AbortSignal.timeout(20000), headers:{Authorization:`Bearer ${session}`, ...(method==='POST' ? {'Content-Type':'application/json'} : {})}});
+      signal:AbortSignal.timeout(20000), body:body === undefined ? undefined : JSON.stringify(body), headers:{Authorization:`Bearer ${session}`, ...(method==='POST' ? {'Content-Type':'application/json'} : {})}});
     const data = await response.json();
     if (!response.ok) {
       if (response.status === 401) forgetSession();
@@ -70,7 +77,7 @@
         saveRun(run);
         showRun(run);
         if (run.status === 'completed') {
-          if (run.conclusion !== 'success') {
+          if (run.conclusion !== 'success' && !run.published) {
             saveRun(null);
             throw new Error('Refresh did not finish successfully. The previous listings are still available. Open the GitHub run for details.');
           }
@@ -80,7 +87,8 @@
             try {
               await window.CinemaData.reload({since:run.createdAt});
               if (token !== generation) return;
-              status.textContent = 'Movie data updated. You’re viewing the fresh listings.';
+              status.textContent = run.conclusion === 'success' ? 'Movie data updated. You’re viewing the fresh listings.'
+                : 'Movie data updated. An archive or notification step needs attention; open the GitHub run for details.';
               saveRun(null);
               return;
             } catch {
@@ -151,12 +159,13 @@
       service = target.origin;
       login.href = service+'/auth/login';
       panel.hidden = false;
-      signedIn(Boolean(session));
+      signedIn(false);
       if (loginError) { status.textContent = loginError; panel.open = true; }
       if (!session) return;
       panel.open = true;
       status.textContent = 'Checking your owner sign-in…';
       const owner = await api('/api/session');
+      signedIn(true);
       status.textContent = `Signed in as ${owner.login}. Refreshing usually takes about a minute.`;
       try { currentRun = JSON.parse(sessionStorage.getItem(runKey)); } catch {}
       if (currentRun?.id || currentRun?.requestedAt) watch(currentRun);

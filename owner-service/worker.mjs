@@ -1,3 +1,4 @@
+import {PushError, internalPush, ownerPush} from './push.mjs';
 const encoder = new TextEncoder();
 const cookieName = '__Host-cinema-login';
 const apiRoot = 'https://api.github.com';
@@ -84,6 +85,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
     const callback = `${env.SERVICE_ORIGIN}/auth/callback`;
     const repo = `/repos/${env.OWNER_LOGIN}/${env.REPO}`;
     const workflow = `${repo}/actions/workflows/${env.WORKFLOW}`;
+    if (url.pathname.startsWith('/internal/push/')) return internalPush(request, env, now);
     if (url.pathname === '/health' && request.method === 'GET') return json({ready:Boolean(env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET)});
     if (!env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET || !env.SESSION_SECRET) throw new PublicError(503, 'Owner sign-in is not configured yet.');
 
@@ -135,6 +137,12 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
     const session = await unseal(authorization.startsWith('Bearer ') ? authorization.slice(7) : '', env.SESSION_SECRET, 'session', now());
     if (session.owner !== env.OWNER_ID) throw new PublicError(403, 'Owner access required.');
 
+    if (url.pathname.startsWith('/api/push/')) {
+      await verifyOwner(session.token, env);
+      return ownerPush(request, env, now, id => github(`${repo}/actions/workflows/push-test.yml/dispatches`, session.token,
+        {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ref:env.REF,inputs:{device_id:id}})}));
+    }
+
     if (url.pathname === '/api/session' && request.method === 'GET') {
       await verifyOwner(session.token, env);
       return json({login:env.OWNER_LOGIN, expires:session.expires});
@@ -175,19 +183,24 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
       const run = await github(`${repo}/actions/runs/${runId}`, session.token);
       if (run.path !== `.github/workflows/${env.WORKFLOW}` || run.head_branch !== env.REF) throw new PublicError(403, 'This run is not a cinema refresh.');
       let stage = run.status === 'queued' ? 'Queued on GitHub…' : 'Refreshing movie data…';
+      let published = false;
+      if (run.status === 'completed' && run.conclusion !== 'success') {
+        const jobs = await github(`${repo}/actions/runs/${runId}/jobs?per_page=10`, session.token);
+        published = jobs.jobs.some(job=>job.name === 'deploy' && job.conclusion === 'success');
+      }
       if (run.status === 'in_progress') {
         const jobs = await github(`${repo}/actions/runs/${runId}/jobs?per_page=10`, session.token);
         if (jobs.jobs.some(job=>job.name === 'deploy' && job.status !== 'queued')) stage = 'Publishing the updated listings…';
         else if (jobs.jobs.some(job=>job.steps?.some(step=>step.name === 'Refresh movie listings' && step.status === 'in_progress'))) stage = 'Checking cinema schedules and trailers…';
       }
-      return json({...publicRun(run, env), stage});
+      return json({...publicRun(run, env), stage, published});
     }
     throw new PublicError(404, 'Not found.');
   }
   return async function handle(request, env) {
     let response;
     try { response = await route(request, env); }
-    catch (error) { response = json({error:error instanceof PublicError ? error.message : 'The refresh service is temporarily unavailable. Try again shortly.'}, error instanceof PublicError ? error.status : 502); }
+    catch (error) { const safe=error instanceof PublicError || error instanceof PushError; response = json({error:safe ? error.message : 'The service is temporarily unavailable. Try again shortly.'}, safe ? error.status : 502); }
     const headers = new Headers(response.headers);
     headers.set('Cache-Control', 'no-store');
     headers.set('Referrer-Policy', 'no-referrer');

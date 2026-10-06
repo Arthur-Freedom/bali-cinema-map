@@ -28,15 +28,18 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install schedule parser
-        run: python -m pip install beautifulsoup4==4.13.3
+        run: python -m pip install beautifulsoup4==4.13.3 pywebpush==2.1.2
       - name: Check schedule parsing
         run: python -m unittest discover -s scripts -p 'test_*.py'
       - name: Check showtime sorting and movie formats
         run: node --test scripts/test_showtime_utils.cjs
       - name: Check owner refresh authorization
-        run: node --test owner-service/worker.test.mjs
+        run: node --test owner-service/worker.test.mjs owner-service/push.test.mjs scripts/test_movie_alerts.cjs
       - name: Refresh movie listings
         id: refresh
+        # Ship code fixes even before the source rolls over after midnight.
+        # Manual/scheduled refresh failures still preserve the published site.
+        continue-on-error: ${{ github.event_name == 'push' }}
         run: python scripts/refresh_showtimes.py
       - name: Save observations and source-check report
         if: ${{ always() && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure') }}
@@ -51,7 +54,8 @@ jobs:
       - name: Package public files
         run: |
           mkdir _site
-          cp index.html app.js showtime-utils.js owner-refresh.js owner-refresh-config.json style.css cinemas.json showtimes.json .nojekyll _site/
+          cp index.html app.js showtime-utils.js owner-refresh.js owner-refresh-config.json movie-alerts.js push-notifications.js sw.js manifest.webmanifest style.css cinemas.json showtimes.json .nojekyll _site/
+          cp -r icons _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
@@ -88,3 +92,31 @@ jobs:
         env:
           PUBLICATION: ${{ needs.deploy.result }}
         run: python scripts/save_snapshot.py .snapshot/showtimes.json --publication "$PUBLICATION"
+  notify:
+    needs: [build, deploy, save-snapshot]
+    if: ${{ always() && needs.deploy.result == 'success' && needs.save-snapshot.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pywebpush==2.1.2
+      - uses: actions/download-artifact@v4
+        with:
+          name: movie-snapshot
+          path: .snapshot
+      - name: Notify subscribed owner devices after publication
+        if: needs.build.outputs.refresh-outcome == 'success'
+        env:
+          PUSH_DISPATCH_SECRET: ${{ secrets.PUSH_DISPATCH_SECRET }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: python scripts/send_movie_push.py --snapshot .snapshot/showtimes.json
+      - name: Check push configuration without sending stale listings
+        if: needs.build.outputs.refresh-outcome != 'success'
+        env:
+          PUSH_DISPATCH_SECRET: ${{ secrets.PUSH_DISPATCH_SECRET }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: python scripts/send_movie_push.py --check-config

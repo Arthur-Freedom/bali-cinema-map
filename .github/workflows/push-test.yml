@@ -1,0 +1,29 @@
+name: Test movie notification
+on:
+  workflow_dispatch:
+    inputs:
+      device_id:
+        description: Private owner device identifier
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: cinema-push-test
+  cancel-in-progress: false
+jobs:
+  test-push:
+    if: github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pywebpush==2.1.2
+      - name: Send test to the requested owner device
+        env:
+          PUSH_DISPATCH_SECRET: ${{ secrets.PUSH_DISPATCH_SECRET }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          DEVICE_ID: ${{ inputs.device_id }}
+        run: python scripts/send_movie_push.py --test-device "$DEVICE_ID"

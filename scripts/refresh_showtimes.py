@@ -174,6 +174,9 @@ def refresh(root=ROOT, source_dir=None, expected_date=None):
     if previous is None and target.exists():
         previous, _ = update_history(None, json.loads(target.read_text(encoding='utf-8')))
     history, changes = update_history(previous, snapshot, metadata)
+    # Only this small discovery timestamp is public; the detailed archive stays in Git.
+    for movie in snapshot['movies']:
+        movie['firstSeenAt'] = history['movies'][movie['id']]['firstSeenAt']
     report.update(status='success', completedAt=timestamp(), snapshotRefreshedAt=snapshot['refreshedAt'], changes=changes,
                   counts={'movies': len(movies), 'cinemas': len(sources), 'formatListings': len(screenings),
                           'showtimes': sum(len(offer['times']) for offer in screenings)})

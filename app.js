@@ -197,6 +197,7 @@
       if (!cinemas.length) throw new Error('Cinema locations are still loading');
       const preferred = showtimes ? movieSelect.value : requestedMovie || '';
       showtimes = data;
+      window.CinemaMovieAlerts?.update(data);
       movieType.disabled = false;
       updateMovieChoices(preferred);
       const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${data.date}T12:00:00+08:00`));
@@ -217,6 +218,12 @@
     }
   }
   window.CinemaData = Object.freeze({reload:loadMovies});
+  window.addEventListener('cinema:choose-movie',event=>{
+    if(!showtimes?.movies.some(movie=>movie.id===event.detail)) return;
+    movieType.value=''; formatSelect.value=''; updateMovieChoices(event.detail);
+    buildFormats(); renderComparison(); setView('movies');
+    document.getElementById('comparison-title').scrollIntoView({behavior:reduceMotion?'instant':'smooth',block:'start'});
+  });
   document.getElementById('view-map').addEventListener('click', () => setView('map'));
   document.getElementById('view-movies').addEventListener('click', () => setView('movies'));
   movieType.addEventListener('change', () => {updateMovieChoices(); formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});

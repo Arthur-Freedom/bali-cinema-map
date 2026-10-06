@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bali Cinema Map</title>
   <meta name="description" content="Find Bali cinemas and compare ticket prices for a movie across venues, studio formats and showtimes.">
+  <meta name="theme-color" content="#16433a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316433a'/%3E%3Crect x='7' y='8' width='18' height='16' rx='2' fill='none' stroke='%23f7f9fa' stroke-width='2'/%3E%3Cpath d='M11 8v16M21 8v16M7 13h4M7 19h4M21 13h4M21 19h4' stroke='%23f7f9fa' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=compact-trailer-2">
-  <script defer src="owner-refresh.js?v=owner-refresh-1"></script>
+  <link rel="stylesheet" href="style.css?v=movie-alerts-1">
+  <script defer src="owner-refresh.js?v=movie-alerts-1"></script>
+  <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
+  <script defer src="push-notifications.js?v=movie-alerts-1"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=movie-time-1"></script>
-  <script defer src="app.js?v=youtube-premium-1"></script>
+  <script defer src="app.js?v=movie-alerts-1"></script>
 </head>
 <body>
   <main class="app">
@@ -25,6 +30,11 @@
         <h1>Bali cinema map</h1>
         <p>Find a cinema. Compare a movie’s prices.</p>
       </header>
+      <details id="new-movies" class="new-movies" hidden>
+        <summary id="new-movies-summary"></summary>
+        <ul id="new-movies-list"></ul>
+        <button id="new-movies-dismiss" type="button">Mark as seen</button>
+      </details>
       <nav class="view-switch" aria-label="Browse by">
         <button id="view-map" type="button" aria-pressed="true" aria-controls="map-view">Cinemas & map</button>
         <button id="view-movies" type="button" aria-pressed="false" aria-controls="comparison">Compare movies</button>
@@ -78,6 +88,16 @@
         </details>
       </section>
       <footer class="source-note">
+        <details id="push-controls" class="push-controls">
+          <summary>New-movie alerts</summary>
+          <p id="push-status" role="status" aria-live="polite">Checking notification support…</p>
+          <div class="owner-actions">
+            <a id="push-login" href="#owner-controls" hidden>Sign in to enable alerts</a>
+            <button id="push-enable" type="button" hidden>Enable movie alerts</button>
+            <button id="push-test" type="button" hidden>Send test</button>
+            <button id="push-disable" type="button" hidden>Turn off on this device</button>
+          </div>
+        </details>
         <details id="owner-controls" class="owner-controls" open hidden>
           <summary>Refresh movie data</summary>
           <p id="owner-status" role="status" aria-live="polite">Only Arthur-Freedom can start a refresh.</p>
@@ -97,6 +117,7 @@
           <p>Use “Sign in with GitHub” above, then “Refresh movie data” to update the listings. Only Arthur-Freedom can start a refresh. It usually takes about a minute, and the new listings load automatically. You can also <a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">run a refresh on GitHub ↗</a>. Reloading alone loads the latest saved snapshot.</p>
           <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
           <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
+          <p>New-movie notices are remembered in this browser. Personal push alerts are optional for Arthur-Freedom; the device’s push address is stored privately and is never published on GitHub. Turn alerts off above or in your browser settings. Alerts follow successful refreshes, not live cinema updates.</p>
           <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
         </details>
         <span>Locations checked · 5 Oct 2026 · <a href="https://github.com/Arthur-Freedom/bali-cinema-map" target="_blank" rel="noopener">GitHub</a></span>
