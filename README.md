@@ -20,6 +20,7 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
 - Open **Premiere, VIP or IMAX?** beside that filter for the format guide and source descriptions. Premiere (Cinema XXI) and VIP (Cinépolis) focus on comfort and service; IMAX focuses on the screen, projection and sound.
 - Play the compact trailer beside the movie title to watch the same YouTube video linked by JadwalNonton. It does not autoplay and stops when switching films or returning to the map. On narrow screens it sits below the title. There is no separate external YouTube link.
+- Trailers use the standard `youtube.com` player so YouTube can recognize an existing Premium sign-in when browser cookie settings allow it. Premium viewers need to be signed in to YouTube in the same browser; [YouTube’s embedded-player troubleshooting](https://support.google.com/youtube/answer/7437519?hl=en) explains cookie and account requirements.
 - **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter. The `experience` and `sort` parameters preserve the movie-type filter and sorting choice.
 
 ## Data
