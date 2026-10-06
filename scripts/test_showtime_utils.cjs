@@ -39,6 +39,9 @@ test('filters the other studio experiences without treating them as premium', ()
     assert.equal(matchesMovieType('IMAX 2D', category), false);
   }
   assert.equal(matchesMovieType('Deluxe', 'executive'), false);
+  assert.equal(matchesMovieType('Deluxe', 'regular'), true);
+  assert.equal(matchesMovieType('Executive', 'regular'), false);
+  assert.equal(matchesMovieType('Premiere', 'regular'), false);
 });
 
 test('language filters require verified spoken-language metadata, never English subtitles or titles', () => {

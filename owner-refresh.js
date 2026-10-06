@@ -11,15 +11,21 @@
     window.history.replaceState(null, '', window.location.pathname + window.location.search);
   }
   try {
-    if (session) sessionStorage.setItem(sessionKey, session);
-    else session = sessionStorage.getItem(sessionKey) || '';
-  } catch {} // Private browsing can disable session storage; this tab still works in memory.
+    if (!session) session = localStorage.getItem(sessionKey) || sessionStorage.getItem(sessionKey) || '';
+    if (session.startsWith('remembered.')) {
+      localStorage.setItem(sessionKey,session);
+      sessionStorage.removeItem(sessionKey);
+    } else if (session) sessionStorage.setItem(sessionKey,session);
+  } catch {
+    try { if (session) sessionStorage.setItem(sessionKey,session); else session=sessionStorage.getItem(sessionKey)||''; } catch {}
+  } // Restricted storage still permits this tab to work in memory.
 
   const panel = document.getElementById('owner-controls');
   const login = document.getElementById('owner-login');
   const refresh = document.getElementById('owner-refresh');
   const signout = document.getElementById('owner-signout');
   const check = document.getElementById('owner-check');
+  const reconnect = document.getElementById('owner-reconnect');
   const status = document.getElementById('owner-status');
   const runLink = document.getElementById('owner-run');
   // Only a sign-in return opens the menu automatically; ordinary browsing stays clear.
@@ -28,6 +34,8 @@
   let authenticated = false;
   window.CinemaOwner = Object.freeze({api,
     get signedIn() { return authenticated; },
+    get hasSavedSignIn() { return Boolean(session); },
+    reconnect:checkSession,
     get loginUrl() { const url=new URL('/auth/login', service || location.origin); url.searchParams.set('return',location.href.split('#')[0]); return url.href; }
   });
   function saveRun(run) {
@@ -36,16 +44,17 @@
   }
   function signedIn(value) {
     authenticated = value;
-    login.hidden = value;
+    login.hidden = value || Boolean(session);
     refresh.hidden = !value;
-    signout.hidden = !value;
+    signout.hidden = !value && !session;
     if (!value) check.hidden = true;
     window.dispatchEvent(new Event('cinema:owner-changed'));
   }
   function forgetSession() {
     session = '';
-    try { sessionStorage.removeItem(sessionKey); sessionStorage.removeItem(runKey); } catch {}
+    try { localStorage.removeItem(sessionKey); sessionStorage.removeItem(sessionKey); sessionStorage.removeItem(runKey); } catch {}
     currentRun = null;
+    reconnect.hidden=true;
     signedIn(false);
   }
   function showRun(run) {
@@ -54,12 +63,15 @@
     runLink.hidden = false;
   }
   async function api(path, method='GET', body) {
+    const requestedSession=session;
     const response = await fetch(service+path, {method, cache:'no-store', credentials:'omit',
       signal:AbortSignal.timeout(20000), body:body === undefined ? undefined : JSON.stringify(body), headers:{Authorization:`Bearer ${session}`, ...(method==='POST' ? {'Content-Type':'application/json'} : {})}});
-    const data = await response.json();
+    const data = await response.json().catch(()=>({error:'The sign-in service is temporarily unavailable. Try again shortly.'}));
     if (!response.ok) {
-      if (response.status === 401) forgetSession();
-      throw new Error(data.error || 'The refresh service could not complete the request.');
+      if (response.status === 401 && session===requestedSession) forgetSession();
+      const error=new Error(data.error || 'The refresh service could not complete the request.');
+      error.status=response.status;
+      throw error;
     }
     return data;
   }
@@ -137,18 +149,51 @@
     } finally { busy = false; refresh.disabled = false; }
   });
   check.addEventListener('click', ()=>{if (currentRun && !busy) watch(currentRun);});
+  reconnect.addEventListener('click',checkSession);
   signout.addEventListener('click', async()=>{
     ++generation;
     signout.disabled = true;
-    // Start revocation before dropping the opaque session from this tab.
+    // Revoke the private server session and forget it in every tab on this device.
     const revocation = api('/api/logout', 'POST');
     forgetSession();
     busy = false;
     refresh.disabled = false;
     status.textContent = 'Signed out.';
     try { await revocation; }
-    catch { status.textContent = 'Signed out of this tab. GitHub could not revoke the session yet; it expires within one hour.'; }
+    catch { status.textContent = 'Signed out on this device. The service could not confirm remote revocation.'; }
     finally { signout.disabled = false; }
+  });
+  async function checkSession() {
+    const checking=session, token=generation;
+    reconnect.hidden=true;
+    if (!session) { signedIn(false); return; }
+    status.textContent='Checking your saved sign-in…';
+    try {
+      const owner=await api('/api/session');
+      if (checking!==session || token!==generation) return;
+      signedIn(true);
+      status.textContent=`Signed in as ${owner.login}. `+(owner.persistent
+        ? 'Remembered on this device until you sign out. Updates keep you signed in.'
+        : 'This older sign-in expires soon. Your next sign-in will be remembered.');
+      try { currentRun=JSON.parse(sessionStorage.getItem(runKey)); } catch {}
+      if (currentRun?.id || currentRun?.requestedAt) watch(currentRun);
+    } catch(error) {
+      if (token!==generation) return;
+      signedIn(false);
+      reconnect.hidden=!session;
+      status.textContent=session
+        ? 'Your saved sign-in is still here. Could not connect to GitHub right now. Retry connection.'
+        : error.message || 'Please sign in with GitHub again.';
+    }
+  }
+  window.addEventListener('storage',event=>{
+    if (event.key!==sessionKey && event.key!==null) return;
+    ++generation;
+    session=event.newValue || '';
+    signedIn(false);
+    reconnect.hidden=!session;
+    if (session && service) checkSession();
+    else status.textContent='Signed out on this device.';
   });
   async function init() {
     try {
@@ -166,15 +211,12 @@
       if (loginError) { status.textContent = loginError; panel.open = true; }
       if (!session) return;
       panel.open = true;
-      status.textContent = 'Checking your owner sign-in…';
-      const owner = await api('/api/session');
-      signedIn(true);
-      status.textContent = `Signed in as ${owner.login}. Refreshing usually takes about a minute.`;
-      try { currentRun = JSON.parse(sessionStorage.getItem(runKey)); } catch {}
-      if (currentRun?.id || currentRun?.requestedAt) watch(currentRun);
+      await checkSession();
     } catch {
       signedIn(false);
-      status.textContent = 'Sign in with GitHub to refresh. Only Arthur-Freedom can start a refresh.';
+      reconnect.hidden=!session;
+      status.textContent = session ? 'Your saved sign-in is still here. The service could not be reached. Try reloading shortly.'
+        : 'Sign in with GitHub to refresh. Only Arthur-Freedom can start a refresh.';
     }
   }
   init();

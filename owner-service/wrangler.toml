@@ -28,3 +28,13 @@ REF = "main"
 [[kv_namespaces]]
 binding = "PUSH_DEVICES"
 id = "2fb20ed5cf2a484894be8ac56986f445"
+
+# SQLite-backed Durable Objects are included on Workers Free; limits fail closed.
+# Private session storage serializes GitHub refresh-token rotation across tabs.
+[[durable_objects.bindings]]
+name = "OWNER_SESSIONS"
+class_name = "OwnerSession"
+
+[[migrations]]
+tag = "owner-sessions-v1"
+new_sqlite_classes = ["OwnerSession"]

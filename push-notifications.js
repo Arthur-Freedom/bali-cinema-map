@@ -53,6 +53,7 @@
   async function ownerChanged() {
     signedIn=Boolean(window.CinemaOwner?.signedIn);
     login.href=window.CinemaOwner?.loginUrl || '#owner-controls';
+    login.textContent=window.CinemaOwner?.hasSavedSignIn ? 'Retry sign-in connection' : 'Sign in to enable alerts';
     publicKey=null;
     render();
     if(signedIn && supported) {
@@ -61,7 +62,10 @@
       catch(error) { render(error.message); }
     }
   }
-  login.addEventListener('click',()=>{ login.href=window.CinemaOwner?.loginUrl || '#owner-controls'; });
+  login.addEventListener('click',event=>{
+    if(window.CinemaOwner?.hasSavedSignIn) { event.preventDefault(); window.CinemaOwner.reconnect(); }
+    else login.href=window.CinemaOwner?.loginUrl || '#owner-controls';
+  });
   enable.addEventListener('click',async()=>{
     if(busy || !signedIn || !publicKey) return;
     busy=true;

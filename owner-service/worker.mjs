@@ -3,6 +3,8 @@ const encoder = new TextEncoder();
 const cookieName = '__Host-cinema-login';
 const apiRoot = 'https://api.github.com';
 const apiVersion = '2026-03-10';
+const renewalLifetime = 15897600;
+const rememberedPattern = /^remembered\.[A-Za-z0-9_-]{43}$/;
 
 class PublicError extends Error {
   constructor(status, message) { super(message); this.status = status; }
@@ -43,7 +45,7 @@ function returnUrl(value, site) {
   }
   target.hash = '';
   for (const name of [...target.searchParams.keys()]) {
-    if (!['movie', 'experience', 'sort', 'v'].includes(name)) target.searchParams.delete(name);
+    if (!['movie', 'experience', 'language', 'sort', 'new', 'v'].includes(name)) target.searchParams.delete(name);
   }
   return target;
 }
@@ -57,11 +59,114 @@ function redirect(url, cookie) {
 }
 const clearCookie = `${cookieName}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
 
+// One private SQLite-backed Durable Object per remembered device. Serializing
+// renewal prevents two tabs from spending the same single-use refresh token.
+// Neither this object's routes nor its GitHub credentials are public endpoints.
+export class OwnerSession {
+  constructor(state, env, {fetch:send=globalThis.fetch, now=Date.now}={}) {
+    this.storage=state.storage; this.env=env; this.send=send; this.now=now;
+    this.pending=Promise.resolve();
+  }
+  serial(action) {
+    const result=this.pending.then(action);
+    this.pending=result.catch(()=>{});
+    return result;
+  }
+  record(credentials, previous={}) {
+    if (!credentials.access_token || credentials.error) throw new PublicError(401,'Please sign in with GitHub again.');
+    const lifetime=Number(credentials.expires_in);
+    const refreshLifetime=Number(credentials.refresh_token_expires_in) || renewalLifetime;
+    return {purpose:'remembered', owner:this.env.OWNER_ID, token:credentials.access_token,
+      refreshToken:credentials.refresh_token || '',
+      tokenExpires:Number.isFinite(lifetime) && lifetime>0 ? this.now()+lifetime*1000 : null,
+      expires:this.now()+Math.min(refreshLifetime,renewalLifetime)*1000,
+      createdAt:previous.createdAt || this.now()};
+  }
+  async save(record) {
+    await this.storage.put('session',await seal(record,this.env.SESSION_SECRET));
+    await this.storage.setAlarm(record.expires);
+  }
+  async route(request) {
+    const path=new URL(request.url).pathname;
+    if (path==='/create' && request.method==='POST') {
+      if (await this.storage.get('session')) throw new PublicError(409,'Session already exists.');
+      await this.save(this.record(await request.json()));
+      return json({ok:true});
+    }
+    const stored=await this.storage.get('session');
+    const record=await unseal(stored,this.env.SESSION_SECRET,'remembered',this.now());
+    if (record.owner!==this.env.OWNER_ID) throw new PublicError(401,'Please sign in with GitHub again.');
+    if (path==='/logout' && request.method==='POST') {
+      // Remove server access first, even if GitHub's revocation endpoint is down.
+      await this.storage.deleteAll();
+      await this.storage.deleteAlarm();
+      const response=await this.send(`${apiRoot}/applications/${this.env.GITHUB_CLIENT_ID}/token`, {
+        method:'DELETE',redirect:'manual',signal:AbortSignal.timeout(12000),
+        headers:{Accept:'application/vnd.github+json','Content-Type':'application/json',
+          'User-Agent':'BaliCinemaMap-OwnerRefresh','X-GitHub-Api-Version':apiVersion,
+          Authorization:`Basic ${btoa(`${this.env.GITHUB_CLIENT_ID}:${this.env.GITHUB_CLIENT_SECRET}`)}`},
+        body:JSON.stringify({access_token:record.token})});
+      return json({signedOut:true,revoked:response.ok || response.status===404});
+    }
+    if (path!=='/session' || request.method!=='GET') throw new PublicError(404,'Not found.');
+    let current=record;
+    if (record.tokenExpires && record.tokenExpires<=this.now()+60000) {
+      if (!record.refreshToken) throw new PublicError(401,'Please sign in with GitHub again.');
+      const response=await this.send('https://github.com/login/oauth/access_token', {
+        method:'POST',redirect:'manual',signal:AbortSignal.timeout(12000),
+        headers:{Accept:'application/json','Content-Type':'application/json'},
+        body:JSON.stringify({client_id:this.env.GITHUB_CLIENT_ID,client_secret:this.env.GITHUB_CLIENT_SECRET,
+          grant_type:'refresh_token',refresh_token:record.refreshToken})});
+      if (!response.ok) throw new PublicError(503,'GitHub is temporarily unavailable. Your saved sign-in is still here. Try again shortly.');
+      const credentials=await response.json();
+      if (credentials.error==='bad_refresh_token' || credentials.error==='invalid_grant') {
+        throw new PublicError(401,'GitHub access expired or was revoked. Please sign in again.');
+      }
+      if (!credentials.access_token || !credentials.refresh_token || credentials.error) {
+        throw new PublicError(503,'GitHub could not renew sign-in yet. Try again shortly.');
+      }
+      current=this.record(credentials,record);
+      await this.save(current);
+    } else if (!record.tokenExpires && record.expires-this.now()<renewalLifetime*500) {
+      current={...record,expires:this.now()+renewalLifetime*1000};
+      await this.save(current);
+    }
+    return json({...current,persistent:true});
+  }
+  fetch(request) {
+    return this.serial(async()=>{
+      try { return await this.route(request); }
+      catch(error) { return json({error:error instanceof PublicError ? error.message : 'Saved sign-in is temporarily unavailable. Try again shortly.'},error instanceof PublicError ? error.status : 503); }
+    });
+  }
+  alarm() {
+    return this.serial(async()=>{
+      const stored=await this.storage.get('session');
+      let record;
+      try { record=await unseal(stored,this.env.SESSION_SECRET,'remembered',this.now()); }
+      catch { await this.storage.deleteAll(); return; }
+      // An older queued alarm must not delete a session renewed just beforehand.
+      await this.storage.setAlarm(record.expires);
+    });
+  }
+}
+
+async function rememberedSession(env, handle, path, credentials) {
+  if (!env.OWNER_SESSIONS) throw new PublicError(503,'Remembered sign-in is temporarily unavailable. Try again shortly.');
+  const object=env.OWNER_SESSIONS.get(env.OWNER_SESSIONS.idFromName(handle));
+  const response=await object.fetch(new Request(`https://session.internal${path}`, {
+    method:credentials || path==='/logout' ? 'POST' : 'GET',
+    ...(credentials ? {headers:{'Content-Type':'application/json'},body:JSON.stringify(credentials)} : {})}));
+  const data=await response.json();
+  if (!response.ok) throw new PublicError(response.status,data.error);
+  return data;
+}
+
 export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = {}) {
   async function github(path, token, options = {}) {
     const response = await send(`${apiRoot}${path}`, {
       // Workers supports manual redirects; reject every non-2xx response below.
-      ...options, redirect:'manual',
+      ...options, redirect:'manual', signal:AbortSignal.timeout(12000),
       headers:{Accept:'application/vnd.github+json', 'X-GitHub-Api-Version':apiVersion,
         'User-Agent':'BaliCinemaMap-OwnerRefresh', Authorization:`Bearer ${token}`, ...options.headers}
     });
@@ -86,7 +191,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
     const repo = `/repos/${env.OWNER_LOGIN}/${env.REPO}`;
     const workflow = `${repo}/actions/workflows/${env.WORKFLOW}`;
     if (url.pathname.startsWith('/internal/push/')) return internalPush(request, env, now);
-    if (url.pathname === '/health' && request.method === 'GET') return json({ready:Boolean(env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET)});
+    if (url.pathname === '/health' && request.method === 'GET') return json({ready:Boolean(env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET),rememberedSignIn:Boolean(env.OWNER_SESSIONS)});
     if (!env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET || !env.SESSION_SECRET) throw new PublicError(503, 'Owner sign-in is not configured yet.');
 
     if (url.pathname === '/auth/login' && request.method === 'GET') {
@@ -110,7 +215,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
         const code = url.searchParams.get('code');
         if (!code || code.length > 512) throw new PublicError(401, 'Sign-in could not be verified.');
         const exchange = await send('https://github.com/login/oauth/access_token', {
-          method:'POST', redirect:'manual', headers:{Accept:'application/json', 'Content-Type':'application/json'},
+          method:'POST', redirect:'manual', signal:AbortSignal.timeout(12000), headers:{Accept:'application/json', 'Content-Type':'application/json'},
           body:JSON.stringify({client_id:env.GITHUB_CLIENT_ID, client_secret:env.GITHUB_CLIENT_SECRET,
             code, redirect_uri:callback, code_verifier:login.verifier, repository_id:env.REPO_ID})
         });
@@ -118,9 +223,8 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
         const credentials = await exchange.json();
         if (!credentials.access_token || credentials.error) throw new PublicError(401, 'Sign-in expired. Please try again.');
         await verifyOwner(credentials.access_token, env);
-        // Discard the refresh token. A short session requires owner sign-in again after one hour.
-        const expires = now() + Math.min(3600, credentials.expires_in || 3600) * 1000;
-        const session = await seal({purpose:'session', owner:env.OWNER_ID, token:credentials.access_token, expires}, env.SESSION_SECRET);
+        const session=`remembered.${random()}`;
+        await rememberedSession(env,session,'/create',credentials);
         back.hash = new URLSearchParams({'owner-session':session}).toString();
       } catch (error) {
         back.hash = new URLSearchParams({'owner-error':error instanceof PublicError ? error.message : 'Sign-in could not finish. Please try again.'}).toString();
@@ -134,7 +238,13 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
     if (!['GET', 'POST'].includes(request.method)) throw new PublicError(405, 'Method not allowed.');
     if (request.method === 'POST' && request.headers.get('Content-Type') !== 'application/json') throw new PublicError(415, 'Expected a JSON request.');
     const authorization = request.headers.get('Authorization') || '';
-    const session = await unseal(authorization.startsWith('Bearer ') ? authorization.slice(7) : '', env.SESSION_SECRET, 'session', now());
+    const handle=authorization.startsWith('Bearer ') ? authorization.slice(7) : '';
+    const persistent=rememberedPattern.test(handle);
+    if (persistent && url.pathname==='/api/logout' && request.method==='POST') {
+      return json(await rememberedSession(env,handle,'/logout'));
+    }
+    const session = persistent ? await rememberedSession(env,handle,'/session')
+      : await unseal(handle, env.SESSION_SECRET, 'session', now());
     if (session.owner !== env.OWNER_ID) throw new PublicError(403, 'Owner access required.');
 
     if (url.pathname.startsWith('/api/push/')) {
@@ -145,7 +255,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
 
     if (url.pathname === '/api/session' && request.method === 'GET') {
       await verifyOwner(session.token, env);
-      return json({login:env.OWNER_LOGIN, expires:session.expires});
+      return json({login:env.OWNER_LOGIN, expires:session.expires,persistent});
     }
     if (url.pathname === '/api/logout' && request.method === 'POST') {
       const response = await send(`${apiRoot}/applications/${env.GITHUB_CLIENT_ID}/token`, {

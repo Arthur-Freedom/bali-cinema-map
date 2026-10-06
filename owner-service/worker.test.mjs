@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createHandler} from './worker.mjs';
+import {createHandler, OwnerSession} from './worker.mjs';
 
 const env = {SITE_URL:'https://arthur-freedom.github.io/bali-cinema-map/',
   SERVICE_ORIGIN:'https://cinema.example', OWNER_LOGIN:'Arthur-Freedom', OWNER_ID:'18115558',
@@ -13,18 +13,29 @@ const response = (data, status=200) => new Response(JSON.stringify(data), {statu
 function setup({owner=env.OWNER_ID, upstream, tokenResponse} = {}) {
   let time = start;
   const calls = [];
-  const handler = createHandler({now:()=>time, fetch:async(url, options)=>{
+  const runtimeEnv={...env}, objects=new Map(), records=new Map();
+  const send=async(url, options)=>{
     // Match workerd: Node's fetch accepts this mode, but Workers throws before sending.
     if (options.redirect === 'error') throw new TypeError('Invalid redirect value: error');
     calls.push({url, options});
-    if (url === 'https://github.com/login/oauth/access_token') return tokenResponse ? tokenResponse() : response({access_token:'ghu_test', expires_in:28800, refresh_token:'never-store-me'});
+    if (url === 'https://github.com/login/oauth/access_token') return tokenResponse ? tokenResponse(options) : response({access_token:'ghu_test', expires_in:28800, refresh_token:'ghr_private',refresh_token_expires_in:15897600});
     if (url === 'https://api.github.com/user') return response({id:Number(owner), login:'name-can-change'});
     if (upstream) return upstream(url, options);
     throw new Error(`Unexpected endpoint ${url}`);
-  }});
-  const request = (path, options={}) => handler(new Request(env.SERVICE_ORIGIN+path, options), env);
+  };
+  runtimeEnv.OWNER_SESSIONS={idFromName:value=>value,get(id){
+    if(!objects.has(id)) {
+      const values=new Map(); records.set(id,values);
+      const storage={get:async key=>values.get(key),put:async(key,value)=>values.set(key,value),
+        deleteAll:async()=>values.clear(),setAlarm:async()=>{},deleteAlarm:async()=>{}};
+      objects.set(id,new OwnerSession({storage},runtimeEnv,{fetch:send,now:()=>time}));
+    }
+    return objects.get(id);
+  }};
+  let handler=createHandler({now:()=>time,fetch:send});
+  const request = (path, options={}) => handler(new Request(env.SERVICE_ORIGIN+path, options), runtimeEnv);
   async function login() {
-    const begin = await request('/auth/login?return='+encodeURIComponent(env.SITE_URL+'?movie=2026%2Fdaniel&sort=time'));
+    const begin = await request('/auth/login?return='+encodeURIComponent(env.SITE_URL+'?movie=2026%2Fdaniel&sort=time&language=en'));
     const authorize = new URL(begin.headers.get('Location'));
     const cookie = begin.headers.get('Set-Cookie').split(';')[0];
     const finish = await request('/auth/callback?code=test-code&state='+authorize.searchParams.get('state'), {headers:{Cookie:cookie}});
@@ -33,7 +44,8 @@ function setup({owner=env.OWNER_ID, upstream, tokenResponse} = {}) {
   }
   const api = (path, session, method='GET', requestOrigin=origin) => request(path, {method,
     headers:{Origin:requestOrigin, Authorization:'Bearer '+session, 'Content-Type':'application/json'}});
-  return {calls, request, login, api, advance:milliseconds=>{time+=milliseconds;}};
+  return {calls,request,login,api,records,objects,advance:milliseconds=>{time+=milliseconds;},
+    redeploy:()=>{handler=createHandler({now:()=>time,fetch:send});}};
 }
 
 test('OAuth uses PKCE, encrypted HttpOnly state, exact callback and repository-scoped token; returns only opaque session', async()=>{
@@ -43,6 +55,7 @@ test('OAuth uses PKCE, encrypted HttpOnly state, exact callback and repository-s
   assert.equal(result.authorize.searchParams.get('redirect_uri'), env.SERVICE_ORIGIN+'/auth/callback');
   assert.equal(result.target.searchParams.get('movie'), '2026/daniel');
   assert.equal(result.target.searchParams.get('sort'), 'time');
+  assert.equal(result.target.searchParams.get('language'),'en');
   assert.ok(result.session && !result.session.includes('ghu_test'));
   assert.equal(result.finish.headers.get('Cache-Control'), 'no-store');
   assert.match(result.finish.headers.get('Set-Cookie'), /HttpOnly; Secure; SameSite=Lax; Max-Age=0/);
@@ -50,7 +63,8 @@ test('OAuth uses PKCE, encrypted HttpOnly state, exact callback and repository-s
   assert.equal(exchange.repository_id, env.REPO_ID);
   assert.ok(exchange.code_verifier && exchange.code_verifier !== result.authorize.searchParams.get('code_challenge'));
   const session=await s.api('/api/session', result.session);
-  assert.deepEqual(await session.json(), {login:env.OWNER_LOGIN, expires:start+3600000});
+  assert.deepEqual(await session.json(), {login:env.OWNER_LOGIN, expires:start+15897600000,persistent:true});
+  assert.ok(!s.records.get(result.session).get('session').includes('ghr_private'));
 });
 test('rejects redirect escape and callback state mismatch without exchanging a token', async()=>{
   const s=setup();
@@ -74,7 +88,7 @@ test('tampering, expiry and untrusted origins cannot trigger workflow calls', as
   assert.equal((await s.api('/api/refresh', session, 'POST', 'https://evil.example')).status, 403);
   assert.equal((await s.api('/api/refresh', session+'x', 'POST')).status, 401);
   assert.equal((await s.api('/api/refresh', '', 'POST')).status, 401);
-  s.advance(3600001);
+  s.advance(15897600001);
   assert.equal((await s.api('/api/refresh', session, 'POST')).status, 401);
   assert.equal(s.calls.length, count);
 });
@@ -116,6 +130,7 @@ test('CORS is limited to the site origin and sign-out revokes the GitHub token',
   const revoke=s.calls.at(-1);
   assert.equal(revoke.url,'https://api.github.com/applications/test-client/token');
   assert.equal(revoke.options.method,'DELETE');
+  assert.equal((await s.api('/api/session',session)).status,401);
 });
 test('rejects upstream redirects without forwarding credentials at exchange, API and revocation endpoints', async()=>{
   const redirect=()=>new Response(null,{status:307,headers:{Location:'https://unexpected.example/'}});
@@ -127,9 +142,55 @@ test('rejects upstream redirects without forwarding credentials at exchange, API
   const s=setup({upstream:redirect});
   const {session}=await s.login();
   assert.equal((await s.api('/api/refresh',session,'POST')).status,502);
-  assert.equal((await s.api('/api/logout',session,'POST')).status,502);
+  assert.deepEqual(await (await s.api('/api/logout',session,'POST')).json(),{signedOut:true,revoked:false});
   for (const call of [...blocked.calls,...s.calls]) {
     assert.equal(call.options.redirect,'manual');
     assert.ok(['https://github.com','https://api.github.com'].includes(new URL(call.url).origin));
   }
+});
+
+test('remembered sign-in survives an hour and worker redeployment',async()=>{
+  const s=setup(),{session}=await s.login();
+  s.advance(7200000); s.redeploy();
+  const result=await s.api('/api/session',session);
+  assert.equal(result.status,200);
+  assert.equal((await result.json()).persistent,true);
+});
+test('simultaneous requests rotate the single-use refresh token once and keep credentials private',async()=>{
+  let rotations=0;
+  const s=setup({tokenResponse:options=>{
+    const body=JSON.parse(options.body),refresh=body.grant_type==='refresh_token';
+    if(refresh) { rotations++; assert.equal(body.refresh_token,'ghr_initial'); }
+    return response({access_token:refresh?'ghu_rotated':'ghu_initial',expires_in:28800,
+      refresh_token:refresh?'ghr_rotated':'ghr_initial',refresh_token_expires_in:15897600});
+  }});
+  const {session}=await s.login(); s.advance(8*3600000);
+  const results=await Promise.all([s.api('/api/session',session),s.api('/api/session',session)]);
+  assert.equal(rotations,1);
+  for(const result of results) {
+    assert.equal(result.status,200);
+    assert.doesNotMatch(await result.text(),/ghu_|ghr_/);
+  }
+  assert.ok(s.calls.some(call=>call.url.endsWith('/user')&&call.options.headers.Authorization==='Bearer ghu_rotated'));
+});
+test('a temporary GitHub renewal failure preserves the saved session and can recover',async()=>{
+  let unavailable=false;
+  const s=setup({tokenResponse:options=>unavailable && JSON.parse(options.body).grant_type==='refresh_token'
+    ? response({error:'private upstream error'},503)
+    : response({access_token:'ghu_test',expires_in:28800,refresh_token:'ghr_private',refresh_token_expires_in:15897600})});
+  const {session}=await s.login(), stored=s.records.get(session).get('session');
+  s.advance(8*3600000); unavailable=true;
+  const failed=await s.api('/api/session',session);
+  assert.equal(failed.status,503);
+  assert.doesNotMatch(await failed.text(),/private upstream/);
+  assert.equal(s.records.get(session).get('session'),stored);
+  unavailable=false;
+  assert.equal((await s.api('/api/session',session)).status,200);
+});
+test('sign-out during renewal removes the renewed session instead of resurrecting it',async()=>{
+  const s=setup({upstream:()=>new Response(null,{status:204})});
+  const {session}=await s.login();s.advance(8*3600000);
+  await Promise.all([s.api('/api/session',session),s.api('/api/logout',session,'POST')]);
+  assert.equal(s.records.get(session).size,0);
+  assert.equal((await s.api('/api/session',session)).status,401);
 });

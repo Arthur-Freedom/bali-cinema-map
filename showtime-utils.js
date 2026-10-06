@@ -13,7 +13,7 @@
   function matchesMovieType(format, type) {
     if (!type) return true;
     const category = /premiere/i.test(format) ? 'premiere' : /\bvip\b/i.test(format) ? 'vip' : /\bimax\b/i.test(format) ? 'imax' : '';
-    if (type === 'regular') return /\bregular\b/i.test(format);
+    if (type === 'regular') return /\b(?:regular|deluxe)\b/i.test(format);
     if (type === 'deluxe') return /\bdeluxe\b/i.test(format);
     if (type === 'executive') return /\bexecutive\b/i.test(format);
     return type === 'premium' ? Boolean(category) : category === type;

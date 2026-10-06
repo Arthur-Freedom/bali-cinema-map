@@ -14,13 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=movie-language-6">
-  <script defer src="owner-refresh.js?v=mobile-layout-3"></script>
+  <link rel="stylesheet" href="style.css?v=seating-guide-7">
+  <script defer src="owner-refresh.js?v=remember-owner-4"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
-  <script defer src="push-notifications.js?v=mobile-layout-3"></script>
+  <script defer src="push-notifications.js?v=remember-owner-4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="showtime-utils.js?v=movie-language-6"></script>
-  <script defer src="app.js?v=movie-language-6"></script>
+  <script defer src="showtime-utils.js?v=seating-guide-7"></script>
+  <script defer src="app.js?v=seating-guide-7"></script>
 </head>
 <body>
   <main class="app">
@@ -66,20 +66,18 @@
           <option value="premiere">Premiere</option>
           <option value="vip">VIP</option>
           <option value="imax">IMAX</option>
-          <option value="regular">Regular</option>
-          <option value="deluxe">Deluxe</option>
+          <option value="regular">Regular or Deluxe</option>
           <option value="executive">Executive</option>
           <option value="premium">Premiere, VIP or IMAX</option>
         </select>
         <label for="movie-language">Spoken language</label>
-        <select id="movie-language" disabled aria-controls="movie-select comparison" aria-describedby="language-note">
+        <select id="movie-language" disabled aria-controls="movie-select comparison">
           <option value="">Any language</option>
           <option value="en">English</option>
           <option value="id">Indonesian</option>
           <option value="ko">Korean</option>
           <option value="unknown">Unknown</option>
         </select>
-        <p id="language-note" class="language-note">Film language; dubbing and subtitles may differ by screening.</p>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
@@ -144,10 +142,12 @@
         <details id="owner-controls" class="owner-controls" hidden>
           <summary>Refresh movie data</summary>
           <p id="owner-status" role="status" aria-live="polite">Only Arthur-Freedom can start a refresh.</p>
+          <p class="owner-note">Sign-in is remembered on this device until you sign out. Browsing and existing movie alerts do not require sign-in.</p>
           <div class="owner-actions">
             <a id="owner-login">Sign in with GitHub</a>
             <button id="owner-refresh" type="button" hidden>Refresh movie data</button>
             <button id="owner-check" type="button" hidden>Check progress</button>
+            <button id="owner-reconnect" type="button" hidden>Retry connection</button>
             <button id="owner-signout" type="button" hidden>Sign out</button>
           </div>
           <a id="owner-run" target="_blank" rel="noopener" hidden>Open GitHub run ↗</a>
@@ -159,17 +159,26 @@
           <p><a href="https://www.cinema21.co.id/faq" target="_blank" rel="noopener">Cinema XXI’s pricing explanation ↗</a></p>
         </details>
         <details class="format-guide">
-          <summary>Premiere, VIP or IMAX?</summary>
-          <p>Premiere and VIP are similar luxury options from different cinema chains. IMAX focuses on the screen, picture and sound.</p>
+          <summary>Premiere, VIP, Executive or IMAX?</summary>
+          <p>Cinemas use different names for their seating. IMAX describes the screen, projection and sound.</p>
           <dl>
+            <dt>Regular or Deluxe · standard seating</dt>
+            <dd>Regular at XXI and Cinépolis, and Deluxe at Denpasar Cineplex, are grouped for comparing standard tickets. Seats and facilities still vary by venue.</dd>
             <dt><a href="https://www.cinema21.co.id/products-services/cinema/the-premiere" target="_blank" rel="noopener">Premiere · Cinema XXI ↗</a></dt>
             <dd>Reclining seats, a more private auditorium and butler service. Food and drinks cost extra.</dd>
             <dt><a href="https://www.cinepolis.co.id/cinema-class/vip" target="_blank" rel="noopener">VIP · Cinépolis · photos ↗</a></dt>
             <dd>Reclining seats with food and drinks served by attendants. A comparable comfort-focused experience; seats, menus and service can vary by venue.</dd>
+            <dt><a href="https://www.denpasarcineplex.com/about" target="_blank" rel="noopener">Executive · Denpasar Cineplex ↗</a></dt>
+            <dd>Its room with wide sofa seats, above Deluxe in its seating range. This label does not promise the same recliners or service as Premiere and VIP.
+              <figure class="format-photo">
+                <a href="https://www.denpasarcineplex.com/images/kursi-executive.jpg" target="_blank" rel="noopener"><img src="https://www.denpasarcineplex.com/images/kursi-executive.jpg" alt="Wide padded Executive sofa seats with armrests and cup holders at Denpasar Cineplex" width="1000" height="1000" loading="lazy" referrerpolicy="no-referrer"></a>
+                <figcaption>Executive seating · photo: Denpasar Cineplex. Tap to enlarge.</figcaption>
+              </figure>
+            </dd>
             <dt><a href="https://www.cinema21.co.id/products-services/cinema/imax" target="_blank" rel="noopener">IMAX ↗</a></dt>
             <dd>A large, immersive screen with specialised projection and sound. IMAX 2D needs no 3D glasses.</dd>
           </dl>
-          <p class="format-guide-tip">For comfort, look for Premiere or VIP. For a big-screen experience, look for IMAX.</p>
+          <p class="format-guide-tip">The “Premiere, VIP or IMAX” filter includes only those three names. Choose Executive separately, or Any format to compare everything.</p>
         </details>
         <details>
           <summary>About this map</summary>
@@ -178,6 +187,7 @@
           <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules. Automatic refreshes are scheduled around 07:17 and 13:17 Bali time (WITA), though they may run later. Movies appear or disappear as cinemas change that day’s listings.</p>
           <p>Use “Sign in with GitHub” above, then “Refresh movie data” to update the listings. Only Arthur-Freedom can start a refresh. It usually takes about a minute, and the new listings load automatically. You can also <a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">run a refresh on GitHub ↗</a>. Reloading alone loads the latest saved snapshot.</p>
           <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
+          <p>The Spoken language filter uses explicit film-language information from JadwalNonton or Indonesia’s LSF film guide. Dubbing and subtitles can vary by screening; unverified languages stay Unknown.</p>
           <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
           <p>New-movie notices are remembered in this browser. Personal push alerts are optional for Arthur-Freedom; the device’s push address is stored privately and is never published on GitHub. Turn alerts off above or in your browser settings. Alerts follow successful refreshes, not live cinema updates.</p>
           <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>

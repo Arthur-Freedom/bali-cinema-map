@@ -20,6 +20,7 @@
   const selectedExperience = () => movieType.selectedOptions[0];
   const movieExperience = () => selectedExperience().value;
   function setMovieExperience(value) {
+    if (value==='deluxe') value='regular'; // Preserve older shared links after grouping standard seating.
     movieType.value = value;
   }
   const priceSort = document.getElementById('price-sort');
