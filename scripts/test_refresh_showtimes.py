@@ -1,6 +1,7 @@
 import unittest
 
-from refresh_showtimes import parse_schedule
+from refresh_showtimes import parse_schedule, parse_trailer, add_trailers
+from unittest.mock import patch
 
 
 class ScheduleParsingTests(unittest.TestCase):
@@ -39,6 +40,29 @@ class ScheduleParsingTests(unittest.TestCase):
     def test_rejects_broken_schedule_instead_of_silently_dropping_movie(self):
         with self.assertRaisesRegex(ValueError, 'Showtimes missing'):
             self.parse(self.page('<span class="showgroup">Regular 2D</span>'))
+
+
+class TrailerParsingTests(unittest.TestCase):
+    def test_uses_source_trailer_and_ignores_other_embeds(self):
+        html = '''<iframe src="https://www.youtube.com/embed/ABCDEFGHIJK"></iframe>
+          <iframe class="vtrail" src="https://www.youtube.com/embed/vMZO8caQu1M?rel=0"></iframe>'''
+        self.assertEqual(parse_trailer(html), 'vMZO8caQu1M')
+
+    def test_rejects_untrusted_hosts_and_malformed_video_ids(self):
+        for src in ('https://youtube.com.evil.example/embed/vMZO8caQu1M',
+                    'https://evil.example/embed/vMZO8caQu1M',
+                    'https://www.youtube.com/embed/too-short',
+                    'https://www.youtube.com/embed/vMZO8caQu1M/other'):
+            with self.subTest(src=src):
+                self.assertIsNone(parse_trailer(f'<iframe class="vtrail" src="{src}"></iframe>'))
+
+    def test_missing_or_failed_trailer_does_not_remove_movie(self):
+        movies = {'2026/example': {'id': '2026/example', 'title': 'Example', 'url': 'https://jadwalnonton.com/film/2026/example/'}}
+        with patch('refresh_showtimes.download_page', side_effect=TimeoutError):
+            add_trailers(movies)
+        self.assertEqual(len(movies), 1)
+        self.assertNotIn('trailerYouTubeId', movies['2026/example'])
+        self.assertIsNone(parse_trailer('<p>No trailer available</p>'))
 
 
 if __name__ == '__main__':

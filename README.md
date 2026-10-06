@@ -19,6 +19,7 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 - Choose **Soonest showtime** to put the next upcoming screening first in Bali time (WITA). The next session is highlighted; started sessions are muted and rows with no remaining sessions appear last. Ordering refreshes while this view is open and uses the snapshot’s date, so old schedules never masquerade as upcoming sessions.
 - Use **Find movies with** before picking a movie to discover films listed in Premiere, VIP or IMAX. The movie picker and venue overview both show only matching listings. Choose **Any studio format** to browse everything again.
 - Open **Premiere, VIP or IMAX?** beside that filter for the format guide and source descriptions. Premiere (Cinema XXI) and VIP (Cinépolis) focus on comfort and service; IMAX focuses on the screen, projection and sound.
+- Open **Watch trailer** above a movie’s venue comparison to play the same YouTube trailer linked by JadwalNonton. The player loads on demand and stops when collapsed, when switching films, or when returning to the map. A YouTube link is available if embedding is unavailable.
 - **Show on map** opens that cinema’s pin; **Check listing** opens its source schedule. Movie selections can be shared with the `?movie=YEAR/SLUG` URL parameter. The `experience` and `sort` parameters preserve the movie-type filter and sorting choice.
 
 ## Data
@@ -26,6 +27,8 @@ Inspired by the [Australia 462 work map](https://github.com/Arthur-Freedom/au-46
 The 12 theaters in [JadwalNonton's Bali listing](https://jadwalnonton.com/bioskop/di-bali/), checked 5 October 2026. This is a location snapshot and may omit independent screening venues.
 
 Movie comparisons load `showtimes.json`, a dated snapshot of those cinema schedules. Each studio format keeps its own price and showtimes. JadwalNonton warns that listed prices may follow the first showtime, and later sessions may differ; they are not a guaranteed final booking total. An absent listing is not proof that a film is unavailable.
+
+The scraper also checks each movie’s source page for its trailer, with at most three requests in parallel. It saves only validated YouTube video IDs, never embedded HTML. Missing or unavailable trailers do not block schedule updates. Saved offline movie pages can be placed under `DIRECTORY/movies/YEAR--SLUG.html` when using `--source-dir`.
 
 GitHub Actions refreshes all 12 schedules and publishes the site on pushes and twice daily (scheduled for 07:17 and 13:17 WITA; runs can be delayed). Every source must have the current Bali date and a valid schedule before publication. A failed refresh leaves the previously published site in place. The UI warns when the snapshot is from another day. Scheduled snapshots are published as Pages artifacts; the committed JSON is a fallback for local development. No browser scraping, API key or persistent backend is needed.
 

@@ -1,183 +1,204 @@
 {
-  "date": "2026-10-05",
-  "refreshedAt": "2026-10-05T20:14:00+08:00",
+  "date": "2026-10-06",
+  "refreshedAt": "2026-10-06T14:46:39+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-10-05"
+      "date": "2026-10-06"
     }
   ],
   "movies": [
     {
       "id": "2026/agensi-rumah-tangga",
       "title": "Agensi Rumah Tangga",
-      "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/"
+      "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
+      "trailerYouTubeId": "IpIuNlQpjMU"
     },
     {
       "id": "2026/all-wishes-come-true",
       "title": "All Wishes Come True!",
-      "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/"
+      "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
+      "trailerYouTubeId": "4SMwC0TVgco"
     },
     {
       "id": "2026/avengers-endgame-encore",
       "title": "Avengers Endgame: Encore",
-      "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/"
+      "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
+      "trailerYouTubeId": "wOsZ8NrKUXk"
     },
     {
       "id": "2026/backrooms",
       "title": "Backrooms",
-      "url": "https://jadwalnonton.com/film/2026/backrooms/"
+      "url": "https://jadwalnonton.com/film/2026/backrooms/",
+      "trailerYouTubeId": "c307B084Np0"
     },
     {
       "id": "2026/daniel-and-the-fiery-furnace",
       "title": "Daniel and the Fiery Furnace",
-      "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/"
+      "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
+      "trailerYouTubeId": "vMZO8caQu1M"
     },
     {
       "id": "2026/digger",
       "title": "Digger",
-      "url": "https://jadwalnonton.com/film/2026/digger/"
+      "url": "https://jadwalnonton.com/film/2026/digger/",
+      "trailerYouTubeId": "nNKhu6DvoKk"
     },
     {
       "id": "2026/djamin-setia-selamanya",
       "title": "Djamin Setia Selamanya",
-      "url": "https://jadwalnonton.com/film/2026/djamin-setia-selamanya/"
+      "url": "https://jadwalnonton.com/film/2026/djamin-setia-selamanya/",
+      "trailerYouTubeId": "o304j-9bs_8"
     },
     {
       "id": "2026/forgotten-island",
       "title": "Forgotten Island",
-      "url": "https://jadwalnonton.com/film/2026/forgotten-island/"
+      "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
+      "trailerYouTubeId": "Fh8EY6o2Rgw"
     },
     {
       "id": "2026/harusnya-horor",
       "title": "Harusnya Horor",
-      "url": "https://jadwalnonton.com/film/2026/harusnya-horor/"
+      "url": "https://jadwalnonton.com/film/2026/harusnya-horor/",
+      "trailerYouTubeId": "2Sy6l8RjfEs"
     },
     {
       "id": "2026/heart-of-the-beast",
       "title": "Heart of the Beast",
-      "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/"
+      "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
+      "trailerYouTubeId": "h5_ZcMGDuyg"
     },
     {
       "id": "2026/ibu-bagaimana-aku-tanpamu",
       "title": "Ibu Bagaimana Aku Tanpamu",
-      "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/"
+      "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
+      "trailerYouTubeId": "dwqSPggRIuw"
     },
     {
       "id": "2026/bolong-309-hari-sebelum-tragedi",
       "title": "LOBANG BUAYA: 309 HARI SEBELUM TRAGEDI",
-      "url": "https://jadwalnonton.com/film/2026/bolong-309-hari-sebelum-tragedi/"
+      "url": "https://jadwalnonton.com/film/2026/bolong-309-hari-sebelum-tragedi/",
+      "trailerYouTubeId": "J7zVXwr2Nus"
     },
     {
       "id": "2026/siksa-sampai-mati",
       "title": "Memburu Pemangsa",
-      "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/"
+      "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
+      "trailerYouTubeId": "lbOJZpkHvKg"
     },
     {
       "id": "2026/munafik-remake",
       "title": "MUNAFIK: Melawan Iblis",
-      "url": "https://jadwalnonton.com/film/2026/munafik-remake/"
+      "url": "https://jadwalnonton.com/film/2026/munafik-remake/",
+      "trailerYouTubeId": "JZiZWfW9Wa0"
     },
     {
       "id": "2026/petaka-gunung-welirang",
       "title": "Petaka Gunung Welirang",
-      "url": "https://jadwalnonton.com/film/2026/petaka-gunung-welirang/"
+      "url": "https://jadwalnonton.com/film/2026/petaka-gunung-welirang/",
+      "trailerYouTubeId": "GKxZUFhMUX8"
     },
     {
       "id": "2026/resident-evil",
       "title": "Resident Evil",
-      "url": "https://jadwalnonton.com/film/2026/resident-evil/"
+      "url": "https://jadwalnonton.com/film/2026/resident-evil/",
+      "trailerYouTubeId": "c0eF2bs09qg"
     },
     {
       "id": "2026/suanggi-ilmu-kutukan",
       "title": "SUANGGI: ILMU KUTUKAN",
-      "url": "https://jadwalnonton.com/film/2026/suanggi-ilmu-kutukan/"
+      "url": "https://jadwalnonton.com/film/2026/suanggi-ilmu-kutukan/",
+      "trailerYouTubeId": "NymgAZDgwRs"
     },
     {
       "id": "2026/tazza-the-song-of-beelzebub",
       "title": "TAZZA THE SONG OF BEELZEBUB",
-      "url": "https://jadwalnonton.com/film/2026/tazza-the-song-of-beelzebub/"
+      "url": "https://jadwalnonton.com/film/2026/tazza-the-song-of-beelzebub/",
+      "trailerYouTubeId": "WkjFM-_ewlI"
     },
     {
       "id": "2026/verity",
       "title": "Verity",
-      "url": "https://jadwalnonton.com/film/2026/verity/"
+      "url": "https://jadwalnonton.com/film/2026/verity/",
+      "trailerYouTubeId": "kIMAexAT7mg"
     },
     {
       "id": "2026/warga-rusun-609",
       "title": "Warga Rusun 609",
-      "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/"
+      "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
+      "trailerYouTubeId": "8OtYZ92MzxI"
     },
     {
       "id": "2026/wind-up-the-movie",
       "title": "WIND UP: The Movie",
-      "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/"
+      "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
+      "trailerYouTubeId": "lgpdLKXD2tk"
     }
   ],
   "screenings": [
     {
       "movieId": "2026/avengers-endgame-encore",
       "cinemaId": "beachwalk-xxi",
-      "format": "Regular 2D",
-      "price": 40000,
+      "format": "Premiere",
+      "price": 100000,
       "times": [
-        "11:55"
+        "20:20"
       ]
     },
     {
@@ -186,10 +207,11 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "15:20",
-        "17:20",
-        "19:20",
-        "21:20"
+        "12:45",
+        "14:45",
+        "16:45",
+        "18:45",
+        "20:45"
       ]
     },
     {
@@ -210,8 +232,8 @@
       "format": "Premiere",
       "price": 100000,
       "times": [
-        "12:45",
-        "16:40"
+        "12:30",
+        "16:25"
       ]
     },
     {
@@ -220,9 +242,8 @@
       "format": "Premiere",
       "price": 100000,
       "times": [
-        "14:50",
-        "18:45",
-        "20:35"
+        "14:35",
+        "18:30"
       ]
     },
     {
@@ -268,7 +289,7 @@
       "movieId": "2026/daniel-and-the-fiery-furnace",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 75000,
+      "price": 40000,
       "times": [
         "15:20",
         "17:40",
@@ -307,7 +328,7 @@
       "movieId": "2026/heart-of-the-beast",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 75000,
+      "price": 40000,
       "times": [
         "13:05"
       ]
@@ -404,6 +425,7 @@
         "11:45",
         "14:05",
         "16:25",
+        "18:45",
         "21:05"
       ]
     },
@@ -459,7 +481,7 @@
       "movieId": "2026/avengers-endgame-encore",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "14:15",
         "19:30"
@@ -469,7 +491,7 @@
       "movieId": "2026/daniel-and-the-fiery-furnace",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:05",
         "17:55",
@@ -489,7 +511,7 @@
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "11:40",
         "16:05",
@@ -501,7 +523,7 @@
       "movieId": "2026/warga-rusun-609",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "11:55",
         "16:45",
@@ -513,7 +535,7 @@
       "movieId": "2026/suanggi-ilmu-kutukan",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "14:05"
       ]
@@ -522,7 +544,7 @@
       "movieId": "2026/agensi-rumah-tangga",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "14:20"
       ]
@@ -531,7 +553,7 @@
       "movieId": "2026/resident-evil",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "17:25"
       ]
@@ -549,7 +571,7 @@
       "movieId": "2026/avengers-endgame-encore",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:10",
         "15:50",
@@ -560,7 +582,7 @@
       "movieId": "2026/daniel-and-the-fiery-furnace",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:30"
       ]
@@ -569,7 +591,7 @@
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "17:20"
       ]
@@ -578,7 +600,7 @@
       "movieId": "2026/warga-rusun-609",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "15:05",
         "19:45"
@@ -597,7 +619,7 @@
       "movieId": "2026/verity",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "14:50",
         "20:00"
@@ -607,7 +629,7 @@
       "movieId": "2026/resident-evil",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:45",
         "14:50",
@@ -619,7 +641,7 @@
       "movieId": "2026/digger",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "17:20"
       ]
@@ -745,6 +767,7 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
+        "12:35",
         "14:25",
         "18:40"
       ]
@@ -766,11 +789,10 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
-        "12:55",
-        "14:45",
-        "16:35",
-        "18:25",
-        "20:15"
+        "14:40",
+        "16:30",
+        "18:20",
+        "20:10"
       ]
     },
     {
@@ -843,8 +865,8 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "14:20",
-        "19:50"
+        "14:35",
+        "20:10"
       ]
     },
     {
@@ -903,8 +925,7 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "12:15",
-        "17:45"
+        "12:30"
       ]
     },
     {
@@ -913,7 +934,6 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "12:35",
         "16:35",
         "20:35"
       ]
@@ -924,7 +944,9 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
+        "12:15",
         "14:25",
+        "18:00",
         "18:25"
       ]
     },
@@ -1062,9 +1084,9 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "13:15",
-        "16:40",
-        "20:05"
+        "12:15",
+        "17:40",
+        "21:05"
       ]
     },
     {
@@ -1097,7 +1119,8 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "12:40",
+        "12:45",
+        "14:45",
         "16:45",
         "20:50"
       ]
@@ -1123,8 +1146,9 @@
       "times": [
         "12:10",
         "14:25",
-        "18:40",
-        "20:55"
+        "16:40",
+        "18:55",
+        "21:10"
       ]
     },
     {
@@ -1133,7 +1157,6 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "14:40",
         "18:45"
       ]
     },
@@ -1164,7 +1187,7 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "16:40"
+        "15:40"
       ]
     }
   ]

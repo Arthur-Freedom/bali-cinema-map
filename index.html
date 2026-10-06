@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=format-guide-1">
+  <link rel="stylesheet" href="style.css?v=trailers-1">
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=movie-time-1"></script>
-  <script defer src="app.js?v=movie-time-1"></script>
+  <script defer src="app.js?v=trailers-1"></script>
 </head>
 <body>
   <main class="app">
@@ -105,6 +105,11 @@
         <h2 id="comparison-title">Pick a movie to compare</h2>
         <p id="comparison-summary" role="status">See each venue, studio format, ticket price and showtime in one overview.</p>
         <a id="movie-source" target="_blank" rel="noopener" hidden>Film listing on JadwalNonton ↗</a>
+        <details id="movie-trailer" class="movie-trailer" hidden>
+          <summary>Watch trailer</summary>
+          <div id="trailer-player" class="trailer-player"></div>
+          <a id="trailer-external" target="_blank" rel="noopener">Open trailer on YouTube ↗</a>
+        </details>
       </header>
       <p id="snapshot-warning" class="snapshot-warning" role="status" hidden></p>
       <div id="comparison-results" hidden>

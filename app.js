@@ -19,6 +19,10 @@
   const movieDataStatus = document.getElementById('movie-data-status');
   const comparisonRows = document.getElementById('comparison-rows');
   const movieSource = document.getElementById('movie-source');
+  const movieTrailer = document.getElementById('movie-trailer');
+  const trailerPlayer = document.getElementById('trailer-player');
+  const trailerExternal = document.getElementById('trailer-external');
+  let trailerKey = '', trailerMovie = null;
   let showtimes = null, comparing = false;
   const colors = {XXI:'#9a6c19', 'Cinépolis':'#235aa7', Independent:'#a3405b'};
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -43,6 +47,7 @@
 
   function setView(value) {
     comparing = value === 'movies';
+    if (!comparing) { movieTrailer.open = false; trailerPlayer.replaceChildren(); }
     if (comparing) { setChoosing(false); window.clearTimeout(labelExitTimer); hovered = null; focused = null; if (labelPopup) labelPopup.remove(); }
     app.classList.toggle('is-comparing', comparing);
     document.getElementById('view-map').setAttribute('aria-pressed', String(!comparing));
@@ -83,11 +88,35 @@
     formatSelect.value = [...formatSelect.options].some(o => o.value === previous) ? previous : '';
     formatSelect.disabled = !movieSelect.value;
   }
+  function updateTrailer(movie) {
+    const videoId = /^[A-Za-z0-9_-]{11}$/.test(movie?.trailerYouTubeId || '') ? movie.trailerYouTubeId : '';
+    const key = videoId ? `${movie.id}:${videoId}` : '';
+    if (key === trailerKey) return;
+    trailerKey = key;
+    trailerMovie = videoId ? movie : null;
+    movieTrailer.open = false;
+    trailerPlayer.replaceChildren();
+    movieTrailer.hidden = !videoId;
+    if (videoId) trailerExternal.href = `https://www.youtube.com/watch?v=${videoId}`;
+    else trailerExternal.removeAttribute('href');
+  }
+  movieTrailer.addEventListener('toggle', () => {
+    trailerPlayer.replaceChildren();
+    if (!movieTrailer.open || !trailerMovie) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${trailerMovie.trailerYouTubeId}?rel=0`;
+    iframe.title = `${trailerMovie.title} trailer`;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    trailerPlayer.append(iframe);
+  });
   function renderComparison() {
     document.getElementById('time-sort-note').hidden = priceSort.value !== 'time';
     priceSort.querySelector('option[value="distance"]').disabled = !origin;
     if (!origin && priceSort.value === 'distance') priceSort.value = 'price';
     const movie = showtimes?.movies.find(m => m.id === movieSelect.value);
+    updateTrailer(movie);
     document.getElementById('comparison-title').textContent = movie?.title || 'Pick a movie to compare';
     document.getElementById('comparison-results').hidden = !movie;
     movieSource.hidden = !movie;
