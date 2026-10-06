@@ -54,9 +54,21 @@ class Setup(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.headers.get('Host') != f'127.0.0.1:{PORT}':
             return self.page('<h1>Invalid host</h1>', 400)
+        url = urlsplit(self.path)
+        target = ROOT / '.local' / 'github-app.json'
+        if url.path in ('/', '/callback') and target.exists():
+            # A completed or recovered setup must never create a second app.
+            try:
+                slug = json.loads(target.read_text(encoding='utf-8'))['slug']
+                if not re.fullmatch(r'[a-z0-9-]+', slug):
+                    raise ValueError('Invalid app slug')
+                return self.page('<h1>GitHub app saved</h1><p>The app credentials have been recovered. No need to create another app.</p>'
+                                 '<p>Next, install it on <strong>Only select repositories → bali-cinema-map</strong>.</p>'
+                                 f'<p><a href="https://github.com/apps/{slug}/installations/new">Open repository installation</a></p>')
+            except (KeyError, ValueError, OSError):
+                return self.page('<h1>Saved setup needs attention</h1><p>The existing credentials were preserved. Check the local setup status.</p>', 409)
         if time.monotonic() > DEADLINE:
             return self.page('<h1>Setup expired</h1><p>Restart the setup helper.</p>', 410)
-        url = urlsplit(self.path)
         if url.path == '/':
             return self.page(f'''<h1>Connect the owner refresh button</h1>
               <p>Create a private GitHub app owned by <strong>Arthur-Freedom</strong>.
@@ -79,7 +91,6 @@ class Setup(BaseHTTPRequestHandler):
         if not re.fullmatch(r'[A-Za-z0-9_-]{10,512}', code):
             return self.page('<h1>Invalid setup code</h1>', 400)
         with LOCK:
-            target = ROOT / '.local' / 'github-app.json'
             if target.exists():
                 return self.page('<h1>App already saved</h1><p>The existing credentials were preserved.</p>', 409)
             try:
@@ -101,7 +112,7 @@ class Setup(BaseHTTPRequestHandler):
                                  f'<p><a href="https://github.com/apps/{html.escape(app["slug"], quote=True)}/installations/new">Open repository installation</a></p>')
             except Exception as error:
                 print('App setup failed:', type(error).__name__, flush=True)
-                return self.page('<h1>Setup could not finish</h1><p>No credentials are shown here. Check the local setup status before trying again.</p>', 502)
+                return self.page('<h1>Setup could not finish</h1><p>No credentials are shown here. Check the local setup status and outbound network access before trying again.</p>', 502)
 
 if __name__ == '__main__':
     print(f'Review GitHub app setup: http://127.0.0.1:{PORT}/', flush=True)
