@@ -52,6 +52,8 @@
 .settings-menu .owner-actions button,.settings-menu .owner-actions a{min-height:44px}
 .settings-menu>span{display:block;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
 #movie-type{margin-bottom:20px}
+.language-note{margin:7px 0 20px;color:var(--muted);font-size:12px;line-height:1.5}
+.movie-language-info a{color:var(--brand);text-underline-offset:3px}
 .cinema-label .maplibregl-popup-content{max-height:var(--popup-max-height,none);overflow-y:auto;overscroll-behavior:contain}
 
 /* On a phone there is one document scroll, with the map between search and list. */

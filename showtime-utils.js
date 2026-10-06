@@ -18,7 +18,16 @@
     if (type === 'executive') return /\bexecutive\b/i.test(format);
     return type === 'premium' ? Boolean(category) : category === type;
   }
-  const helpers = {nextShowtime, matchesMovieType};
+  function movieLanguageCodes(movie) {
+    const info = movie?.languageInfo;
+    return info?.status === 'verified' && Array.isArray(info.codes)
+      ? info.codes.filter(code => typeof code === 'string' && /^[a-z]{2,3}$/.test(code)) : [];
+  }
+  function matchesMovieLanguage(movie, language) {
+    const codes = movieLanguageCodes(movie);
+    return !language || (language === 'unknown' ? !codes.length : codes.includes(language));
+  }
+  const helpers = {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage};
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   else window.CinemaShowtimes = helpers;
 })();

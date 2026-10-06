@@ -12,6 +12,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 from movie_tracking import parse_movie_details, update_history, archive_snapshot
+from movie_languages import add_languages
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -165,22 +166,25 @@ def refresh(root=ROOT, source_dir=None, expected_date=None):
         write_json(root / 'tracking' / 'latest.json', report)
         return False
     metadata = add_trailers(movies, source_dir)
+    target = root / 'showtimes.json'
+    previous_snapshot = json.loads(target.read_text(encoding='utf-8')) if target.exists() else {}
+    add_languages(movies, metadata, previous_snapshot.get('movies', []),
+                  fetch_page=None if source_dir else download_page)
     report['movieChecks'] = list(metadata.values())
     snapshot = {'date': date, 'refreshedAt': timestamp(), 'sources': sources,
                 'movies': sorted(movies.values(), key=lambda m: m['title'].casefold()), 'screenings': screenings}
     history_path = root / 'tracking' / 'history.json'
     previous = json.loads(history_path.read_text(encoding='utf-8')) if history_path.exists() else None
-    target = root / 'showtimes.json'
     if previous is None and target.exists():
         previous, _ = update_history(None, json.loads(target.read_text(encoding='utf-8')))
     history, changes = update_history(previous, snapshot, metadata)
-    # Only this small discovery timestamp is public; the detailed archive stays in Git.
+    # Discovery timestamps and verified language metadata are public; detailed history stays in Git.
     for movie in snapshot['movies']:
         movie['firstSeenAt'] = history['movies'][movie['id']]['firstSeenAt']
     report.update(status='success', completedAt=timestamp(), snapshotRefreshedAt=snapshot['refreshedAt'], changes=changes,
                   counts={'movies': len(movies), 'cinemas': len(sources), 'formatListings': len(screenings),
                           'showtimes': sum(len(offer['times']) for offer in screenings)})
-    # Tracking files are archived in Git only; the public site's data shape is unchanged.
+    # Detailed tracking files are archived in Git and excluded from the public site.
     write_json(root / 'tracking' / 'snapshot.json', archive_snapshot(snapshot, metadata))
     write_json(history_path, history)
     write_json(target, snapshot)

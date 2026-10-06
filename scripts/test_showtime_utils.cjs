@@ -1,7 +1,7 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const {nextShowtime, matchesMovieType} = require('../showtime-utils.js');
+const {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage} = require('../showtime-utils.js');
 
 test('finds the soonest remaining session, skipping already started screenings', () => {
   const now = Date.parse('2026-10-05T16:45:30+08:00');
@@ -39,4 +39,19 @@ test('filters the other studio experiences without treating them as premium', ()
     assert.equal(matchesMovieType('IMAX 2D', category), false);
   }
   assert.equal(matchesMovieType('Deluxe', 'executive'), false);
+});
+
+test('language filters require verified spoken-language metadata, never English subtitles or titles', () => {
+  const english = {languageInfo:{status:'verified',codes:['en']}};
+  const korean = {title:'An English Title',languageInfo:{status:'verified',codes:['ko']},subtitles:'English'};
+  assert.equal(matchesMovieLanguage(english, 'en'), true);
+  assert.equal(matchesMovieLanguage(korean, 'en'), false);
+  assert.equal(matchesMovieLanguage(korean, 'ko'), true);
+  for (const unknown of [{}, {languageInfo:{status:'unavailable',codes:['en']}}, {languageInfo:{status:'verified',codes:[]}}]) {
+    assert.equal(matchesMovieLanguage(unknown, 'en'), false);
+    assert.equal(matchesMovieLanguage(unknown, 'unknown'), true);
+    assert.equal(matchesMovieLanguage(unknown, ''), true);
+  }
+  assert.deepEqual(movieLanguageCodes(korean), ['ko']);
+  assert.equal(matchesMovieLanguage({languageInfo:{status:'verified',codes:['en','id']}}, 'en'), true);
 });

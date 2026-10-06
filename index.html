@@ -14,13 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=format-dropdown-5">
+  <link rel="stylesheet" href="style.css?v=movie-language-6">
   <script defer src="owner-refresh.js?v=mobile-layout-3"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
   <script defer src="push-notifications.js?v=mobile-layout-3"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="showtime-utils.js?v=movie-controls-4"></script>
-  <script defer src="app.js?v=format-dropdown-5"></script>
+  <script defer src="showtime-utils.js?v=movie-language-6"></script>
+  <script defer src="app.js?v=movie-language-6"></script>
 </head>
 <body>
   <main class="app">
@@ -71,6 +71,15 @@
           <option value="executive">Executive</option>
           <option value="premium">Premiere, VIP or IMAX</option>
         </select>
+        <label for="movie-language">Spoken language</label>
+        <select id="movie-language" disabled aria-controls="movie-select comparison" aria-describedby="language-note">
+          <option value="">Any language</option>
+          <option value="en">English</option>
+          <option value="id">Indonesian</option>
+          <option value="ko">Korean</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <p id="language-note" class="language-note">Film language; dubbing and subtitles may differ by screening.</p>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
         <p id="movie-data-status" role="status">Loading the latest saved listings…</p>
@@ -99,6 +108,7 @@
           <span class="eyebrow">MOVIE · PRICE COMPARISON</span>
           <h2 id="comparison-title">Pick a movie to compare</h2>
           <p id="comparison-summary" role="status">See each venue, studio format, ticket price and showtime in one overview.</p>
+          <p id="movie-language-info" class="movie-language-info" hidden></p>
           <a id="movie-source" target="_blank" rel="noopener" hidden>Film listing on JadwalNonton ↗</a>
         </div>
         <div id="movie-trailer" class="movie-trailer" role="group" aria-label="Movie trailer" hidden>

@@ -68,127 +68,317 @@
       "id": "2026/agensi-rumah-tangga",
       "title": "Agensi Rumah Tangga",
       "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
-      "trailerYouTubeId": "IpIuNlQpjMU"
+      "trailerYouTubeId": "IpIuNlQpjMU",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesia",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/agensi-rumah-tangga/1386",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/all-wishes-come-true",
       "title": "All Wishes Come True!",
       "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
-      "trailerYouTubeId": "4SMwC0TVgco"
+      "trailerYouTubeId": "4SMwC0TVgco",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/avengers-endgame-encore",
       "title": "Avengers Endgame: Encore",
       "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
-      "trailerYouTubeId": "wOsZ8NrKUXk"
+      "trailerYouTubeId": "wOsZ8NrKUXk",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/avengers-endgame-encore/1515",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/backrooms",
       "title": "Backrooms",
       "url": "https://jadwalnonton.com/film/2026/backrooms/",
-      "trailerYouTubeId": "c307B084Np0"
+      "trailerYouTubeId": "c307B084Np0",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/backrooms/1194",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/daniel-and-the-fiery-furnace",
       "title": "Daniel and the Fiery Furnace",
       "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "trailerYouTubeId": "vMZO8caQu1M"
+      "trailerYouTubeId": "vMZO8caQu1M",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/daniel-fiery-furnace/1486",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/digger",
       "title": "Digger",
       "url": "https://jadwalnonton.com/film/2026/digger/",
-      "trailerYouTubeId": "nNKhu6DvoKk"
+      "trailerYouTubeId": "nNKhu6DvoKk",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/digger/1528",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/djamin-setia-selamanya",
       "title": "Djamin Setia Selamanya",
       "url": "https://jadwalnonton.com/film/2026/djamin-setia-selamanya/",
-      "trailerYouTubeId": "o304j-9bs_8"
+      "trailerYouTubeId": "o304j-9bs_8",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesia",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/djamin-setia-selamanya/1566",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/forgotten-island",
       "title": "Forgotten Island",
       "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
-      "trailerYouTubeId": "Fh8EY6o2Rgw"
+      "trailerYouTubeId": "Fh8EY6o2Rgw",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/forgotten-island/1514",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/harusnya-horor",
       "title": "Harusnya Horor",
       "url": "https://jadwalnonton.com/film/2026/harusnya-horor/",
-      "trailerYouTubeId": "2Sy6l8RjfEs"
+      "trailerYouTubeId": "2Sy6l8RjfEs",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/heart-of-the-beast",
       "title": "Heart of the Beast",
       "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
-      "trailerYouTubeId": "h5_ZcMGDuyg"
+      "trailerYouTubeId": "h5_ZcMGDuyg",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/heart-beast/1487",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/ibu-bagaimana-aku-tanpamu",
       "title": "Ibu Bagaimana Aku Tanpamu",
       "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
-      "trailerYouTubeId": "dwqSPggRIuw"
+      "trailerYouTubeId": "dwqSPggRIuw",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/bolong-309-hari-sebelum-tragedi",
       "title": "LOBANG BUAYA: 309 HARI SEBELUM TRAGEDI",
       "url": "https://jadwalnonton.com/film/2026/bolong-309-hari-sebelum-tragedi/",
-      "trailerYouTubeId": "J7zVXwr2Nus"
+      "trailerYouTubeId": "J7zVXwr2Nus",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesian",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/bolong-309-hari-sebelum-tragedi-hole/1549",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/siksa-sampai-mati",
       "title": "Memburu Pemangsa",
       "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
-      "trailerYouTubeId": "lbOJZpkHvKg"
+      "trailerYouTubeId": "lbOJZpkHvKg",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesian",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/memburu-pemangsa/1551",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/munafik-remake",
       "title": "MUNAFIK: Melawan Iblis",
       "url": "https://jadwalnonton.com/film/2026/munafik-remake/",
-      "trailerYouTubeId": "JZiZWfW9Wa0"
+      "trailerYouTubeId": "JZiZWfW9Wa0",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesian",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/munafik-melawan-iblis/1447",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/petaka-gunung-welirang",
       "title": "Petaka Gunung Welirang",
       "url": "https://jadwalnonton.com/film/2026/petaka-gunung-welirang/",
-      "trailerYouTubeId": "GKxZUFhMUX8"
+      "trailerYouTubeId": "GKxZUFhMUX8",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesia",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/petaka-gunung-welirang/1210",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/resident-evil",
       "title": "Resident Evil",
       "url": "https://jadwalnonton.com/film/2026/resident-evil/",
-      "trailerYouTubeId": "c0eF2bs09qg"
+      "trailerYouTubeId": "c0eF2bs09qg",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/resident-evil/1485",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/suanggi-ilmu-kutukan",
       "title": "SUANGGI: ILMU KUTUKAN",
       "url": "https://jadwalnonton.com/film/2026/suanggi-ilmu-kutukan/",
-      "trailerYouTubeId": "NymgAZDgwRs"
+      "trailerYouTubeId": "NymgAZDgwRs",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesia",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/suanggi-ilmu-kutukan/1352",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/tazza-the-song-of-beelzebub",
       "title": "TAZZA THE SONG OF BEELZEBUB",
       "url": "https://jadwalnonton.com/film/2026/tazza-the-song-of-beelzebub/",
-      "trailerYouTubeId": "WkjFM-_ewlI"
+      "trailerYouTubeId": "WkjFM-_ewlI",
+      "languageInfo": {
+        "codes": [
+          "ko"
+        ],
+        "reportedLanguage": "Korean",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/tazza-song-beelzebub/1548",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     },
     {
       "id": "2026/verity",
       "title": "Verity",
       "url": "https://jadwalnonton.com/film/2026/verity/",
-      "trailerYouTubeId": "kIMAexAT7mg"
+      "trailerYouTubeId": "kIMAexAT7mg",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/verity/1541",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/warga-rusun-609",
       "title": "Warga Rusun 609",
       "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
-      "trailerYouTubeId": "8OtYZ92MzxI"
+      "trailerYouTubeId": "8OtYZ92MzxI",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesian",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/warga-rusun-609/1561",
+        "status": "verified",
+        "checkedAt": "2026-10-06T19:32:36+00:00"
+      }
     },
     {
       "id": "2026/wind-up-the-movie",
       "title": "WIND UP: The Movie",
       "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
-      "trailerYouTubeId": "lgpdLKXD2tk"
+      "trailerYouTubeId": "lgpdLKXD2tk",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-10-06T19:35:26+00:00"
+      }
     }
   ],
   "screenings": [
