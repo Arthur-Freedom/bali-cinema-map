@@ -20,6 +20,8 @@ jobs:
     # Manual refreshes are reserved for the repository owner.
     if: github.event_name != 'workflow_dispatch' || github.actor == github.repository_owner
     runs-on: ubuntu-latest
+    outputs:
+      refresh-outcome: ${{ steps.refresh.outcome }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v5
@@ -34,12 +36,16 @@ jobs:
       - name: Check owner refresh authorization
         run: node --test owner-service/worker.test.mjs
       - name: Refresh movie listings
+        id: refresh
         run: python scripts/refresh_showtimes.py
-      - name: Save validated snapshot for repository backup
+      - name: Save observations and source-check report
+        if: ${{ always() && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure') }}
         uses: actions/upload-artifact@v4
         with:
           name: movie-snapshot
-          path: showtimes.json
+          path: |
+            showtimes.json
+            tracking/*.json
           retention-days: 1
           if-no-files-found: error
       - name: Package public files
@@ -65,7 +71,8 @@ jobs:
   save-snapshot:
     # Real data commits keep the repository active beyond GitHub's 60-day limit.
     # Only this job can write contents; scraping and deployment remain separate.
-    needs: deploy
+    needs: [build, deploy]
+    if: ${{ always() && (needs.build.outputs.refresh-outcome == 'success' || needs.build.outputs.refresh-outcome == 'failure') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -77,5 +84,7 @@ jobs:
         with:
           name: movie-snapshot
           path: .snapshot
-      - name: Commit published movie snapshot
-        run: python scripts/save_snapshot.py .snapshot/showtimes.json
+      - name: Archive movie observations and diagnostics
+        env:
+          PUBLICATION: ${{ needs.deploy.result }}
+        run: python scripts/save_snapshot.py .snapshot/showtimes.json --publication "$PUBLICATION"
