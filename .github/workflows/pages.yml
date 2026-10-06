@@ -31,12 +31,14 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_*.py'
       - name: Check showtime sorting and movie formats
         run: node --test scripts/test_showtime_utils.cjs
+      - name: Check owner refresh authorization
+        run: node --test owner-service/worker.test.mjs
       - name: Refresh movie listings
         run: python scripts/refresh_showtimes.py
       - name: Package public files
         run: |
           mkdir _site
-          cp index.html app.js showtime-utils.js style.css cinemas.json showtimes.json .nojekyll _site/
+          cp index.html app.js showtime-utils.js owner-refresh.js owner-refresh-config.json style.css cinemas.json showtimes.json .nojekyll _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

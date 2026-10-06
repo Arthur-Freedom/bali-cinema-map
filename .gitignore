@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 showtimes.tmp
 _site/
+.dev.vars*
+.env*
+.wrangler/
+node_modules/
+owner-service/.local/

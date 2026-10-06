@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=trailers-1">
+  <link rel="stylesheet" href="style.css?v=owner-refresh-1">
+  <script defer src="owner-refresh.js?v=owner-refresh-1"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=movie-time-1"></script>
-  <script defer src="app.js?v=trailers-1"></script>
+  <script defer src="app.js?v=owner-refresh-1"></script>
 </head>
 <body>
   <main class="app">
@@ -77,6 +78,17 @@
         </details>
       </section>
       <footer class="source-note">
+        <details id="owner-controls" class="owner-controls" hidden>
+          <summary>Refresh movie data</summary>
+          <p id="owner-status" role="status" aria-live="polite">Only Arthur-Freedom can start a refresh.</p>
+          <div class="owner-actions">
+            <a id="owner-login">Sign in with GitHub</a>
+            <button id="owner-refresh" type="button" hidden>Refresh movie data</button>
+            <button id="owner-check" type="button" hidden>Check progress</button>
+            <button id="owner-signout" type="button" hidden>Sign out</button>
+          </div>
+          <a id="owner-run" target="_blank" rel="noopener" hidden>Open GitHub run ↗</a>
+        </details>
         <details>
           <summary>About this map</summary>
           <p>The 12 cinemas in <a href="https://jadwalnonton.com/bioskop/di-bali/" target="_blank" rel="noopener">JadwalNonton’s Bali listing</a>, checked 5 October 2026. This listing may not include independent screening venues.</p>

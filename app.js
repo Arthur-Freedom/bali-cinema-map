@@ -192,30 +192,36 @@
     const refreshed = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Makassar'}).format(new Date(showtimes.refreshedAt));
     document.getElementById('comparison-updated').textContent = `Source: JadwalNonton · ${showtimes.sources.length} cinema schedules checked · refreshed ${refreshed} WITA. Listed prices may differ from the final booking total.`;
   }
-  function loadMovies() {
-    fetch('./showtimes.json', {cache:'no-store'}).then(response => {
+  async function loadMovies({since} = {}) {
+    try {
+      const response = await fetch(since ? `./showtimes.json?refresh=${Date.now()}` : './showtimes.json', {cache:'no-store'});
       if (!response.ok) throw new Error('Movie listings unavailable');
-      return response.json();
-    }).then(data => {
+      const data = await response.json();
       if (!Array.isArray(data.movies) || !data.movies.length || !Array.isArray(data.screenings)) throw new Error('Invalid movie listings');
+      if (since && (!Number.isFinite(Date.parse(data.refreshedAt)) || Date.parse(data.refreshedAt) < Date.parse(since))) throw new Error('Waiting for the published snapshot');
+      if (!cinemas.length) throw new Error('Cinema locations are still loading');
+      const preferred = showtimes ? movieSelect.value : requestedMovie || '';
       showtimes = data;
       movieType.disabled = false;
-      updateMovieChoices(requestedMovie || '');
+      updateMovieChoices(preferred);
       const dateText = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', timeZone:'Asia/Makassar'}).format(new Date(`${data.date}T12:00:00+08:00`));
       const today = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Makassar', year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date());
       const warning = document.getElementById('snapshot-warning');
       warning.hidden = data.date === today;
       warning.textContent = `These are saved listings for ${dateText}, not today’s schedule. Open the source listing for current prices and showtimes.`;
-      if (requestedMovie && !movieSelect.value) movieDataStatus.textContent += ' · The linked movie has no matching listing. Choose another movie or format.';
+      if (preferred && !movieSelect.value) movieDataStatus.textContent += ' · The selected movie has no matching listing. Choose another movie or format.';
       buildFormats(); renderComparison(); updateMovieUrl();
-    }).catch(() => {
+      return {refreshedAt:data.refreshedAt};
+    } catch (error) {
+      if (since || showtimes) throw error;
       movieSelect.replaceChildren(new Option('Movies unavailable', ''));
       movieDataStatus.replaceChildren();
       const message = document.createTextNode('Movie listings could not load. ');
       const source = document.createElement('a'); source.textContent = 'Browse current Bali schedules ↗'; source.href = 'https://jadwalnonton.com/bioskop/di-bali/'; source.target = '_blank'; source.rel = 'noopener';
       movieDataStatus.append(message, source);
-    });
+    }
   }
+  window.CinemaData = Object.freeze({reload:loadMovies});
   document.getElementById('view-map').addEventListener('click', () => setView('map'));
   document.getElementById('view-movies').addEventListener('click', () => setView('movies'));
   movieType.addEventListener('change', () => {updateMovieChoices(); formatSelect.value = ''; buildFormats(); renderComparison(); updateMovieUrl();});

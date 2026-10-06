@@ -1,0 +1,24 @@
+name = "bali-cinema-owner-refresh"
+main = "worker.mjs"
+compatibility_date = "2026-10-06"
+account_id = "94cabf810cae12652da86b210cad8009"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = false
+
+[vars]
+SITE_URL = "https://arthur-freedom.github.io/bali-cinema-map/"
+SERVICE_ORIGIN = "https://bali-cinema-owner-refresh.honeymooninbali.workers.dev"
+OWNER_LOGIN = "Arthur-Freedom"
+OWNER_ID = "18115558"
+REPO = "bali-cinema-map"
+REPO_ID = "1405444014"
+WORKFLOW = "pages.yml"
+REF = "main"
+
+# Secrets, entered with wrangler secret put: GITHUB_CLIENT_ID,
+# GITHUB_CLIENT_SECRET, SESSION_SECRET (at least 32 random bytes, base64url).
+# Deploy only after confirming this account uses Workers Free.
+# No paid bindings, storage, custom domains, or observability are enabled.
