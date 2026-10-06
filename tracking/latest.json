@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "runId": "37446940059",
-  "startedAt": "2026-10-06T18:01:19+08:00",
+  "runId": "37460261138",
+  "startedAt": "2026-10-06T20:01:01+08:00",
   "scheduleDate": "2026-10-06",
   "status": "success",
   "scheduleChecks": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:19+08:00",
+      "checkedAt": "2026-10-06T20:01:01+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 6,
@@ -17,7 +17,7 @@
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "checkedAt": "2026-10-06T18:01:20+08:00",
+      "checkedAt": "2026-10-06T20:01:02+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 16,
@@ -26,7 +26,7 @@
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "checkedAt": "2026-10-06T18:01:22+08:00",
+      "checkedAt": "2026-10-06T20:01:03+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 7,
@@ -35,7 +35,7 @@
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "checkedAt": "2026-10-06T18:01:23+08:00",
+      "checkedAt": "2026-10-06T20:01:05+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 9,
@@ -44,7 +44,7 @@
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "checkedAt": "2026-10-06T18:01:24+08:00",
+      "checkedAt": "2026-10-06T20:01:06+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 8,
@@ -53,7 +53,7 @@
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "checkedAt": "2026-10-06T18:01:25+08:00",
+      "checkedAt": "2026-10-06T20:01:07+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 10,
@@ -62,7 +62,7 @@
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:27+08:00",
+      "checkedAt": "2026-10-06T20:01:08+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 4,
@@ -71,7 +71,7 @@
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:28+08:00",
+      "checkedAt": "2026-10-06T20:01:09+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 6,
@@ -80,7 +80,7 @@
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:29+08:00",
+      "checkedAt": "2026-10-06T20:01:11+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 8,
@@ -89,7 +89,7 @@
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:30+08:00",
+      "checkedAt": "2026-10-06T20:01:12+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 7,
@@ -98,7 +98,7 @@
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:32+08:00",
+      "checkedAt": "2026-10-06T20:01:13+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 4,
@@ -107,7 +107,7 @@
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "checkedAt": "2026-10-06T18:01:33+08:00",
+      "checkedAt": "2026-10-06T20:01:14+08:00",
       "status": "ok",
       "sourceDate": "2026-10-06",
       "formatListingCount": 10,
@@ -118,7 +118,7 @@
     {
       "movieId": "2026/avengers-endgame-encore",
       "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
-      "checkedAt": "2026-10-06T18:01:36+08:00",
+      "checkedAt": "2026-10-06T20:01:17+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 186,
@@ -136,7 +136,7 @@
     {
       "movieId": "2026/heart-of-the-beast",
       "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
-      "checkedAt": "2026-10-06T18:01:36+08:00",
+      "checkedAt": "2026-10-06T20:01:17+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 101,
@@ -155,7 +155,7 @@
     {
       "movieId": "2026/verity",
       "url": "https://jadwalnonton.com/film/2026/verity/",
-      "checkedAt": "2026-10-06T18:01:35+08:00",
+      "checkedAt": "2026-10-06T20:01:17+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 114,
@@ -175,7 +175,7 @@
     {
       "movieId": "2026/forgotten-island",
       "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
-      "checkedAt": "2026-10-06T18:01:37+08:00",
+      "checkedAt": "2026-10-06T20:01:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 109,
@@ -193,7 +193,7 @@
     {
       "movieId": "2026/resident-evil",
       "url": "https://jadwalnonton.com/film/2026/resident-evil/",
-      "checkedAt": "2026-10-06T18:01:37+08:00",
+      "checkedAt": "2026-10-06T20:01:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 90,
@@ -210,7 +210,7 @@
     {
       "movieId": "2026/digger",
       "url": "https://jadwalnonton.com/film/2026/digger/",
-      "checkedAt": "2026-10-06T18:01:37+08:00",
+      "checkedAt": "2026-10-06T20:01:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 128,
@@ -227,7 +227,7 @@
     {
       "movieId": "2026/tazza-the-song-of-beelzebub",
       "url": "https://jadwalnonton.com/film/2026/tazza-the-song-of-beelzebub/",
-      "checkedAt": "2026-10-06T18:01:38+08:00",
+      "checkedAt": "2026-10-06T20:01:19+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 130,
@@ -245,7 +245,7 @@
     {
       "movieId": "2026/daniel-and-the-fiery-furnace",
       "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "checkedAt": "2026-10-06T18:01:39+08:00",
+      "checkedAt": "2026-10-06T20:01:19+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 108,
@@ -261,7 +261,7 @@
     {
       "movieId": "2026/all-wishes-come-true",
       "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
-      "checkedAt": "2026-10-06T18:01:39+08:00",
+      "checkedAt": "2026-10-06T20:01:19+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 144,
@@ -280,7 +280,7 @@
     {
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
-      "checkedAt": "2026-10-06T18:01:40+08:00",
+      "checkedAt": "2026-10-06T20:01:21+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 111,
@@ -297,7 +297,7 @@
     {
       "movieId": "2026/warga-rusun-609",
       "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
-      "checkedAt": "2026-10-06T18:01:40+08:00",
+      "checkedAt": "2026-10-06T20:01:21+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 103,
@@ -314,7 +314,7 @@
     {
       "movieId": "2026/petaka-gunung-welirang",
       "url": "https://jadwalnonton.com/film/2026/petaka-gunung-welirang/",
-      "checkedAt": "2026-10-06T18:01:40+08:00",
+      "checkedAt": "2026-10-06T20:01:21+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 105,
@@ -330,7 +330,7 @@
     {
       "movieId": "2026/munafik-remake",
       "url": "https://jadwalnonton.com/film/2026/munafik-remake/",
-      "checkedAt": "2026-10-06T18:01:41+08:00",
+      "checkedAt": "2026-10-06T20:01:22+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 103,
@@ -346,7 +346,7 @@
     {
       "movieId": "2026/harusnya-horor",
       "url": "https://jadwalnonton.com/film/2026/harusnya-horor/",
-      "checkedAt": "2026-10-06T18:01:42+08:00",
+      "checkedAt": "2026-10-06T20:01:22+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 106,
@@ -363,7 +363,7 @@
     {
       "movieId": "2026/siksa-sampai-mati",
       "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
-      "checkedAt": "2026-10-06T18:01:42+08:00",
+      "checkedAt": "2026-10-06T20:01:22+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 115,
@@ -381,7 +381,7 @@
     {
       "movieId": "2026/backrooms",
       "url": "https://jadwalnonton.com/film/2026/backrooms/",
-      "checkedAt": "2026-10-06T18:01:43+08:00",
+      "checkedAt": "2026-10-06T20:01:23+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 111,
@@ -398,7 +398,7 @@
     {
       "movieId": "2026/suanggi-ilmu-kutukan",
       "url": "https://jadwalnonton.com/film/2026/suanggi-ilmu-kutukan/",
-      "checkedAt": "2026-10-06T18:01:43+08:00",
+      "checkedAt": "2026-10-06T20:01:23+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 88,
@@ -416,7 +416,7 @@
     {
       "movieId": "2026/agensi-rumah-tangga",
       "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
-      "checkedAt": "2026-10-06T18:01:43+08:00",
+      "checkedAt": "2026-10-06T20:01:24+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 115,
@@ -433,7 +433,7 @@
     {
       "movieId": "2026/wind-up-the-movie",
       "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
-      "checkedAt": "2026-10-06T18:01:44+08:00",
+      "checkedAt": "2026-10-06T20:01:25+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 88,
@@ -450,7 +450,7 @@
     {
       "movieId": "2026/bolong-309-hari-sebelum-tragedi",
       "url": "https://jadwalnonton.com/film/2026/bolong-309-hari-sebelum-tragedi/",
-      "checkedAt": "2026-10-06T18:01:44+08:00",
+      "checkedAt": "2026-10-06T20:01:25+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 99,
@@ -469,7 +469,7 @@
     {
       "movieId": "2026/djamin-setia-selamanya",
       "url": "https://jadwalnonton.com/film/2026/djamin-setia-selamanya/",
-      "checkedAt": "2026-10-06T18:01:44+08:00",
+      "checkedAt": "2026-10-06T20:01:25+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 103,
@@ -493,200 +493,10 @@
     "returnedListings": [],
     "priceChanges": [],
     "availabilityChanges": [],
-    "metadataChanges": [
-      {
-        "movieId": "2026/agensi-rumah-tangga",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/all-wishes-come-true",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/avengers-endgame-encore",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/backrooms",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/bolong-309-hari-sebelum-tragedi",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/daniel-and-the-fiery-furnace",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/digger",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/djamin-setia-selamanya",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/forgotten-island",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/harusnya-horor",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/heart-of-the-beast",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/munafik-remake",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/petaka-gunung-welirang",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/resident-evil",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/siksa-sampai-mati",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/suanggi-ilmu-kutukan",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/tazza-the-song-of-beelzebub",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/verity",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/warga-rusun-609",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      },
-      {
-        "movieId": "2026/wind-up-the-movie",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres",
-          "sourceReleaseDate"
-        ]
-      }
-    ]
+    "metadataChanges": []
   },
-  "completedAt": "2026-10-06T18:01:44+08:00",
-  "snapshotRefreshedAt": "2026-10-06T18:01:44+08:00",
+  "completedAt": "2026-10-06T20:01:25+08:00",
+  "snapshotRefreshedAt": "2026-10-06T20:01:25+08:00",
   "counts": {
     "movies": 21,
     "cinemas": 12,
