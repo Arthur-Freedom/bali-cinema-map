@@ -68,127 +68,369 @@
       "id": "2026/agensi-rumah-tangga",
       "title": "Agensi Rumah Tangga",
       "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
-      "trailerYouTubeId": "IpIuNlQpjMU"
+      "trailerYouTubeId": "IpIuNlQpjMU",
+      "details": {
+        "runtimeMinutes": 115,
+        "ageRating": "Remaja",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-09-10",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/all-wishes-come-true",
       "title": "All Wishes Come True!",
       "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
-      "trailerYouTubeId": "4SMwC0TVgco"
+      "trailerYouTubeId": "4SMwC0TVgco",
+      "details": {
+        "runtimeMinutes": 144,
+        "ageRating": "Remaja",
+        "genres": [
+          "Adventure",
+          "Animation",
+          "Comedy",
+          "Fantasy"
+        ],
+        "sourceReleaseDate": "2026-09-02",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/avengers-endgame-encore",
       "title": "Avengers Endgame: Encore",
       "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
-      "trailerYouTubeId": "wOsZ8NrKUXk"
+      "trailerYouTubeId": "wOsZ8NrKUXk",
+      "details": {
+        "runtimeMinutes": 186,
+        "ageRating": "Remaja",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/backrooms",
       "title": "Backrooms",
       "url": "https://jadwalnonton.com/film/2026/backrooms/",
-      "trailerYouTubeId": "c307B084Np0"
+      "trailerYouTubeId": "c307B084Np0",
+      "details": {
+        "runtimeMinutes": 111,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Horror",
+          "Sci-fi"
+        ],
+        "sourceReleaseDate": "2026-06-10",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/daniel-and-the-fiery-furnace",
       "title": "Daniel and the Fiery Furnace",
       "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "trailerYouTubeId": "vMZO8caQu1M"
+      "trailerYouTubeId": "vMZO8caQu1M",
+      "details": {
+        "runtimeMinutes": 108,
+        "ageRating": "Remaja",
+        "genres": [
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/digger",
       "title": "Digger",
       "url": "https://jadwalnonton.com/film/2026/digger/",
-      "trailerYouTubeId": "nNKhu6DvoKk"
+      "trailerYouTubeId": "nNKhu6DvoKk",
+      "details": {
+        "runtimeMinutes": 128,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Thriller",
+          "Comedy"
+        ],
+        "sourceReleaseDate": "2026-09-30",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/djamin-setia-selamanya",
       "title": "Djamin Setia Selamanya",
       "url": "https://jadwalnonton.com/film/2026/djamin-setia-selamanya/",
-      "trailerYouTubeId": "o304j-9bs_8"
+      "trailerYouTubeId": "o304j-9bs_8",
+      "details": {
+        "runtimeMinutes": 103,
+        "ageRating": "Remaja",
+        "genres": [
+          "Biography",
+          "History"
+        ],
+        "sourceReleaseDate": "2026-10-01",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/forgotten-island",
       "title": "Forgotten Island",
       "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
-      "trailerYouTubeId": "Fh8EY6o2Rgw"
+      "trailerYouTubeId": "Fh8EY6o2Rgw",
+      "details": {
+        "runtimeMinutes": 109,
+        "ageRating": "Remaja",
+        "genres": [
+          "Adventure",
+          "Action",
+          "Animation"
+        ],
+        "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/harusnya-horor",
       "title": "Harusnya Horor",
       "url": "https://jadwalnonton.com/film/2026/harusnya-horor/",
-      "trailerYouTubeId": "2Sy6l8RjfEs"
+      "trailerYouTubeId": "2Sy6l8RjfEs",
+      "details": {
+        "runtimeMinutes": 106,
+        "ageRating": "Remaja",
+        "genres": [
+          "Horror",
+          "Comedy"
+        ],
+        "sourceReleaseDate": "2026-08-20",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/heart-of-the-beast",
       "title": "Heart of the Beast",
       "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
-      "trailerYouTubeId": "h5_ZcMGDuyg"
+      "trailerYouTubeId": "h5_ZcMGDuyg",
+      "details": {
+        "runtimeMinutes": 101,
+        "ageRating": "Remaja",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Thriller"
+        ],
+        "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/ibu-bagaimana-aku-tanpamu",
       "title": "Ibu Bagaimana Aku Tanpamu",
       "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
-      "trailerYouTubeId": "dwqSPggRIuw"
+      "trailerYouTubeId": "dwqSPggRIuw",
+      "details": {
+        "runtimeMinutes": 111,
+        "ageRating": "Semua Umur",
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "sourceReleaseDate": "2026-09-24",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/bolong-309-hari-sebelum-tragedi",
       "title": "LOBANG BUAYA: 309 HARI SEBELUM TRAGEDI",
       "url": "https://jadwalnonton.com/film/2026/bolong-309-hari-sebelum-tragedi/",
-      "trailerYouTubeId": "J7zVXwr2Nus"
+      "trailerYouTubeId": "J7zVXwr2Nus",
+      "details": {
+        "runtimeMinutes": 99,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Thriller",
+          "Horror",
+          "Mystery",
+          "Crime"
+        ],
+        "sourceReleaseDate": "2026-09-30",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/siksa-sampai-mati",
       "title": "Memburu Pemangsa",
       "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
-      "trailerYouTubeId": "lbOJZpkHvKg"
+      "trailerYouTubeId": "lbOJZpkHvKg",
+      "details": {
+        "runtimeMinutes": 115,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Horror",
+          "Crime",
+          "Action"
+        ],
+        "sourceReleaseDate": "2026-09-24",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/munafik-remake",
       "title": "MUNAFIK: Melawan Iblis",
       "url": "https://jadwalnonton.com/film/2026/munafik-remake/",
-      "trailerYouTubeId": "JZiZWfW9Wa0"
+      "trailerYouTubeId": "JZiZWfW9Wa0",
+      "details": {
+        "runtimeMinutes": 103,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Horror"
+        ],
+        "sourceReleaseDate": "2026-09-03",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/petaka-gunung-welirang",
       "title": "Petaka Gunung Welirang",
       "url": "https://jadwalnonton.com/film/2026/petaka-gunung-welirang/",
-      "trailerYouTubeId": "GKxZUFhMUX8"
+      "trailerYouTubeId": "GKxZUFhMUX8",
+      "details": {
+        "runtimeMinutes": 105,
+        "ageRating": "Remaja",
+        "genres": [
+          "Horror"
+        ],
+        "sourceReleaseDate": "2026-07-02",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/resident-evil",
       "title": "Resident Evil",
       "url": "https://jadwalnonton.com/film/2026/resident-evil/",
-      "trailerYouTubeId": "c0eF2bs09qg"
+      "trailerYouTubeId": "c0eF2bs09qg",
+      "details": {
+        "runtimeMinutes": 90,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Sci-fi",
+          "Psychological Thriller"
+        ],
+        "sourceReleaseDate": "2026-09-18",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/suanggi-ilmu-kutukan",
       "title": "SUANGGI: ILMU KUTUKAN",
       "url": "https://jadwalnonton.com/film/2026/suanggi-ilmu-kutukan/",
-      "trailerYouTubeId": "NymgAZDgwRs"
+      "trailerYouTubeId": "NymgAZDgwRs",
+      "details": {
+        "runtimeMinutes": 88,
+        "ageRating": "Dewasa 21+",
+        "genres": [
+          "Thriller",
+          "Horror",
+          "Mystery"
+        ],
+        "sourceReleaseDate": "2026-09-10",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/tazza-the-song-of-beelzebub",
       "title": "TAZZA THE SONG OF BEELZEBUB",
       "url": "https://jadwalnonton.com/film/2026/tazza-the-song-of-beelzebub/",
-      "trailerYouTubeId": "WkjFM-_ewlI"
+      "trailerYouTubeId": "WkjFM-_ewlI",
+      "details": {
+        "runtimeMinutes": 130,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Thriller",
+          "Drama",
+          "Crime"
+        ],
+        "sourceReleaseDate": "2026-09-30",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/verity",
       "title": "Verity",
       "url": "https://jadwalnonton.com/film/2026/verity/",
-      "trailerYouTubeId": "kIMAexAT7mg"
+      "trailerYouTubeId": "kIMAexAT7mg",
+      "details": {
+        "runtimeMinutes": 114,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Mystery",
+          "Thriller",
+          "Romance"
+        ],
+        "sourceReleaseDate": "2026-09-30",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/warga-rusun-609",
       "title": "Warga Rusun 609",
       "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
-      "trailerYouTubeId": "8OtYZ92MzxI"
+      "trailerYouTubeId": "8OtYZ92MzxI",
+      "details": {
+        "runtimeMinutes": 103,
+        "ageRating": "Remaja",
+        "genres": [
+          "Horror",
+          "Comedy"
+        ],
+        "sourceReleaseDate": "2026-10-01",
+        "language": null,
+        "subtitles": null
+      }
     },
     {
       "id": "2026/wind-up-the-movie",
       "title": "WIND UP: The Movie",
       "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
-      "trailerYouTubeId": "lgpdLKXD2tk"
+      "trailerYouTubeId": "lgpdLKXD2tk",
+      "details": {
+        "runtimeMinutes": 88,
+        "ageRating": "Remaja",
+        "genres": [
+          "Drama",
+          "Fantasy"
+        ],
+        "sourceReleaseDate": "2026-07-22",
+        "language": null,
+        "subtitles": null
+      }
     }
   ],
   "screenings": [
@@ -1190,5 +1432,7 @@
         "15:40"
       ]
     }
-  ]
+  ],
+  "schemaVersion": 1,
+  "priceBasis": "Source-listed price by studio format; final checkout price may differ."
 }
