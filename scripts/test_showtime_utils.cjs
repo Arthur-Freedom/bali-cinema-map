@@ -57,4 +57,7 @@ test('language filters require verified spoken-language metadata, never English 
   }
   assert.deepEqual(movieLanguageCodes(korean), ['ko']);
   assert.equal(matchesMovieLanguage({languageInfo:{status:'verified',codes:['en','id']}}, 'en'), true);
+  assert.equal(matchesMovieLanguage({languageInfo:{status:'verified',codes:['ja']}}, 'ja'), true);
+  assert.equal(matchesMovieLanguage({languageInfo:{status:'verified',codes:['cmn']}}, 'cmn'), true);
+  assert.equal(matchesMovieLanguage({languageInfo:{status:'verified',codes:['cmn']}}, 'en'), false);
 });

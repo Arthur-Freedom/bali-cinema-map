@@ -87,9 +87,14 @@
       "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
       "trailerYouTubeId": "4SMwC0TVgco",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-06T19:35:26+00:00"
+        "reportedLanguage": "Mandarin",
+        "sourceName": "CMC Pictures",
+        "sourceUrl": "https://cmc-pictures.com/all-wishes-come-true/",
+        "checkedAt": "2026-10-07T02:34:08+00:00",
+        "codes": [
+          "cmn"
+        ],
+        "status": "verified"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -184,9 +189,14 @@
       "url": "https://jadwalnonton.com/film/2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa/",
       "trailerYouTubeId": "2yK8pXys4zs",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-07T02:22:23+00:00"
+        "codes": [
+          "ja"
+        ],
+        "reportedLanguage": "Jepang",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/fullmetal-alchemist-movie-conqueror-shamballa/1570",
+        "status": "verified",
+        "checkedAt": "2026-10-07T02:37:25+00:00"
       },
       "firstSeenAt": "2026-10-07T10:22:29+08:00"
     },
@@ -213,9 +223,14 @@
       "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
       "trailerYouTubeId": "dwqSPggRIuw",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-06T19:35:26+00:00"
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesia",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/ibu-bagaimana-aku-tanpamu/1488",
+        "status": "verified",
+        "checkedAt": "2026-10-07T02:37:25+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -293,9 +308,14 @@
       "url": "https://jadwalnonton.com/film/2026/reawakened-man/",
       "trailerYouTubeId": "F-oyLQ3Ntho",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-07T02:22:23+00:00"
+        "codes": [
+          "ko"
+        ],
+        "reportedLanguage": "Korean",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/reawakened-man-red/1564",
+        "status": "verified",
+        "checkedAt": "2026-10-07T02:37:25+00:00"
       },
       "firstSeenAt": "2026-10-07T10:22:29+08:00"
     },
@@ -356,9 +376,14 @@
       "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
       "trailerYouTubeId": "lgpdLKXD2tk",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-06T19:35:26+00:00"
+        "codes": [
+          "ko"
+        ],
+        "reportedLanguage": "Korea Selatan",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/wind/1299",
+        "status": "verified",
+        "checkedAt": "2026-10-07T02:37:25+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     }

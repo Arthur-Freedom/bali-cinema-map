@@ -3,7 +3,7 @@ from datetime import datetime, timezone, timedelta
 import unittest
 from unittest.mock import Mock
 
-from movie_languages import add_languages, find_lsf_candidates, language_codes, parse_lsf_language
+from movie_languages import add_languages, find_lsf_candidates, language_codes, parse_lsf_language, reviewed_language
 
 MOVIE = {'id': '2026/example', 'title': 'Example', 'url': 'https://jadwalnonton.com/film/2026/example/'}
 NOW = datetime(2026, 10, 7, tzinfo=timezone.utc)
@@ -26,6 +26,9 @@ class LanguageParsingTests(unittest.TestCase):
         self.assertEqual(language_codes('English'), ['en'])
         self.assertEqual(language_codes('Bahasa Indonesia / Korea'), ['id', 'ko'])
         self.assertEqual(language_codes('English and Japanese'), ['en', 'ja'])
+        self.assertEqual(language_codes('Jepang / Mandarin'), ['cmn', 'ja'])
+        self.assertEqual(language_codes('Korea Selatan'), ['ko'])
+        self.assertEqual(language_codes('Thai, French, Tamil'), ['fr', 'ta', 'th'])
         for value in (None, '-', 'United States', 'English subtitles', 'English / something unknown'):
             self.assertEqual(language_codes(value), [])
 
@@ -51,6 +54,32 @@ class LanguageParsingTests(unittest.TestCase):
         movie = {**MOVIE, 'id':'2026/daniel-and-the-fiery-furnace', 'title':'Daniel and the Fiery Furnace'}
         self.assertEqual(parse_lsf_language(page(title='Daniel : The Fiery Furnace'), movie)['codes'], ['en'])
         self.assertIsNone(parse_lsf_language(page(title='Daniel : The Fiery Furnace', year='2013'), movie))
+
+    def test_reviewed_korean_titles_match_without_accepting_unreviewed_sequels(self):
+        movie = {**MOVIE, 'id':'2026/reawakened-man', 'title':'Reawakened Man'}
+        self.assertEqual(parse_lsf_language(page(title='REAWAKENED MAN: THE RED', language='Korean'), movie)['codes'], ['ko'])
+        self.assertIsNone(parse_lsf_language(page(title='REAWAKENED MAN: PART TWO', language='Korean'), movie))
+        movie = {**MOVIE, 'id':'2026/wind-up-the-movie', 'title':'WIND UP: The Movie'}
+        self.assertEqual(parse_lsf_language(page(title='WIND UP', language='Korea Selatan'), movie)['codes'], ['ko'])
+
+    def test_rerelease_exception_is_bound_to_reviewed_source_and_runtime(self):
+        movie = {**MOVIE, 'id':'2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa',
+                 'title':'Fullmetal Alchemist The Movie: Conqueror of Shamballa'}
+        html = page(title=movie['title'], language='Jepang', duration='105 menit')
+        source = 'https://lsf.go.id/film/fullmetal-alchemist-movie-conqueror-shamballa/1570'
+        self.assertEqual(parse_lsf_language(html, movie, {'runtimeMinutes':105}, source)['codes'], ['ja'])
+        for details, url in [({},source), ({'runtimeMinutes':150},source), ({'runtimeMinutes':105},source+'0')]:
+            self.assertIsNone(parse_lsf_language(html, movie, details, url))
+
+    def test_reviewed_distributor_language_has_identity_guards_and_provenance(self):
+        movie = {**MOVIE, 'id':'2026/all-wishes-come-true', 'title':'All Wishes Come True!'}
+        info = reviewed_language(movie, {'runtimeMinutes':144})
+        self.assertEqual(info['codes'], ['cmn'])
+        self.assertEqual(info['sourceName'], 'CMC Pictures')
+        self.assertEqual(info['checkedAt'], '2026-10-07T02:34:08+00:00')
+        self.assertIsNone(reviewed_language({**movie, 'title':'All Wishes Come True 2'}, {'runtimeMinutes':144}))
+        self.assertIsNone(reviewed_language(movie, {'runtimeMinutes':90}))
+        self.assertIsNone(reviewed_language(movie, {}))
 
 
 class LanguageEnrichmentTests(unittest.TestCase):
@@ -81,6 +110,34 @@ class LanguageEnrichmentTests(unittest.TestCase):
         info = self.enrich(Mock(side_effect=['<p>No English entry</p>', listing(url=source), page(language='Indonesia')]))
         self.assertEqual(info['codes'], ['id'])
         self.assertEqual(info['sourceUrl'], source)
+
+    def test_search_retries_a_single_word_when_punctuation_hides_a_match(self):
+        movie = {**MOVIE, 'id':'2026/ibu-bagaimana-aku-tanpamu', 'title':'Ibu Bagaimana Aku Tanpamu'}
+        movies = {movie['id']: movie}
+        fetch = Mock(side_effect=['<p>No result</p>', '<p>No result</p>',
+                                 listing('Ibu, Bagaimana Aku Tanpamu?'),
+                                 page(title='Ibu, Bagaimana Aku Tanpamu?', language='Indonesia')])
+        add_languages(movies, fetch_page=fetch, now=NOW)
+        self.assertEqual(movie['languageInfo']['codes'], ['id'])
+        self.assertIn('keyword=Bagaimana', fetch.call_args_list[2].args[0])
+
+    def test_manual_retry_bypasses_unknown_cache_but_keeps_verified_cache(self):
+        movies = {MOVIE['id']:deepcopy(MOVIE)}
+        cached = {**MOVIE, 'languageInfo':{'status':'unknown','codes':[],'checkedAt':NOW.isoformat()}}
+        fetch = Mock(side_effect=[listing(), page(language='Japanese')])
+        add_languages(movies, previous_movies=[cached], fetch_page=fetch, now=NOW, retry_unknown=True)
+        self.assertEqual(movies[MOVIE['id']]['languageInfo']['codes'], ['ja'])
+        no_network = Mock(side_effect=AssertionError('Verified cache must remain usable'))
+        add_languages(movies, previous_movies=deepcopy(list(movies.values())), fetch_page=no_network, now=NOW, retry_unknown=True)
+        no_network.assert_not_called()
+
+    def test_distributor_fallback_does_not_claim_a_fresh_network_check(self):
+        movie = {**MOVIE, 'id':'2026/all-wishes-come-true', 'title':'All Wishes Come True!'}
+        movies = {movie['id']:movie}
+        add_languages(movies, {movie['id']:{'details':{'runtimeMinutes':144}}},
+                      fetch_page=Mock(side_effect=TimeoutError), now=NOW+timedelta(days=10))
+        self.assertEqual(movie['languageInfo']['codes'], ['cmn'])
+        self.assertEqual(movie['languageInfo']['checkedAt'], '2026-10-07T02:34:08+00:00')
 
     def test_failure_keeps_previous_verification_time(self):
         info = {'status':'verified', 'codes':['en'], 'sourceUrl':SOURCE, 'sourceName':'LSF',

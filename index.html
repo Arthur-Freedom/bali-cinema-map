@@ -20,7 +20,7 @@
   <script defer src="push-notifications.js?v=remember-owner-4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=seating-guide-7"></script>
-  <script defer src="app.js?v=seating-guide-7"></script>
+  <script defer src="app.js?v=language-matches-9"></script>
 </head>
 <body>
   <main class="app">
@@ -73,10 +73,6 @@
         <label for="movie-language">Spoken language</label>
         <select id="movie-language" disabled aria-controls="movie-select comparison">
           <option value="">Any language</option>
-          <option value="en">English</option>
-          <option value="id">Indonesian</option>
-          <option value="ko">Korean</option>
-          <option value="unknown">Unknown</option>
         </select>
         <label for="movie-select">Pick a movie</label>
         <select id="movie-select" disabled aria-controls="comparison"><option value="">Loading movies…</option></select>
@@ -182,7 +178,7 @@
           <p>Movie comparisons use a dated snapshot of JadwalNonton’s cinema schedules. Automatic refreshes are scheduled around 07:17 and 13:17 Bali time (WITA), though they may run later. Movies appear or disappear as cinemas change that day’s listings.</p>
           <p>Use “Sign in with GitHub” above, then “Refresh movie data” to update the listings. Only Arthur-Freedom can start a refresh. It usually takes about a minute, and the new listings load automatically. You can also <a href="https://github.com/Arthur-Freedom/bali-cinema-map/actions/workflows/pages.yml" target="_blank" rel="noopener">run a refresh on GitHub ↗</a>. Reloading alone loads the latest saved snapshot.</p>
           <p>Prices are listed per ticket; later showtimes may have different prices. Check the cinema’s booking page for the final total and seat availability.</p>
-          <p>The Spoken language filter uses explicit film-language information from JadwalNonton or Indonesia’s LSF film guide. Dubbing and subtitles can vary by screening; unverified languages stay Unknown.</p>
+          <p>The Spoken language filter uses explicit film-language information from JadwalNonton, Indonesia’s LSF film guide or a verified distributor source. Dubbing and subtitles can vary by screening; unverified languages stay Unknown.</p>
           <p>Distances are straight-line estimates, not driving distances. Your starting point is saved only in this browser.</p>
           <p>New-movie notices are remembered in this browser. Personal push alerts are optional for Arthur-Freedom; the device’s push address is stored privately and is never published on GitHub. Turn alerts off above or in your browser settings. Alerts follow successful refreshes, not live cinema updates.</p>
           <p>Basemap: OpenFreeMap, © OpenMapTiles, data from OpenStreetMap. Location data © OpenStreetMap contributors (ODbL).</p>
