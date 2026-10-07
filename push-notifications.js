@@ -6,11 +6,17 @@
   const test=document.getElementById('push-test');
   const login=document.getElementById('push-login');
   const language=document.getElementById('push-language');
+  const languagePanel=document.getElementById('push-language-panel');
+  const languageFields=document.getElementById('push-language-fields');
+  const languageOptions=document.getElementById('push-language-options');
+  const anyLanguage=document.getElementById('push-language-any');
+  const saveLanguages=document.getElementById('push-language-save');
+  const cancelLanguages=document.getElementById('push-language-cancel');
   const languageNote=document.getElementById('push-language-note');
   const preferenceStatus=document.getElementById('push-preference-status');
-  const languageNames=new Intl.DisplayNames(['en'],{type:'language'});
-  const languageName=code=>code==='cmn' ? 'Mandarin' : languageNames.of(code);
-  let savedLanguage='', configReady=false, savingPreference=false, configVersion=0;
+  const languageName=window.CinemaShowtimes.languageName;
+  const languageInputs=new Map();
+  let savedLanguages=[], configReady=false, savingPreference=false, configVersion=0;
   const receiptKey='bali-cinema-push-device';
   let registration=null, subscription=null, publicKey=null, signedIn=false, busy=false, deviceId='';
   let registrationTask=null;
@@ -35,7 +41,8 @@
     test.hidden=!active || !signedIn || !deviceId; test.disabled=busy;
     login.hidden=signedIn || !supported || (ios&&!standalone);
     language.disabled=!signedIn || !configReady || savingPreference;
-    languageNote.textContent=signedIn ? 'Applies to all your devices. Saves automatically.' : 'Applies to all your devices. Sign in to change it.';
+    languageFields.disabled=language.disabled;
+    languageNote.textContent=signedIn ? 'Choose one or more. Applies to all your devices.' : 'Applies to all your devices. Sign in to change it.';
     if(message) status.textContent=message;
     else if(ios&&!standalone) status.textContent='On iPhone: open this site in Safari, tap Share → Add to Home Screen, then open it from that icon.';
     else if(!supported) status.textContent='This browser cannot receive website notifications. On Android, open this site in Chrome.';
@@ -64,7 +71,7 @@
     signedIn=Boolean(window.CinemaOwner?.signedIn);
     login.href=window.CinemaOwner?.loginUrl || '#owner-controls';
     login.textContent=window.CinemaOwner?.hasSavedSignIn ? 'Retry sign-in connection' : 'Sign in to manage alerts';
-    publicKey=null; configReady=false;
+    publicKey=null; configReady=false; closeLanguages();
     render();
     if(signedIn) {
       document.getElementById('push-controls').open=true;
@@ -73,33 +80,62 @@
         if(version!==configVersion) return;
         publicKey=config.publicKey;
         if(!Array.isArray(config.languages)) throw new Error('Alert language settings are not available yet. Reload in a moment.');
-        language.replaceChildren(new Option('Any language',''));
+        languageOptions.replaceChildren(); languageInputs.clear();
         config.languages.filter(code=>/^[a-z]{2,3}$/.test(code))
           .sort((a,b)=>languageName(a).localeCompare(languageName(b)))
-          .forEach(code=>language.add(new Option(languageName(code),code)));
-        savedLanguage=config.language || ''; language.value=savedLanguage; configReady=true;
+          .forEach(code=>{
+            const label=document.createElement('label'), input=document.createElement('input');
+            label.className='push-language-option'; input.type='checkbox'; input.value=code;
+            input.addEventListener('change',()=>{anyLanguage.checked=![...languageInputs.values()].some(item=>item.checked);});
+            label.append(input,document.createTextNode(languageName(code))); languageOptions.append(label); languageInputs.set(code,input);
+          });
+        savedLanguages=config.selectedLanguages || (config.language ? [config.language] : []);
+        resetLanguages(); configReady=true;
         render();
       }
       catch(error) { if(version===configVersion) render(error.message); }
     }
   }
-  language.addEventListener('change',async()=>{
+  function resetLanguages() {
+    languageInputs.forEach((input,code)=>{input.checked=savedLanguages.includes(code);});
+    anyLanguage.checked=!savedLanguages.length;
+    const names=savedLanguages.map(languageName).sort();
+    language.textContent=names.length>2 ? `${names.slice(0,2).join(', ')} + ${names.length-2} more` : names.join(', ') || 'Any language';
+    language.title=names.join(', ') || 'Any language';
+  }
+  function closeLanguages(focus=false) {
+    languagePanel.hidden=true; language.setAttribute('aria-expanded','false'); resetLanguages();
+    if(focus) language.focus();
+  }
+  language.addEventListener('click',()=>{
+    if(language.disabled) return;
+    if(!languagePanel.hidden) { closeLanguages(); return; }
+    resetLanguages(); languagePanel.hidden=false; language.setAttribute('aria-expanded','true');
+  });
+  anyLanguage.addEventListener('change',()=>{
+    if(anyLanguage.checked) languageInputs.forEach(input=>{input.checked=false;});
+    else anyLanguage.checked=![...languageInputs.values()].some(input=>input.checked);
+  });
+  cancelLanguages.addEventListener('click',()=>closeLanguages(true));
+  languagePanel.addEventListener('keydown',event=>{
+    if(event.key==='Escape' && !savingPreference) { event.preventDefault(); event.stopPropagation(); closeLanguages(true); }
+  });
+  saveLanguages.addEventListener('click',async()=>{
     if(!signedIn || !configReady || savingPreference) return;
-    const selected=language.value, version=configVersion;
+    const selectedLanguages=[...languageInputs].filter(([,input])=>input.checked).map(([code])=>code), version=configVersion;
     savingPreference=true;
-    preferenceStatus.hidden=false; preferenceStatus.textContent='Saving alert language…'; render();
+    preferenceStatus.hidden=false; preferenceStatus.textContent='Saving alert languages…'; render();
     try {
-      const result=await window.CinemaOwner.api('/api/push/preferences','POST',{language:selected});
+      const result=await window.CinemaOwner.api('/api/push/preferences','POST',{selectedLanguages});
       if(version!==configVersion) return;
-      savedLanguage=result.language; language.value=savedLanguage;
-      preferenceStatus.textContent=savedLanguage
-        ? `Saved for all devices. Only movies with verified ${languageName(savedLanguage)} will trigger alerts.`
+      savedLanguages=result.selectedLanguages; closeLanguages();
+      preferenceStatus.textContent=savedLanguages.length
+        ? 'Saved for all devices. Movies matching any selected language will trigger alerts.'
         : 'Saved for all devices. New movies in any language will trigger alerts.';
     } catch(error) {
       if(version!==configVersion) return;
-      language.value=savedLanguage;
-      preferenceStatus.textContent=`Could not save the language change. ${error.message || 'Please try again.'}`;
-    } finally { savingPreference=false; render(); }
+      preferenceStatus.textContent=`Could not save. Your previous selection is still active. ${error.message || 'Please try again.'}`;
+    } finally { savingPreference=false; render(); if(languagePanel.hidden && signedIn) language.focus(); }
   });
   login.addEventListener('click',event=>{
     if(window.CinemaOwner?.hasSavedSignIn) { event.preventDefault(); window.CinemaOwner.reconnect(); }

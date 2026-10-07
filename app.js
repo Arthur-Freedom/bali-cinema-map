@@ -16,8 +16,7 @@
   const movieType = document.getElementById('movie-type');
   const movieLanguage = document.getElementById('movie-language');
   const movieLanguageInfo = document.getElementById('movie-language-info');
-  const languageNames = new Intl.DisplayNames(['en'], {type:'language'});
-  const languageName = code => code === 'cmn' ? 'Mandarin' : languageNames.of(code);
+  const languageName = window.CinemaShowtimes.languageName;
   const selectedExperience = () => movieType.selectedOptions[0];
   const movieExperience = () => selectedExperience().value;
   function setMovieExperience(value) {

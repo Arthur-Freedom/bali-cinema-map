@@ -52,9 +52,11 @@ def movie_language_codes(movie):
         if info.get('status') == 'verified' and isinstance(codes, list) else []
 
 
-def send_notifications(snapshot, devices, send, acknowledge, test_id=None, language=''):
-    if language and not re.fullmatch(r'[a-z]{2,3}', language):
-        raise ValueError('Invalid alert language')
+def send_notifications(snapshot, devices, send, acknowledge, test_id=None, language='', languages=None):
+    selected = ([language] if language else []) if languages is None else languages
+    if not isinstance(selected, list) or any(not isinstance(code, str) or not re.fullmatch(r'[a-z]{2,3}', code) for code in selected):
+        raise ValueError('Invalid alert languages')
+    selected = set(selected)
     sent = 0
     failures = 0
     for device in devices:
@@ -69,8 +71,8 @@ def send_notifications(snapshot, devices, send, acknowledge, test_id=None, langu
             pending_ids = set(device.get('pendingLanguage', []))
             candidates = list({m['id']:m for m in [*candidates, *[
                 m for m in snapshot['movies'] if m['id'] in pending_ids]]}.values())
-        movies = [m for m in candidates if not language or language in movie_language_codes(m)]
-        pending = [m['id'] for m in candidates if language and not movie_language_codes(m)]
+        movies = [m for m in candidates if not selected or selected.intersection(movie_language_codes(m))]
+        pending = [m['id'] for m in candidates if selected and not movie_language_codes(m)]
         ack = None if test_id else {'id':device['id'], 'cursor':snapshot['refreshedAt']}
         if not test_id and (pending or device.get('pendingLanguage')):
             ack['pendingLanguage'] = pending
@@ -174,7 +176,7 @@ def main():
             time.sleep(10)  # Allow a new KV registration to reach another region.
             devices = api('targets')['devices']
     count = send_notifications(snapshot, devices, send, lambda data: api('ack', data), args.test_device,
-                               language=targets.get('language', ''))
+                               language=targets.get('language', ''), languages=targets.get('selectedLanguages'))
     print(f'Push service accepted {count} notification(s). Device endpoints remain private.')
 
 

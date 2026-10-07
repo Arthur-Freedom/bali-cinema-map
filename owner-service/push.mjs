@@ -3,11 +3,17 @@ const encoder = new TextEncoder();
 // Explicit languages supported by the movie metadata scraper; no guessed/Unknown alerts when filtered.
 const languages = ['en','id','ko','ja','zh','cmn','yue','th','ms','hi','ta','te','ml','kn','fr','es','de','it','ar','jv','su','ban'];
 const preferencesKey = 'preferences:language';
-async function alertLanguage(env) {
+function validateLanguages(selected) {
+  if (!Array.isArray(selected) || selected.length>languages.length || selected.some(code=>!languages.includes(code)))
+    fail(400,'Choose supported alert languages.');
+  return [...new Set(selected)].sort();
+}
+async function alertLanguages(env) {
   const saved = await env.PUSH_DEVICES.get(preferencesKey, 'json');
-  if (saved === null) return '';
-  if (saved?.language !== '' && !languages.includes(saved?.language)) fail(503, 'Alert language settings could not be read. Please try again.');
-  return saved.language;
+  if (saved === null) return [];
+  // Preserve the owner's existing single-language preference during migration.
+  try { return validateLanguages(saved.selectedLanguages ?? (saved.language==='' ? [] : [saved.language])); }
+  catch { fail(503, 'Alert language settings could not be read. Please try again.'); }
 }
 export class PushError extends Error {
   constructor(status, message) { super(message); this.status = status; }
@@ -70,7 +76,8 @@ export async function internalPush(request, env, now) {
   if (path==='/internal/push/targets' && request.method==='GET') {
     const listing=await env.PUSH_DEVICES.list({prefix:'device:',limit:20});
     const devices=(await Promise.all(listing.keys.map(k=>env.PUSH_DEVICES.get(k.name,'json')))).filter(Boolean);
-    return json({devices, language:await alertLanguage(env)});
+    const selectedLanguages=await alertLanguages(env);
+    return json({devices, selectedLanguages, language:selectedLanguages[0] || ''});
   }
   if (path==='/internal/push/ack' && request.method==='POST') {
     const data=await body(request);
@@ -98,13 +105,16 @@ export async function internalPush(request, env, now) {
 export async function ownerPush(request, env, now, dispatchTest) {
   ready(env);
   const path=new URL(request.url).pathname;
-  if (path==='/api/push/config' && request.method==='GET') return json({publicKey:env.VAPID_PUBLIC_KEY, languages, language:await alertLanguage(env)});
+  if (path==='/api/push/config' && request.method==='GET') {
+    const selectedLanguages=await alertLanguages(env);
+    return json({publicKey:env.VAPID_PUBLIC_KEY, languages, selectedLanguages, language:selectedLanguages[0] || ''});
+  }
   if (request.method!=='POST') fail(405,'Method not allowed.');
   const data=await body(request);
   if (path==='/api/push/preferences') {
-    if (data.language !== '' && !languages.includes(data.language)) fail(400,'Choose a supported alert language.');
-    await env.PUSH_DEVICES.put(preferencesKey,JSON.stringify({language:data.language}));
-    return json({language:data.language});
+    const selectedLanguages=validateLanguages(data.selectedLanguages ?? (data.language==='' ? [] : [data.language]));
+    await env.PUSH_DEVICES.put(preferencesKey,JSON.stringify({selectedLanguages}));
+    return json({selectedLanguages, language:selectedLanguages[0] || ''});
   }
   if (path==='/api/push/subscribe' || path==='/api/push/unsubscribe') {
     const subscription=validateSubscription(data.subscription);

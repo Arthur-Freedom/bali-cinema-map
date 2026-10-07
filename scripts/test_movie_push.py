@@ -84,6 +84,25 @@ class PushTests(unittest.TestCase):
         self.assertEqual(send_notifications(None,[self.device],lambda *_:201,
                          lambda _:self.fail('test does not change cursor'),test_id=self.device['id'],language='en'),1)
 
+    def test_multiple_languages_match_either_language_and_do_not_duplicate_bilingual_films(self):
+        self.snapshot['movies']=[self.language_movie('english',['en']),self.language_movie('korean',['ko']),
+            self.language_movie('both',['en','ko']),self.language_movie('indonesian',['id']),self.language_movie('unknown')]
+        sent,acks=[],[]
+        self.assertEqual(send_notifications(self.snapshot,[self.device],lambda s,p:sent.append(p) or 201,
+                         acks.append,languages=['en','ko']),1)
+        self.assertEqual(sent[0]['title'],'3 new movies in Bali')
+        self.assertIn('new=both%2Cenglish%2Ckorean',sent[0]['url'])
+        self.assertNotIn('indonesian',sent[0]['body'])
+        self.assertEqual(acks[0]['pendingLanguage'],['unknown'])
+        sent=[]
+        send_notifications(self.snapshot,[self.device],lambda s,p:sent.append(p) or 201,acks.append,languages=[])
+        self.assertEqual(sent[0]['title'],'5 new movies in Bali')
+
+    def test_rejects_malformed_multi_language_preferences(self):
+        for languages in ['en',{},[None],['unknown']]:
+            with self.assertRaises(ValueError):
+                send_notifications(self.snapshot,[self.device],lambda *_:self.fail('invalid'),lambda _:None,languages=languages)
+
     def test_test_notification_does_not_advance_real_movie_cursor(self):
         sent=[]
         self.assertEqual(send_notifications(None,[self.device],lambda s,p:sent.append(p) or 201,

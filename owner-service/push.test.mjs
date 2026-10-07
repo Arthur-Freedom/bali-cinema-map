@@ -62,6 +62,21 @@ test('unresolved language discoveries persist with the cursor and stale acknowle
   await internalPush(request('/internal/push/ack',{id,cursor:new Date(now()+2000).toISOString(),pendingLanguage:[]}),env,now);
   assert.deepEqual(JSON.parse(entries.get('device:'+id)).pendingLanguage,[]);
 });
+
+test('multiple language preferences preserve a legacy selection and reject unsupported lists',async()=>{
+  const {env,entries,request}=setup();
+  entries.set('preferences:language',JSON.stringify({language:'en'}));
+  const read=async()=>(await (await ownerPush(request('/api/push/config'),env,now)).json()).selectedLanguages;
+  assert.deepEqual(await read(),['en']);
+  await ownerPush(request('/api/push/preferences',{selectedLanguages:['ko','en','en']}),env,now);
+  assert.deepEqual(await read(),['en','ko']);
+  assert.deepEqual((await (await internalPush(request('/internal/push/targets'),env,now)).json()).selectedLanguages,['en','ko']);
+  for(const selectedLanguages of ['en',{},['unknown'],['en',null],['en','bad']])
+    await assert.rejects(ownerPush(request('/api/push/preferences',{selectedLanguages}),env,now),{status:400});
+  assert.deepEqual(await read(),['en','ko']);
+  await ownerPush(request('/api/push/preferences',{selectedLanguages:[]}),env,now);
+  assert.deepEqual(await read(),[]);
+});
 test('registration starts at now, is idempotent, and private reads require the dispatch secret',async()=>{
   const {env,entries,request}=setup();
   const first=await (await ownerPush(request('/api/push/subscribe',{subscription:sub}),env,now)).json();

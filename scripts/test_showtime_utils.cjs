@@ -1,7 +1,14 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage} = require('../showtime-utils.js');
+const {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage, languageName} = require('../showtime-utils.js');
+
+test('supported languages have readable names even when browser locale data omits them', () => {
+  assert.equal(languageName('ban'),'Balinese');
+  assert.equal(languageName('cmn'),'Mandarin');
+  for(const code of ['en','id','ko','ja','zh','cmn','yue','th','ms','hi','ta','te','ml','kn','fr','es','de','it','ar','jv','su','ban'])
+    assert.notEqual(languageName(code),code);
+});
 
 test('finds the soonest remaining session, skipping already started screenings', () => {
   const now = Date.parse('2026-10-05T16:45:30+08:00');

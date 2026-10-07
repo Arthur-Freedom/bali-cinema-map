@@ -1,5 +1,9 @@
 'use strict';
 (() => {
+  const languageLabels = {en:'English',id:'Indonesian',ko:'Korean',ja:'Japanese',zh:'Chinese',cmn:'Mandarin',
+    yue:'Cantonese',th:'Thai',ms:'Malay',hi:'Hindi',ta:'Tamil',te:'Telugu',ml:'Malayalam',kn:'Kannada',
+    fr:'French',es:'Spanish',de:'German',it:'Italian',ar:'Arabic',jv:'Javanese',su:'Sundanese',ban:'Balinese'};
+  function languageName(code) { return languageLabels[code] || code; }
   function nextShowtime(date, times, now = Date.now()) {
     let next = null;
     for (const time of times) {
@@ -27,7 +31,7 @@
     const codes = movieLanguageCodes(movie);
     return !language || (language === 'unknown' ? !codes.length : codes.includes(language));
   }
-  const helpers = {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage};
+  const helpers = {nextShowtime, matchesMovieType, movieLanguageCodes, matchesMovieLanguage, languageName};
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   else window.CinemaShowtimes = helpers;
 })();

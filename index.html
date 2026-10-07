@@ -14,13 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=alert-language-9">
+  <link rel="stylesheet" href="style.css?v=alert-languages-10">
   <script defer src="owner-refresh.js?v=remember-owner-4"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
-  <script defer src="push-notifications.js?v=alert-language-5"></script>
+  <script defer src="showtime-utils.js?v=language-labels-8"></script>
+  <script defer src="push-notifications.js?v=alert-languages-6"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script defer src="showtime-utils.js?v=seating-guide-7"></script>
-  <script defer src="app.js?v=language-matches-9"></script>
+  <script defer src="app.js?v=language-labels-10"></script>
 </head>
 <body>
   <main class="app">
@@ -128,8 +128,16 @@
         <details id="push-controls" class="push-controls">
           <summary>New-movie alerts</summary>
           <div class="push-preferences">
-            <label for="push-language">Alert language</label>
-            <select id="push-language" disabled aria-describedby="push-language-note"><option value="">Any language</option></select>
+            <label id="push-language-label" for="push-language">Alert languages</label>
+            <button id="push-language" type="button" disabled aria-expanded="false" aria-controls="push-language-panel" aria-describedby="push-language-note">Any language</button>
+            <div id="push-language-panel" hidden>
+              <fieldset id="push-language-fields" disabled>
+                <legend class="sr-only">Choose alert languages</legend>
+                <label class="push-language-option"><input id="push-language-any" type="checkbox" checked>Any language</label>
+                <div id="push-language-options"></div>
+                <div class="push-language-actions"><button id="push-language-save" type="button">Save languages</button><button id="push-language-cancel" type="button">Cancel</button></div>
+              </fieldset>
+            </div>
             <p id="push-language-note">Applies to all your devices. Sign in to change it.</p>
             <p id="push-preference-status" role="status" aria-live="polite" hidden></p>
           </div>
