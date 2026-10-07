@@ -5,6 +5,12 @@
   const disable=document.getElementById('push-disable');
   const test=document.getElementById('push-test');
   const login=document.getElementById('push-login');
+  const language=document.getElementById('push-language');
+  const languageNote=document.getElementById('push-language-note');
+  const preferenceStatus=document.getElementById('push-preference-status');
+  const languageNames=new Intl.DisplayNames(['en'],{type:'language'});
+  const languageName=code=>code==='cmn' ? 'Mandarin' : languageNames.of(code);
+  let savedLanguage='', configReady=false, savingPreference=false, configVersion=0;
   const receiptKey='bali-cinema-push-device';
   let registration=null, subscription=null, publicKey=null, signedIn=false, busy=false, deviceId='';
   let registrationTask=null;
@@ -27,7 +33,9 @@
     enable.disabled=busy || !publicKey || permission==='denied';
     disable.hidden=!active; disable.disabled=busy;
     test.hidden=!active || !signedIn || !deviceId; test.disabled=busy;
-    login.hidden=active || signedIn || !supported || (ios&&!standalone);
+    login.hidden=signedIn || !supported || (ios&&!standalone);
+    language.disabled=!signedIn || !configReady || savingPreference;
+    languageNote.textContent=signedIn ? 'Applies to all your devices. Saves automatically.' : 'Applies to all your devices. Sign in to change it.';
     if(message) status.textContent=message;
     else if(ios&&!standalone) status.textContent='On iPhone: open this site in Safari, tap Share → Add to Home Screen, then open it from that icon.';
     else if(!supported) status.textContent='This browser cannot receive website notifications. On Android, open this site in Chrome.';
@@ -51,17 +59,48 @@
     } catch { render('Movie alerts could not start. Reload the page and try again.'); }
   }
   async function ownerChanged() {
+    const version=++configVersion;
+    preferenceStatus.hidden=true;
     signedIn=Boolean(window.CinemaOwner?.signedIn);
     login.href=window.CinemaOwner?.loginUrl || '#owner-controls';
-    login.textContent=window.CinemaOwner?.hasSavedSignIn ? 'Retry sign-in connection' : 'Sign in to enable alerts';
-    publicKey=null;
+    login.textContent=window.CinemaOwner?.hasSavedSignIn ? 'Retry sign-in connection' : 'Sign in to manage alerts';
+    publicKey=null; configReady=false;
     render();
-    if(signedIn && supported) {
+    if(signedIn) {
       document.getElementById('push-controls').open=true;
-      try { publicKey=(await window.CinemaOwner.api('/api/push/config')).publicKey; render(); }
-      catch(error) { render(error.message); }
+      try {
+        const config=await window.CinemaOwner.api('/api/push/config');
+        if(version!==configVersion) return;
+        publicKey=config.publicKey;
+        if(!Array.isArray(config.languages)) throw new Error('Alert language settings are not available yet. Reload in a moment.');
+        language.replaceChildren(new Option('Any language',''));
+        config.languages.filter(code=>/^[a-z]{2,3}$/.test(code))
+          .sort((a,b)=>languageName(a).localeCompare(languageName(b)))
+          .forEach(code=>language.add(new Option(languageName(code),code)));
+        savedLanguage=config.language || ''; language.value=savedLanguage; configReady=true;
+        render();
+      }
+      catch(error) { if(version===configVersion) render(error.message); }
     }
   }
+  language.addEventListener('change',async()=>{
+    if(!signedIn || !configReady || savingPreference) return;
+    const selected=language.value, version=configVersion;
+    savingPreference=true;
+    preferenceStatus.hidden=false; preferenceStatus.textContent='Saving alert language…'; render();
+    try {
+      const result=await window.CinemaOwner.api('/api/push/preferences','POST',{language:selected});
+      if(version!==configVersion) return;
+      savedLanguage=result.language; language.value=savedLanguage;
+      preferenceStatus.textContent=savedLanguage
+        ? `Saved for all devices. Only movies with verified ${languageName(savedLanguage)} will trigger alerts.`
+        : 'Saved for all devices. New movies in any language will trigger alerts.';
+    } catch(error) {
+      if(version!==configVersion) return;
+      language.value=savedLanguage;
+      preferenceStatus.textContent=`Could not save the language change. ${error.message || 'Please try again.'}`;
+    } finally { savingPreference=false; render(); }
+  });
   login.addEventListener('click',event=>{
     if(window.CinemaOwner?.hasSavedSignIn) { event.preventDefault(); window.CinemaOwner.reconnect(); }
     else login.href=window.CinemaOwner?.loginUrl || '#owner-controls';

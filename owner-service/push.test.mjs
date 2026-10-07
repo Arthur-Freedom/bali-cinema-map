@@ -14,7 +14,7 @@ function setup() {
     VAPID_PUBLIC_KEY:'public',PUSH_DISPATCH_SECRET:'d'.repeat(43),PUSH_DEVICES:{
       get:async key=>entries.has(key)?JSON.parse(entries.get(key)):null,
       put:async(key,value)=>entries.set(key,value),delete:async key=>entries.delete(key),
-      list:async()=>({keys:[...entries.keys()].map(name=>({name}))})}};
+      list:async({prefix=''})=>({keys:[...entries.keys()].filter(name=>name.startsWith(prefix)).map(name=>({name}))})}};
   const request=(path,data,token=env.PUSH_DISPATCH_SECRET)=>new Request(base+path,{
     method:data===undefined?'GET':'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},
     body:data===undefined?undefined:JSON.stringify(data)});
@@ -25,8 +25,42 @@ test('only owner-authenticated routes can register a device; internal secret is 
   const handler=createHandler({now,fetch:async()=>{throw new Error('Must not fetch');}});
   const noSession=new Request(base+'/api/push/subscribe',{method:'POST',headers:{Origin:new URL(env.SITE_URL).origin,'Content-Type':'application/json'},body:JSON.stringify({subscription:sub})});
   assert.equal((await handler(noSession,env)).status,401);
+  const noPreferencesSession=new Request(base+'/api/push/preferences',{method:'POST',headers:{Origin:new URL(env.SITE_URL).origin,'Content-Type':'application/json'},body:JSON.stringify({language:'en'})});
+  assert.equal((await handler(noPreferencesSession,env)).status,401);
   assert.equal((await handler(request('/internal/push/targets',undefined,'wrong'),env)).status,401);
   assert.equal(entries.size,0);
+});
+
+test('alert language is owner-wide, survives registration and preserves device cursors',async()=>{
+  const {env,entries,request}=setup();
+  const config=await (await ownerPush(request('/api/push/config'),env,now)).json();
+  assert.equal(config.language,'');
+  assert.ok(config.languages.includes('cmn'));
+  const {id}=await (await ownerPush(request('/api/push/subscribe',{subscription:sub}),env,now)).json();
+  const before=entries.get('device:'+id);
+  await ownerPush(request('/api/push/preferences',{language:'en'}),env,now);
+  await ownerPush(request('/api/push/subscribe',{subscription:{...sub,endpoint:sub.endpoint+'-phone'}}),env,now);
+  assert.equal((await (await ownerPush(request('/api/push/config'),env,now)).json()).language,'en');
+  const targets=await (await internalPush(request('/internal/push/targets'),env,now)).json();
+  assert.equal(targets.language,'en');
+  assert.equal(targets.devices.length,2);
+  assert.equal(entries.get('device:'+id),before);
+  for(const language of ['unknown','EN','en,id',null,{},'not-a-language'])
+    await assert.rejects(ownerPush(request('/api/push/preferences',{language}),env,now),{status:400});
+  await ownerPush(request('/api/push/preferences',{language:''}),env,now);
+  assert.equal((await (await internalPush(request('/internal/push/targets'),env,now)).json()).language,'');
+});
+
+test('unresolved language discoveries persist with the cursor and stale acknowledgements cannot erase them',async()=>{
+  const {env,entries,request}=setup();
+  const {id}=await (await ownerPush(request('/api/push/subscribe',{subscription:sub}),env,now)).json();
+  const cursor=new Date(now()+1000).toISOString();
+  await internalPush(request('/internal/push/ack',{id,cursor,pendingLanguage:['2026/unknown-film']}),env,now);
+  await internalPush(request('/internal/push/ack',{id,cursor:new Date(now()-1000).toISOString(),pendingLanguage:[]}),env,now);
+  assert.deepEqual(JSON.parse(entries.get('device:'+id)).pendingLanguage,['2026/unknown-film']);
+  await assert.rejects(internalPush(request('/internal/push/ack',{id,cursor,pendingLanguage:['bad space']}),env,now),{status:400});
+  await internalPush(request('/internal/push/ack',{id,cursor:new Date(now()+2000).toISOString(),pendingLanguage:[]}),env,now);
+  assert.deepEqual(JSON.parse(entries.get('device:'+id)).pendingLanguage,[]);
 });
 test('registration starts at now, is idempotent, and private reads require the dispatch secret',async()=>{
   const {env,entries,request}=setup();

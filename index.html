@@ -14,10 +14,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="style.css?v=seating-links-8">
+  <link rel="stylesheet" href="style.css?v=alert-language-9">
   <script defer src="owner-refresh.js?v=remember-owner-4"></script>
   <script defer src="movie-alerts.js?v=movie-alerts-1"></script>
-  <script defer src="push-notifications.js?v=remember-owner-4"></script>
+  <script defer src="push-notifications.js?v=alert-language-5"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script defer src="showtime-utils.js?v=seating-guide-7"></script>
   <script defer src="app.js?v=language-matches-9"></script>
@@ -127,6 +127,12 @@
     <header class="settings-heading"><h2 id="settings-title">Settings &amp; help</h2><button type="button" popovertarget="settings-menu" popovertargetaction="hide" aria-label="Close settings">✕</button></header>
         <details id="push-controls" class="push-controls">
           <summary>New-movie alerts</summary>
+          <div class="push-preferences">
+            <label for="push-language">Alert language</label>
+            <select id="push-language" disabled aria-describedby="push-language-note"><option value="">Any language</option></select>
+            <p id="push-language-note">Applies to all your devices. Sign in to change it.</p>
+            <p id="push-preference-status" role="status" aria-live="polite" hidden></p>
+          </div>
           <p id="push-status" role="status" aria-live="polite">Checking notification support…</p>
           <div class="owner-actions">
             <a id="push-login" href="#owner-controls" hidden>Sign in to enable alerts</a>

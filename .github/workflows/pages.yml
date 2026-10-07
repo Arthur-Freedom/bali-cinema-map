@@ -34,7 +34,7 @@ jobs:
       - name: Check showtime sorting and movie formats
         run: node --test scripts/test_showtime_utils.cjs
       - name: Check owner refresh authorization
-        run: node --test owner-service/worker.test.mjs owner-service/push.test.mjs scripts/test_movie_alerts.cjs scripts/test_owner_refresh.cjs
+        run: node --test owner-service/worker.test.mjs owner-service/push.test.mjs scripts/test_movie_alerts.cjs scripts/test_owner_refresh.cjs scripts/test_push_preferences.cjs
       - name: Refresh movie listings
         id: refresh
         # Ship code fixes even before the source rolls over after midnight.

@@ -1,5 +1,14 @@
 // Private, owner-only device registrations. No endpoints or keys enter the public repo.
 const encoder = new TextEncoder();
+// Explicit languages supported by the movie metadata scraper; no guessed/Unknown alerts when filtered.
+const languages = ['en','id','ko','ja','zh','cmn','yue','th','ms','hi','ta','te','ml','kn','fr','es','de','it','ar','jv','su','ban'];
+const preferencesKey = 'preferences:language';
+async function alertLanguage(env) {
+  const saved = await env.PUSH_DEVICES.get(preferencesKey, 'json');
+  if (saved === null) return '';
+  if (saved?.language !== '' && !languages.includes(saved?.language)) fail(503, 'Alert language settings could not be read. Please try again.');
+  return saved.language;
+}
 export class PushError extends Error {
   constructor(status, message) { super(message); this.status = status; }
 }
@@ -61,7 +70,7 @@ export async function internalPush(request, env, now) {
   if (path==='/internal/push/targets' && request.method==='GET') {
     const listing=await env.PUSH_DEVICES.list({prefix:'device:',limit:20});
     const devices=(await Promise.all(listing.keys.map(k=>env.PUSH_DEVICES.get(k.name,'json')))).filter(Boolean);
-    return json({devices});
+    return json({devices, language:await alertLanguage(env)});
   }
   if (path==='/internal/push/ack' && request.method==='POST') {
     const data=await body(request);
@@ -73,7 +82,13 @@ export async function internalPush(request, env, now) {
       else {
         const time=Date.parse(data.cursor);
         if (!Number.isFinite(time) || time>now()+300000) fail(400,'Invalid observation time.');
-        if (time>Date.parse(device.cursor)) { device.cursor=data.cursor; await env.PUSH_DEVICES.put(key,JSON.stringify(device)); }
+        if (data.pendingLanguage !== undefined && (!Array.isArray(data.pendingLanguage) || data.pendingLanguage.length>200
+          || data.pendingLanguage.some(id=>typeof id!=='string' || !/^[a-z0-9][a-z0-9/_-]{0,199}$/.test(id)))) fail(400,'Invalid pending movies.');
+        if (time>Date.parse(device.cursor)) {
+          device.cursor=data.cursor;
+          if (data.pendingLanguage !== undefined) device.pendingLanguage=[...new Set(data.pendingLanguage)];
+          await env.PUSH_DEVICES.put(key,JSON.stringify(device));
+        }
       }
     }
     return json({ok:true});
@@ -83,9 +98,14 @@ export async function internalPush(request, env, now) {
 export async function ownerPush(request, env, now, dispatchTest) {
   ready(env);
   const path=new URL(request.url).pathname;
-  if (path==='/api/push/config' && request.method==='GET') return json({publicKey:env.VAPID_PUBLIC_KEY});
+  if (path==='/api/push/config' && request.method==='GET') return json({publicKey:env.VAPID_PUBLIC_KEY, languages, language:await alertLanguage(env)});
   if (request.method!=='POST') fail(405,'Method not allowed.');
   const data=await body(request);
+  if (path==='/api/push/preferences') {
+    if (data.language !== '' && !languages.includes(data.language)) fail(400,'Choose a supported alert language.');
+    await env.PUSH_DEVICES.put(preferencesKey,JSON.stringify({language:data.language}));
+    return json({language:data.language});
+  }
   if (path==='/api/push/subscribe' || path==='/api/push/unsubscribe') {
     const subscription=validateSubscription(data.subscription);
     const id=await subscriptionId(subscription.endpoint), key='device:'+id;

@@ -29,6 +29,61 @@ class PushTests(unittest.TestCase):
             send_notifications(self.snapshot,[self.device],lambda *_:503,acks.append)
         self.assertEqual(acks,[])
 
+    def language_movie(self, id, codes=None, status='verified'):
+        return {'id':id, 'title':id, 'firstSeenAt':'2026-10-07T07:00:00+08:00',
+                'languageInfo':{'status':status, 'codes':codes or []}}
+
+    def test_language_filters_payload_and_counts_for_each_device(self):
+        self.snapshot['movies']=[self.language_movie('english',['en']),self.language_movie('korean',['ko']),
+                                 self.language_movie('mixed',['id','en']),self.language_movie('unknown',['en'],'unknown')]
+        sent,acks=[],[]
+        count=send_notifications(self.snapshot,[self.device,{**self.device,'id':'b'*64}],
+                                 lambda s,p:sent.append(p) or 201,acks.append,language='en')
+        self.assertEqual(count,2)
+        self.assertEqual(sent[0]['title'],'2 new movies in Bali')
+        self.assertIn('new=english%2Cmixed',sent[0]['url'])
+        self.assertNotIn('korean',sent[0]['body'])
+        self.assertEqual(acks[0]['pendingLanguage'],['unknown'])
+        self.assertEqual(acks[1]['pendingLanguage'],['unknown'])
+
+    def test_nonmatches_are_silent_and_not_a_backlog_when_filter_changes(self):
+        self.snapshot['movies']=[self.language_movie('korean',['ko'])]
+        acks=[]
+        self.assertEqual(send_notifications(self.snapshot,[self.device],lambda *_:self.fail('no match'),acks.append,language='en'),0)
+        self.device.update(acks[0])
+        self.assertEqual(send_notifications(self.snapshot,[self.device],lambda *_:self.fail('no backlog'),acks.append),0)
+
+    def test_unknown_can_notify_after_later_verification_even_when_another_alert_advanced_cursor(self):
+        self.snapshot['movies']=[self.language_movie('english',['en']),self.language_movie('later')]
+        acks=[]
+        send_notifications(self.snapshot,[self.device],lambda *_:201,acks.append,language='en')
+        self.device.update(acks[0])
+        self.snapshot['refreshedAt']='2026-10-08T07:00:00+08:00'
+        self.snapshot['movies'][1]['languageInfo']={'status':'verified','codes':['en']}
+        sent=[]
+        send_notifications(self.snapshot,[self.device],lambda s,p:sent.append(p) or 201,acks.append,language='en')
+        self.assertIn('movie=later',sent[0]['url'])
+        self.assertEqual(acks[-1]['pendingLanguage'],[])
+        self.device.update(acks[-1])
+        self.assertEqual(send_notifications(self.snapshot,[self.device],lambda *_:self.fail('duplicate'),acks.append,language='en'),0)
+
+    def test_unverified_only_batch_is_retained_but_filtered_delivery_failure_does_not_advance(self):
+        self.snapshot['movies']=[self.language_movie('unknown')]
+        acks=[]
+        send_notifications(self.snapshot,[self.device],lambda *_:self.fail('unknown must wait'),acks.append,language='en')
+        self.assertEqual(acks[0]['pendingLanguage'],['unknown'])
+        self.snapshot['movies'].append(self.language_movie('english',['en']))
+        acks=[]
+        with self.assertRaises(RuntimeError):
+            send_notifications(self.snapshot,[self.device],lambda *_:503,acks.append,language='en')
+        self.assertEqual(acks,[])
+
+    def test_three_letter_language_and_test_notification_bypass(self):
+        self.snapshot['movies']=[self.language_movie('mandarin',['cmn'])]
+        self.assertEqual(send_notifications(self.snapshot,[self.device],lambda *_:201,lambda _:None,language='cmn'),1)
+        self.assertEqual(send_notifications(None,[self.device],lambda *_:201,
+                         lambda _:self.fail('test does not change cursor'),test_id=self.device['id'],language='en'),1)
+
     def test_test_notification_does_not_advance_real_movie_cursor(self):
         sent=[]
         self.assertEqual(send_notifications(None,[self.device],lambda s,p:sent.append(p) or 201,

@@ -4,6 +4,7 @@ from datetime import datetime
 import hashlib
 import json
 import os
+import re
 import uuid
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
@@ -44,7 +45,16 @@ def payload_for(movies):
             'tag': 'movies-' + hashlib.sha256('\n'.join(ids).encode()).hexdigest()[:24]}
 
 
-def send_notifications(snapshot, devices, send, acknowledge, test_id=None):
+def movie_language_codes(movie):
+    info = movie.get('languageInfo') or {}
+    codes = info.get('codes')
+    return [code for code in codes if isinstance(code, str) and re.fullmatch(r'[a-z]{2,3}', code)] \
+        if info.get('status') == 'verified' and isinstance(codes, list) else []
+
+
+def send_notifications(snapshot, devices, send, acknowledge, test_id=None, language=''):
+    if language and not re.fullmatch(r'[a-z]{2,3}', language):
+        raise ValueError('Invalid alert language')
     sent = 0
     failures = 0
     for device in devices:
@@ -53,9 +63,25 @@ def send_notifications(snapshot, devices, send, acknowledge, test_id=None):
         subscription = device['subscription']
         if not allowed_endpoint(subscription['endpoint']):
             raise ValueError('Unsupported push service')
-        movies = eligible_movies(snapshot, device['cursor']) if not test_id else []
+        candidates = eligible_movies(snapshot, device['cursor']) if not test_id else []
+        if not test_id:
+            # Keep unresolved discoveries even if another film's successful alert advances the cursor.
+            pending_ids = set(device.get('pendingLanguage', []))
+            candidates = list({m['id']:m for m in [*candidates, *[
+                m for m in snapshot['movies'] if m['id'] in pending_ids]]}.values())
+        movies = [m for m in candidates if not language or language in movie_language_codes(m)]
+        pending = [m['id'] for m in candidates if language and not movie_language_codes(m)]
+        ack = None if test_id else {'id':device['id'], 'cursor':snapshot['refreshedAt']}
+        if not test_id and (pending or device.get('pendingLanguage')):
+            ack['pendingLanguage'] = pending
         if not movies and not test_id:
-            continue  # Keep the cursor unchanged until an alert is accepted; retry failures next refresh.
+            if candidates or device.get('pendingLanguage'):
+                # Known nonmatches are processed silently; unknown languages can match on a later refresh.
+                try:
+                    acknowledge(ack)
+                except Exception:
+                    failures += 1
+            continue
         payload = ({'title': 'Bali cinema test notification',
                     'body': 'Your test reached this device. New-movie alerts will appear here too.',
                     'url': SITE, 'tag': 'bali-cinema-test-' + uuid.uuid4().hex,
@@ -66,7 +92,7 @@ def send_notifications(snapshot, devices, send, acknowledge, test_id=None):
                 acknowledge({'id': device['id'], 'expired': True})
             elif 200 <= status < 300:
                 if not test_id:
-                    acknowledge({'id': device['id'], 'cursor': snapshot['refreshedAt']})
+                    acknowledge(ack)
                 sent += 1
             else:
                 failures += 1
@@ -138,7 +164,8 @@ def main():
             if attempt == 11:
                 raise RuntimeError('Fresh listings are not visible yet; no alert sent.')
             time.sleep(5)
-    devices = api('targets')['devices']
+    targets = api('targets')
+    devices = targets['devices']
     if args.test_device:
         import time
         for _ in range(6):
@@ -146,7 +173,8 @@ def main():
                 break
             time.sleep(10)  # Allow a new KV registration to reach another region.
             devices = api('targets')['devices']
-    count = send_notifications(snapshot, devices, send, lambda data: api('ack', data), args.test_device)
+    count = send_notifications(snapshot, devices, send, lambda data: api('ack', data), args.test_device,
+                               language=targets.get('language', ''))
     print(f'Push service accepted {count} notification(s). Device endpoints remain private.')
 
 
