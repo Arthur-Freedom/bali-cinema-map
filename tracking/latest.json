@@ -1,124 +1,124 @@
 {
   "schemaVersion": 1,
-  "runId": "37926462270",
-  "startedAt": "2026-10-09T19:53:09+08:00",
-  "scheduleDate": "2026-10-09",
+  "runId": "38016515689",
+  "startedAt": "2026-10-10T10:19:17+08:00",
+  "scheduleDate": "2026-10-10",
   "status": "success",
   "scheduleChecks": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:09+08:00",
+      "checkedAt": "2026-10-10T10:19:17+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 5,
       "showtimeCount": 15
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "checkedAt": "2026-10-09T19:53:11+08:00",
+      "checkedAt": "2026-10-10T10:19:18+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 12,
-      "showtimeCount": 26
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 14,
+      "showtimeCount": 27
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "checkedAt": "2026-10-09T19:53:12+08:00",
+      "checkedAt": "2026-10-10T10:19:19+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 8,
       "showtimeCount": 12
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "checkedAt": "2026-10-09T19:53:14+08:00",
+      "checkedAt": "2026-10-10T10:19:20+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 8,
-      "showtimeCount": 13
+      "showtimeCount": 16
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "checkedAt": "2026-10-09T19:53:15+08:00",
+      "checkedAt": "2026-10-10T10:19:22+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 9,
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 11,
       "showtimeCount": 16
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "checkedAt": "2026-10-09T19:53:17+08:00",
+      "checkedAt": "2026-10-10T10:19:23+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 10,
       "showtimeCount": 23
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:19+08:00",
+      "checkedAt": "2026-10-10T10:19:24+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 5,
       "showtimeCount": 15
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:20+08:00",
+      "checkedAt": "2026-10-10T10:19:25+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 6,
-      "showtimeCount": 19
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 8,
+      "showtimeCount": 18
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:22+08:00",
+      "checkedAt": "2026-10-10T10:19:27+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
+      "sourceDate": "2026-10-10",
       "formatListingCount": 9,
       "showtimeCount": 28
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:23+08:00",
+      "checkedAt": "2026-10-10T10:19:28+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 5,
-      "showtimeCount": 23
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 7,
+      "showtimeCount": 24
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:25+08:00",
+      "checkedAt": "2026-10-10T10:19:29+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 5,
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 6,
       "showtimeCount": 20
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "checkedAt": "2026-10-09T19:53:26+08:00",
+      "checkedAt": "2026-10-10T10:19:30+08:00",
       "status": "ok",
-      "sourceDate": "2026-10-09",
-      "formatListingCount": 8,
-      "showtimeCount": 31
+      "sourceDate": "2026-10-10",
+      "formatListingCount": 10,
+      "showtimeCount": 32
     }
   ],
   "movieChecks": [
     {
       "movieId": "2026/crawlers",
       "url": "https://jadwalnonton.com/film/2026/crawlers/",
-      "checkedAt": "2026-10-09T19:53:30+08:00",
+      "checkedAt": "2026-10-10T10:19:33+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 86,
@@ -127,7 +127,7 @@
           "Thriller",
           "Horror"
         ],
-        "sourceReleaseDate": null,
+        "sourceReleaseDate": "2026-10-09",
         "language": null,
         "subtitles": null
       }
@@ -135,7 +135,7 @@
     {
       "movieId": "2026/avengers-endgame-encore",
       "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
-      "checkedAt": "2026-10-09T19:53:30+08:00",
+      "checkedAt": "2026-10-10T10:19:33+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 186,
@@ -153,7 +153,7 @@
     {
       "movieId": "2026/other-mommy",
       "url": "https://jadwalnonton.com/film/2026/other-mommy/",
-      "checkedAt": "2026-10-09T19:53:30+08:00",
+      "checkedAt": "2026-10-10T10:19:33+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 93,
@@ -169,7 +169,7 @@
     {
       "movieId": "2026/heart-of-the-beast",
       "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
-      "checkedAt": "2026-10-09T19:53:32+08:00",
+      "checkedAt": "2026-10-10T10:19:34+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 101,
@@ -188,7 +188,7 @@
     {
       "movieId": "2026/resident-evil",
       "url": "https://jadwalnonton.com/film/2026/resident-evil/",
-      "checkedAt": "2026-10-09T19:53:32+08:00",
+      "checkedAt": "2026-10-10T10:19:34+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 90,
@@ -205,7 +205,7 @@
     {
       "movieId": "2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa",
       "url": "https://jadwalnonton.com/film/2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa/",
-      "checkedAt": "2026-10-09T19:53:32+08:00",
+      "checkedAt": "2026-10-10T10:19:34+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 105,
@@ -221,7 +221,7 @@
     {
       "movieId": "2026/daniel-and-the-fiery-furnace",
       "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "checkedAt": "2026-10-09T19:53:33+08:00",
+      "checkedAt": "2026-10-10T10:19:35+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 108,
@@ -235,18 +235,37 @@
       }
     },
     {
-      "movieId": "2026/the-so",
-      "url": "https://jadwalnonton.com/film/2026/the-so/",
-      "checkedAt": "2026-10-09T19:53:33+08:00",
+      "movieId": "2026/all-wishes-come-true",
+      "url": "https://jadwalnonton.com/film/2026/all-wishes-come-true/",
+      "checkedAt": "2026-10-10T10:19:35+08:00",
       "status": "ok",
       "details": {
-        "runtimeMinutes": 112,
-        "ageRating": "Dewasa 17+",
+        "runtimeMinutes": 144,
+        "ageRating": "Remaja",
         "genres": [
-          "Drama",
-          "Thriller"
+          "Adventure",
+          "Animation",
+          "Comedy",
+          "Fantasy"
         ],
-        "sourceReleaseDate": null,
+        "sourceReleaseDate": "2026-09-02",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "movieId": "2026/warga-rusun-609",
+      "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
+      "checkedAt": "2026-10-10T10:19:35+08:00",
+      "status": "ok",
+      "details": {
+        "runtimeMinutes": 103,
+        "ageRating": "Remaja",
+        "genres": [
+          "Horror",
+          "Comedy"
+        ],
+        "sourceReleaseDate": "2026-10-01",
         "language": null,
         "subtitles": null
       }
@@ -254,7 +273,7 @@
     {
       "movieId": "2026/verity",
       "url": "https://jadwalnonton.com/film/2026/verity/",
-      "checkedAt": "2026-10-09T19:53:33+08:00",
+      "checkedAt": "2026-10-10T10:19:37+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 114,
@@ -272,9 +291,27 @@
       }
     },
     {
+      "movieId": "2026/forgotten-island",
+      "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
+      "checkedAt": "2026-10-10T10:19:36+08:00",
+      "status": "ok",
+      "details": {
+        "runtimeMinutes": 109,
+        "ageRating": "Remaja",
+        "genres": [
+          "Adventure",
+          "Action",
+          "Animation"
+        ],
+        "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
       "movieId": "2026/backrooms",
       "url": "https://jadwalnonton.com/film/2026/backrooms/",
-      "checkedAt": "2026-10-09T19:53:35+08:00",
+      "checkedAt": "2026-10-10T10:19:37+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 111,
@@ -291,7 +328,7 @@
     {
       "movieId": "2026/kuasa-gelap-2",
       "url": "https://jadwalnonton.com/film/2026/kuasa-gelap-2/",
-      "checkedAt": "2026-10-09T19:53:35+08:00",
+      "checkedAt": "2026-10-10T10:19:38+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 120,
@@ -307,7 +344,7 @@
     {
       "movieId": "2026/siksa-sampai-mati",
       "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
-      "checkedAt": "2026-10-09T19:53:35+08:00",
+      "checkedAt": "2026-10-10T10:19:38+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 115,
@@ -325,7 +362,7 @@
     {
       "movieId": "2026/cidro-asmoro",
       "url": "https://jadwalnonton.com/film/2026/cidro-asmoro/",
-      "checkedAt": "2026-10-09T19:53:36+08:00",
+      "checkedAt": "2026-10-10T10:19:38+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 106,
@@ -342,7 +379,7 @@
     {
       "movieId": "2026/hasut",
       "url": "https://jadwalnonton.com/film/2026/hasut/",
-      "checkedAt": "2026-10-09T19:53:37+08:00",
+      "checkedAt": "2026-10-10T10:19:39+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 96,
@@ -359,7 +396,7 @@
     {
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
-      "checkedAt": "2026-10-09T19:53:36+08:00",
+      "checkedAt": "2026-10-10T10:19:39+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 111,
@@ -374,26 +411,9 @@
       }
     },
     {
-      "movieId": "2026/wind-up-the-movie",
-      "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
-      "checkedAt": "2026-10-09T19:53:38+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 88,
-        "ageRating": "Remaja",
-        "genres": [
-          "Drama",
-          "Fantasy"
-        ],
-        "sourceReleaseDate": "2026-07-22",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "movieId": "2026/reawakened-man",
       "url": "https://jadwalnonton.com/film/2026/reawakened-man/",
-      "checkedAt": "2026-10-09T19:53:38+08:00",
+      "checkedAt": "2026-10-10T10:19:39+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 101,
@@ -409,18 +429,18 @@
       }
     },
     {
-      "movieId": "2026/warga-rusun-609",
-      "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
-      "checkedAt": "2026-10-09T19:53:38+08:00",
+      "movieId": "2026/agensi-rumah-tangga",
+      "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
+      "checkedAt": "2026-10-10T10:19:40+08:00",
       "status": "ok",
       "details": {
-        "runtimeMinutes": 103,
+        "runtimeMinutes": 115,
         "ageRating": "Remaja",
         "genres": [
-          "Horror",
-          "Comedy"
+          "Comedy",
+          "Drama"
         ],
-        "sourceReleaseDate": "2026-10-01",
+        "sourceReleaseDate": "2026-09-10",
         "language": null,
         "subtitles": null
       }
@@ -428,7 +448,7 @@
     {
       "movieId": "2026/empat-musim-pertiwi",
       "url": "https://jadwalnonton.com/film/2026/empat-musim-pertiwi/",
-      "checkedAt": "2026-10-09T19:53:40+08:00",
+      "checkedAt": "2026-10-10T10:19:40+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 137,
@@ -443,9 +463,43 @@
       }
     },
     {
+      "movieId": "2026/wind-up-the-movie",
+      "url": "https://jadwalnonton.com/film/2026/wind-up-the-movie/",
+      "checkedAt": "2026-10-10T10:19:40+08:00",
+      "status": "ok",
+      "details": {
+        "runtimeMinutes": 88,
+        "ageRating": "Remaja",
+        "genres": [
+          "Drama",
+          "Fantasy"
+        ],
+        "sourceReleaseDate": "2026-07-22",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "movieId": "2026/the-so",
+      "url": "https://jadwalnonton.com/film/2026/the-so/",
+      "checkedAt": "2026-10-10T10:19:41+08:00",
+      "status": "ok",
+      "details": {
+        "runtimeMinutes": 112,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "sourceReleaseDate": "2026-10-07",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
       "movieId": "2026/digger",
       "url": "https://jadwalnonton.com/film/2026/digger/",
-      "checkedAt": "2026-10-09T19:53:40+08:00",
+      "checkedAt": "2026-10-10T10:19:41+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 128,
@@ -463,20 +517,1436 @@
   "changes": {
     "newMovies": [],
     "missingMovies": [],
-    "returnedMovies": [],
-    "newListings": [],
-    "missingListings": [],
-    "returnedListings": [],
-    "priceChanges": [],
-    "availabilityChanges": [],
-    "metadataChanges": []
+    "returnedMovies": [
+      "2026/agensi-rumah-tangga",
+      "2026/all-wishes-come-true",
+      "2026/forgotten-island"
+    ],
+    "newListings": [
+      {
+        "movieId": "2026/all-wishes-come-true",
+        "cinemaId": "lippo-plaza-sunset",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Premiere"
+      }
+    ],
+    "missingListings": [
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "VIP 2D"
+      },
+      {
+        "movieId": "2026/the-so",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/wind-up-the-movie",
+        "cinemaId": "lippo-plaza-sunset",
+        "format": "Regular 2D"
+      }
+    ],
+    "returnedListings": [
+      {
+        "movieId": "2026/agensi-rumah-tangga",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/all-wishes-come-true",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Premiere"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/backrooms",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/forgotten-island",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D"
+      },
+      {
+        "movieId": "2026/wind-up-the-movie",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D"
+      }
+    ],
+    "priceChanges": [
+      {
+        "movieId": "2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/agensi-rumah-tangga",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Premiere",
+        "before": [
+          100000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "level-21-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          75000
+        ],
+        "previousSeenAt": "2026-10-07T19:47:11+08:00",
+        "previousScheduleDate": "2026-10-07",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "tsm-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-07T19:47:11+08:00",
+        "previousScheduleDate": "2026-10-07",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "galeria-xxi",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          50000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/crawlers",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/digger",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/empat-musim-pertiwi",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/empat-musim-pertiwi",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/empat-musim-pertiwi",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/forgotten-island",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          25000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/hasut",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/hasut",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/heart-of-the-beast",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/heart-of-the-beast",
+        "cinemaId": "icon-bali-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "galeria-xxi",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          50000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D",
+        "before": [
+          65000
+        ],
+        "after": [
+          75000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          25000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "VIP 2D",
+        "before": [
+          100000
+        ],
+        "after": [
+          150000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "galeria-xxi",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          50000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "icon-bali-xxi",
+        "format": "IMAX 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D",
+        "before": [
+          65000
+        ],
+        "after": [
+          75000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "galeria-xxi",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          50000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "level-21-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/reawakened-man",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/reawakened-man",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Premiere",
+        "before": [
+          150000
+        ],
+        "after": [
+          200000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          25000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-08T20:02:07+08:00",
+        "previousScheduleDate": "2026-10-08",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "cinemaId": "galeria-xxi",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          50000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/siksa-sampai-mati",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/the-so",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/the-so",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D",
+        "before": [
+          65000
+        ],
+        "after": [
+          75000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/the-so",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/verity",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/verity",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          50000
+        ],
+        "after": [
+          60000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/verity",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/verity",
+        "cinemaId": "tsm-xxi",
+        "format": "Regular 2D",
+        "before": [
+          55000
+        ],
+        "after": [
+          65000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          25000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-06T20:01:25+08:00",
+        "previousScheduleDate": "2026-10-06",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          45000
+        ],
+        "after": [
+          55000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "level-21-xxi",
+        "format": "Regular 2D",
+        "before": [
+          60000
+        ],
+        "after": [
+          70000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "living-world-denpasar-xxi",
+        "format": "Regular 2D",
+        "before": [
+          65000
+        ],
+        "after": [
+          75000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "cinemaId": "park-23-xxi",
+        "format": "Regular 2D",
+        "before": [
+          30000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-10-09T19:53:40+08:00",
+        "previousScheduleDate": "2026-10-09",
+        "scheduleDate": "2026-10-10"
+      }
+    ],
+    "availabilityChanges": [
+      {
+        "movieId": "2026/agensi-rumah-tangga",
+        "before": {
+          "cinemaCount": 0,
+          "formatListingCount": 0,
+          "showtimeCount": 0
+        },
+        "after": {
+          "cinemaCount": 1,
+          "formatListingCount": 1,
+          "showtimeCount": 1
+        }
+      },
+      {
+        "movieId": "2026/all-wishes-come-true",
+        "before": {
+          "cinemaCount": 0,
+          "formatListingCount": 0,
+          "showtimeCount": 0
+        },
+        "after": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 2
+        }
+      },
+      {
+        "movieId": "2026/avengers-endgame-encore",
+        "before": {
+          "cinemaCount": 10,
+          "formatListingCount": 10,
+          "showtimeCount": 18
+        },
+        "after": {
+          "cinemaCount": 10,
+          "formatListingCount": 13,
+          "showtimeCount": 25
+        }
+      },
+      {
+        "movieId": "2026/backrooms",
+        "before": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 2
+        },
+        "after": {
+          "cinemaCount": 3,
+          "formatListingCount": 3,
+          "showtimeCount": 3
+        }
+      },
+      {
+        "movieId": "2026/crawlers",
+        "before": {
+          "cinemaCount": 8,
+          "formatListingCount": 8,
+          "showtimeCount": 31
+        },
+        "after": {
+          "cinemaCount": 8,
+          "formatListingCount": 8,
+          "showtimeCount": 12
+        }
+      },
+      {
+        "movieId": "2026/daniel-and-the-fiery-furnace",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 6
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 8
+        }
+      },
+      {
+        "movieId": "2026/empat-musim-pertiwi",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 8
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 7
+        }
+      },
+      {
+        "movieId": "2026/forgotten-island",
+        "before": {
+          "cinemaCount": 0,
+          "formatListingCount": 0,
+          "showtimeCount": 0
+        },
+        "after": {
+          "cinemaCount": 1,
+          "formatListingCount": 1,
+          "showtimeCount": 1
+        }
+      },
+      {
+        "movieId": "2026/hasut",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 13
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 10
+        }
+      },
+      {
+        "movieId": "2026/heart-of-the-beast",
+        "before": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 5
+        },
+        "after": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 6
+        }
+      },
+      {
+        "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+        "before": {
+          "cinemaCount": 7,
+          "formatListingCount": 7,
+          "showtimeCount": 11
+        },
+        "after": {
+          "cinemaCount": 8,
+          "formatListingCount": 8,
+          "showtimeCount": 18
+        }
+      },
+      {
+        "movieId": "2026/kuasa-gelap-2",
+        "before": {
+          "cinemaCount": 11,
+          "formatListingCount": 12,
+          "showtimeCount": 59
+        },
+        "after": {
+          "cinemaCount": 11,
+          "formatListingCount": 12,
+          "showtimeCount": 63
+        }
+      },
+      {
+        "movieId": "2026/other-mommy",
+        "before": {
+          "cinemaCount": 8,
+          "formatListingCount": 11,
+          "showtimeCount": 34
+        },
+        "after": {
+          "cinemaCount": 10,
+          "formatListingCount": 12,
+          "showtimeCount": 36
+        }
+      },
+      {
+        "movieId": "2026/resident-evil",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 8
+        },
+        "after": {
+          "cinemaCount": 5,
+          "formatListingCount": 5,
+          "showtimeCount": 10
+        }
+      },
+      {
+        "movieId": "2026/the-so",
+        "before": {
+          "cinemaCount": 5,
+          "formatListingCount": 5,
+          "showtimeCount": 15
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 6
+        }
+      },
+      {
+        "movieId": "2026/verity",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 6
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 10
+        }
+      },
+      {
+        "movieId": "2026/warga-rusun-609",
+        "before": {
+          "cinemaCount": 5,
+          "formatListingCount": 5,
+          "showtimeCount": 15
+        },
+        "after": {
+          "cinemaCount": 6,
+          "formatListingCount": 6,
+          "showtimeCount": 18
+        }
+      }
+    ],
+    "metadataChanges": [
+      {
+        "movieId": "2026/crawlers",
+        "fields": [
+          "sourceReleaseDate"
+        ]
+      },
+      {
+        "movieId": "2026/the-so",
+        "fields": [
+          "sourceReleaseDate"
+        ]
+      }
+    ]
   },
-  "completedAt": "2026-10-09T19:53:40+08:00",
-  "snapshotRefreshedAt": "2026-10-09T19:53:40+08:00",
+  "completedAt": "2026-10-10T10:19:45+08:00",
+  "snapshotRefreshedAt": "2026-10-10T10:19:45+08:00",
   "counts": {
-    "movies": 20,
+    "movies": 23,
     "cinemas": 12,
-    "formatListings": 90,
-    "showtimes": 241
+    "formatListings": 101,
+    "showtimes": 246
   }
 }
