@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "refreshedAt": "2026-10-11T09:52:20+08:00",
+  "refreshedAt": "2026-10-11T19:24:19+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -180,34 +180,6 @@
       }
     },
     {
-      "id": "2026/cidro-asmoro",
-      "title": "CIDRO ASMORO",
-      "url": "https://jadwalnonton.com/film/2026/cidro-asmoro/",
-      "trailerYouTubeId": "YQepBQRMpHc",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesia",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/cidro-asmoro/1337",
-        "status": "verified",
-        "checkedAt": "2026-10-08T02:42:15+00:00"
-      },
-      "firstSeenAt": "2026-10-08T10:42:19+08:00",
-      "details": {
-        "runtimeMinutes": 106,
-        "ageRating": "Remaja",
-        "genres": [
-          "Drama",
-          "Comedy"
-        ],
-        "sourceReleaseDate": "2026-10-08",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2026/crawlers",
       "title": "CRAWLERS",
       "url": "https://jadwalnonton.com/film/2026/crawlers/",
@@ -298,7 +270,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-10T11:10:42+00:00"
+        "checkedAt": "2026-10-11T11:24:15+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00",
       "details": {
@@ -338,6 +310,33 @@
           "Animation"
         ],
         "sourceReleaseDate": "2026-09-23",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa",
+      "title": "FULLMETAL ALCHEMIST THE MOVIE: CONQUEROR OF SHAMBALLA",
+      "url": "https://jadwalnonton.com/film/2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa/",
+      "trailerYouTubeId": "j6rI6enObbM",
+      "languageInfo": {
+        "codes": [
+          "ja"
+        ],
+        "reportedLanguage": "Jepang",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/fullmetal-alchemist-movie-conqueror-shamballa/1570",
+        "status": "verified",
+        "checkedAt": "2026-10-11T11:24:15+00:00"
+      },
+      "firstSeenAt": "2026-10-07T10:22:29+08:00",
+      "details": {
+        "runtimeMinutes": 105,
+        "ageRating": "Remaja",
+        "genres": [
+          "Animation"
+        ],
+        "sourceReleaseDate": "2026-10-07",
         "language": null,
         "subtitles": null
       }
@@ -713,6 +712,53 @@
       ]
     },
     {
+      "movieId": "2005/fullmetal-alchemist-the-movie-conqueror-of-shamballa",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "13:15"
+      ]
+    },
+    {
+      "movieId": "2026/crawlers",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "14:55"
+      ]
+    },
+    {
+      "movieId": "2026/avengers-endgame-encore",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "19:00"
+      ]
+    },
+    {
+      "movieId": "2026/hasut",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "12:45",
+        "16:50"
+      ]
+    },
+    {
+      "movieId": "2026/daniel-and-the-fiery-furnace",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "15:30",
+        "20:15"
+      ]
+    },
+    {
       "movieId": "2026/all-wishes-come-true",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
@@ -805,12 +851,12 @@
       ]
     },
     {
-      "movieId": "2026/cidro-asmoro",
-      "cinemaId": "lippo-plaza-sunset",
+      "movieId": "2026/siksa-sampai-mati",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 25000,
+      "price": 40000,
       "times": [
-        "15:00"
+        "17:50"
       ]
     },
     {
@@ -828,7 +874,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "17:15"
+        "13:00"
       ]
     },
     {
@@ -842,30 +888,23 @@
       ]
     },
     {
-      "movieId": "2026/all-wishes-come-true",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:00"
-      ]
-    },
-    {
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "17:30"
+        "17:35"
       ]
     },
     {
-      "movieId": "2026/backrooms",
+      "movieId": "2026/other-mommy",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:45"
+        "13:15",
+        "15:20",
+        "17:25"
       ]
     },
     {
@@ -998,6 +1037,16 @@
       ]
     },
     {
+      "movieId": "2026/hasut",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 60000,
+      "times": [
+        "14:45",
+        "19:00"
+      ]
+    },
+    {
       "movieId": "2026/all-wishes-come-true",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
@@ -1021,8 +1070,7 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
-        "14:50",
-        "19:00"
+        "12:30"
       ]
     },
     {
@@ -1049,8 +1097,7 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
-        "12:45",
-        "16:55"
+        "16:50"
       ]
     },
     {
