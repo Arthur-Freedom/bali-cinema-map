@@ -63,12 +63,12 @@ test('OAuth uses PKCE, encrypted HttpOnly state, exact callback and repository-s
   assert.equal(exchange.repository_id, env.REPO_ID);
   assert.ok(exchange.code_verifier && exchange.code_verifier !== result.authorize.searchParams.get('code_challenge'));
   const session=await s.api('/api/session', result.session);
-  assert.deepEqual(await session.json(), {login:env.OWNER_LOGIN, expires:start+15897600000,persistent:true});
+  assert.deepEqual(await session.json(), {login:env.OWNER_LOGIN, ownerId:env.OWNER_ID, expires:start+15897600000,persistent:true});
   assert.ok(!s.records.get(result.session).get('session').includes('ghr_private'));
 });
 test('rejects redirect escape and callback state mismatch without exchanging a token', async()=>{
   const s=setup();
-  for (const target of ['https://evil.example/', origin+'/another-project/']) {
+  for (const target of ['https://evil.example/', origin+'/another-project/', origin+'/bali-petrol-map/evil', origin+'/bali-petrol-map.evil/']) {
     assert.equal((await s.request('/auth/login?return='+encodeURIComponent(target))).status, 400);
   }
   const login=await s.request('/auth/login');
@@ -76,6 +76,16 @@ test('rejects redirect escape and callback state mismatch without exchanging a t
   assert.equal(new URL(bad.headers.get('Location')).origin, origin);
   assert.ok(new URL(bad.headers.get('Location')).hash.startsWith('#owner-error='));
   assert.equal(s.calls.length, 0);
+});
+
+test('owner can sign in back to the exact petrol app path', async()=>{
+  const s=setup(), target=origin+'/bali-petrol-map/';
+  const begin=await s.request('/auth/login?return='+encodeURIComponent(target));
+  assert.equal(begin.status,303);
+  const auth=new URL(begin.headers.get('Location'));
+  const finish=await s.request('/auth/callback?code=test&state='+auth.searchParams.get('state'),{headers:{Cookie:begin.headers.get('Set-Cookie').split(';')[0]}});
+  assert.equal(new URL(finish.headers.get('Location')).pathname,'/bali-petrol-map/');
+  assert.match(new URL(finish.headers.get('Location')).hash,/owner-session=remembered\./);
 });
 test('non-owner cannot get a session even with successful GitHub authentication', async()=>{
   const s=setup({owner:'999'}), result=await s.login();

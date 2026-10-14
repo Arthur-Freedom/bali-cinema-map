@@ -40,7 +40,7 @@ async function unseal(value, secret, purpose, now) {
 function returnUrl(value, site) {
   const target = new URL(value || site, site);
   const allowed = new URL(site);
-  if (target.origin !== allowed.origin || target.pathname !== allowed.pathname || target.username || target.password) {
+  if (target.origin !== allowed.origin || ![allowed.pathname, '/bali-petrol-map/'].includes(target.pathname) || target.username || target.password) {
     throw new PublicError(400, 'Invalid return address.');
   }
   target.hash = '';
@@ -255,7 +255,7 @@ export function createHandler({fetch:send = globalThis.fetch, now = Date.now} = 
 
     if (url.pathname === '/api/session' && request.method === 'GET') {
       await verifyOwner(session.token, env);
-      return json({login:env.OWNER_LOGIN, expires:session.expires,persistent});
+      return json({login:env.OWNER_LOGIN, ownerId:env.OWNER_ID, expires:session.expires,persistent});
     }
     if (url.pathname === '/api/logout' && request.method === 'POST') {
       const response = await send(`${apiRoot}/applications/${env.GITHUB_CLIENT_ID}/token`, {
