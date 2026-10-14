@@ -1,520 +1,120 @@
 {
   "schemaVersion": 1,
-  "runId": "38547634685",
-  "startedAt": "2026-10-14T18:10:12+08:00",
-  "scheduleDate": "2026-10-14",
-  "status": "success",
+  "runId": "38611492501",
+  "startedAt": "2026-10-15T02:00:47+08:00",
+  "scheduleDate": "2026-10-15",
+  "status": "failed",
   "scheduleChecks": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:12+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:47+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 4,
-      "showtimeCount": 15
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "checkedAt": "2026-10-14T18:10:14+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:49+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 13,
-      "showtimeCount": 24
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "checkedAt": "2026-10-14T18:10:15+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:51+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 6,
-      "showtimeCount": 12
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "checkedAt": "2026-10-14T18:10:17+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:52+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 10,
-      "showtimeCount": 17
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "checkedAt": "2026-10-14T18:10:18+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:54+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 9,
-      "showtimeCount": 14
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "checkedAt": "2026-10-14T18:10:20+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:55+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 10,
-      "showtimeCount": 24
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:21+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:57+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 5,
-      "showtimeCount": 15
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:22+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:00:58+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 6,
-      "showtimeCount": 14
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:24+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:01:00+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 7,
-      "showtimeCount": 30
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:25+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:01:02+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 8,
-      "showtimeCount": 24
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:27+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:01:03+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 5,
-      "showtimeCount": 20
+      "errorType": "ScheduleError"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "checkedAt": "2026-10-14T18:10:28+08:00",
-      "status": "ok",
+      "checkedAt": "2026-10-15T02:01:05+08:00",
+      "status": "outdated",
+      "reason": "outdated_schedule",
       "sourceDate": "2026-10-14",
-      "formatListingCount": 7,
-      "showtimeCount": 33
+      "errorType": "ScheduleError"
     }
   ],
-  "movieChecks": [
-    {
-      "movieId": "2026/heart-of-the-beast",
-      "url": "https://jadwalnonton.com/film/2026/heart-of-the-beast/",
-      "checkedAt": "2026-10-14T18:10:31+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 101,
-        "ageRating": "Remaja",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Drama",
-          "Thriller"
-        ],
-        "sourceReleaseDate": "2026-09-23",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/whalefall",
-      "url": "https://jadwalnonton.com/film/2026/whalefall/",
-      "checkedAt": "2026-10-14T18:10:31+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 106,
-        "ageRating": "Remaja",
-        "genres": [
-          "Adventure",
-          "Drama",
-          "Horror",
-          "Thriller"
-        ],
-        "sourceReleaseDate": null,
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/resident-evil",
-      "url": "https://jadwalnonton.com/film/2026/resident-evil/",
-      "checkedAt": "2026-10-14T18:10:31+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 90,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Sci-fi",
-          "Psychological Thriller"
-        ],
-        "sourceReleaseDate": "2026-09-18",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "url": "https://jadwalnonton.com/film/2026/street-fighter/",
-      "checkedAt": "2026-10-14T18:10:32+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 125,
-        "ageRating": "Remaja",
-        "genres": [
-          "Action",
-          "Drama"
-        ],
-        "sourceReleaseDate": null,
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
-      "url": "https://jadwalnonton.com/film/2026/fullmetal-alchemist-the-sacred-star-of-milos/",
-      "checkedAt": "2026-10-14T18:10:32+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 111,
-        "ageRating": "Remaja",
-        "genres": [
-          "Animation"
-        ],
-        "sourceReleaseDate": null,
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "url": "https://jadwalnonton.com/film/2026/avengers-endgame-encore/",
-      "checkedAt": "2026-10-14T18:10:32+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 186,
-        "ageRating": "Remaja",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Fantasy"
-        ],
-        "sourceReleaseDate": "2026-09-23",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/daniel-and-the-fiery-furnace",
-      "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "checkedAt": "2026-10-14T18:10:33+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 108,
-        "ageRating": "Remaja",
-        "genres": [
-          "Drama"
-        ],
-        "sourceReleaseDate": "2026-09-23",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/other-mommy",
-      "url": "https://jadwalnonton.com/film/2026/other-mommy/",
-      "checkedAt": "2026-10-14T18:10:34+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 93,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Horror"
-        ],
-        "sourceReleaseDate": "2026-10-08",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/agensi-rumah-tangga",
-      "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
-      "checkedAt": "2026-10-14T18:10:34+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 115,
-        "ageRating": "Remaja",
-        "genres": [
-          "Comedy",
-          "Drama"
-        ],
-        "sourceReleaseDate": "2026-09-10",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/forgotten-island",
-      "url": "https://jadwalnonton.com/film/2026/forgotten-island/",
-      "checkedAt": "2026-10-14T18:10:34+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 109,
-        "ageRating": "Remaja",
-        "genres": [
-          "Adventure",
-          "Action",
-          "Animation"
-        ],
-        "sourceReleaseDate": "2026-09-23",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/kuasa-gelap-2",
-      "url": "https://jadwalnonton.com/film/2026/kuasa-gelap-2/",
-      "checkedAt": "2026-10-14T18:10:35+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 120,
-        "ageRating": "Remaja",
-        "genres": [
-          "Horror"
-        ],
-        "sourceReleaseDate": "2026-10-08",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/operasi-pesta-pora",
-      "url": "https://jadwalnonton.com/film/2026/operasi-pesta-pora/",
-      "checkedAt": "2026-10-14T18:10:35+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 113,
-        "ageRating": "Remaja",
-        "genres": [
-          "Heist",
-          "Comedy",
-          "Action",
-          "Musical"
-        ],
-        "sourceReleaseDate": "2026-08-27",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/ibu-bagaimana-aku-tanpamu",
-      "url": "https://jadwalnonton.com/film/2026/ibu-bagaimana-aku-tanpamu/",
-      "checkedAt": "2026-10-14T18:10:36+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 111,
-        "ageRating": "Semua Umur",
-        "genres": [
-          "Drama",
-          "Family"
-        ],
-        "sourceReleaseDate": "2026-09-24",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/warga-rusun-609",
-      "url": "https://jadwalnonton.com/film/2026/warga-rusun-609/",
-      "checkedAt": "2026-10-14T18:10:37+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 103,
-        "ageRating": "Remaja",
-        "genres": [
-          "Horror",
-          "Comedy"
-        ],
-        "sourceReleaseDate": "2026-10-01",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/empat-musim-pertiwi",
-      "url": "https://jadwalnonton.com/film/2026/empat-musim-pertiwi/",
-      "checkedAt": "2026-10-14T18:10:37+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 137,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Suspense",
-          "Drama"
-        ],
-        "sourceReleaseDate": "2026-10-08",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/crawlers",
-      "url": "https://jadwalnonton.com/film/2026/crawlers/",
-      "checkedAt": "2026-10-14T18:10:37+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 86,
-        "ageRating": "Remaja",
-        "genres": [
-          "Thriller",
-          "Horror"
-        ],
-        "sourceReleaseDate": "2026-10-09",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/the-so",
-      "url": "https://jadwalnonton.com/film/2026/the-so/",
-      "checkedAt": "2026-10-14T18:10:38+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 112,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "sourceReleaseDate": "2026-10-07",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/verity",
-      "url": "https://jadwalnonton.com/film/2026/verity/",
-      "checkedAt": "2026-10-14T18:10:38+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 114,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Crime",
-          "Drama",
-          "Mystery",
-          "Thriller",
-          "Romance"
-        ],
-        "sourceReleaseDate": "2026-09-30",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/hasut",
-      "url": "https://jadwalnonton.com/film/2026/hasut/",
-      "checkedAt": "2026-10-14T18:10:39+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 96,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Horror",
-          "Mystery"
-        ],
-        "sourceReleaseDate": "2026-10-08",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/siksa-sampai-mati",
-      "url": "https://jadwalnonton.com/film/2026/siksa-sampai-mati/",
-      "checkedAt": "2026-10-14T18:10:40+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 115,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Horror",
-          "Crime",
-          "Action"
-        ],
-        "sourceReleaseDate": "2026-09-24",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "movieId": "2026/digger",
-      "url": "https://jadwalnonton.com/film/2026/digger/",
-      "checkedAt": "2026-10-14T18:10:40+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 128,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Thriller",
-          "Comedy"
-        ],
-        "sourceReleaseDate": "2026-09-30",
-        "language": null,
-        "subtitles": null
-      }
-    }
-  ],
-  "changes": {
-    "newMovies": [
-      "2026/fullmetal-alchemist-the-sacred-star-of-milos"
-    ],
-    "missingMovies": [],
-    "returnedMovies": [],
-    "newListings": [
-      {
-        "movieId": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
-        "cinemaId": "cinemaxx-lippo-mall-kuta",
-        "format": "Regular 2D"
-      }
-    ],
-    "missingListings": [],
-    "returnedListings": [],
-    "priceChanges": [],
-    "availabilityChanges": [],
-    "metadataChanges": [
-      {
-        "movieId": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
-        "fields": [
-          "runtimeMinutes",
-          "ageRating",
-          "genres"
-        ]
-      }
-    ]
-  },
-  "completedAt": "2026-10-14T18:10:45+08:00",
-  "snapshotRefreshedAt": "2026-10-14T18:10:45+08:00",
-  "counts": {
-    "movies": 21,
-    "cinemas": 12,
-    "formatListings": 90,
-    "showtimes": 242
-  }
+  "movieChecks": [],
+  "changes": null,
+  "completedAt": "2026-10-15T02:01:07+08:00"
 }
