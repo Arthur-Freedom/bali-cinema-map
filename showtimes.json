@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "refreshedAt": "2026-10-14T09:54:38+08:00",
+  "refreshedAt": "2026-10-14T18:10:45+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -179,6 +179,18 @@
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
     {
+      "id": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
+      "title": "FULLMETAL ALCHEMIST: THE SACRED STAR OF MILOS",
+      "url": "https://jadwalnonton.com/film/2026/fullmetal-alchemist-the-sacred-star-of-milos/",
+      "trailerYouTubeId": "s3MNu8zWM1Y",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-10-14T10:10:40+00:00"
+      },
+      "firstSeenAt": "2026-10-14T18:10:45+08:00"
+    },
+    {
       "id": "2026/hasut",
       "title": "Hasut",
       "url": "https://jadwalnonton.com/film/2026/hasut/",
@@ -225,7 +237,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/film/ibu-bagaimana-aku-tanpamu/1488",
         "status": "verified",
-        "checkedAt": "2026-10-07T02:37:25+00:00"
+        "checkedAt": "2026-10-14T10:10:40+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -289,11 +301,11 @@
         "codes": [
           "en"
         ],
-        "reportedLanguage": "Inggris",
+        "reportedLanguage": "English",
         "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/other-mommy/1573",
+        "sourceUrl": "https://lsf.go.id/en/film/other-mommy/1585",
         "status": "verified",
-        "checkedAt": "2026-10-07T02:22:23+00:00"
+        "checkedAt": "2026-10-14T10:10:40+00:00"
       },
       "firstSeenAt": "2026-10-07T10:22:29+08:00"
     },
@@ -441,6 +453,16 @@
         "16:30",
         "18:45",
         "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "14:35",
+        "19:15"
       ]
     },
     {
