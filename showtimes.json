@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "refreshedAt": "2026-10-15T09:27:46+08:00",
+  "refreshedAt": "2026-10-15T17:53:30+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -169,7 +169,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-15T09:53:28+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
     },
@@ -266,7 +266,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/kuasa-gelap-perjanjian-darah/1446",
         "status": "verified",
-        "checkedAt": "2026-10-08T02:42:15+00:00"
+        "checkedAt": "2026-10-15T09:53:28+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
     },
@@ -380,7 +380,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-15T09:53:28+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00"
     }
@@ -413,18 +413,19 @@
       "format": "Premiere",
       "price": 100000,
       "times": [
-        "15:25",
-        "20:05"
+        "12:30",
+        "14:45",
+        "18:50"
       ]
     },
     {
-      "movieId": "2026/digger",
+      "movieId": "2026/resident-evil",
       "cinemaId": "beachwalk-xxi",
       "format": "Premiere",
       "price": 100000,
       "times": [
-        "13:00",
-        "17:40"
+        "17:00",
+        "21:05"
       ]
     },
     {
