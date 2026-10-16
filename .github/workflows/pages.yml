@@ -35,6 +35,13 @@ jobs:
         run: node --test scripts/test_showtime_utils.cjs
       - name: Check owner refresh authorization
         run: node --test owner-service/worker.test.mjs owner-service/push.test.mjs scripts/test_movie_alerts.cjs scripts/test_owner_refresh.cjs scripts/test_push_preferences.cjs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check remembered sign-in in the Worker runtime
+        run: |
+          npm ci --prefix owner-service --ignore-scripts --no-audit --no-fund
+          node --test owner-service/runtime.test.mjs
       - name: Refresh movie listings
         id: refresh
         # Ship code fixes even before the source rolls over after midnight.

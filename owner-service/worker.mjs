@@ -64,7 +64,9 @@ const clearCookie = `${cookieName}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max
 // Neither this object's routes nor its GitHub credentials are public endpoints.
 export class OwnerSession {
   constructor(state, env, {fetch:send=globalThis.fetch, now=Date.now}={}) {
-    this.storage=state.storage; this.env=env; this.send=send; this.now=now;
+    // Native Workers fetch must be called as a function, not as an OwnerSession
+    // method. The latter throws before sending when an eight-hour token renews.
+    this.storage=state.storage; this.env=env; this.send=(...args)=>send(...args); this.now=now;
     this.pending=Promise.resolve();
   }
   serial(action) {
@@ -117,12 +119,14 @@ export class OwnerSession {
         headers:{Accept:'application/json','Content-Type':'application/json'},
         body:JSON.stringify({client_id:this.env.GITHUB_CLIENT_ID,client_secret:this.env.GITHUB_CLIENT_SECRET,
           grant_type:'refresh_token',refresh_token:record.refreshToken})});
-      if (!response.ok) throw new PublicError(503,'GitHub is temporarily unavailable. Your saved sign-in is still here. Try again shortly.');
-      const credentials=await response.json();
-      if (credentials.error==='bad_refresh_token' || credentials.error==='invalid_grant') {
+      const credentials=await response.json().catch(()=>null);
+      // OAuth errors may use HTTP 400 as well as 200. An unusable credential
+      // needs sign-in, not an endless temporary-outage retry.
+      if (response.status<500 && (credentials?.error==='bad_refresh_token' || credentials?.error==='invalid_grant')) {
         throw new PublicError(401,'GitHub access expired or was revoked. Please sign in again.');
       }
-      if (!credentials.access_token || !credentials.refresh_token || credentials.error) {
+      if (!response.ok) throw new PublicError(503,'GitHub is temporarily unavailable. Your saved sign-in is still here. Try again shortly.');
+      if (!credentials?.access_token || !credentials.refresh_token || credentials.error) {
         throw new PublicError(503,'GitHub could not renew sign-in yet. Try again shortly.');
       }
       current=this.record(credentials,record);

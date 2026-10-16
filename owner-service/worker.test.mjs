@@ -204,3 +204,12 @@ test('sign-out during renewal removes the renewed session instead of resurrectin
   assert.equal(s.records.get(session).size,0);
   assert.equal((await s.api('/api/session',session)).status,401);
 });
+
+test('invalid refresh credentials on HTTP 200 or 400 require sign-in instead of endless retries',async()=>{
+ for(const status of [200,400])for(const error of ['bad_refresh_token','invalid_grant']){
+  let expired=false;
+  const s=setup({tokenResponse:()=>expired?response({error},status):response({access_token:'ghu_test',expires_in:28800,refresh_token:'ghr_private',refresh_token_expires_in:15897600})});
+  const {session}=await s.login();expired=true;s.advance(8*3600000);
+  const result=await s.api('/api/session',session);assert.equal(result.status,401);assert.match((await result.json()).error,/expired or was revoked/);
+ }
+});

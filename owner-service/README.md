@@ -24,6 +24,8 @@ Run `node --test owner-service/worker.test.mjs scripts/test_owner_refresh.cjs` (
 
 Remembered sign-in uses [GitHub refresh-token rotation](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/refreshing-user-access-tokens) and [Durable Objects on Workers Free](https://developers.cloudflare.com/durable-objects/platform/pricing/). Free-plan quota exhaustion rejects operations rather than charging for overages. Do not upgrade the account.
 
+The native-runtime regression (`npm ci --prefix owner-service`, then `node --test owner-service/runtime.test.mjs`) checks renewal after a Worker restart, concurrent rotation and logout with synthetic credentials. It catches Workers' receiver-sensitive native `fetch`: call it through a function wrapper, never directly as an instance method. Invalid refresh-token errors, including HTTP 400, require a fresh sign-in rather than an endless temporary-outage retry. Ordinary releases preserve the stored session and encryption key.
+
 The private GitHub app can be uninstalled to revoke access. Removing the public service URL disables onsite controls; the original GitHub workflow remains available. Rotate `SESSION_SECRET` to invalidate all encrypted sessions.
 
 ## Personal movie notifications
