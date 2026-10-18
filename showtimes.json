@@ -1,66 +1,66 @@
 {
-  "date": "2026-10-17",
-  "refreshedAt": "2026-10-17T17:20:13+08:00",
+  "date": "2026-10-18",
+  "refreshedAt": "2026-10-18T09:01:41+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     }
   ],
   "movies": [
@@ -462,15 +462,6 @@
   ],
   "screenings": [
     {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "beachwalk-xxi",
-      "format": "Regular 2D",
-      "price": 60000,
-      "times": [
-        "18:50"
-      ]
-    },
-    {
       "movieId": "2026/heart-of-the-beast",
       "cinemaId": "beachwalk-xxi",
       "format": "Regular 2D",
@@ -489,7 +480,8 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
-        "14:30"
+        "14:30",
+        "18:50"
       ]
     },
     {
@@ -521,7 +513,7 @@
       "times": [
         "12:15",
         "16:35",
-        "20:50"
+        "20:55"
       ]
     },
     {
@@ -745,9 +737,9 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:00",
-        "14:30",
-        "17:00"
+        "13:00",
+        "15:30",
+        "18:00"
       ]
     },
     {
@@ -1045,11 +1037,9 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "13:00",
-        "14:50",
-        "16:40",
-        "18:30",
-        "20:20"
+        "15:05",
+        "19:00",
+        "20:50"
       ]
     },
     {
@@ -1058,8 +1048,8 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "12:10",
-        "16:25"
+        "14:25",
+        "18:40"
       ]
     },
     {
@@ -1068,7 +1058,8 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "20:40"
+        "13:00",
+        "16:55"
       ]
     },
     {
@@ -1090,17 +1081,9 @@
       "format": "Regular 2D",
       "price": 50000,
       "times": [
-        "14:10",
-        "18:25"
-      ]
-    },
-    {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Regular 2D",
-      "price": 65000,
-      "times": [
-        "14:50"
+        "12:10",
+        "16:25",
+        "20:40"
       ]
     },
     {
@@ -1119,8 +1102,8 @@
       "format": "Regular 2D",
       "price": 65000,
       "times": [
-        "12:35",
-        "19:20"
+        "14:45",
+        "18:35"
       ]
     },
     {
@@ -1129,8 +1112,9 @@
       "format": "Regular 2D",
       "price": 65000,
       "times": [
-        "16:50",
-        "20:55"
+        "12:45",
+        "16:35",
+        "20:25"
       ]
     },
     {
@@ -1139,8 +1123,9 @@
       "format": "Regular 2D",
       "price": 65000,
       "times": [
-        "12:45",
-        "18:50"
+        "14:35",
+        "18:55",
+        "21:00"
       ]
     },
     {
@@ -1149,8 +1134,8 @@
       "format": "Regular 2D",
       "price": 65000,
       "times": [
-        "17:05",
-        "21:10"
+        "12:20",
+        "16:40"
       ]
     },
     {
@@ -1249,33 +1234,13 @@
       ]
     },
     {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Regular 2D",
-      "price": 75000,
-      "times": [
-        "12:00",
-        "18:25"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Premiere",
-      "price": 200000,
-      "times": [
-        "12:05",
-        "17:45"
-      ]
-    },
-    {
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Regular 2D",
       "price": 75000,
       "times": [
-        "14:00",
-        "16:35"
+        "12:00",
+        "14:10"
       ]
     },
     {
@@ -1286,8 +1251,9 @@
       "times": [
         "12:55",
         "14:45",
-        "18:45",
-        "20:35"
+        "16:35",
+        "18:25",
+        "20:15"
       ]
     },
     {
@@ -1301,6 +1267,19 @@
         "17:00",
         "19:00",
         "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/whalefall",
+      "cinemaId": "living-world-denpasar-xxi",
+      "format": "Premiere",
+      "price": 200000,
+      "times": [
+        "12:25",
+        "14:30",
+        "16:35",
+        "18:40",
+        "20:45"
       ]
     },
     {
@@ -1322,18 +1301,9 @@
       "format": "Regular 2D",
       "price": 75000,
       "times": [
-        "16:10",
-        "20:25"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Premiere",
-      "price": 200000,
-      "times": [
-        "15:30",
-        "21:10"
+        "16:20",
+        "18:35",
+        "20:50"
       ]
     },
     {
@@ -1342,9 +1312,7 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "12:30",
-        "16:50",
-        "21:05"
+        "17:00"
       ]
     },
     {
@@ -1353,11 +1321,8 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "13:30",
-        "15:20",
-        "17:10",
-        "19:00",
-        "20:55"
+        "13:10",
+        "19:00"
       ]
     },
     {
@@ -1366,11 +1331,8 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "12:40",
-        "14:40",
-        "16:40",
-        "18:40",
-        "20:40"
+        "15:00",
+        "20:50"
       ]
     },
     {
@@ -1392,39 +1354,34 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "14:30",
-        "18:50"
-      ]
-    },
-    {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "tsm-xxi",
-      "format": "Regular 2D",
-      "price": 65000,
-      "times": [
-        "12:20",
-        "16:25",
-        "20:35"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "tsm-xxi",
-      "format": "Regular 2D",
-      "price": 65000,
-      "times": [
-        "14:30",
-        "20:10"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "tsm-xxi",
-      "format": "Premiere",
-      "price": 200000,
-      "times": [
         "12:00",
-        "15:25"
+        "14:15",
+        "16:30",
+        "18:45",
+        "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/empat-musim-pertiwi",
+      "cinemaId": "park-23-xxi",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "12:30",
+        "15:05",
+        "17:40",
+        "20:15"
+      ]
+    },
+    {
+      "movieId": "2026/avengers-endgame-encore",
+      "cinemaId": "tsm-xxi",
+      "format": "Regular 2D",
+      "price": 65000,
+      "times": [
+        "12:45",
+        "16:10",
+        "19:35"
       ]
     },
     {
@@ -1459,18 +1416,11 @@
       "format": "Regular 2D",
       "price": 65000,
       "times": [
-        "14:20",
-        "18:25"
-      ]
-    },
-    {
-      "movieId": "2026/verity",
-      "cinemaId": "tsm-xxi",
-      "format": "Regular 2D",
-      "price": 65000,
-      "times": [
-        "12:15",
-        "17:55"
+        "12:20",
+        "14:25",
+        "16:30",
+        "18:35",
+        "20:40"
       ]
     },
     {
@@ -1505,8 +1455,10 @@
       "format": "Premiere",
       "price": 200000,
       "times": [
-        "18:50",
-        "21:05"
+        "13:15",
+        "15:30",
+        "17:45",
+        "20:00"
       ]
     }
   ]
