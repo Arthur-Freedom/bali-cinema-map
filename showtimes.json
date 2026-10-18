@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "refreshedAt": "2026-10-18T09:01:41+08:00",
+  "refreshedAt": "2026-10-18T17:35:53+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -87,9 +87,14 @@
       "url": "https://jadwalnonton.com/film/2026/always-lalisa/",
       "trailerYouTubeId": "aKXzvwjhX6c",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-17T01:18:13+00:00"
+        "codes": [
+          "ko"
+        ],
+        "reportedLanguage": "Korea",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/always-lalisa/1593",
+        "status": "verified",
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-12T10:23:17+08:00"
     },
@@ -186,7 +191,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-17T09:20:05+00:00"
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-15T09:27:46+08:00"
     },
@@ -215,7 +220,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-17T01:18:13+00:00"
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
     },
@@ -244,7 +249,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-17T09:20:05+00:00"
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-14T18:10:45+08:00"
     },
@@ -409,7 +414,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-17T09:20:05+00:00"
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-16T09:20:16+08:00"
     },
@@ -453,9 +458,14 @@
       "url": "https://jadwalnonton.com/film/2026/whalefall/",
       "trailerYouTubeId": "dNBrTaKiUig",
       "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-17T01:18:13+00:00"
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "Inggris",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/whalefall/1592",
+        "status": "verified",
+        "checkedAt": "2026-10-18T09:35:46+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00"
     }
