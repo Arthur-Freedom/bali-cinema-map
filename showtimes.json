@@ -1,86 +1,69 @@
 {
-  "date": "2026-10-20",
-  "refreshedAt": "2026-10-20T18:02:22+08:00",
+  "date": "2026-10-21",
+  "refreshedAt": "2026-10-21T18:06:58+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
     }
   ],
   "movies": [
-    {
-      "id": "2026/agensi-rumah-tangga",
-      "title": "Agensi Rumah Tangga",
-      "url": "https://jadwalnonton.com/film/2026/agensi-rumah-tangga/",
-      "trailerYouTubeId": "IpIuNlQpjMU",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesia",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/agensi-rumah-tangga/1386",
-        "status": "verified",
-        "checkedAt": "2026-10-17T09:20:05+00:00"
-      },
-      "firstSeenAt": "2026-10-06T17:17:59+08:00"
-    },
     {
       "id": "2026/avengers-endgame-encore",
       "title": "Avengers Endgame: Encore",
@@ -94,7 +77,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/avengers-endgame-encore/1515",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -116,21 +99,21 @@
       "firstSeenAt": "2026-10-15T09:27:46+08:00"
     },
     {
-      "id": "2026/beware-boiuna",
-      "title": "Beware Boiuna",
-      "url": "https://jadwalnonton.com/film/2026/beware-boiuna/",
-      "trailerYouTubeId": "PthOgHKtdKk",
+      "id": "2026/clayface",
+      "title": "Clayface",
+      "url": "https://jadwalnonton.com/film/2026/clayface/",
+      "trailerYouTubeId": "N9mDzsdqGGw",
       "languageInfo": {
         "codes": [
           "en"
         ],
-        "reportedLanguage": "English",
+        "reportedLanguage": "Inggris",
         "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/beware-boiuna/1575",
+        "sourceUrl": "https://lsf.go.id/film/clayface/1598",
         "status": "verified",
-        "checkedAt": "2026-10-16T01:20:11+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
-      "firstSeenAt": "2026-10-16T09:20:16+08:00"
+      "firstSeenAt": "2026-10-21T18:06:58+08:00"
     },
     {
       "id": "2026/daniel-and-the-fiery-furnace",
@@ -145,7 +128,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/daniel-fiery-furnace/1486",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -157,7 +140,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-19T10:45:04+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-15T09:27:46+08:00"
     },
@@ -174,7 +157,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/digger/1528",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -186,21 +169,9 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-19T10:45:04+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
-    },
-    {
-      "id": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
-      "title": "FULLMETAL ALCHEMIST: THE SACRED STAR OF MILOS",
-      "url": "https://jadwalnonton.com/film/2026/fullmetal-alchemist-the-sacred-star-of-milos/",
-      "trailerYouTubeId": "s3MNu8zWM1Y",
-      "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-19T10:45:04+00:00"
-      },
-      "firstSeenAt": "2026-10-14T18:10:45+08:00"
     },
     {
       "id": "2026/ghosthing",
@@ -232,7 +203,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/heart-beast/1487",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -271,40 +242,6 @@
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
     },
     {
-      "id": "2026/naza",
-      "title": "Naza",
-      "url": "https://jadwalnonton.com/film/2026/naza/",
-      "trailerYouTubeId": "idpD7H2xB34",
-      "languageInfo": {
-        "codes": [
-          "en"
-        ],
-        "reportedLanguage": "Inggris",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/naza/1600",
-        "status": "verified",
-        "checkedAt": "2026-10-17T09:20:05+00:00"
-      },
-      "firstSeenAt": "2026-10-16T09:20:16+08:00"
-    },
-    {
-      "id": "2026/operasi-pesta-pora",
-      "title": "Operasi Pesta Copet",
-      "url": "https://jadwalnonton.com/film/2026/operasi-pesta-pora/",
-      "trailerYouTubeId": "rt8cI14HEEk",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesia",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/operasi-pesta-copet/1379",
-        "status": "verified",
-        "checkedAt": "2026-10-17T01:18:13+00:00"
-      },
-      "firstSeenAt": "2026-10-14T09:54:38+08:00"
-    },
-    {
       "id": "2026/other-mommy",
       "title": "Other Mommy",
       "url": "https://jadwalnonton.com/film/2026/other-mommy/",
@@ -334,7 +271,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/resident-evil/1485",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -351,7 +288,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/street-fighter/1580",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00"
     },
@@ -363,7 +300,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-19T10:45:04+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-16T09:20:16+08:00"
     },
@@ -380,7 +317,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/verity/1541",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -397,7 +334,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/warga-rusun-609/1561",
         "status": "verified",
-        "checkedAt": "2026-10-14T01:54:29+00:00"
+        "checkedAt": "2026-10-21T10:06:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
@@ -426,11 +363,9 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "13:00",
-        "15:00",
-        "17:00",
-        "19:00",
-        "21:00"
+        "12:45",
+        "16:50",
+        "20:55"
       ]
     },
     {
@@ -439,7 +374,7 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "14:30",
+        "14:45",
         "18:50"
       ]
     },
@@ -449,19 +384,22 @@
       "format": "Premiere",
       "price": 100000,
       "times": [
-        "12:25",
-        "14:40",
-        "18:45"
+        "12:00",
+        "14:15",
+        "16:30",
+        "18:45",
+        "21:00"
       ]
     },
     {
-      "movieId": "2026/resident-evil",
+      "movieId": "2026/clayface",
       "cinemaId": "beachwalk-xxi",
-      "format": "Premiere",
-      "price": 100000,
+      "format": "Regular 2D",
+      "price": 40000,
       "times": [
-        "16:55",
-        "21:00"
+        "12:10",
+        "16:30",
+        "20:50"
       ]
     },
     {
@@ -470,28 +408,8 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "12:15",
-        "16:35",
-        "20:55"
-      ]
-    },
-    {
-      "movieId": "2026/fullmetal-alchemist-the-sacred-star-of-milos",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "14:30"
-      ]
-    },
-    {
-      "movieId": "2026/naza",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:25",
-        "19:30"
+        "14:15",
+        "18:35"
       ]
     },
     {
@@ -500,25 +418,9 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "17:15"
-      ]
-    },
-    {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "14:55"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "16:50"
+        "12:30",
+        "14:45",
+        "19:30"
       ]
     },
     {
@@ -527,7 +429,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "20:30"
+        "13:35"
       ]
     },
     {
@@ -536,12 +438,45 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:10",
-        "18:00"
+        "15:40",
+        "20:15"
       ]
     },
     {
       "movieId": "2026/whalefall",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "17:55"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "13:00",
+        "15:20",
+        "17:40",
+        "20:00"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "VIP 2D",
+      "price": 75000,
+      "times": [
+        "13:30",
+        "15:50",
+        "18:10",
+        "20:30"
+      ]
+    },
+    {
+      "movieId": "2026/resident-evil",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 25000,
@@ -550,104 +485,27 @@
       ]
     },
     {
-      "movieId": "2026/whalefall",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 40000,
-      "times": [
-        "14:55",
-        "19:45"
-      ]
-    },
-    {
-      "movieId": "2026/agensi-rumah-tangga",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:05"
-      ]
-    },
-    {
-      "movieId": "2026/resident-evil",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:50",
-        "17:10",
-        "19:15"
-      ]
-    },
-    {
       "movieId": "2026/kuasa-gelap-2",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "15:30",
-        "20:15"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
+        "12:40",
         "15:10",
-        "20:00"
+        "19:45"
       ]
     },
     {
       "movieId": "2026/street-fighter",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 40000,
-      "times": [
-        "12:25",
-        "17:15"
-      ]
-    },
-    {
-      "movieId": "2026/operasi-pesta-pora",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:45"
-      ]
-    },
-    {
-      "movieId": "2026/beware-boiuna",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "19:20"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "19:00"
-      ]
-    },
-    {
-      "movieId": "2026/daniel-and-the-fiery-furnace",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:15",
         "17:00"
       ]
     },
     {
-      "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+      "movieId": "2026/avengers-endgame-encore",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
@@ -656,174 +514,38 @@
       ]
     },
     {
-      "movieId": "2026/bapak-paling-jujur",
+      "movieId": "2026/daniel-and-the-fiery-furnace",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:00",
-        "16:45"
-      ]
-    },
-    {
-      "movieId": "2026/kuasa-gelap-2",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:30",
-        "15:00",
-        "17:30",
-        "20:00"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "14:15"
-      ]
-    },
-    {
-      "movieId": "2026/naza",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:40"
-      ]
-    },
-    {
-      "movieId": "2026/avengers-endgame-encore",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "19:00"
+        "20:45"
       ]
     },
     {
       "movieId": "2026/ibu-bagaimana-aku-tanpamu",
-      "cinemaId": "cinemaxx-plaza-renon",
+      "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:45"
+        "12:15"
       ]
     },
     {
-      "movieId": "2026/warga-rusun-609",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "17:45"
-      ]
-    },
-    {
-      "movieId": "2026/bapak-paling-jujur",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:25",
-        "17:30",
-        "19:45"
-      ]
-    },
-    {
-      "movieId": "2026/whalefall",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:40",
-        "20:30"
-      ]
-    },
-    {
-      "movieId": "2026/agensi-rumah-tangga",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:15"
-      ]
-    },
-    {
-      "movieId": "2026/resident-evil",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:10"
-      ]
-    },
-    {
-      "movieId": "2026/kuasa-gelap-2",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:15",
-        "20:00"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "18:00"
-      ]
-    },
-    {
-      "movieId": "2026/empat-musim-pertiwi",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "16:10"
-      ]
-    },
-    {
-      "movieId": "2026/bapak-paling-jujur",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:10",
-        "20:30"
-      ]
-    },
-    {
-      "movieId": "2026/whalefall",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:50",
-        "17:25",
-        "19:45"
-      ]
-    },
-    {
-      "movieId": "2026/kuasa-gelap-2",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "movieId": "2026/clayface",
+      "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
         "13:00",
-        "15:30",
-        "18:00"
+        "15:20",
+        "17:40",
+        "20:00"
       ]
     },
     {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "movieId": "2026/kuasa-gelap-2",
+      "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
@@ -834,14 +556,146 @@
       ]
     },
     {
+      "movieId": "2026/street-fighter",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "18:15"
+      ]
+    },
+    {
+      "movieId": "2026/ibu-bagaimana-aku-tanpamu",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "movieId": "2026/warga-rusun-609",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "18:00"
+      ]
+    },
+    {
+      "movieId": "2026/bapak-paling-jujur",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "13:10",
+        "15:25",
+        "17:35",
+        "19:50"
+      ]
+    },
+    {
+      "movieId": "2026/whalefall",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "20:15"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "13:00",
+        "15:20",
+        "17:40",
+        "20:00"
+      ]
+    },
+    {
+      "movieId": "2026/resident-evil",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "15:55"
+      ]
+    },
+    {
+      "movieId": "2026/kuasa-gelap-2",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "12:25",
+        "14:55",
+        "17:25",
+        "19:55"
+      ]
+    },
+    {
+      "movieId": "2026/bapak-paling-jujur",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "14:55"
+      ]
+    },
+    {
+      "movieId": "2026/whalefall",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "12:35",
+        "17:10",
+        "19:30"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "13:00",
+        "15:20",
+        "17:40",
+        "20:00"
+      ]
+    },
+    {
+      "movieId": "2026/kuasa-gelap-2",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "14:45"
+      ]
+    },
+    {
+      "movieId": "2026/street-fighter",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "12:15",
+        "17:15",
+        "19:45"
+      ]
+    },
+    {
       "movieId": "2026/dendam-arwah-penari",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "13:00",
-        "15:00",
-        "17:00",
+        "15:10",
+        "17:10",
         "21:35"
       ]
     },
@@ -851,8 +705,7 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "12:30",
-        "14:50"
+        "14:45"
       ]
     },
     {
@@ -861,9 +714,8 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "17:10",
-        "19:25",
-        "21:40"
+        "12:30",
+        "17:05"
       ]
     },
     {
@@ -882,11 +734,24 @@
     {
       "movieId": "2026/whalefall",
       "cinemaId": "denpasar-cineplex",
+      "format": "Deluxe",
+      "price": 20000,
+      "times": [
+        "19:30",
+        "21:45"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "denpasar-cineplex",
       "format": "Executive",
       "price": 30000,
       "times": [
-        "14:55",
-        "19:35"
+        "12:30",
+        "14:45",
+        "17:00",
+        "19:15",
+        "21:30"
       ]
     },
     {
@@ -905,21 +770,11 @@
     {
       "movieId": "2026/street-fighter",
       "cinemaId": "denpasar-cineplex",
-      "format": "Executive",
-      "price": 30000,
-      "times": [
-        "12:30",
-        "17:10",
-        "21:50"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "19:15"
+        "12:45",
+        "19:10"
       ]
     },
     {
@@ -940,8 +795,7 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
-        "12:10",
-        "16:25"
+        "14:25"
       ]
     },
     {
@@ -950,7 +804,19 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
-        "16:30",
+        "16:30"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "galeria-xxi",
+      "format": "Regular 2D",
+      "price": 35000,
+      "times": [
+        "12:40",
+        "14:45",
+        "16:50",
+        "18:55",
         "21:00"
       ]
     },
@@ -960,10 +826,9 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
-        "12:00",
-        "14:15",
-        "16:30",
-        "18:45"
+        "12:10",
+        "16:25",
+        "20:55"
       ]
     },
     {
@@ -972,9 +837,7 @@
       "format": "Regular 2D",
       "price": 35000,
       "times": [
-        "14:10",
-        "18:25",
-        "20:40"
+        "18:40"
       ]
     },
     {
@@ -993,20 +856,8 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "12:45",
-        "14:35",
-        "16:25",
-        "18:15",
-        "20:05"
-      ]
-    },
-    {
-      "movieId": "2026/heart-of-the-beast",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Regular 2D",
-      "price": 45000,
-      "times": [
-        "12:25"
+        "16:45",
+        "20:40"
       ]
     },
     {
@@ -1015,18 +866,22 @@
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "14:25",
-        "18:45"
+        "12:35",
+        "14:40",
+        "18:35"
       ]
     },
     {
-      "movieId": "2026/kuasa-gelap-2",
+      "movieId": "2026/clayface",
       "cinemaId": "icon-bali-xxi",
       "format": "Regular 2D",
       "price": 45000,
       "times": [
-        "16:30",
-        "20:50"
+        "12:45",
+        "14:50",
+        "16:55",
+        "19:00",
+        "21:05"
       ]
     },
     {
@@ -1135,9 +990,8 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "12:35",
-        "14:45",
-        "18:45"
+        "14:35",
+        "18:35"
       ]
     },
     {
@@ -1146,8 +1000,9 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "16:55",
-        "20:55"
+        "12:45",
+        "16:45",
+        "20:45"
       ]
     },
     {
@@ -1156,24 +1011,24 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "13:00",
-        "15:00",
-        "17:00",
-        "19:00",
-        "21:00"
+        "12:25",
+        "14:25",
+        "16:25",
+        "18:25",
+        "20:25"
       ]
     },
     {
-      "movieId": "2026/whalefall",
+      "movieId": "2026/clayface",
       "cinemaId": "living-world-denpasar-xxi",
-      "format": "Premiere",
-      "price": 100000,
+      "format": "Regular 2D",
+      "price": 55000,
       "times": [
-        "12:25",
-        "14:30",
-        "16:35",
-        "18:40",
-        "20:45"
+        "12:30",
+        "14:35",
+        "16:40",
+        "18:45",
+        "20:50"
       ]
     },
     {
@@ -1182,23 +1037,23 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "12:10",
-        "14:25",
-        "16:40",
-        "18:55",
-        "21:10"
+        "12:05",
+        "14:20",
+        "16:35",
+        "18:50",
+        "21:05"
       ]
     },
     {
       "movieId": "2026/street-fighter",
       "cinemaId": "living-world-denpasar-xxi",
-      "format": "Regular 2D",
-      "price": 55000,
+      "format": "Premiere",
+      "price": 100000,
       "times": [
-        "13:15",
-        "15:30",
-        "17:45",
-        "20:00"
+        "13:30",
+        "15:45",
+        "18:00",
+        "20:15"
       ]
     },
     {
@@ -1207,11 +1062,21 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:45",
-        "14:45",
-        "16:45",
-        "18:45",
-        "20:45"
+        "15:30",
+        "19:45"
+      ]
+    },
+    {
+      "movieId": "2026/clayface",
+      "cinemaId": "park-23-xxi",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "12:15",
+        "14:20",
+        "16:25",
+        "18:30",
+        "20:35"
       ]
     },
     {
@@ -1234,9 +1099,7 @@
       "price": 25000,
       "times": [
         "13:15",
-        "15:30",
-        "17:45",
-        "20:00"
+        "17:30"
       ]
     },
     {
@@ -1297,6 +1160,19 @@
       ]
     },
     {
+      "movieId": "2026/clayface",
+      "cinemaId": "tsm-xxi",
+      "format": "Regular 2D",
+      "price": 45000,
+      "times": [
+        "12:30",
+        "14:35",
+        "16:40",
+        "18:45",
+        "20:50"
+      ]
+    },
+    {
       "movieId": "2026/resident-evil",
       "cinemaId": "tsm-xxi",
       "format": "Regular 2D",
@@ -1320,18 +1196,6 @@
         "16:40",
         "18:55",
         "21:10"
-      ]
-    },
-    {
-      "movieId": "2026/street-fighter",
-      "cinemaId": "tsm-xxi",
-      "format": "Regular 2D",
-      "price": 45000,
-      "times": [
-        "13:30",
-        "15:45",
-        "18:00",
-        "20:15"
       ]
     },
     {
