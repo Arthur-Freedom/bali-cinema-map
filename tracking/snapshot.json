@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "refreshedAt": "2026-10-22T09:30:11+08:00",
+  "refreshedAt": "2026-10-22T18:09:42+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -237,7 +237,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-22T10:09:38+00:00"
       },
       "firstSeenAt": "2026-10-15T09:27:46+08:00",
       "details": {
@@ -288,7 +288,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-22T10:09:38+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00",
       "details": {
@@ -374,7 +374,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/kuasa-gelap-perjanjian-darah/1446",
         "status": "verified",
-        "checkedAt": "2026-10-15T09:53:28+00:00"
+        "checkedAt": "2026-10-22T10:09:38+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00",
       "details": {
@@ -585,7 +585,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-22T10:09:38+00:00"
       },
       "firstSeenAt": "2026-10-16T09:20:16+08:00",
       "details": {
@@ -1118,6 +1118,17 @@
         "13:00",
         "19:15",
         "21:30"
+      ]
+    },
+    {
+      "movieId": "2026/lingsir-wengi-motel-malioboro",
+      "cinemaId": "denpasar-cineplex",
+      "format": "Deluxe",
+      "price": 20000,
+      "times": [
+        "12:30",
+        "14:45",
+        "21:40"
       ]
     },
     {
