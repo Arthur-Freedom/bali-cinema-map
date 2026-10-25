@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "refreshedAt": "2026-10-25T09:08:49+08:00",
+  "refreshedAt": "2026-10-25T17:48:23+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -163,7 +163,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-15T09:27:46+08:00"
     },
@@ -192,7 +192,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-08T10:42:19+08:00"
     },
@@ -200,11 +200,11 @@
       "id": "2026/henrys-first-date",
       "title": "HENRY'S FIRST DATE",
       "url": "https://jadwalnonton.com/film/2026/henrys-first-date/",
-      "trailerYouTubeId": "f6AJnkYeiBQ",
+      "trailerYouTubeId": "cFdkOZOTwSU",
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-23T09:29:38+08:00"
     },
@@ -346,7 +346,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-23T09:29:38+08:00"
     },
@@ -392,7 +392,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-16T09:20:16+08:00"
     },
@@ -404,7 +404,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-10-24T01:34:53+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-23T09:29:38+08:00"
     },
@@ -434,11 +434,11 @@
         "codes": [
           "en"
         ],
-        "reportedLanguage": "Inggris",
+        "reportedLanguage": "English",
         "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/whalefall/1592",
+        "sourceUrl": "https://lsf.go.id/en/film/whalefall/1609",
         "status": "verified",
-        "checkedAt": "2026-10-18T09:35:46+00:00"
+        "checkedAt": "2026-10-25T09:48:17+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00"
     }
