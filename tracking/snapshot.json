@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "refreshedAt": "2026-10-27T10:04:32+08:00",
+  "refreshedAt": "2026-10-27T18:31:52+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -169,33 +169,6 @@
           "Sci-fi"
         ],
         "sourceReleaseDate": "2026-10-21",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "id": "2026/daniel-and-the-fiery-furnace",
-      "title": "Daniel and the Fiery Furnace",
-      "url": "https://jadwalnonton.com/film/2026/daniel-and-the-fiery-furnace/",
-      "trailerYouTubeId": "vMZO8caQu1M",
-      "languageInfo": {
-        "codes": [
-          "en"
-        ],
-        "reportedLanguage": "English",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/daniel-fiery-furnace/1486",
-        "status": "verified",
-        "checkedAt": "2026-10-27T02:04:28+00:00"
-      },
-      "firstSeenAt": "2026-10-06T17:17:59+08:00",
-      "details": {
-        "runtimeMinutes": 108,
-        "ageRating": "Remaja",
-        "genres": [
-          "Drama"
-        ],
-        "sourceReleaseDate": "2026-09-23",
         "language": null,
         "subtitles": null
       }
@@ -671,33 +644,6 @@
       }
     },
     {
-      "id": "2026/tomorrow-x-together-world-tour-act-tomorrow",
-      "title": "TOMORROW X TOGETHER WORLD TOUR 'ACT : TOMORROW'",
-      "url": "https://jadwalnonton.com/film/2026/tomorrow-x-together-world-tour-act-tomorrow/",
-      "trailerYouTubeId": "xhlmksosID4",
-      "languageInfo": {
-        "codes": [
-          "ko"
-        ],
-        "reportedLanguage": "Korean",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/tomorrow-x-together-world-tour-act-tomorrow/1623",
-        "status": "verified",
-        "checkedAt": "2026-10-26T01:08:51+00:00"
-      },
-      "firstSeenAt": "2026-10-24T09:35:02+08:00",
-      "details": {
-        "runtimeMinutes": 100,
-        "ageRating": "Semua Umur",
-        "genres": [
-          "Documentary"
-        ],
-        "sourceReleaseDate": "2026-10-24",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2026/verity",
       "title": "Verity",
       "url": "https://jadwalnonton.com/film/2026/verity/",
@@ -827,15 +773,6 @@
       ]
     },
     {
-      "movieId": "2025/about-a-place-in-the-kinki-region",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 45000,
-      "times": [
-        "12:20"
-      ]
-    },
-    {
       "movieId": "2026/henrys-first-date",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
@@ -850,7 +787,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:15",
         "15:25",
         "17:35",
         "19:45"
@@ -863,15 +799,6 @@
       "price": 25000,
       "times": [
         "15:20"
-      ]
-    },
-    {
-      "movieId": "2026/bapak-paling-jujur",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:55"
       ]
     },
     {
@@ -889,7 +816,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:00",
         "17:40",
         "20:00"
       ]
@@ -909,7 +835,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:15",
         "18:00"
       ]
     },
@@ -938,15 +863,6 @@
       "price": 25000,
       "times": [
         "17:35"
-      ]
-    },
-    {
-      "movieId": "2026/daniel-and-the-fiery-furnace",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:15"
       ]
     },
     {
@@ -983,7 +899,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:30",
         "17:30",
         "20:00"
       ]
@@ -1003,7 +918,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:55",
         "18:00"
       ]
     },
@@ -1023,15 +937,6 @@
       "price": 100000,
       "times": [
         "15:15"
-      ]
-    },
-    {
-      "movieId": "2026/tomorrow-x-together-world-tour-act-tomorrow",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 100000,
-      "times": [
-        "13:00"
       ]
     },
     {
@@ -1060,28 +965,9 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:30",
         "15:45",
         "18:00",
         "20:15"
-      ]
-    },
-    {
-      "movieId": "2026/clayface",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:30"
-      ]
-    },
-    {
-      "movieId": "2026/kuasa-gelap-2",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D,Atmos,",
-      "price": 25000,
-      "times": [
-        "13:00"
       ]
     },
     {
@@ -1103,24 +989,6 @@
       "times": [
         "15:00",
         "19:30"
-      ]
-    },
-    {
-      "movieId": "2026/beautiful-pain",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:35"
-      ]
-    },
-    {
-      "movieId": "2026/lingsir-wengi-motel-malioboro",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:45"
       ]
     },
     {
@@ -1147,7 +1015,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:15",
         "15:35",
         "17:55",
         "20:15"
@@ -1159,7 +1026,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:30",
         "15:00",
         "17:30"
       ]
@@ -1451,6 +1317,7 @@
       "format": "Reguler 2D",
       "price": 25000,
       "times": [
+        "12:15",
         "14:05",
         "15:55",
         "18:30",

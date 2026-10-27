@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "trackingStartedAt": "2026-10-06T17:17:59+08:00",
-  "lastSuccessfulObservationAt": "2026-10-27T10:04:32+08:00",
+  "lastSuccessfulObservationAt": "2026-10-27T18:31:52+08:00",
   "movies": {
     "2026/agensi-rumah-tangga": {
       "title": "Agensi Rumah Tangga",
@@ -497,7 +497,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -712,7 +712,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -761,7 +761,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -781,7 +781,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
         "cinemaCount": 2,
@@ -800,7 +800,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:26+08:00"
+      "detailsObservedAt": "2026-10-27T18:31:50+08:00"
     },
     "2026/backrooms": {
       "title": "Backrooms",
@@ -1131,8 +1131,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-06T17:17:59+08:00",
           "firstScheduleDate": "2026-10-06",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -1201,14 +1201,14 @@
           "showtimeCount": 5
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-10-27T18:31:52+08:00",
       "lastSeenAt": "2026-10-27T10:04:32+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
-        "cinemaCount": 1,
-        "formatListingCount": 1,
-        "showtimeCount": 1
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       },
       "details": {
         "runtimeMinutes": 108,
@@ -1399,7 +1399,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -1516,7 +1516,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
         "cinemaCount": 1,
@@ -1534,7 +1534,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:26+08:00"
+      "detailsObservedAt": "2026-10-27T18:31:51+08:00"
     },
     "2026/djamin-setia-selamanya": {
       "title": "Djamin Setia Selamanya",
@@ -2232,7 +2232,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -2275,7 +2275,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
         "cinemaCount": 1,
@@ -2293,7 +2293,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:28+08:00"
+      "detailsObservedAt": "2026-10-27T18:31:52+08:00"
     },
     "2026/munafik-remake": {
       "title": "MUNAFIK: Melawan Iblis",
@@ -2480,7 +2480,7 @@
           "firstScheduleDate": "2026-10-12",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             45000
@@ -2764,7 +2764,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -2785,7 +2785,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
         "cinemaCount": 2,
@@ -2803,7 +2803,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:20+08:00"
+      "detailsObservedAt": "2026-10-27T18:31:46+08:00"
     },
     "2026/siksa-sampai-mati": {
       "title": "Memburu Pemangsa",
@@ -3051,7 +3051,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -3218,7 +3218,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -3310,7 +3310,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "latestCounts": {
         "cinemaCount": 2,
@@ -3331,7 +3331,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:14+08:00"
+      "detailsObservedAt": "2026-10-27T18:31:42+08:00"
     },
     "2026/warga-rusun-609": {
       "title": "Warga Rusun 609",
@@ -3983,7 +3983,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -3993,6 +3993,7 @@
             {
               "price": 25000,
               "times": [
+                "12:15",
                 "14:05",
                 "15:55",
                 "18:30",
@@ -4000,7 +4001,7 @@
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 5
         },
         {
           "cinemaId": "lippo-plaza-sunset",
@@ -4081,7 +4082,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4149,7 +4150,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 93,
@@ -4161,11 +4162,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:26+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:52+08:00",
       "latestCounts": {
         "cinemaCount": 2,
         "formatListingCount": 2,
-        "showtimeCount": 6
+        "showtimeCount": 7
       }
     },
     "2026/reawakened-man": {
@@ -4698,7 +4699,7 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4708,12 +4709,11 @@
             {
               "price": 25000,
               "times": [
-                "13:15",
                 "18:00"
               ]
             }
           ],
-          "showtimeCount": 2
+          "showtimeCount": 1
         },
         {
           "cinemaId": "cinemaxx-lippo-mall-kuta",
@@ -4722,7 +4722,7 @@
           "firstScheduleDate": "2026-10-09",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             45000
@@ -4745,7 +4745,7 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4768,8 +4768,8 @@
           "format": "Regular 2D,Atmos,",
           "firstSeenAt": "2026-10-27T10:04:32+08:00",
           "firstScheduleDate": "2026-10-27",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -4793,7 +4793,7 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4803,13 +4803,12 @@
             {
               "price": 25000,
               "times": [
-                "12:30",
                 "15:00",
                 "17:30"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "denpasar-cineplex",
@@ -4818,7 +4817,7 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -4870,7 +4869,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4973,7 +4972,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -4998,7 +4997,7 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5008,13 +5007,12 @@
             {
               "price": 25000,
               "times": [
-                "12:30",
                 "17:30",
                 "20:00"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "living-world-denpasar-xxi",
@@ -5050,7 +5048,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5104,7 +5102,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5158,7 +5156,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5178,7 +5176,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 120,
@@ -5190,11 +5188,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:21+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:46+08:00",
       "latestCounts": {
         "cinemaCount": 10,
-        "formatListingCount": 12,
-        "showtimeCount": 36
+        "formatListingCount": 11,
+        "showtimeCount": 32
       }
     },
     "2026/crawlers": {
@@ -5802,7 +5800,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5827,7 +5825,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5897,7 +5895,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -5994,7 +5992,7 @@
           "firstScheduleDate": "2026-10-20",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             50000
@@ -6098,7 +6096,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6171,7 +6169,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -6296,7 +6294,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -6346,7 +6344,7 @@
           "firstScheduleDate": "2026-10-25",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6366,7 +6364,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 125,
@@ -6379,7 +6377,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:16+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:43+08:00",
       "latestCounts": {
         "cinemaCount": 7,
         "formatListingCount": 8,
@@ -6469,7 +6467,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             45000
@@ -6515,7 +6513,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6538,7 +6536,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -6562,7 +6560,7 @@
           "firstScheduleDate": "2026-10-14",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             30000
@@ -6609,7 +6607,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6658,7 +6656,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6707,7 +6705,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -6859,7 +6857,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6880,7 +6878,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 106,
@@ -6895,7 +6893,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:20+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:46+08:00",
       "latestCounts": {
         "cinemaCount": 7,
         "formatListingCount": 8,
@@ -6964,8 +6962,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-17T09:18:17+08:00",
           "firstScheduleDate": "2026-10-17",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -6989,7 +6987,7 @@
           "firstScheduleDate": "2026-10-15",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -6999,14 +6997,13 @@
             {
               "price": 25000,
               "times": [
-                "13:30",
                 "15:45",
                 "18:00",
                 "20:15"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 3
         },
         {
           "cinemaId": "cinemaxx-sidewalk-jimbaran",
@@ -7015,7 +7012,7 @@
           "firstScheduleDate": "2026-10-17",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -7038,7 +7035,7 @@
           "firstScheduleDate": "2026-10-15",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -7115,7 +7112,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -7193,7 +7190,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -7289,7 +7286,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 103,
@@ -7301,11 +7298,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:19+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:50+08:00",
       "latestCounts": {
-        "cinemaCount": 6,
-        "formatListingCount": 6,
-        "showtimeCount": 21
+        "cinemaCount": 5,
+        "formatListingCount": 5,
+        "showtimeCount": 19
       }
     },
     "2026/dendam-arwah-penari": {
@@ -7321,7 +7318,7 @@
           "firstScheduleDate": "2026-10-15",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -7388,7 +7385,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 87,
@@ -7401,7 +7398,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:25+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:50+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -7523,7 +7520,7 @@
           "firstScheduleDate": "2026-10-16",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -7545,8 +7542,8 @@
           "format": "VIP 2D",
           "firstSeenAt": "2026-10-26T09:08:55+08:00",
           "firstScheduleDate": "2026-10-26",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -7566,7 +7563,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 103,
@@ -7578,11 +7575,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:16+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:43+08:00",
       "latestCounts": {
         "cinemaCount": 1,
-        "formatListingCount": 2,
-        "showtimeCount": 3
+        "formatListingCount": 1,
+        "showtimeCount": 2
       }
     },
     "2026/aplikasi-iblis": {
@@ -7915,7 +7912,7 @@
           "firstScheduleDate": "2026-10-16",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -7957,7 +7954,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 80,
@@ -7969,7 +7966,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:16+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:43+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -8014,7 +8011,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8041,7 +8038,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8051,13 +8048,12 @@
             {
               "price": 25000,
               "times": [
-                "13:00",
                 "17:40",
                 "20:00"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "cinemaxx-lippo-mall-kuta",
@@ -8087,8 +8083,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-21T18:06:58+08:00",
           "firstScheduleDate": "2026-10-21",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -8112,7 +8108,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8122,14 +8118,13 @@
             {
               "price": 25000,
               "times": [
-                "13:15",
                 "15:35",
                 "17:55",
                 "20:15"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 3
         },
         {
           "cinemaId": "denpasar-cineplex",
@@ -8138,7 +8133,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -8162,7 +8157,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             30000
@@ -8214,7 +8209,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8268,7 +8263,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8295,7 +8290,7 @@
           "firstScheduleDate": "2026-10-26",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8320,7 +8315,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8371,7 +8366,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8475,7 +8470,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8498,7 +8493,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 105,
@@ -8513,11 +8508,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:14+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:42+08:00",
       "latestCounts": {
-        "cinemaCount": 11,
-        "formatListingCount": 12,
-        "showtimeCount": 40
+        "cinemaCount": 10,
+        "formatListingCount": 11,
+        "showtimeCount": 37
       }
     },
     "2026/beautiful-pain": {
@@ -8531,8 +8526,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-22T09:30:11+08:00",
           "firstScheduleDate": "2026-10-22",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -8603,7 +8598,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8627,7 +8622,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8697,7 +8692,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8720,7 +8715,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 99,
@@ -8733,11 +8728,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:22+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:47+08:00",
       "latestCounts": {
-        "cinemaCount": 4,
-        "formatListingCount": 4,
-        "showtimeCount": 9
+        "cinemaCount": 3,
+        "formatListingCount": 3,
+        "showtimeCount": 8
       }
     },
     "2026/lingsir-wengi-motel-malioboro": {
@@ -8753,7 +8748,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8774,8 +8769,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-22T09:30:11+08:00",
           "firstScheduleDate": "2026-10-22",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -8824,7 +8819,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8848,7 +8843,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8871,7 +8866,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 102,
@@ -8884,11 +8879,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:18+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:45+08:00",
       "latestCounts": {
-        "cinemaCount": 4,
-        "formatListingCount": 4,
-        "showtimeCount": 9
+        "cinemaCount": 3,
+        "formatListingCount": 3,
+        "showtimeCount": 8
       }
     },
     "2026/pirunduk": {
@@ -8904,7 +8899,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8914,14 +8909,13 @@
             {
               "price": 25000,
               "times": [
-                "13:15",
                 "15:25",
                 "17:35",
                 "19:45"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 3
         },
         {
           "cinemaId": "cinemaxx-plaza-renon",
@@ -8930,7 +8924,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8955,7 +8949,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -8979,7 +8973,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             20000
@@ -9006,7 +9000,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9030,7 +9024,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9057,7 +9051,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9080,7 +9074,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9107,7 +9101,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9137,7 +9131,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9160,7 +9154,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 96,
@@ -9172,11 +9166,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:18+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:44+08:00",
       "latestCounts": {
         "cinemaCount": 10,
         "formatListingCount": 10,
-        "showtimeCount": 40
+        "showtimeCount": 39
       }
     },
     "2026/siti-vampire": {
@@ -9241,7 +9235,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9251,12 +9245,11 @@
             {
               "price": 25000,
               "times": [
-                "12:55",
                 "18:00"
               ]
             }
           ],
-          "showtimeCount": 2
+          "showtimeCount": 1
         },
         {
           "cinemaId": "tsm-xxi",
@@ -9286,7 +9279,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 104,
@@ -9300,11 +9293,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:23+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:48+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
-        "showtimeCount": 2
+        "showtimeCount": 1
       }
     },
     "2026/henrys-first-date": {
@@ -9320,7 +9313,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9392,7 +9385,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9436,7 +9429,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 115,
@@ -9450,7 +9443,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:18+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:44+08:00",
       "latestCounts": {
         "cinemaCount": 2,
         "formatListingCount": 2,
@@ -9470,7 +9463,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9494,7 +9487,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9517,7 +9510,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9540,7 +9533,7 @@
           "firstScheduleDate": "2026-10-27",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -9587,7 +9580,7 @@
           "firstScheduleDate": "2026-10-25",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -9612,7 +9605,7 @@
           "firstScheduleDate": "2026-10-25",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9636,7 +9629,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9657,7 +9650,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 100,
@@ -9669,7 +9662,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:13+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:42+08:00",
       "latestCounts": {
         "cinemaCount": 7,
         "formatListingCount": 7,
@@ -9689,7 +9682,7 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             25000
@@ -9708,7 +9701,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 116,
@@ -9720,7 +9713,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:22+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:47+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -9740,7 +9733,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -9759,7 +9752,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 101,
@@ -9771,7 +9764,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:24+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:49+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -9791,7 +9784,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -9810,7 +9803,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 60,
@@ -9822,7 +9815,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:23+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:49+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -9842,7 +9835,7 @@
           "firstScheduleDate": "2026-10-24",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-10-27T10:04:32+08:00",
+          "lastSeenAt": "2026-10-27T18:31:52+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
             100000
@@ -9861,7 +9854,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-10-27T10:04:32+08:00",
+      "lastSeenAt": "2026-10-27T18:31:52+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
         "runtimeMinutes": 102,
@@ -9873,7 +9866,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-10-27T10:04:25+08:00",
+      "detailsObservedAt": "2026-10-27T18:31:49+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -9891,8 +9884,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-24T09:35:02+08:00",
           "firstScheduleDate": "2026-10-24",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-10-27T18:31:52+08:00",
           "lastSeenAt": "2026-10-27T10:04:32+08:00",
           "lastScheduleDate": "2026-10-27",
           "pricesIdr": [
@@ -9910,8 +9903,8 @@
           "showtimeCount": 1
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-10-27T18:31:52+08:00",
       "lastSeenAt": "2026-10-27T10:04:32+08:00",
       "lastScheduleDate": "2026-10-27",
       "details": {
@@ -9926,9 +9919,9 @@
       },
       "detailsObservedAt": "2026-10-27T10:04:25+08:00",
       "latestCounts": {
-        "cinemaCount": 1,
-        "formatListingCount": 1,
-        "showtimeCount": 1
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       }
     },
     "2026/bts-world-tour-arirang-in-buenos-aires-live-vie": {
