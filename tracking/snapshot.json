@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "refreshedAt": "2026-10-28T10:14:57+08:00",
+  "refreshedAt": "2026-10-28T16:58:42+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -1219,32 +1219,11 @@
     {
       "movieId": "2026/whalefall",
       "cinemaId": "denpasar-cineplex",
-      "format": "Executive",
-      "price": 30000,
-      "times": [
-        "12:30",
-        "14:45"
-      ]
-    },
-    {
-      "movieId": "2026/whalefall",
-      "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
       "price": 20000,
       "times": [
         "17:15",
         "19:30"
-      ]
-    },
-    {
-      "movieId": "2026/clayface",
-      "cinemaId": "denpasar-cineplex",
-      "format": "Executive",
-      "price": 30000,
-      "times": [
-        "17:00",
-        "19:15",
-        "21:30"
       ]
     },
     {
