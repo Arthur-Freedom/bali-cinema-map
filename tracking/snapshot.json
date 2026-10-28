@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "refreshedAt": "2026-10-28T16:58:42+08:00",
+  "refreshedAt": "2026-10-28T19:19:49+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -77,7 +77,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/avengers-endgame-encore/1515",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00",
       "details": {
@@ -152,11 +152,11 @@
         "codes": [
           "en"
         ],
-        "reportedLanguage": "Inggris",
+        "reportedLanguage": "English",
         "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/clayface/1598",
+        "sourceUrl": "https://lsf.go.id/en/film/clayface/1616",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-21T18:06:58+08:00",
       "details": {
@@ -236,7 +236,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/digger/1528",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00",
       "details": {
@@ -556,7 +556,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/resident-evil/1485",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00",
       "details": {
@@ -633,7 +633,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/street-fighter/1580",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00",
       "details": {
@@ -761,7 +761,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/verity/1541",
         "status": "verified",
-        "checkedAt": "2026-10-21T10:06:48+00:00"
+        "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00",
       "details": {
