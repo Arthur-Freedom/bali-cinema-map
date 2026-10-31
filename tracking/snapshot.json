@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "refreshedAt": "2026-10-31T10:21:00+08:00",
+  "refreshedAt": "2026-10-31T18:55:56+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -126,9 +126,9 @@
       "url": "https://jadwalnonton.com/film/2026/beautiful-pain/",
       "trailerYouTubeId": "e40_gyKI738",
       "languageInfo": {
-        "status": "unknown",
+        "status": "unavailable",
         "codes": [],
-        "checkedAt": "2026-10-30T02:35:28+00:00"
+        "checkedAt": "2026-10-31T10:55:21+00:00"
       },
       "firstSeenAt": "2026-10-22T09:30:11+08:00",
       "details": {
@@ -195,28 +195,6 @@
       }
     },
     {
-      "id": "2026/detective-conan-episode-zero-the-shinichi-kudo",
-      "title": "Detective Conan: Episode \"ZERO\": The Shinichi Kudo Aquarium Case",
-      "url": "https://jadwalnonton.com/film/2026/detective-conan-episode-zero-the-shinichi-kudo/",
-      "trailerYouTubeId": "JeVdfNU4Wug",
-      "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-30T02:35:28+00:00"
-      },
-      "firstSeenAt": "2026-10-29T10:25:59+08:00",
-      "details": {
-        "runtimeMinutes": 47,
-        "ageRating": "Remaja",
-        "genres": [
-          "Animation"
-        ],
-        "sourceReleaseDate": "2026-10-28",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2026/digger",
       "title": "Digger",
       "url": "https://jadwalnonton.com/film/2026/digger/",
@@ -273,32 +251,6 @@
       }
     },
     {
-      "id": "2026/hybe-cheering-party",
-      "title": "HYBE CHEERING PARTY",
-      "url": "https://jadwalnonton.com/film/2026/hybe-cheering-party/",
-      "languageInfo": {
-        "codes": [
-          "ko"
-        ],
-        "reportedLanguage": "Korean",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/hybe-cheering-party/1626",
-        "status": "verified",
-        "checkedAt": "2026-10-31T02:20:55+00:00"
-      },
-      "firstSeenAt": "2026-10-24T09:35:02+08:00",
-      "details": {
-        "runtimeMinutes": 60,
-        "ageRating": null,
-        "genres": [
-          "Documentary"
-        ],
-        "sourceReleaseDate": "2026-10-24",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2023/iu-concert-the-golden-hour",
       "title": "IU CONCERT: THE GOLDEN HOUR",
       "url": "https://jadwalnonton.com/film/2023/iu-concert-the-golden-hour/",
@@ -317,34 +269,6 @@
           "Documentary"
         ],
         "sourceReleaseDate": "2026-10-28",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "id": "2025/iu-concert-the-winning",
-      "title": "IU CONCERT: THE WINNING",
-      "url": "https://jadwalnonton.com/film/2025/iu-concert-the-winning/",
-      "trailerYouTubeId": "VY010ubwfTM",
-      "languageInfo": {
-        "codes": [
-          "ko"
-        ],
-        "reportedLanguage": "Korean",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/iu-concert-winning/1411",
-        "status": "verified",
-        "checkedAt": "2026-10-30T02:35:28+00:00"
-      },
-      "firstSeenAt": "2026-10-30T10:35:35+08:00",
-      "details": {
-        "runtimeMinutes": 124,
-        "ageRating": "Semua Umur",
-        "genres": [
-          "Music",
-          "Documentary"
-        ],
-        "sourceReleaseDate": "2026-10-30",
         "language": null,
         "subtitles": null
       }
@@ -409,9 +333,9 @@
       "url": "https://jadwalnonton.com/film/2026/mawang-jangan-sebut-namanya/",
       "trailerYouTubeId": "CFtWWTieu-E",
       "languageInfo": {
-        "status": "unknown",
+        "status": "unavailable",
         "codes": [],
-        "checkedAt": "2026-10-30T02:35:28+00:00"
+        "checkedAt": "2026-10-31T10:55:21+00:00"
       },
       "firstSeenAt": "2026-10-29T10:25:59+08:00",
       "details": {
@@ -742,17 +666,7 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "14:20",
         "19:25"
-      ]
-    },
-    {
-      "movieId": "2026/the-intern-2",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "11:30"
       ]
     },
     {
@@ -765,21 +679,11 @@
       ]
     },
     {
-      "movieId": "2026/the-mongoose",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "14:15"
-      ]
-    },
-    {
       "movieId": "2026/the-doll-ghawiah",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "12:00",
         "17:05"
       ]
     },
@@ -789,11 +693,6 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "11:30",
-        "12:00",
-        "13:00",
-        "14:15",
-        "14:45",
         "15:45",
         "17:00",
         "17:30",
@@ -809,21 +708,11 @@
       "format": "VIP 2D",
       "price": 150000,
       "times": [
-        "12:30",
         "15:15",
         "16:30",
         "18:00",
         "19:15",
         "20:45"
-      ]
-    },
-    {
-      "movieId": "2025/iu-concert-the-winning",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 130000,
-      "times": [
-        "13:00"
       ]
     },
     {
@@ -854,15 +743,6 @@
       ]
     },
     {
-      "movieId": "2026/clayface",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "13:00"
-      ]
-    },
-    {
       "movieId": "2026/kuasa-gelap-2",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
@@ -877,8 +757,6 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:30",
-        "12:45",
         "15:15",
         "15:30",
         "18:00",
@@ -888,30 +766,11 @@
       ]
     },
     {
-      "movieId": "2026/detective-conan-episode-zero-the-shinichi-kudo",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 55000,
-      "times": [
-        "13:30"
-      ]
-    },
-    {
-      "movieId": "2026/hybe-cheering-party",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 100000,
-      "times": [
-        "12:00"
-      ]
-    },
-    {
       "movieId": "2026/bts-world-tour-arirang-in-sao-paulo-live-viewin",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
       "price": 450000,
       "times": [
-        "14:45",
         "18:30"
       ]
     },
@@ -930,7 +789,6 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "14:45",
         "19:15"
       ]
     },
@@ -949,9 +807,6 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "12:00",
-        "12:30",
-        "14:45",
         "15:15",
         "17:30",
         "18:00",
@@ -960,21 +815,11 @@
       ]
     },
     {
-      "movieId": "2026/hungry",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 60000,
-      "times": [
-        "12:45"
-      ]
-    },
-    {
       "movieId": "2026/the-mongoose",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
       "price": 60000,
       "times": [
-        "13:00",
         "17:30"
       ]
     },
@@ -1002,8 +847,6 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
-        "12:30",
-        "14:45",
         "15:15",
         "17:30",
         "18:00",
@@ -1027,6 +870,18 @@
       "price": 25000,
       "times": [
         "17:15"
+      ]
+    },
+    {
+      "movieId": "2026/the-intern-2",
+      "cinemaId": "denpasar-cineplex",
+      "format": "Executive",
+      "price": 30000,
+      "times": [
+        "13:00",
+        "15:45",
+        "18:30",
+        "21:15"
       ]
     },
     {
