@@ -1,66 +1,66 @@
 {
-  "date": "2026-10-31",
-  "refreshedAt": "2026-10-31T18:55:56+08:00",
+  "date": "2026-11-01",
+  "refreshedAt": "2026-11-01T10:13:09+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-10-31"
+      "date": "2026-11-01"
     }
   ],
   "movies": [
@@ -111,17 +111,6 @@
       "firstSeenAt": "2026-10-22T09:30:11+08:00"
     },
     {
-      "id": "2026/bts-world-tour-arirang-in-sao-paulo-live-viewin",
-      "title": "BTS WORLD TOUR `ARIRANG` IN SAO PAULO: LIVE VIEWIN",
-      "url": "https://jadwalnonton.com/film/2026/bts-world-tour-arirang-in-sao-paulo-live-viewin/",
-      "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-10-31T02:20:55+00:00"
-      },
-      "firstSeenAt": "2026-10-31T10:21:00+08:00"
-    },
-    {
       "id": "2026/clayface",
       "title": "Clayface",
       "url": "https://jadwalnonton.com/film/2026/clayface/",
@@ -137,6 +126,18 @@
         "checkedAt": "2026-10-28T11:19:45+00:00"
       },
       "firstSeenAt": "2026-10-21T18:06:58+08:00"
+    },
+    {
+      "id": "2026/detective-conan-episode-zero-the-shinichi-kudo",
+      "title": "Detective Conan: Episode \"ZERO\": The Shinichi Kudo Aquarium Case",
+      "url": "https://jadwalnonton.com/film/2026/detective-conan-episode-zero-the-shinichi-kudo/",
+      "trailerYouTubeId": "JeVdfNU4Wug",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-11-01T02:13:07+00:00"
+      },
+      "firstSeenAt": "2026-10-29T10:25:59+08:00"
     },
     {
       "id": "2026/digger",
@@ -183,6 +184,23 @@
         "checkedAt": "2026-10-31T02:20:55+00:00"
       },
       "firstSeenAt": "2026-10-28T10:14:57+08:00"
+    },
+    {
+      "id": "2025/iu-concert-the-winning",
+      "title": "IU CONCERT: THE WINNING",
+      "url": "https://jadwalnonton.com/film/2025/iu-concert-the-winning/",
+      "trailerYouTubeId": "VY010ubwfTM",
+      "languageInfo": {
+        "codes": [
+          "ko"
+        ],
+        "reportedLanguage": "Korean",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/iu-concert-winning/1411",
+        "status": "verified",
+        "checkedAt": "2026-11-01T02:13:07+00:00"
+      },
+      "firstSeenAt": "2026-10-30T10:35:35+08:00"
     },
     {
       "id": "2026/kuasa-gelap-2",
@@ -445,7 +463,17 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
+        "14:20",
         "19:25"
+      ]
+    },
+    {
+      "movieId": "2026/the-intern-2",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "VIP 2D",
+      "price": 150000,
+      "times": [
+        "11:30"
       ]
     },
     {
@@ -458,11 +486,21 @@
       ]
     },
     {
+      "movieId": "2026/the-mongoose",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "VIP 2D",
+      "price": 150000,
+      "times": [
+        "14:15"
+      ]
+    },
+    {
       "movieId": "2026/the-doll-ghawiah",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 40000,
       "times": [
+        "12:00",
         "17:05"
       ]
     },
@@ -472,11 +510,12 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
+        "12:00",
+        "13:00",
+        "14:45",
         "15:45",
-        "17:00",
         "17:30",
         "18:30",
-        "19:45",
         "20:15",
         "21:15"
       ]
@@ -487,6 +526,7 @@
       "format": "VIP 2D",
       "price": 150000,
       "times": [
+        "12:30",
         "15:15",
         "16:30",
         "18:00",
@@ -495,12 +535,21 @@
       ]
     },
     {
+      "movieId": "2025/iu-concert-the-winning",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 130000,
+      "times": [
+        "16:25"
+      ]
+    },
+    {
       "movieId": "2023/iu-concert-the-golden-hour",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 130000,
       "times": [
-        "15:35"
+        "13:00"
       ]
     },
     {
@@ -522,6 +571,15 @@
       ]
     },
     {
+      "movieId": "2026/clayface",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "13:00"
+      ]
+    },
+    {
       "movieId": "2026/kuasa-gelap-2",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
@@ -536,6 +594,8 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
+        "12:30",
+        "12:45",
         "15:15",
         "15:30",
         "18:00",
@@ -545,12 +605,12 @@
       ]
     },
     {
-      "movieId": "2026/bts-world-tour-arirang-in-sao-paulo-live-viewin",
+      "movieId": "2026/detective-conan-episode-zero-the-shinichi-kudo",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 450000,
+      "price": 55000,
       "times": [
-        "18:30"
+        "12:15"
       ]
     },
     {
@@ -559,7 +619,7 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "21:30"
+        "20:15"
       ]
     },
     {
@@ -568,7 +628,8 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "19:15"
+        "13:30",
+        "18:00"
       ]
     },
     {
@@ -577,7 +638,7 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
-        "17:00"
+        "15:45"
       ]
     },
     {
@@ -586,11 +647,27 @@
       "format": "Regular 2D",
       "price": 55000,
       "times": [
+        "11:30",
+        "12:00",
+        "12:30",
+        "14:15",
+        "14:45",
         "15:15",
+        "17:00",
         "17:30",
         "18:00",
+        "19:45",
         "20:15",
         "20:45"
+      ]
+    },
+    {
+      "movieId": "2026/hungry",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 60000,
+      "times": [
+        "12:45"
       ]
     },
     {
@@ -599,6 +676,7 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
+        "13:00",
         "17:30"
       ]
     },
@@ -626,6 +704,8 @@
       "format": "Regular 2D",
       "price": 60000,
       "times": [
+        "12:30",
+        "14:45",
         "15:15",
         "17:30",
         "18:00",
@@ -709,6 +789,7 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
+        "13:20",
         "15:10",
         "19:05"
       ]
@@ -729,7 +810,6 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "13:05",
         "17:00",
         "20:55"
       ]
@@ -831,19 +911,11 @@
       "format": "Reguler 2D",
       "price": 70000,
       "times": [
-        "12:05",
-        "16:30",
-        "20:55"
-      ]
-    },
-    {
-      "movieId": "2026/the-intern-2",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 70000,
-      "times": [
-        "14:00",
-        "18:25"
+        "13:10",
+        "15:05",
+        "17:00",
+        "18:55",
+        "20:50"
       ]
     },
     {
@@ -1051,8 +1123,7 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:25",
-        "16:25"
+        "17:00"
       ]
     },
     {
@@ -1085,9 +1156,8 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "14:20",
-        "18:20",
-        "20:25"
+        "14:55",
+        "20:45"
       ]
     },
     {
@@ -1096,8 +1166,8 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "13:25",
-        "17:05"
+        "13:05",
+        "18:55"
       ]
     },
     {
@@ -1117,9 +1187,11 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "15:15",
-        "18:55",
-        "20:45"
+        "13:30",
+        "15:20",
+        "17:10",
+        "19:00",
+        "20:50"
       ]
     },
     {
