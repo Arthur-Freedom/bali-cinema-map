@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "refreshedAt": "2026-11-04T11:00:52+08:00",
+  "refreshedAt": "2026-11-04T20:58:51+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -94,7 +94,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/clayface/1616",
         "status": "verified",
-        "checkedAt": "2026-10-28T11:19:45+00:00"
+        "checkedAt": "2026-11-04T12:58:48+00:00"
       },
       "firstSeenAt": "2026-10-21T18:06:58+08:00"
     },
@@ -247,7 +247,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/street-fighter/1580",
         "status": "verified",
-        "checkedAt": "2026-10-28T11:19:45+00:00"
+        "checkedAt": "2026-11-04T12:58:48+00:00"
       },
       "firstSeenAt": "2026-10-14T09:54:38+08:00"
     },
@@ -289,7 +289,7 @@
       "id": "2026/the-mongoose",
       "title": "The Mongoose",
       "url": "https://jadwalnonton.com/film/2026/the-mongoose/",
-      "trailerYouTubeId": "H1Y77u8fCFI",
+      "trailerYouTubeId": "hmRahyj1cuY",
       "languageInfo": {
         "codes": [
           "en"
@@ -315,7 +315,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/verity/1541",
         "status": "verified",
-        "checkedAt": "2026-10-28T11:19:45+00:00"
+        "checkedAt": "2026-11-04T12:58:48+00:00"
       },
       "firstSeenAt": "2026-10-06T17:17:59+08:00"
     },
