@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "trackingStartedAt": "2026-10-06T17:17:59+08:00",
-  "lastSuccessfulObservationAt": "2026-11-04T20:58:51+08:00",
+  "lastSuccessfulObservationAt": "2026-11-05T11:29:03+08:00",
   "movies": {
     "2026/agensi-rumah-tangga": {
       "title": "Agensi Rumah Tangga",
@@ -2041,8 +2041,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-06T17:17:59+08:00",
           "firstScheduleDate": "2026-10-06",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -2087,8 +2087,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-06T17:17:59+08:00",
           "firstScheduleDate": "2026-10-06",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -2273,14 +2273,14 @@
           "showtimeCount": 2
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-11-05T11:29:03+08:00",
       "lastSeenAt": "2026-11-04T20:58:51+08:00",
       "lastScheduleDate": "2026-11-04",
       "latestCounts": {
-        "cinemaCount": 2,
-        "formatListingCount": 2,
-        "showtimeCount": 2
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       },
       "details": {
         "runtimeMinutes": 111,
@@ -2764,8 +2764,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -2774,25 +2774,23 @@
             {
               "price": 45000,
               "times": [
-                "13:30",
-                "15:20",
-                "17:10",
-                "19:00",
-                "20:50"
+                "13:15",
+                "15:05",
+                "19:10"
               ]
             }
           ],
-          "showtimeCount": 5
+          "showtimeCount": 3
         }
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
-        "showtimeCount": 5
+        "showtimeCount": 3
       },
       "details": {
         "runtimeMinutes": 90,
@@ -2805,7 +2803,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:48+08:00"
+      "detailsObservedAt": "2026-11-05T11:28:55+08:00"
     },
     "2026/siksa-sampai-mati": {
       "title": "Memburu Pemangsa",
@@ -3053,8 +3051,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -3312,8 +3310,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -3333,7 +3331,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:40+08:00"
+      "detailsObservedAt": "2026-11-05T11:28:48+08:00"
     },
     "2026/warga-rusun-609": {
       "title": "Warga Rusun 609",
@@ -3346,8 +3344,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-06T17:17:59+08:00",
           "firstScheduleDate": "2026-10-06",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -3392,8 +3390,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-06T17:17:59+08:00",
           "firstScheduleDate": "2026-10-06",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -3560,14 +3558,14 @@
           "showtimeCount": 2
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-11-05T11:29:03+08:00",
       "lastSeenAt": "2026-11-04T20:58:51+08:00",
       "lastScheduleDate": "2026-11-04",
       "latestCounts": {
-        "cinemaCount": 2,
-        "formatListingCount": 2,
-        "showtimeCount": 2
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       },
       "details": {
         "runtimeMinutes": 103,
@@ -3985,8 +3983,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -3995,12 +3993,11 @@
             {
               "price": 50000,
               "times": [
-                "15:00",
-                "18:45"
+                "16:55"
               ]
             }
           ],
-          "showtimeCount": 2
+          "showtimeCount": 1
         },
         {
           "cinemaId": "lippo-plaza-sunset",
@@ -4149,8 +4146,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 93,
         "ageRating": "Dewasa 17+",
@@ -4161,11 +4158,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:47+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:54+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
-        "showtimeCount": 2
+        "showtimeCount": 1
       }
     },
     "2026/reawakened-man": {
@@ -4813,8 +4810,8 @@
           "firstScheduleDate": "2026-10-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             20000
           ],
@@ -4824,14 +4821,11 @@
               "price": 20000,
               "times": [
                 "12:30",
-                "14:50",
-                "17:10",
-                "19:30",
-                "21:50"
+                "14:50"
               ]
             }
           ],
-          "showtimeCount": 5
+          "showtimeCount": 2
         },
         {
           "cinemaId": "galeria-xxi",
@@ -4991,8 +4985,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-08T10:42:19+08:00",
           "firstScheduleDate": "2026-10-08",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -5014,10 +5008,10 @@
           "format": "Regular 2D,Atmos,",
           "firstSeenAt": "2026-10-30T10:35:35+08:00",
           "firstScheduleDate": "2026-10-30",
-          "currentlyListed": false,
-          "missingSince": "2026-10-31T10:21:00+08:00",
-          "lastSeenAt": "2026-10-30T19:23:52+08:00",
-          "lastScheduleDate": "2026-10-30",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -5026,7 +5020,7 @@
             {
               "price": 25000,
               "times": [
-                "17:25"
+                "17:30"
               ]
             }
           ],
@@ -5066,8 +5060,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             55000
           ],
@@ -5076,8 +5070,8 @@
             {
               "price": 55000,
               "times": [
-                "14:40",
-                "18:50"
+                "12:20",
+                "18:25"
               ]
             }
           ],
@@ -5190,8 +5184,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 120,
         "ageRating": "Remaja",
@@ -5202,11 +5196,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:45+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:53+08:00",
       "latestCounts": {
         "cinemaCount": 3,
         "formatListingCount": 3,
-        "showtimeCount": 8
+        "showtimeCount": 5
       }
     },
     "2026/crawlers": {
@@ -6180,8 +6174,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -6355,8 +6349,8 @@
           "firstScheduleDate": "2026-10-25",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -6365,8 +6359,8 @@
             {
               "price": 45000,
               "times": [
-                "15:55",
-                "20:45"
+                "16:55",
+                "21:00"
               ]
             }
           ],
@@ -6375,8 +6369,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 125,
         "ageRating": "Remaja",
@@ -6388,7 +6382,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:47+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:54+08:00",
       "latestCounts": {
         "cinemaCount": 2,
         "formatListingCount": 2,
@@ -6994,8 +6988,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-15T09:27:46+08:00",
           "firstScheduleDate": "2026-10-15",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -7281,8 +7275,8 @@
           "showtimeCount": 2
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-11-05T11:29:03+08:00",
       "lastSeenAt": "2026-11-04T20:58:51+08:00",
       "lastScheduleDate": "2026-11-04",
       "details": {
@@ -7297,9 +7291,9 @@
       },
       "detailsObservedAt": "2026-11-04T20:58:45+08:00",
       "latestCounts": {
-        "cinemaCount": 1,
-        "formatListingCount": 1,
-        "showtimeCount": 1
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       }
     },
     "2026/dendam-arwah-penari": {
@@ -8007,8 +8001,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -8017,13 +8011,11 @@
             {
               "price": 40000,
               "times": [
-                "12:45",
-                "16:45",
-                "20:45"
+                "18:35"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 1
         },
         {
           "cinemaId": "cinemaxx-lippo-mall-kuta",
@@ -8101,8 +8093,8 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -8111,7 +8103,7 @@
             {
               "price": 40000,
               "times": [
-                "13:10"
+                "15:10"
               ]
             }
           ],
@@ -8252,8 +8244,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -8479,8 +8471,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -8489,21 +8481,18 @@
             {
               "price": 45000,
               "times": [
-                "12:10",
-                "14:15",
-                "16:20",
-                "18:25",
-                "20:35"
+                "12:35",
+                "16:35"
               ]
             }
           ],
-          "showtimeCount": 5
+          "showtimeCount": 2
         }
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 105,
         "ageRating": "Dewasa 17+",
@@ -8517,11 +8506,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:40+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:48+08:00",
       "latestCounts": {
         "cinemaCount": 4,
         "formatListingCount": 4,
-        "showtimeCount": 10
+        "showtimeCount": 5
       }
     },
     "2026/beautiful-pain": {
@@ -8969,8 +8958,8 @@
           "format": "Deluxe",
           "firstSeenAt": "2026-10-22T09:30:11+08:00",
           "firstScheduleDate": "2026-10-22",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -9018,8 +9007,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -9028,13 +9017,12 @@
             {
               "price": 50000,
               "times": [
-                "12:20",
-                "16:20",
-                "20:20"
+                "12:55",
+                "18:45"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "lippo-plaza-sunset",
@@ -9066,8 +9054,8 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             55000
           ],
@@ -9076,12 +9064,11 @@
             {
               "price": 55000,
               "times": [
-                "16:55",
-                "21:05"
+                "16:30"
               ]
             }
           ],
-          "showtimeCount": 2
+          "showtimeCount": 1
         },
         {
           "cinemaId": "park-23-xxi",
@@ -9090,8 +9077,8 @@
           "firstScheduleDate": "2026-10-23",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -9136,8 +9123,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 96,
         "ageRating": "Remaja",
@@ -9148,11 +9135,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:45+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:53+08:00",
       "latestCounts": {
-        "cinemaCount": 4,
-        "formatListingCount": 4,
-        "showtimeCount": 10
+        "cinemaCount": 3,
+        "formatListingCount": 3,
+        "showtimeCount": 6
       }
     },
     "2026/siti-vampire": {
@@ -10116,8 +10103,8 @@
           "format": "Reguler 2D",
           "firstSeenAt": "2026-11-02T10:29:25+08:00",
           "firstScheduleDate": "2026-11-02",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -10160,8 +10147,8 @@
           "showtimeCount": 2
         }
       ],
-      "currentlyListed": true,
-      "missingSince": null,
+      "currentlyListed": false,
+      "missingSince": "2026-11-05T11:29:03+08:00",
       "lastSeenAt": "2026-11-04T20:58:51+08:00",
       "lastScheduleDate": "2026-11-04",
       "details": {
@@ -10177,9 +10164,9 @@
       },
       "detailsObservedAt": "2026-11-04T20:58:46+08:00",
       "latestCounts": {
-        "cinemaCount": 1,
-        "formatListingCount": 1,
-        "showtimeCount": 2
+        "cinemaCount": 0,
+        "formatListingCount": 0,
+        "showtimeCount": 0
       }
     },
     "2026/the-mongoose": {
@@ -10195,8 +10182,8 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -10205,12 +10192,11 @@
             {
               "price": 40000,
               "times": [
-                "14:50",
-                "18:50"
+                "14:35"
               ]
             }
           ],
-          "showtimeCount": 2
+          "showtimeCount": 1
         },
         {
           "cinemaId": "cinemaxx-lippo-mall-kuta",
@@ -10219,8 +10205,8 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -10263,8 +10249,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-31T10:21:00+08:00",
           "firstScheduleDate": "2026-10-31",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -10312,8 +10298,8 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -10335,8 +10321,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -10345,13 +10331,12 @@
             {
               "price": 50000,
               "times": [
-                "13:05",
-                "16:50",
-                "20:35"
+                "14:40",
+                "19:05"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "lippo-plaza-sunset",
@@ -10409,8 +10394,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             55000
           ],
@@ -10419,13 +10404,12 @@
             {
               "price": 55000,
               "times": [
-                "12:40",
                 "14:35",
-                "19:05"
+                "20:40"
               ]
             }
           ],
-          "showtimeCount": 3
+          "showtimeCount": 2
         },
         {
           "cinemaId": "park-23-xxi",
@@ -10434,8 +10418,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -10483,8 +10467,8 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -10493,21 +10477,19 @@
             {
               "price": 45000,
               "times": [
-                "12:55",
-                "14:50",
-                "16:45",
+                "14:40",
                 "18:40",
                 "20:35"
               ]
             }
           ],
-          "showtimeCount": 5
+          "showtimeCount": 3
         }
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 98,
         "ageRating": "Remaja",
@@ -10520,11 +10502,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:40+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:48+08:00",
       "latestCounts": {
-        "cinemaCount": 8,
-        "formatListingCount": 8,
-        "showtimeCount": 18
+        "cinemaCount": 7,
+        "formatListingCount": 7,
+        "showtimeCount": 12
       }
     },
     "2026/detective-conan-episode-zero-the-shinichi-kudo": {
@@ -10615,8 +10597,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -10664,8 +10646,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             42000
           ],
@@ -10674,18 +10656,14 @@
             {
               "price": 42000,
               "times": [
-                "11:45",
-                "12:45",
-                "14:30",
-                "15:30",
-                "17:15",
-                "18:15",
-                "20:00",
-                "21:00"
+                "12:15",
+                "15:00",
+                "17:45",
+                "20:30"
               ]
             }
           ],
-          "showtimeCount": 8
+          "showtimeCount": 4
         },
         {
           "cinemaId": "cinemaxx-sidewalk-jimbaran",
@@ -10694,8 +10672,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -10704,7 +10682,7 @@
             {
               "price": 40000,
               "times": [
-                "20:00"
+                "17:00"
               ]
             }
           ],
@@ -10717,8 +10695,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             20000
           ],
@@ -10743,8 +10721,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             35000
           ],
@@ -10753,18 +10731,14 @@
             {
               "price": 35000,
               "times": [
-                "12:15",
                 "13:00",
-                "14:45",
                 "15:30",
-                "17:15",
                 "18:00",
-                "19:45",
                 "20:30"
               ]
             }
           ],
-          "showtimeCount": 8
+          "showtimeCount": 4
         },
         {
           "cinemaId": "icon-bali-xxi",
@@ -10773,8 +10747,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -10823,8 +10797,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -10833,18 +10807,13 @@
             {
               "price": 50000,
               "times": [
-                "12:30",
-                "13:15",
-                "15:00",
-                "15:45",
-                "17:30",
-                "18:15",
-                "20:00",
-                "20:45"
+                "12:10",
+                "16:35",
+                "21:00"
               ]
             }
           ],
-          "showtimeCount": 8
+          "showtimeCount": 3
         },
         {
           "cinemaId": "lippo-plaza-sunset",
@@ -10853,8 +10822,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -10863,18 +10832,14 @@
             {
               "price": 25000,
               "times": [
-                "11:45",
-                "12:45",
-                "14:30",
-                "15:30",
-                "17:15",
-                "18:15",
-                "20:00",
-                "21:00"
+                "12:30",
+                "15:15",
+                "18:00",
+                "20:45"
               ]
             }
           ],
-          "showtimeCount": 8
+          "showtimeCount": 4
         },
         {
           "cinemaId": "living-world-denpasar-xxi",
@@ -10907,8 +10872,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             55000
           ],
@@ -10919,24 +10884,22 @@
               "times": [
                 "12:45",
                 "15:15",
-                "16:30",
                 "17:45",
-                "20:15",
-                "21:00"
+                "20:15"
               ]
             }
           ],
-          "showtimeCount": 6
+          "showtimeCount": 4
         },
         {
           "cinemaId": "park-23-xxi",
           "format": "Reguler 2D",
           "firstSeenAt": "2026-10-29T10:25:59+08:00",
           "firstScheduleDate": "2026-10-29",
-          "currentlyListed": false,
-          "missingSince": "2026-11-04T11:00:52+08:00",
-          "lastSeenAt": "2026-11-03T20:46:27+08:00",
-          "lastScheduleDate": "2026-11-03",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -10945,14 +10908,12 @@
             {
               "price": 25000,
               "times": [
-                "12:45",
-                "15:15",
-                "17:45",
-                "20:15"
+                "15:20",
+                "20:20"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 2
         },
         {
           "cinemaId": "tsm-xxi",
@@ -10985,8 +10946,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -11007,8 +10968,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 135,
         "ageRating": "Dewasa 17+",
@@ -11019,11 +10980,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:43+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:51+08:00",
       "latestCounts": {
-        "cinemaCount": 10,
-        "formatListingCount": 10,
-        "showtimeCount": 53
+        "cinemaCount": 11,
+        "formatListingCount": 11,
+        "showtimeCount": 36
       }
     },
     "2026/mawang-jangan-sebut-namanya": {
@@ -11112,8 +11073,8 @@
           "format": "Regular 2D",
           "firstSeenAt": "2026-10-29T10:25:59+08:00",
           "firstScheduleDate": "2026-10-29",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -11137,8 +11098,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -11147,7 +11108,7 @@
             {
               "price": 40000,
               "times": [
-                "17:40"
+                "12:25"
               ]
             }
           ],
@@ -11158,8 +11119,8 @@
           "format": "Deluxe",
           "firstSeenAt": "2026-10-29T10:25:59+08:00",
           "firstScheduleDate": "2026-10-29",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -11238,8 +11199,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -11248,8 +11209,8 @@
             {
               "price": 50000,
               "times": [
-                "14:15",
-                "18:15"
+                "14:50",
+                "20:40"
               ]
             }
           ],
@@ -11262,8 +11223,8 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -11272,7 +11233,7 @@
             {
               "price": 25000,
               "times": [
-                "13:10"
+                "12:50"
               ]
             }
           ],
@@ -11308,8 +11269,8 @@
           "format": "Reguler 2D",
           "firstSeenAt": "2026-10-29T10:25:59+08:00",
           "firstScheduleDate": "2026-10-29",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -11355,8 +11316,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 110,
         "ageRating": "Dewasa 17+",
@@ -11369,11 +11330,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:43+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:52+08:00",
       "latestCounts": {
-        "cinemaCount": 6,
-        "formatListingCount": 6,
-        "showtimeCount": 13
+        "cinemaCount": 3,
+        "formatListingCount": 3,
+        "showtimeCount": 4
       }
     },
     "2026/the-longest-wait": {
@@ -11516,8 +11477,8 @@
           "firstScheduleDate": "2026-10-30",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -11610,8 +11571,8 @@
           "format": "Reguler 2D",
           "firstSeenAt": "2026-10-30T10:35:35+08:00",
           "firstScheduleDate": "2026-10-30",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -11632,8 +11593,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 132,
         "ageRating": "Remaja",
@@ -11645,11 +11606,11 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:42+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:49+08:00",
       "latestCounts": {
-        "cinemaCount": 2,
-        "formatListingCount": 2,
-        "showtimeCount": 3
+        "cinemaCount": 1,
+        "formatListingCount": 1,
+        "showtimeCount": 1
       }
     },
     "2026/bts-world-tour-arirang-in-sao-paulo-live-viewin": {
@@ -11768,8 +11729,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -11794,8 +11755,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -11805,19 +11766,13 @@
               "price": 25000,
               "times": [
                 "12:00",
-                "13:00",
                 "14:45",
-                "15:45",
-                "16:30",
                 "17:30",
-                "18:30",
-                "19:15",
-                "20:15",
-                "21:15"
+                "20:10"
               ]
             }
           ],
-          "showtimeCount": 10
+          "showtimeCount": 4
         },
         {
           "cinemaId": "cinemaxx-lippo-mall-kuta",
@@ -11826,8 +11781,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             75000
           ],
@@ -11852,8 +11807,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             42000
           ],
@@ -11864,14 +11819,12 @@
               "times": [
                 "12:00",
                 "14:45",
-                "16:45",
                 "17:30",
-                "19:30",
                 "20:15"
               ]
             }
           ],
-          "showtimeCount": 6
+          "showtimeCount": 4
         },
         {
           "cinemaId": "cinemaxx-sidewalk-jimbaran",
@@ -11880,8 +11833,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             40000
           ],
@@ -11890,24 +11843,21 @@
             {
               "price": 40000,
               "times": [
-                "12:30",
-                "15:15",
-                "17:00",
-                "18:00",
-                "19:45",
-                "20:45"
+                "12:25",
+                "17:30",
+                "20:15"
               ]
             }
           ],
-          "showtimeCount": 6
+          "showtimeCount": 3
         },
         {
           "cinemaId": "denpasar-cineplex",
           "format": "Deluxe",
           "firstSeenAt": "2026-11-04T11:00:52+08:00",
           "firstScheduleDate": "2026-11-04",
-          "currentlyListed": true,
-          "missingSince": null,
+          "currentlyListed": false,
+          "missingSince": "2026-11-05T11:29:03+08:00",
           "lastSeenAt": "2026-11-04T20:58:51+08:00",
           "lastScheduleDate": "2026-11-04",
           "pricesIdr": [
@@ -11932,8 +11882,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             30000
           ],
@@ -11958,8 +11908,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             35000
           ],
@@ -11968,10 +11918,10 @@
             {
               "price": 35000,
               "times": [
-                "13:15",
-                "15:45",
-                "18:15",
-                "20:45"
+                "13:20",
+                "15:50",
+                "18:20",
+                "20:50"
               ]
             }
           ],
@@ -11984,8 +11934,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -12010,8 +11960,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -12036,8 +11986,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -12061,8 +12011,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -12087,8 +12037,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             50000
           ],
@@ -12113,8 +12063,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -12126,13 +12076,11 @@
                 "12:00",
                 "14:45",
                 "17:30",
-                "18:00",
-                "20:15",
-                "20:45"
+                "20:15"
               ]
             }
           ],
-          "showtimeCount": 6
+          "showtimeCount": 4
         },
         {
           "cinemaId": "living-world-denpasar-xxi",
@@ -12141,8 +12089,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -12165,8 +12113,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             55000
           ],
@@ -12175,14 +12123,13 @@
             {
               "price": 55000,
               "times": [
-                "13:00",
                 "15:30",
                 "18:00",
                 "20:30"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 3
         },
         {
           "cinemaId": "park-23-xxi",
@@ -12191,8 +12138,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             25000
           ],
@@ -12201,14 +12148,12 @@
             {
               "price": 25000,
               "times": [
-                "12:45",
-                "15:15",
-                "17:45",
-                "20:15"
+                "12:50",
+                "17:50"
               ]
             }
           ],
-          "showtimeCount": 4
+          "showtimeCount": 2
         },
         {
           "cinemaId": "tsm-xxi",
@@ -12217,8 +12162,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             100000
           ],
@@ -12243,8 +12188,8 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-04T20:58:51+08:00",
-          "lastScheduleDate": "2026-11-04",
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
           "pricesIdr": [
             45000
           ],
@@ -12265,8 +12210,8 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-04T20:58:51+08:00",
-      "lastScheduleDate": "2026-11-04",
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
       "details": {
         "runtimeMinutes": 135,
         "ageRating": "Remaja",
@@ -12276,15 +12221,743 @@
           "Horror",
           "Sci-fi"
         ],
-        "sourceReleaseDate": null,
+        "sourceReleaseDate": "2026-11-04",
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-04T20:58:42+08:00",
+      "detailsObservedAt": "2026-11-05T11:28:50+08:00",
       "latestCounts": {
         "cinemaCount": 12,
-        "formatListingCount": 19,
-        "showtimeCount": 83
+        "formatListingCount": 18,
+        "showtimeCount": 65
+      }
+    },
+    "2026/gak-ada-matinya": {
+      "title": "Gak Ada Matinya!",
+      "sourceUrl": "https://jadwalnonton.com/film/2026/gak-ada-matinya/",
+      "firstSeenAt": "2026-11-05T11:29:03+08:00",
+      "firstScheduleDate": "2026-11-05",
+      "listings": [
+        {
+          "cinemaId": "cinemaxx-lippo-mall-kuta",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "12:20",
+                "14:55",
+                "17:30",
+                "20:00"
+              ]
+            }
+          ],
+          "showtimeCount": 4
+        },
+        {
+          "cinemaId": "cinemaxx-plaza-renon",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            42000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 42000,
+              "times": [
+                "12:15",
+                "14:50",
+                "17:25",
+                "20:00"
+              ]
+            }
+          ],
+          "showtimeCount": 4
+        },
+        {
+          "cinemaId": "cinemaxx-sidewalk-jimbaran",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            40000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 40000,
+              "times": [
+                "12:15",
+                "14:50",
+                "17:25",
+                "20:00"
+              ]
+            }
+          ],
+          "showtimeCount": 4
+        },
+        {
+          "cinemaId": "denpasar-cineplex",
+          "format": "Deluxe",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            20000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 20000,
+              "times": [
+                "17:10",
+                "19:30",
+                "21:50"
+              ]
+            }
+          ],
+          "showtimeCount": 3
+        },
+        {
+          "cinemaId": "level-21-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            50000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 50000,
+              "times": [
+                "12:00",
+                "14:20",
+                "16:40",
+                "19:00",
+                "21:20"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        },
+        {
+          "cinemaId": "lippo-plaza-sunset",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "12:00",
+                "14:30",
+                "17:10",
+                "19:45"
+              ]
+            }
+          ],
+          "showtimeCount": 4
+        },
+        {
+          "cinemaId": "living-world-denpasar-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            55000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 55000,
+              "times": [
+                "12:00",
+                "14:20",
+                "16:40",
+                "19:00",
+                "21:20"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        }
+      ],
+      "currentlyListed": true,
+      "missingSince": null,
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
+      "details": {
+        "runtimeMinutes": 102,
+        "ageRating": "Remaja",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-05",
+        "language": null,
+        "subtitles": null
+      },
+      "detailsObservedAt": "2026-11-05T11:28:51+08:00",
+      "latestCounts": {
+        "cinemaCount": 7,
+        "formatListingCount": 7,
+        "showtimeCount": 29
+      }
+    },
+    "2026/gjls-pahlawan-tanpa-lawan": {
+      "title": "GJLS: BERAPI-API",
+      "sourceUrl": "https://jadwalnonton.com/film/2026/gjls-pahlawan-tanpa-lawan/",
+      "firstSeenAt": "2026-11-05T11:29:03+08:00",
+      "firstScheduleDate": "2026-11-05",
+      "listings": [
+        {
+          "cinemaId": "beachwalk-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            40000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 40000,
+              "times": [
+                "12:30",
+                "16:30",
+                "20:40"
+              ]
+            }
+          ],
+          "showtimeCount": 3
+        },
+        {
+          "cinemaId": "cinemaxx-lippo-mall-kuta",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "13:25",
+                "18:00"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "cinemaxx-sidewalk-jimbaran",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            40000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 40000,
+              "times": [
+                "14:55",
+                "19:30"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "denpasar-cineplex",
+          "format": "Deluxe",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            20000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 20000,
+              "times": [
+                "12:45",
+                "15:00",
+                "17:15",
+                "19:30",
+                "21:45"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        },
+        {
+          "cinemaId": "galeria-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            35000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 35000,
+              "times": [
+                "12:40",
+                "20:45"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "lippo-plaza-sunset",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "15:10",
+                "20:00"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "park-23-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "12:25",
+                "14:30",
+                "16:35",
+                "18:40",
+                "20:50"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        },
+        {
+          "cinemaId": "tsm-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            45000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 45000,
+              "times": [
+                "12:50",
+                "14:55",
+                "17:00",
+                "19:05",
+                "21:10"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        }
+      ],
+      "currentlyListed": true,
+      "missingSince": null,
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
+      "details": {
+        "runtimeMinutes": 110,
+        "ageRating": "Remaja",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-05",
+        "language": null,
+        "subtitles": null
+      },
+      "detailsObservedAt": "2026-11-05T11:28:49+08:00",
+      "latestCounts": {
+        "cinemaCount": 8,
+        "formatListingCount": 8,
+        "showtimeCount": 26
+      }
+    },
+    "2026/putri-jangan-gentayangan-lagi": {
+      "title": "Putri Jangan Gentayangan Lagi",
+      "sourceUrl": "https://jadwalnonton.com/film/2026/putri-jangan-gentayangan-lagi/",
+      "firstSeenAt": "2026-11-05T11:29:03+08:00",
+      "firstScheduleDate": "2026-11-05",
+      "listings": [
+        {
+          "cinemaId": "cinemaxx-lippo-mall-kuta",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "15:45",
+                "20:20"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "cinemaxx-sidewalk-jimbaran",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            40000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 40000,
+              "times": [
+                "14:45",
+                "19:45"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "denpasar-cineplex",
+          "format": "Deluxe",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            20000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 20000,
+              "times": [
+                "15:00",
+                "19:30",
+                "21:45"
+              ]
+            }
+          ],
+          "showtimeCount": 3
+        },
+        {
+          "cinemaId": "level-21-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            50000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 50000,
+              "times": [
+                "12:20",
+                "14:25",
+                "16:30",
+                "18:35",
+                "20:40"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        },
+        {
+          "cinemaId": "tsm-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            45000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 45000,
+              "times": [
+                "12:20",
+                "14:25",
+                "16:30",
+                "18:35",
+                "20:40"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        }
+      ],
+      "currentlyListed": true,
+      "missingSince": null,
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
+      "details": {
+        "runtimeMinutes": 104,
+        "ageRating": "Remaja",
+        "genres": [
+          "Horror",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-05",
+        "language": null,
+        "subtitles": null
+      },
+      "detailsObservedAt": "2026-11-05T11:28:51+08:00",
+      "latestCounts": {
+        "cinemaCount": 5,
+        "formatListingCount": 5,
+        "showtimeCount": 17
+      }
+    },
+    "2026/rambut-sewu-satu-langkah-getih": {
+      "title": "RAMBUT SEWU: SATU LANGKAH GETIH",
+      "sourceUrl": "https://jadwalnonton.com/film/2026/rambut-sewu-satu-langkah-getih/",
+      "firstSeenAt": "2026-11-05T11:29:03+08:00",
+      "firstScheduleDate": "2026-11-05",
+      "listings": [
+        {
+          "cinemaId": "cinemaxx-sidewalk-jimbaran",
+          "format": "Regular 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            40000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 40000,
+              "times": [
+                "12:40",
+                "17:15"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "denpasar-cineplex",
+          "format": "Deluxe",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            20000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 20000,
+              "times": [
+                "12:45",
+                "17:15"
+              ]
+            }
+          ],
+          "showtimeCount": 2
+        },
+        {
+          "cinemaId": "galeria-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            35000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 35000,
+              "times": [
+                "14:45",
+                "16:45",
+                "18:45"
+              ]
+            }
+          ],
+          "showtimeCount": 3
+        },
+        {
+          "cinemaId": "park-23-xxi",
+          "format": "Reguler 2D",
+          "firstSeenAt": "2026-11-05T11:29:03+08:00",
+          "firstScheduleDate": "2026-11-05",
+          "currentlyListed": true,
+          "missingSince": null,
+          "lastSeenAt": "2026-11-05T11:29:03+08:00",
+          "lastScheduleDate": "2026-11-05",
+          "pricesIdr": [
+            25000
+          ],
+          "hasUnknownPrice": false,
+          "offers": [
+            {
+              "price": 25000,
+              "times": [
+                "12:45",
+                "14:45",
+                "16:45",
+                "18:45",
+                "20:45"
+              ]
+            }
+          ],
+          "showtimeCount": 5
+        }
+      ],
+      "currentlyListed": true,
+      "missingSince": null,
+      "lastSeenAt": "2026-11-05T11:29:03+08:00",
+      "lastScheduleDate": "2026-11-05",
+      "details": {
+        "runtimeMinutes": 105,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Drama",
+          "Horror"
+        ],
+        "sourceReleaseDate": "2026-11-05",
+        "language": null,
+        "subtitles": null
+      },
+      "detailsObservedAt": "2026-11-05T11:28:53+08:00",
+      "latestCounts": {
+        "cinemaCount": 4,
+        "formatListingCount": 4,
+        "showtimeCount": 12
       }
     }
   }
