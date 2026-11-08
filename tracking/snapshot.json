@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-07",
-  "refreshedAt": "2026-11-07T19:42:58+08:00",
+  "date": "2026-11-08",
+  "refreshedAt": "2026-11-08T10:28:01+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-11-07"
+      "date": "2026-11-08"
     }
   ],
   "movies": [
@@ -131,7 +131,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-06T12:55:54+00:00"
+        "checkedAt": "2026-11-08T02:27:54+00:00"
       },
       "firstSeenAt": "2026-11-05T11:29:03+08:00",
       "details": {
@@ -310,33 +310,6 @@
       }
     },
     {
-      "id": "2026/pirunduk",
-      "title": "Pirunduk",
-      "url": "https://jadwalnonton.com/film/2026/pirunduk/",
-      "trailerYouTubeId": "bqLaZQd309g",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesian",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/pirunduk/1581",
-        "status": "verified",
-        "checkedAt": "2026-11-05T03:28:55+00:00"
-      },
-      "firstSeenAt": "2026-10-22T09:30:11+08:00",
-      "details": {
-        "runtimeMinutes": 96,
-        "ageRating": "Remaja",
-        "genres": [
-          "Horror"
-        ],
-        "sourceReleaseDate": "2026-10-22",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2026/putri-jangan-gentayangan-lagi",
       "title": "Putri Jangan Gentayangan Lagi",
       "url": "https://jadwalnonton.com/film/2026/putri-jangan-gentayangan-lagi/",
@@ -416,28 +389,6 @@
           "Psychological Thriller"
         ],
         "sourceReleaseDate": "2026-09-18",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
-      "id": "2026/stray-kids-world-tour-run-it-live-viewing",
-      "title": "Stray Kids World Tour `RUN IT` LIVE VIEWING",
-      "url": "https://jadwalnonton.com/film/2026/stray-kids-world-tour-run-it-live-viewing/",
-      "trailerYouTubeId": "byhaFzg-Oik",
-      "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-11-07T02:47:10+00:00"
-      },
-      "firstSeenAt": "2026-11-07T10:47:14+08:00",
-      "details": {
-        "runtimeMinutes": 195,
-        "ageRating": null,
-        "genres": [
-          "Music"
-        ],
-        "sourceReleaseDate": null,
         "language": null,
         "subtitles": null
       }
@@ -527,37 +478,6 @@
         "language": null,
         "subtitles": null
       }
-    },
-    {
-      "id": "2026/verity",
-      "title": "Verity",
-      "url": "https://jadwalnonton.com/film/2026/verity/",
-      "trailerYouTubeId": "kIMAexAT7mg",
-      "languageInfo": {
-        "codes": [
-          "en"
-        ],
-        "reportedLanguage": "English",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/verity/1541",
-        "status": "verified",
-        "checkedAt": "2026-11-04T12:58:48+00:00"
-      },
-      "firstSeenAt": "2026-10-06T17:17:59+08:00",
-      "details": {
-        "runtimeMinutes": 114,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Crime",
-          "Drama",
-          "Mystery",
-          "Thriller",
-          "Romance"
-        ],
-        "sourceReleaseDate": "2026-09-30",
-        "language": null,
-        "subtitles": null
-      }
     }
   ],
   "screenings": [
@@ -572,16 +492,13 @@
       ]
     },
     {
-      "movieId": "2026/verity",
+      "movieId": "2026/the-mongoose",
       "cinemaId": "beachwalk-xxi",
       "format": "Premiere 2D",
       "price": 200000,
       "times": [
-        "12:00",
-        "14:15",
-        "16:30",
-        "18:45",
-        "21:00"
+        "14:40",
+        "19:05"
       ]
     },
     {
@@ -613,6 +530,17 @@
         "15:15",
         "17:45",
         "20:15"
+      ]
+    },
+    {
+      "movieId": "2026/godzilla-minus-zero",
+      "cinemaId": "beachwalk-xxi",
+      "format": "Premiere 2D",
+      "price": 200000,
+      "times": [
+        "12:10",
+        "16:35",
+        "21:00"
       ]
     },
     {
@@ -730,7 +658,7 @@
       "format": "Regular 2D",
       "price": 130000,
       "times": [
-        "16:25"
+        "13:00"
       ]
     },
     {
@@ -739,7 +667,7 @@
       "format": "Regular 2D",
       "price": 130000,
       "times": [
-        "13:00"
+        "15:35"
       ]
     },
     {
@@ -748,8 +676,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:40",
-        "18:15"
+        "17:45"
       ]
     },
     {
@@ -758,8 +685,10 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:15",
-        "14:45",
+        "12:00",
+        "12:55",
+        "14:35",
+        "17:10",
         "19:45"
       ]
     },
@@ -769,7 +698,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "14:55",
+        "15:25",
         "20:00"
       ]
     },
@@ -781,7 +710,8 @@
       "times": [
         "12:45",
         "15:30",
-        "20:30"
+        "18:15",
+        "21:00"
       ]
     },
     {
@@ -806,23 +736,15 @@
       ]
     },
     {
-      "movieId": "2026/stray-kids-world-tour-run-it-live-viewing",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 300000,
-      "times": [
-        "15:45",
-        "20:00"
-      ]
-    },
-    {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
       "price": 55000,
       "times": [
+        "11:30",
         "12:00",
         "14:50",
+        "16:55",
         "17:25",
         "20:00"
       ]
@@ -844,8 +766,10 @@
       "price": 55000,
       "times": [
         "12:15",
+        "14:05",
         "15:00",
         "17:45",
+        "19:30",
         "20:30"
       ]
     },
@@ -1076,9 +1000,8 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:35",
-        "16:50",
-        "21:05"
+        "14:40",
+        "18:55"
       ]
     },
     {
@@ -1087,8 +1010,9 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "14:30",
-        "18:45"
+        "12:20",
+        "16:35",
+        "20:50"
       ]
     },
     {
@@ -1202,20 +1126,12 @@
       ]
     },
     {
-      "movieId": "2026/pirunduk",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Reguler 2D",
-      "price": 75000,
-      "times": [
-        "12:35"
-      ]
-    },
-    {
       "movieId": "2026/putri-jangan-gentayangan-lagi",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
       "price": 75000,
       "times": [
+        "12:25",
         "14:30",
         "18:50"
       ]
@@ -1285,9 +1201,19 @@
       "format": "Reguler 2D",
       "price": 40000,
       "times": [
-        "14:30",
-        "18:35",
-        "20:35"
+        "14:40",
+        "18:45"
+      ]
+    },
+    {
+      "movieId": "2026/the-mongoose",
+      "cinemaId": "park-23-xxi",
+      "format": "Reguler 2D",
+      "price": 40000,
+      "times": [
+        "12:20",
+        "16:20",
+        "20:20"
       ]
     },
     {
@@ -1296,8 +1222,9 @@
       "format": "Reguler 2D",
       "price": 40000,
       "times": [
-        "12:25",
-        "16:30"
+        "12:35",
+        "16:40",
+        "20:45"
       ]
     },
     {
@@ -1318,11 +1245,8 @@
       "format": "Reguler 2D",
       "price": 40000,
       "times": [
-        "12:40",
-        "14:45",
-        "16:50",
-        "18:55",
-        "21:00"
+        "14:15",
+        "18:15"
       ]
     },
     {
@@ -1343,8 +1267,11 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "14:55",
-        "18:55"
+        "12:45",
+        "14:40",
+        "16:35",
+        "18:30",
+        "20:25"
       ]
     },
     {
@@ -1353,9 +1280,8 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:35",
-        "14:40",
-        "18:35"
+        "12:40",
+        "18:55"
       ]
     },
     {
@@ -1364,10 +1290,7 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:30",
-        "14:35",
-        "19:00",
-        "21:05"
+        "16:50"
       ]
     },
     {
@@ -1376,7 +1299,10 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "16:45",
+        "13:20",
+        "15:10",
+        "17:00",
+        "18:50",
         "20:40"
       ]
     },
@@ -1386,9 +1312,11 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "14:15",
+        "12:00",
+        "14:20",
         "16:40",
-        "18:40"
+        "19:00",
+        "21:20"
       ]
     },
     {
@@ -1397,8 +1325,7 @@
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:10",
-        "16:35",
+        "14:45",
         "21:00"
       ]
     },
@@ -1427,26 +1354,16 @@
       ]
     },
     {
-      "movieId": "2026/laut-bercerita",
-      "cinemaId": "tsm-xxi",
-      "format": "Reguler 2D",
-      "price": 65000,
-      "times": [
-        "13:15",
-        "15:45",
-        "18:15",
-        "20:45"
-      ]
-    },
-    {
       "movieId": "2026/the-cat-in-the-hat",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
       "price": 65000,
       "times": [
-        "12:50",
-        "16:50",
-        "20:50"
+        "12:10",
+        "14:15",
+        "16:20",
+        "18:25",
+        "20:30"
       ]
     }
   ],
