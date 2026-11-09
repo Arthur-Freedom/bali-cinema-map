@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "trackingStartedAt": "2026-10-06T17:17:59+08:00",
-  "lastSuccessfulObservationAt": "2026-11-09T10:39:44+08:00",
+  "lastSuccessfulObservationAt": "2026-11-09T21:52:34+08:00",
   "movies": {
     "2026/agensi-rumah-tangga": {
       "title": "Agensi Rumah Tangga",
@@ -2764,7 +2764,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -2787,7 +2787,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "latestCounts": {
         "cinemaCount": 1,
@@ -2805,7 +2805,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:35+08:00"
+      "detailsObservedAt": "2026-11-09T21:52:34+08:00"
     },
     "2026/siksa-sampai-mati": {
       "title": "Memburu Pemangsa",
@@ -5062,7 +5062,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             55000
@@ -5186,7 +5186,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 120,
@@ -5198,7 +5198,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:35+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:33+08:00",
       "latestCounts": {
         "cinemaCount": 1,
         "formatListingCount": 1,
@@ -8003,7 +8003,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -8096,7 +8096,7 @@
           "firstScheduleDate": "2026-10-21",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -8474,7 +8474,7 @@
           "firstScheduleDate": "2026-10-22",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -8494,7 +8494,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 105,
@@ -8509,7 +8509,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:30+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:28+08:00",
       "latestCounts": {
         "cinemaCount": 3,
         "formatListingCount": 3,
@@ -10185,7 +10185,7 @@
           "firstScheduleDate": "2026-11-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -10209,7 +10209,7 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -10326,7 +10326,7 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -10497,7 +10497,7 @@
           "firstScheduleDate": "2026-10-28",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -10520,7 +10520,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 98,
@@ -10534,7 +10534,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:30+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:28+08:00",
       "latestCounts": {
         "cinemaCount": 3,
         "formatListingCount": 4,
@@ -10629,7 +10629,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -10678,7 +10678,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             42000
@@ -10706,7 +10706,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -10729,7 +10729,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -10755,7 +10755,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             35000
@@ -10781,7 +10781,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -10831,7 +10831,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -10855,7 +10855,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -10905,7 +10905,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             55000
@@ -10931,7 +10931,7 @@
           "firstScheduleDate": "2026-10-29",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -11001,7 +11001,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 135,
@@ -11013,7 +11013,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:34+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:32+08:00",
       "latestCounts": {
         "cinemaCount": 10,
         "formatListingCount": 10,
@@ -11762,7 +11762,7 @@
           "firstScheduleDate": "2026-11-08",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -11787,7 +11787,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -11813,7 +11813,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -11838,7 +11838,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             75000
@@ -11864,7 +11864,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             42000
@@ -11888,7 +11888,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -11937,7 +11937,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             30000
@@ -11963,7 +11963,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             35000
@@ -11989,7 +11989,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -12015,7 +12015,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -12066,7 +12066,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -12092,7 +12092,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -12118,7 +12118,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12144,7 +12144,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -12170,7 +12170,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             55000
@@ -12196,7 +12196,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12222,7 +12222,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             100000
@@ -12248,7 +12248,7 @@
           "firstScheduleDate": "2026-11-04",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -12270,7 +12270,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 135,
@@ -12285,7 +12285,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:32+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:30+08:00",
       "latestCounts": {
         "cinemaCount": 12,
         "formatListingCount": 18,
@@ -12305,7 +12305,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -12328,7 +12328,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12354,7 +12354,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             42000
@@ -12382,7 +12382,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -12408,7 +12408,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -12435,7 +12435,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             35000
@@ -12460,7 +12460,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -12485,7 +12485,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -12516,7 +12516,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12542,7 +12542,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             55000
@@ -12569,7 +12569,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12595,7 +12595,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -12618,7 +12618,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 102,
@@ -12631,7 +12631,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:31+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:28+08:00",
       "latestCounts": {
         "cinemaCount": 12,
         "formatListingCount": 12,
@@ -12676,7 +12676,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12699,7 +12699,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -12722,7 +12722,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -12747,7 +12747,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             35000
@@ -12770,7 +12770,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12795,7 +12795,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12819,7 +12819,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -12839,7 +12839,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 110,
@@ -12852,7 +12852,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:34+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:33+08:00",
       "latestCounts": {
         "cinemaCount": 7,
         "formatListingCount": 7,
@@ -12872,7 +12872,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12896,7 +12896,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -12920,7 +12920,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -12946,7 +12946,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -12973,7 +12973,7 @@
           "firstScheduleDate": "2026-11-07",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -12996,7 +12996,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             55000
@@ -13021,7 +13021,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -13046,7 +13046,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -13065,7 +13065,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 104,
@@ -13078,7 +13078,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:33+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:32+08:00",
       "latestCounts": {
         "cinemaCount": 8,
         "formatListingCount": 8,
@@ -13098,7 +13098,7 @@
           "firstScheduleDate": "2026-11-07",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -13121,7 +13121,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -13144,7 +13144,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -13168,7 +13168,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             35000
@@ -13191,7 +13191,7 @@
           "firstScheduleDate": "2026-11-05",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -13211,7 +13211,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 105,
@@ -13224,7 +13224,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:32+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:30+08:00",
       "latestCounts": {
         "cinemaCount": 5,
         "formatListingCount": 5,
@@ -13296,7 +13296,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -13319,7 +13319,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             42000
@@ -13338,7 +13338,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 108,
@@ -13352,7 +13352,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:32+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:29+08:00",
       "latestCounts": {
         "cinemaCount": 2,
         "formatListingCount": 2,
@@ -13372,7 +13372,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             25000
@@ -13395,7 +13395,7 @@
           "firstScheduleDate": "2026-11-07",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             30000
@@ -13418,7 +13418,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             42000
@@ -13441,7 +13441,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             40000
@@ -13465,7 +13465,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             20000
@@ -13488,7 +13488,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             50000
@@ -13512,7 +13512,7 @@
           "firstScheduleDate": "2026-11-06",
           "currentlyListed": true,
           "missingSince": null,
-          "lastSeenAt": "2026-11-09T10:39:44+08:00",
+          "lastSeenAt": "2026-11-09T21:52:34+08:00",
           "lastScheduleDate": "2026-11-09",
           "pricesIdr": [
             45000
@@ -13535,7 +13535,7 @@
       ],
       "currentlyListed": true,
       "missingSince": null,
-      "lastSeenAt": "2026-11-09T10:39:44+08:00",
+      "lastSeenAt": "2026-11-09T21:52:34+08:00",
       "lastScheduleDate": "2026-11-09",
       "details": {
         "runtimeMinutes": 107,
@@ -13549,7 +13549,7 @@
         "language": null,
         "subtitles": null
       },
-      "detailsObservedAt": "2026-11-09T10:39:35+08:00",
+      "detailsObservedAt": "2026-11-09T21:52:34+08:00",
       "latestCounts": {
         "cinemaCount": 6,
         "formatListingCount": 7,
