@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "refreshedAt": "2026-11-11T10:47:10+08:00",
+  "refreshedAt": "2026-11-11T20:42:38+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -98,6 +98,7 @@
       "id": "2026/fs-detective-conan-the-counterfeit-case-of-ultra-30",
       "title": "DETECTIVE CONAN: THE COUNTERFEIT CASE OF ULTRA 30",
       "url": "https://jadwalnonton.com/film/2026/fs-detective-conan-the-counterfeit-case-of-ultra-30/",
+      "trailerYouTubeId": "uoU_vy06obo",
       "languageInfo": {
         "status": "unknown",
         "codes": [],
@@ -123,7 +124,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-10T04:37:43+00:00"
+        "checkedAt": "2026-11-11T12:42:31+00:00"
       },
       "firstSeenAt": "2026-11-05T11:29:03+08:00",
       "details": {
@@ -209,7 +210,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/godzilla-minus-zero/1624",
         "status": "verified",
-        "checkedAt": "2026-11-04T03:00:46+00:00"
+        "checkedAt": "2026-11-11T12:42:31+00:00"
       },
       "firstSeenAt": "2026-11-04T11:00:52+08:00",
       "details": {
@@ -444,35 +445,6 @@
       }
     },
     {
-      "id": "2026/the-doll-ghawiah",
-      "title": "The Doll Ghawiah",
-      "url": "https://jadwalnonton.com/film/2026/the-doll-ghawiah/",
-      "trailerYouTubeId": "O6rBSGcw5Tw",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesian",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/doll-ghawiah/1587",
-        "status": "verified",
-        "checkedAt": "2026-11-11T02:47:03+00:00"
-      },
-      "firstSeenAt": "2026-10-29T10:25:59+08:00",
-      "details": {
-        "runtimeMinutes": 110,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Thriller",
-          "Horror",
-          "Mystery"
-        ],
-        "sourceReleaseDate": "2026-10-29",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "id": "2026/the-mongoose",
       "title": "The Mongoose",
       "url": "https://jadwalnonton.com/film/2026/the-mongoose/",
@@ -485,7 +457,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/mongoose/1591",
         "status": "verified",
-        "checkedAt": "2026-11-04T03:00:46+00:00"
+        "checkedAt": "2026-11-11T12:42:31+00:00"
       },
       "firstSeenAt": "2026-10-28T10:14:57+08:00",
       "details": {
@@ -833,8 +805,6 @@
       "format": "Executive",
       "price": 30000,
       "times": [
-        "12:30",
-        "16:00",
         "20:30"
       ]
     },
@@ -882,6 +852,16 @@
       "times": [
         "13:15",
         "21:30"
+      ]
+    },
+    {
+      "movieId": "2026/godzilla-minus-zero",
+      "cinemaId": "denpasar-cineplex",
+      "format": "Executive",
+      "price": 30000,
+      "times": [
+        "13:00",
+        "15:45"
       ]
     },
     {
@@ -1173,13 +1153,13 @@
       ]
     },
     {
-      "movieId": "2026/the-doll-ghawiah",
+      "movieId": "2026/the-mongoose",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
       "price": 25000,
       "times": [
         "14:30",
-        "18:40"
+        "18:30"
       ]
     },
     {
@@ -1189,8 +1169,8 @@
       "price": 25000,
       "times": [
         "12:25",
-        "16:35",
-        "20:45"
+        "16:25",
+        "20:25"
       ]
     },
     {
