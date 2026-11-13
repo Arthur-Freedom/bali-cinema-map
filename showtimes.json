@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "refreshedAt": "2026-11-13T11:24:38+08:00",
+  "refreshedAt": "2026-11-13T21:05:08+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -89,7 +89,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-13T13:05:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -193,7 +193,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-13T13:05:01+00:00"
       },
       "firstSeenAt": "2026-11-12T11:48:59+08:00"
     },
@@ -273,7 +273,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-13T13:05:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -285,7 +285,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-13T13:05:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -319,7 +319,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/cat-hat/1647",
         "status": "verified",
-        "checkedAt": "2026-11-06T03:26:00+00:00"
+        "checkedAt": "2026-11-13T13:05:01+00:00"
       },
       "firstSeenAt": "2026-11-06T11:26:05+08:00"
     },
