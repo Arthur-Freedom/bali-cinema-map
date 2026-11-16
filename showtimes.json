@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "refreshedAt": "2026-11-16T10:44:08+08:00",
+  "refreshedAt": "2026-11-16T21:37:32+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -118,7 +118,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T12:43:10+00:00"
+        "checkedAt": "2026-11-16T13:37:24+00:00"
       },
       "firstSeenAt": "2026-11-13T11:24:38+08:00"
     },
@@ -130,7 +130,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T12:43:10+00:00"
+        "checkedAt": "2026-11-16T13:37:24+00:00"
       },
       "firstSeenAt": "2026-11-05T11:29:03+08:00"
     },
@@ -201,7 +201,7 @@
       "id": "2026/paradise-lost",
       "title": "Paradise Lost",
       "url": "https://jadwalnonton.com/film/2026/paradise-lost/",
-      "trailerYouTubeId": "v8eHfWbtVx4",
+      "trailerYouTubeId": "bjSAbtvJDE8",
       "languageInfo": {
         "codes": [
           "ko"
