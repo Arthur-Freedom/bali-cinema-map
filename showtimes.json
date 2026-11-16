@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-15",
-  "refreshedAt": "2026-11-15T20:43:20+08:00",
+  "date": "2026-11-16",
+  "refreshedAt": "2026-11-16T10:44:08+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-11-15"
+      "date": "2026-11-16"
     }
   ],
   "movies": [
@@ -89,7 +89,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T02:38:36+00:00"
+        "checkedAt": "2026-11-16T02:44:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -176,7 +176,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T02:38:36+00:00"
+        "checkedAt": "2026-11-16T02:44:01+00:00"
       },
       "firstSeenAt": "2026-11-12T11:48:59+08:00"
     },
@@ -198,18 +198,6 @@
       "firstSeenAt": "2026-10-29T10:25:59+08:00"
     },
     {
-      "id": "2026/look-back-live-action",
-      "title": "Look Back Live Action",
-      "url": "https://jadwalnonton.com/film/2026/look-back-live-action/",
-      "trailerYouTubeId": "PiUQ1FNp3dM",
-      "languageInfo": {
-        "status": "unknown",
-        "codes": [],
-        "checkedAt": "2026-11-15T12:43:10+00:00"
-      },
-      "firstSeenAt": "2026-11-14T11:12:19+08:00"
-    },
-    {
       "id": "2026/paradise-lost",
       "title": "Paradise Lost",
       "url": "https://jadwalnonton.com/film/2026/paradise-lost/",
@@ -225,23 +213,6 @@
         "checkedAt": "2026-11-13T03:24:35+00:00"
       },
       "firstSeenAt": "2026-11-13T11:24:38+08:00"
-    },
-    {
-      "id": "2026/pulang-kampung",
-      "title": "Pulang Kampung",
-      "url": "https://jadwalnonton.com/film/2026/pulang-kampung/",
-      "trailerYouTubeId": "4wFpkW30SX4",
-      "languageInfo": {
-        "codes": [
-          "id"
-        ],
-        "reportedLanguage": "Indonesian",
-        "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/en/film/pulang-kampung/1661",
-        "status": "verified",
-        "checkedAt": "2026-11-15T02:38:36+00:00"
-      },
-      "firstSeenAt": "2026-11-15T10:38:42+08:00"
     },
     {
       "id": "2026/putri-jangan-gentayangan-lagi",
@@ -268,7 +239,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T02:38:36+00:00"
+        "checkedAt": "2026-11-16T02:44:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -280,7 +251,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-15T02:38:36+00:00"
+        "checkedAt": "2026-11-16T02:44:01+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00"
     },
@@ -341,7 +312,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "14:05",
         "19:55"
@@ -351,7 +322,7 @@
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "12:15",
         "16:30",
@@ -362,7 +333,7 @@
       "movieId": "2026/the-mongoose",
       "cinemaId": "beachwalk-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
         "14:40",
         "19:05"
@@ -372,7 +343,7 @@
       "movieId": "2026/clayface",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "14:25",
         "18:40"
@@ -382,7 +353,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "beachwalk-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
         "12:10",
         "16:35",
@@ -393,7 +364,7 @@
       "movieId": "2026/the-cat-in-the-hat",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "12:00",
         "17:50"
@@ -403,186 +374,45 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "11:30",
-        "15:30"
+        "19:30"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 3D",
-      "price": 45000,
+      "price": 30000,
       "times": [
-        "19:30"
+        "15:30"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 150000,
+      "price": 75000,
       "times": [
         "11:00",
-        "14:55",
-        "18:50"
+        "15:00",
+        "19:00"
       ]
     },
     {
       "movieId": "2026/fs-detective-conan-the-counterfeit-case-of-ultra-30",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "18:05"
+        "12:40",
+        "18:10"
       ]
     },
     {
       "movieId": "2026/go-for-broke-2",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "15:20",
-        "20:10"
-      ]
-    },
-    {
-      "movieId": "2026/go-for-broke-2",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "12:30"
-      ]
-    },
-    {
-      "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "15:05"
-      ]
-    },
-    {
-      "movieId": "2026/ebenezer-a-christmas-carol",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "15:15",
-        "20:30"
-      ]
-    },
-    {
-      "movieId": "2026/ebenezer-a-christmas-carol",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "20:30"
-      ]
-    },
-    {
-      "movieId": "2026/dewi-siluman-ular",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "13:00",
-        "17:10"
-      ]
-    },
-    {
-      "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "12:00",
-        "14:35",
-        "17:10",
-        "19:45"
-      ]
-    },
-    {
-      "movieId": "2026/gak-ada-matinya",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "12:45"
-      ]
-    },
-    {
-      "movieId": "2026/godzilla-minus-zero",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "17:45"
-      ]
-    },
-    {
-      "movieId": "2026/godzilla-minus-zero",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "17:45"
-      ]
-    },
-    {
-      "movieId": "2026/laut-bercerita",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "12:30"
-      ]
-    },
-    {
-      "movieId": "2026/ramayana-part-1",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 40000,
-      "times": [
-        "19:15"
-      ]
-    },
-    {
-      "movieId": "2026/the-cat-in-the-hat",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "VIP 2D",
-      "price": 150000,
-      "times": [
-        "15:15"
-      ]
-    },
-    {
-      "movieId": "2026/ramayana-directors-cut",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:00",
-        "19:30"
-      ]
-    },
-    {
-      "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "18:15"
-      ]
-    },
-    {
-      "movieId": "2026/dewi-siluman-ular",
-      "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
@@ -590,20 +420,139 @@
       ]
     },
     {
+      "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "13:10"
+      ]
+    },
+    {
+      "movieId": "2026/ebenezer-a-christmas-carol",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "20:00"
+      ]
+    },
+    {
+      "movieId": "2026/dewi-siluman-ular",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "15:10"
+      ]
+    },
+    {
+      "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "17:10"
+      ]
+    },
+    {
+      "movieId": "2026/gak-ada-matinya",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "15:35"
+      ]
+    },
+    {
+      "movieId": "2026/godzilla-minus-zero",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "19:45"
+      ]
+    },
+    {
+      "movieId": "2026/laut-bercerita",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "17:15"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-part-1",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "12:15"
+      ]
+    },
+    {
+      "movieId": "2026/the-cat-in-the-hat",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "14:45"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-directors-cut",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "11:30",
+        "15:30",
+        "19:30"
+      ]
+    },
+    {
+      "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "12:30"
+      ]
+    },
+    {
+      "movieId": "2026/dewi-siluman-ular",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "13:15"
+      ]
+    },
+    {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:15",
-        "13:00",
-        "14:50",
-        "17:25",
-        "20:00"
+        "12:05",
+        "14:40",
+        "17:15",
+        "17:55",
+        "19:50"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "15:20"
+      ]
+    },
+    {
+      "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
@@ -612,43 +561,34 @@
       ]
     },
     {
-      "movieId": "2026/godzilla-minus-zero",
-      "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "15:30"
-      ]
-    },
-    {
       "movieId": "2026/laut-bercerita",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "11:45",
         "14:30",
-        "19:45"
+        "20:00"
       ]
     },
     {
       "movieId": "2026/ramayana-part-1",
       "cinemaId": "lippo-plaza-sunset",
-      "format": "Regular 2D",
+      "format": "Regular 2D,3D,Atmos",
       "price": 25000,
       "times": [
-        "16:00"
+        "20:30"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
         "11:30",
+        "14:30",
         "15:30",
-        "16:00",
+        "18:30",
         "19:30"
       ]
     },
@@ -656,73 +596,64 @@
       "movieId": "2026/go-for-broke-2",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
-        "20:15"
+        "12:15"
       ]
     },
     {
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
-        "20:00"
-      ]
-    },
-    {
-      "movieId": "2026/look-back-live-action",
-      "cinemaId": "cinemaxx-plaza-renon",
-      "format": "Regular 2D",
-      "price": 55000,
-      "times": [
-        "15:30"
+        "11:45"
       ]
     },
     {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
         "12:00",
-        "14:30",
-        "17:15",
-        "19:45"
+        "17:30",
+        "20:00"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
-        "17:40"
+        "20:30"
       ]
     },
     {
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
-        "12:45"
+        "17:45"
       ]
     },
     {
       "movieId": "2026/laut-bercerita",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 55000,
+      "price": 42000,
       "times": [
-        "13:15"
+        "14:45",
+        "15:00"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "11:30",
         "15:30",
@@ -733,36 +664,35 @@
       "movieId": "2026/paradise-lost",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
-        "15:15"
+        "13:00"
       ]
     },
     {
       "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
-        "13:15"
+        "12:45"
       ]
     },
     {
       "movieId": "2026/dewi-siluman-ular",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
-        "17:40"
+        "15:15"
       ]
     },
     {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
-        "15:00",
         "19:45"
       ]
     },
@@ -770,7 +700,7 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
         "17:30"
       ]
@@ -779,8 +709,9 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
+        "14:45",
         "20:00"
       ]
     },
@@ -788,9 +719,9 @@
       "movieId": "2026/the-cat-in-the-hat",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 60000,
+      "price": 40000,
       "times": [
-        "12:30"
+        "17:15"
       ]
     },
     {
@@ -808,7 +739,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "20:20"
       ]
@@ -817,7 +748,7 @@
       "movieId": "2026/lagi-probation-kerja-ngejar-apa-sih",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "12:30"
       ]
@@ -826,7 +757,7 @@
       "movieId": "2026/dewi-siluman-ular",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "14:30",
         "21:45"
@@ -836,7 +767,7 @@
       "movieId": "2026/putri-jangan-gentayangan-lagi",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "12:30",
         "14:45",
@@ -847,7 +778,7 @@
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "12:30",
         "14:55",
@@ -860,7 +791,7 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "12:45",
         "15:10",
@@ -873,7 +804,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "17:35"
       ]
@@ -882,7 +813,7 @@
       "movieId": "2026/laut-bercerita",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
-      "price": 25000,
+      "price": 20000,
       "times": [
         "16:35"
       ]
@@ -891,7 +822,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "galeria-xxi",
       "format": "Reguler 2D",
-      "price": 50000,
+      "price": 35000,
       "times": [
         "12:15",
         "12:45",
@@ -905,7 +836,7 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "galeria-xxi",
       "format": "Reguler 2D",
-      "price": 50000,
+      "price": 35000,
       "times": [
         "15:45",
         "20:35"
@@ -915,7 +846,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "galeria-xxi",
       "format": "Reguler 2D",
-      "price": 50000,
+      "price": 35000,
       "times": [
         "13:15",
         "18:05"
@@ -925,7 +856,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "icon-bali-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:00",
         "15:45",
@@ -936,7 +867,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "icon-bali-xxi",
       "format": "IMAX 3D Film",
-      "price": 75000,
+      "price": 50000,
       "times": [
         "12:15",
         "16:00",
@@ -947,7 +878,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "icon-bali-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
         "12:45",
         "16:30",
@@ -958,7 +889,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "icon-bali-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "18:30",
         "21:00"
@@ -968,7 +899,7 @@
       "movieId": "2026/the-cat-in-the-hat",
       "cinemaId": "icon-bali-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:15",
         "14:20",
@@ -979,74 +910,56 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "level-21-xxi",
       "format": "Reguler 2D",
-      "price": 70000,
+      "price": 50000,
       "times": [
-        "12:15",
-        "12:45",
-        "16:00",
-        "16:30",
-        "19:45",
-        "20:15"
+        "12:00",
+        "12:30",
+        "13:00",
+        "15:45",
+        "16:15",
+        "16:45",
+        "19:30",
+        "20:00",
+        "20:30"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "level-21-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
-        "12:30",
-        "16:15",
-        "20:00"
+        "12:15",
+        "16:00",
+        "19:45"
       ]
     },
     {
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "level-21-xxi",
       "format": "Reguler 2D",
-      "price": 70000,
+      "price": 50000,
       "times": [
-        "12:10",
-        "16:40",
-        "18:50",
-        "21:00"
+        "16:35",
+        "20:40"
       ]
     },
     {
       "movieId": "2026/dewi-siluman-ular",
       "cinemaId": "level-21-xxi",
       "format": "Reguler 2D",
-      "price": 70000,
+      "price": 50000,
       "times": [
-        "14:25",
-        "18:40"
-      ]
-    },
-    {
-      "movieId": "2026/pulang-kampung",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 70000,
-      "times": [
-        "14:20"
-      ]
-    },
-    {
-      "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 70000,
-      "times": [
-        "12:05",
-        "16:20",
-        "20:35"
+        "12:45",
+        "14:40",
+        "18:45"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "level-21-xxi",
       "format": "Reguler 2D",
-      "price": 70000,
+      "price": 50000,
       "times": [
         "12:00",
         "14:20",
@@ -1059,7 +972,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
         "12:15",
         "16:00",
@@ -1070,7 +983,7 @@
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "14:15"
       ]
@@ -1079,7 +992,7 @@
       "movieId": "2026/putri-jangan-gentayangan-lagi",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "12:10",
         "18:55"
@@ -1089,7 +1002,7 @@
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "12:00",
         "14:20",
@@ -1102,7 +1015,7 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "11:50",
         "14:10",
@@ -1115,7 +1028,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "15:30",
         "16:25",
@@ -1126,7 +1039,7 @@
       "movieId": "2026/laut-bercerita",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 75000,
+      "price": 55000,
       "times": [
         "13:00",
         "18:00",
@@ -1137,9 +1050,10 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:15",
+        "14:55",
         "16:00",
         "19:45"
       ]
@@ -1148,61 +1062,51 @@
       "movieId": "2026/dewi-siluman-ular",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "14:20",
-        "18:20"
+        "20:55"
       ]
     },
     {
       "movieId": "2026/putri-jangan-gentayangan-lagi",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "16:35",
-        "21:00"
+        "12:05",
+        "16:30"
       ]
     },
     {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "11:55",
-        "14:15",
-        "18:40"
+        "14:10",
+        "18:35"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "13:20",
-        "15:40",
-        "18:00",
-        "20:20"
-      ]
-    },
-    {
-      "movieId": "2026/the-cat-in-the-hat",
-      "cinemaId": "park-23-xxi",
-      "format": "Reguler 2D",
-      "price": 40000,
-      "times": [
-        "12:15",
-        "16:15",
-        "20:15"
+        "12:35",
+        "13:05",
+        "15:25",
+        "17:45",
+        "18:40",
+        "20:05",
+        "21:00"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:15",
         "16:00",
@@ -1213,7 +1117,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "tsm-xxi",
       "format": "Premiere 2D",
-      "price": 200000,
+      "price": 100000,
       "times": [
         "12:30",
         "16:15",
@@ -1224,7 +1128,7 @@
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:05",
         "14:15",
@@ -1237,7 +1141,7 @@
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:00",
         "14:20",
@@ -1250,7 +1154,7 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "11:50",
         "14:10",
@@ -1263,7 +1167,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:45",
         "15:15",
@@ -1275,7 +1179,7 @@
       "movieId": "2026/the-cat-in-the-hat",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 45000,
       "times": [
         "12:30",
         "14:35",
