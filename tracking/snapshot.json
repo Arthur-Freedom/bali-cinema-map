@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "refreshedAt": "2026-11-18T12:16:55+08:00",
+  "refreshedAt": "2026-11-18T21:56:00+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -208,7 +208,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/godzilla-minus-zero/1624",
         "status": "verified",
-        "checkedAt": "2026-11-11T12:42:31+00:00"
+        "checkedAt": "2026-11-18T13:55:58+00:00"
       },
       "firstSeenAt": "2026-11-04T11:00:52+08:00",
       "details": {
@@ -310,7 +310,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-17T05:04:32+00:00"
+        "checkedAt": "2026-11-18T13:55:58+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00",
       "details": {
