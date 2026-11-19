@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-18",
-  "refreshedAt": "2026-11-18T21:56:00+08:00",
+  "date": "2026-11-19",
+  "refreshedAt": "2026-11-19T12:10:56+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     }
   ],
   "movies": [
@@ -104,7 +104,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/dewi-siluman-ular/1635",
         "status": "verified",
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
       "firstSeenAt": "2026-11-12T11:48:59+08:00",
       "details": {
@@ -126,7 +126,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-17T14:21:46+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
       "firstSeenAt": "2026-11-13T11:24:38+08:00",
       "details": {
@@ -150,7 +150,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-17T14:21:46+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
       "firstSeenAt": "2026-11-05T11:29:03+08:00",
       "details": {
@@ -226,6 +226,34 @@
       }
     },
     {
+      "id": "2026/hamka-awal-mula-vol-3",
+      "title": "Hamka: Awal Mula (VOL 3)",
+      "url": "https://jadwalnonton.com/film/2026/hamka-awal-mula-vol-3/",
+      "trailerYouTubeId": "5SkPmhyRrDw",
+      "languageInfo": {
+        "codes": [
+          "id"
+        ],
+        "reportedLanguage": "Indonesian",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/hamka-awal-mula-vol-3/1646",
+        "status": "verified",
+        "checkedAt": "2026-11-19T04:10:45+00:00"
+      },
+      "firstSeenAt": "2026-11-19T12:10:56+08:00",
+      "details": {
+        "runtimeMinutes": 116,
+        "ageRating": "Semua Umur",
+        "genres": [
+          "Biography",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-19",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
       "id": "2026/laut-bercerita",
       "title": "Laut Bercerita",
       "url": "https://jadwalnonton.com/film/2026/laut-bercerita/",
@@ -238,7 +266,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/film/laut-bercerita/1322",
         "status": "verified",
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
       "firstSeenAt": "2026-10-29T10:25:59+08:00",
       "details": {
@@ -275,29 +303,77 @@
       }
     },
     {
-      "id": "2026/putri-jangan-gentayangan-lagi",
-      "title": "Putri Jangan Gentayangan Lagi",
-      "url": "https://jadwalnonton.com/film/2026/putri-jangan-gentayangan-lagi/",
-      "trailerYouTubeId": "Xuj8GxbWOT4",
+      "id": "2026/menang-untuk-kalah",
+      "title": "Menang Untuk Kalah",
+      "url": "https://jadwalnonton.com/film/2026/menang-untuk-kalah/",
+      "trailerYouTubeId": "E2gj6Fj2i9k",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-11-19T04:10:45+00:00"
+      },
+      "firstSeenAt": "2026-11-19T12:10:56+08:00",
+      "details": {
+        "runtimeMinutes": 116,
+        "ageRating": "Dewasa 17+",
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "sourceReleaseDate": null,
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2026/people-pleaser-si-paling-gak-enakan",
+      "title": "People Pleaser: Si Paling Ga Enakan",
+      "url": "https://jadwalnonton.com/film/2026/people-pleaser-si-paling-gak-enakan/",
+      "trailerYouTubeId": "9BRYYXKBJ04",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-11-19T04:10:45+00:00"
+      },
+      "firstSeenAt": "2026-11-19T12:10:56+08:00",
+      "details": {
+        "runtimeMinutes": 107,
+        "ageRating": "Remaja",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "sourceReleaseDate": "2026-11-19",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2026/piye-to-kih",
+      "title": "Piye To Kih?",
+      "url": "https://jadwalnonton.com/film/2026/piye-to-kih/",
+      "trailerYouTubeId": "5fr8qfh0wAM",
       "languageInfo": {
         "codes": [
           "id"
         ],
-        "reportedLanguage": "Indonesia",
+        "reportedLanguage": "Indonesian",
         "sourceName": "LSF",
-        "sourceUrl": "https://lsf.go.id/film/putri-jangan-gentayangan-lagi/1382",
+        "sourceUrl": "https://lsf.go.id/en/film/piye-kih/1610",
         "status": "verified",
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
-      "firstSeenAt": "2026-11-05T11:29:03+08:00",
+      "firstSeenAt": "2026-11-19T12:10:56+08:00",
       "details": {
-        "runtimeMinutes": 104,
+        "runtimeMinutes": 108,
         "ageRating": "Remaja",
         "genres": [
-          "Horror",
-          "Drama"
+          "Drama",
+          "Comedy",
+          "Romance"
         ],
-        "sourceReleaseDate": "2026-11-05",
+        "sourceReleaseDate": "2026-11-19",
         "language": null,
         "subtitles": null
       }
@@ -340,7 +416,7 @@
         "sourceName": "LSF",
         "sourceUrl": "https://lsf.go.id/en/film/seporsi-mie-ayam-sebelum-mati/1625",
         "status": "verified",
-        "checkedAt": "2026-11-12T03:48:48+00:00"
+        "checkedAt": "2026-11-19T04:10:45+00:00"
       },
       "firstSeenAt": "2026-11-02T10:29:25+08:00",
       "details": {
@@ -410,7 +486,7 @@
           "Sci-Fi",
           "Thriller"
         ],
-        "sourceReleaseDate": null,
+        "sourceReleaseDate": "2026-11-18",
         "language": null,
         "subtitles": null
       }
@@ -447,8 +523,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "11:00",
-        "15:00",
+        "12:15",
         "19:00"
       ]
     },
@@ -468,7 +543,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "17:10"
+        "12:55"
       ]
     },
     {
@@ -481,23 +556,12 @@
       ]
     },
     {
-      "movieId": "2026/ebenezer-a-christmas-carol",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "14:40"
-      ]
-    },
-    {
       "movieId": "2026/look-back-live-action",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:15",
-        "15:25",
-        "17:35",
+        "15:00",
         "19:45"
       ]
     },
@@ -507,17 +571,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "14:45"
-      ]
-    },
-    {
-      "movieId": "2026/gak-ada-matinya",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "12:05",
-        "12:10"
+        "17:10"
       ]
     },
     {
@@ -526,16 +580,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "19:15"
-      ]
-    },
-    {
-      "movieId": "2026/laut-bercerita",
-      "cinemaId": "cinemaxx-lippo-mall-kuta",
-      "format": "Regular 2D",
-      "price": 25000,
-      "times": [
-        "20:30"
+        "16:15"
       ]
     },
     {
@@ -544,9 +589,8 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:00",
-        "16:15",
-        "17:20",
+        "13:10",
+        "16:20",
         "19:30"
       ]
     },
@@ -556,8 +600,8 @@
       "format": "VIP 2D",
       "price": 75000,
       "times": [
-        "13:30",
-        "16:45",
+        "13:40",
+        "16:50",
         "20:00"
       ]
     },
@@ -567,8 +611,18 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:45",
-        "19:30"
+        "12:15",
+        "19:00"
+      ]
+    },
+    {
+      "movieId": "2026/piye-to-kih",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "14:55",
+        "19:45"
       ]
     },
     {
@@ -577,19 +631,17 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:15",
-        "14:50",
-        "17:25",
-        "20:00"
+        "12:25",
+        "17:15"
       ]
     },
     {
-      "movieId": "2026/godzilla-minus-zero",
+      "movieId": "2026/laut-bercerita",
       "cinemaId": "lippo-plaza-sunset",
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "16:45"
+        "16:15"
       ]
     },
     {
@@ -598,8 +650,8 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "13:00",
-        "16:15",
+        "13:10",
+        "16:20",
         "19:30"
       ]
     },
@@ -609,9 +661,29 @@
       "format": "Regular 2D",
       "price": 42000,
       "times": [
-        "11:15",
-        "15:15",
-        "19:15"
+        "15:45"
+      ]
+    },
+    {
+      "movieId": "2026/hamka-awal-mula-vol-3",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "13:00",
+        "15:30",
+        "18:00",
+        "20:30"
+      ]
+    },
+    {
+      "movieId": "2026/people-pleaser-si-paling-gak-enakan",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 42000,
+      "times": [
+        "13:15",
+        "19:45"
       ]
     },
     {
@@ -620,8 +692,7 @@
       "format": "Regular 2D",
       "price": 42000,
       "times": [
-        "15:15",
-        "20:00"
+        "17:50"
       ]
     },
     {
@@ -630,8 +701,7 @@
       "format": "Regular 2D",
       "price": 42000,
       "times": [
-        "12:40",
-        "17:25"
+        "12:00"
       ]
     },
     {
@@ -640,9 +710,8 @@
       "format": "Regular 2D",
       "price": 42000,
       "times": [
-        "13:00",
-        "16:15",
-        "19:30"
+        "14:40",
+        "20:00"
       ]
     },
     {
@@ -654,6 +723,16 @@
         "11:00",
         "15:00",
         "19:00"
+      ]
+    },
+    {
+      "movieId": "2026/menang-untuk-kalah",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "14:50",
+        "20:30"
       ]
     },
     {
@@ -671,7 +750,7 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "12:40"
+        "12:15"
       ]
     },
     {
@@ -689,12 +768,11 @@
       "format": "Regular 2D",
       "price": 40000,
       "times": [
-        "13:00",
-        "13:40",
-        "16:15",
-        "16:50",
-        "19:30",
-        "20:00"
+        "12:05",
+        "13:10",
+        "16:20",
+        "17:20",
+        "19:30"
       ]
     },
     {
@@ -727,23 +805,45 @@
       ]
     },
     {
-      "movieId": "2026/dewi-siluman-ular",
+      "movieId": "2026/hamka-awal-mula-vol-3",
+      "cinemaId": "denpasar-cineplex",
+      "format": "Deluxe",
+      "price": 20000,
+      "times": [
+        "13:15",
+        "16:00"
+      ]
+    },
+    {
+      "movieId": "2026/menang-untuk-kalah",
+      "cinemaId": "denpasar-cineplex",
+      "format": "Deluxe",
+      "price": 20000,
+      "times": [
+        "13:00",
+        "15:25"
+      ]
+    },
+    {
+      "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
       "price": 20000,
       "times": [
         "12:30",
-        "17:15"
+        "14:45",
+        "21:15"
       ]
     },
     {
-      "movieId": "2026/putri-jangan-gentayangan-lagi",
+      "movieId": "2026/piye-to-kih",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "12:45",
-        "15:00"
+        "12:30",
+        "14:45",
+        "17:00"
       ]
     },
     {
@@ -752,11 +852,9 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "13:00",
-        "15:25",
         "17:50",
-        "19:20",
-        "21:45"
+        "19:15",
+        "21:40"
       ]
     },
     {
@@ -765,10 +863,8 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "14:35",
         "17:00",
-        "19:25",
-        "21:50"
+        "19:25"
       ]
     },
     {
@@ -777,10 +873,8 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "12:30",
-        "15:35",
-        "18:40",
-        "21:45"
+        "18:30",
+        "21:40"
       ]
     },
     {
@@ -795,23 +889,15 @@
       ]
     },
     {
-      "movieId": "2026/gak-ada-matinya",
-      "cinemaId": "galeria-xxi",
-      "format": "Reguler 2D",
-      "price": 35000,
-      "times": [
-        "15:45",
-        "20:35"
-      ]
-    },
-    {
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "galeria-xxi",
       "format": "Reguler 2D",
       "price": 35000,
       "times": [
-        "13:15",
-        "18:05"
+        "13:10",
+        "15:40",
+        "18:10",
+        "20:40"
       ]
     },
     {
@@ -832,9 +918,9 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "12:00",
-        "15:45",
-        "19:30"
+        "12:05",
+        "15:50",
+        "19:35"
       ]
     },
     {
@@ -843,8 +929,10 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "15:20",
-        "20:20"
+        "12:00",
+        "14:55",
+        "17:50",
+        "20:45"
       ]
     },
     {
@@ -872,30 +960,30 @@
       ]
     },
     {
-      "movieId": "2026/the-cat-in-the-hat",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Reguler 2D",
-      "price": 45000,
-      "times": [
-        "13:15",
-        "18:15"
-      ]
-    },
-    {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "level-21-xxi",
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
         "12:00",
-        "12:30",
         "13:00",
         "15:45",
-        "16:15",
         "16:45",
         "19:30",
-        "20:00",
         "20:30"
+      ]
+    },
+    {
+      "movieId": "2026/hamka-awal-mula-vol-3",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 50000,
+      "times": [
+        "12:05",
+        "14:20",
+        "16:35",
+        "18:50",
+        "21:05"
       ]
     },
     {
@@ -904,8 +992,7 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "14:45",
-        "19:00"
+        "21:05"
       ]
     },
     {
@@ -914,9 +1001,8 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "12:25",
-        "16:40",
-        "20:55"
+        "13:20",
+        "15:40"
       ]
     },
     {
@@ -953,24 +1039,14 @@
       ]
     },
     {
-      "movieId": "2026/dewi-siluman-ular",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Reguler 2D",
-      "price": 55000,
-      "times": [
-        "21:20"
-      ]
-    },
-    {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
       "price": 55000,
       "times": [
-        "12:00",
-        "14:20",
-        "16:40",
-        "19:00"
+        "13:20",
+        "18:10",
+        "20:30"
       ]
     },
     {
@@ -992,6 +1068,7 @@
       "format": "Reguler 2D",
       "price": 55000,
       "times": [
+        "15:40",
         "19:30"
       ]
     },
@@ -1034,42 +1111,35 @@
       "format": "Reguler 2D",
       "price": 25000,
       "times": [
-        "12:05",
-        "15:50",
-        "19:35"
+        "12:10",
+        "15:55",
+        "19:40"
       ]
     },
     {
-      "movieId": "2026/dewi-siluman-ular",
-      "cinemaId": "park-23-xxi",
-      "format": "Reguler 2D",
-      "price": 25000,
-      "times": [
-        "16:35",
-        "20:50"
-      ]
-    },
-    {
-      "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
+      "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
       "price": 25000,
       "times": [
         "11:55",
-        "14:15",
-        "18:30"
+        "14:10",
+        "16:25",
+        "18:40",
+        "20:55"
       ]
     },
     {
-      "movieId": "2026/gak-ada-matinya",
+      "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
       "price": 25000,
       "times": [
-        "13:05",
-        "15:25",
-        "17:45",
-        "20:05"
+        "12:20",
+        "14:25",
+        "16:30",
+        "18:35",
+        "20:40"
       ]
     },
     {
@@ -1091,9 +1161,34 @@
       "price": 45000,
       "times": [
         "12:15",
-        "15:15",
         "16:00",
         "19:45"
+      ]
+    },
+    {
+      "movieId": "2026/menang-untuk-kalah",
+      "cinemaId": "tsm-xxi",
+      "format": "Reguler 2D",
+      "price": 45000,
+      "times": [
+        "12:05",
+        "14:20",
+        "16:35",
+        "18:50",
+        "21:05"
+      ]
+    },
+    {
+      "movieId": "2026/people-pleaser-si-paling-gak-enakan",
+      "cinemaId": "tsm-xxi",
+      "format": "Reguler 2D",
+      "price": 45000,
+      "times": [
+        "12:20",
+        "14:25",
+        "16:30",
+        "18:35",
+        "20:40"
       ]
     },
     {
@@ -1102,11 +1197,9 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "12:25",
-        "14:35",
-        "16:45",
-        "18:55",
-        "21:05"
+        "12:05",
+        "14:15",
+        "18:45"
       ]
     },
     {
@@ -1115,11 +1208,7 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "11:50",
-        "14:10",
-        "16:30",
-        "18:50",
-        "21:10"
+        "16:20"
       ]
     },
     {
@@ -1128,10 +1217,8 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "13:30",
-        "15:50",
-        "18:10",
-        "20:30"
+        "16:25",
+        "20:55"
       ]
     },
     {
@@ -1140,8 +1227,8 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "12:45",
-        "19:00"
+        "13:50",
+        "21:10"
       ]
     },
     {
