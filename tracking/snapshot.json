@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-20",
-  "refreshedAt": "2026-11-20T21:59:42+08:00",
+  "date": "2026-11-21",
+  "refreshedAt": "2026-11-21T11:58:03+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     }
   ],
   "movies": [
@@ -82,6 +82,28 @@
           "Action",
           "Thriller",
           "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-20",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2026/bts-world-tour-arirang-in-kaohsiung-live-viewing",
+      "title": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING",
+      "url": "https://jadwalnonton.com/film/2026/bts-world-tour-arirang-in-kaohsiung-live-viewing/",
+      "trailerYouTubeId": "xzTFYPnoum8",
+      "languageInfo": {
+        "status": "unknown",
+        "codes": [],
+        "checkedAt": "2026-11-21T03:57:56+00:00"
+      },
+      "firstSeenAt": "2026-11-21T11:58:03+08:00",
+      "details": {
+        "runtimeMinutes": 195,
+        "ageRating": null,
+        "genres": [
+          "Music"
         ],
         "sourceReleaseDate": null,
         "language": null,
@@ -108,6 +130,34 @@
           "Horror"
         ],
         "sourceReleaseDate": "2026-11-13",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2026/focker-in-law",
+      "title": "Focker In-Law",
+      "url": "https://jadwalnonton.com/film/2026/focker-in-law/",
+      "trailerYouTubeId": "y0MNNws-N9g",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "Inggris",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/film/focker-law/1700",
+        "status": "verified",
+        "checkedAt": "2026-11-21T03:57:56+00:00"
+      },
+      "firstSeenAt": "2026-11-21T11:58:03+08:00",
+      "details": {
+        "runtimeMinutes": 105,
+        "ageRating": "Remaja",
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "sourceReleaseDate": null,
         "language": null,
         "subtitles": null
       }
@@ -257,7 +307,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-19T14:24:43+00:00"
+        "checkedAt": "2026-11-21T03:57:56+00:00"
       },
       "firstSeenAt": "2026-11-14T11:12:19+08:00",
       "details": {
@@ -355,7 +405,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-19T14:24:43+00:00"
+        "checkedAt": "2026-11-21T03:57:56+00:00"
       },
       "firstSeenAt": "2026-11-11T10:47:10+08:00",
       "details": {
@@ -396,6 +446,35 @@
           "Horror"
         ],
         "sourceReleaseDate": "2026-11-12",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
+      "id": "2026/the-cat-in-the-hat",
+      "title": "The Cat in the Hat",
+      "url": "https://jadwalnonton.com/film/2026/the-cat-in-the-hat/",
+      "trailerYouTubeId": "kMfogBPOTvQ",
+      "languageInfo": {
+        "codes": [
+          "en"
+        ],
+        "reportedLanguage": "English",
+        "sourceName": "LSF",
+        "sourceUrl": "https://lsf.go.id/en/film/cat-hat/1647",
+        "status": "verified",
+        "checkedAt": "2026-11-21T03:57:56+00:00"
+      },
+      "firstSeenAt": "2026-11-06T11:26:05+08:00",
+      "details": {
+        "runtimeMinutes": 107,
+        "ageRating": "Semua Umur",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Family"
+        ],
+        "sourceReleaseDate": "2026-11-06",
         "language": null,
         "subtitles": null
       }
@@ -456,7 +535,7 @@
           "Mystery",
           "Crime"
         ],
-        "sourceReleaseDate": null,
+        "sourceReleaseDate": "2026-11-20",
         "language": null,
         "subtitles": null
       }
@@ -464,22 +543,30 @@
   ],
   "screenings": [
     {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "12:00",
-        "14:55",
-        "17:50",
         "20:45"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "beachwalk-xxi",
+      "format": "Reguler 2D",
+      "price": 60000,
+      "times": [
+        "12:00",
+        "14:55",
+        "17:50"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "beachwalk-xxi",
       "format": "Premiere 2D",
-      "price": 150000,
+      "price": 200000,
       "times": [
         "12:05",
         "15:00",
@@ -491,7 +578,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "11:00",
         "15:00",
@@ -502,7 +589,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 100000,
+      "price": 150000,
       "times": [
         "11:30",
         "15:30",
@@ -513,7 +600,7 @@
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "12:55",
         "18:00",
@@ -524,17 +611,17 @@
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
-        "13:10",
-        "18:05"
+        "13:20",
+        "18:15"
       ]
     },
     {
       "movieId": "2026/look-back-live-action",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "12:55",
         "17:50",
@@ -545,17 +632,25 @@
       "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
-        "15:30",
-        "20:25"
+        "15:40"
+      ]
+    },
+    {
+      "movieId": "2026/focker-in-law",
+      "cinemaId": "cinemaxx-lippo-mall-kuta",
+      "format": "Regular 2D",
+      "price": 40000,
+      "times": [
+        "20:35"
       ]
     },
     {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "15:25"
       ]
@@ -564,7 +659,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "15:05"
       ]
@@ -573,7 +668,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "13:25",
         "16:35",
@@ -584,7 +679,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 100000,
+      "price": 150000,
       "times": [
         "12:55",
         "16:05",
@@ -597,8 +692,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:00",
-        "16:30"
+        "12:45"
       ]
     },
     {
@@ -607,7 +701,8 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "15:30",
+        "11:45",
+        "15:45",
         "19:45"
       ]
     },
@@ -617,8 +712,8 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "14:15",
-        "18:45"
+        "15:15",
+        "20:15"
       ]
     },
     {
@@ -627,7 +722,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "21:00"
+        "15:00"
       ]
     },
     {
@@ -636,7 +731,16 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "14:30"
+        "17:25"
+      ]
+    },
+    {
+      "movieId": "2026/gak-ada-matinya",
+      "cinemaId": "lippo-plaza-sunset",
+      "format": "Regular 2D",
+      "price": 25000,
+      "times": [
+        "12:30"
       ]
     },
     {
@@ -645,7 +749,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "17:00"
+        "17:30"
       ]
     },
     {
@@ -654,7 +758,7 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "11:45"
+        "20:00"
       ]
     },
     {
@@ -663,27 +767,35 @@
       "format": "Regular 2D",
       "price": 25000,
       "times": [
-        "12:15",
+        "13:00",
+        "16:15",
         "19:30"
+      ]
+    },
+    {
+      "movieId": "2026/bts-world-tour-arirang-in-kaohsiung-live-viewing",
+      "cinemaId": "cinemaxx-plaza-renon",
+      "format": "Regular 2D",
+      "price": 450000,
+      "times": [
+        "18:45"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "12:15",
-        "19:30"
+        "19:45"
       ]
     },
     {
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "12:45",
         "17:30"
       ]
     },
@@ -691,106 +803,124 @@
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "13:15",
-        "18:15"
+        "15:15",
+        "20:05"
       ]
     },
     {
       "movieId": "2026/look-back-live-action",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "15:15"
+        "14:25"
       ]
     },
     {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "20:30"
+        "11:45"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "15:45"
+        "12:30"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 47000,
+      "price": 55000,
       "times": [
-        "16:15",
-        "20:00"
+        "16:35"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "13:00",
-        "19:30"
+        "11:45",
+        "15:45",
+        "19:45"
+      ]
+    },
+    {
+      "movieId": "2026/blue-lock",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 60000,
+      "times": [
+        "15:00"
       ]
     },
     {
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "12:15",
+        "12:40",
         "17:30"
-      ]
-    },
-    {
-      "movieId": "2026/menang-untuk-kalah",
-      "cinemaId": "cinemaxx-sidewalk-jimbaran",
-      "format": "Regular 2D",
-      "price": 50000,
-      "times": [
-        "15:30"
       ]
     },
     {
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "13:30",
-        "17:00"
+        "15:10",
+        "20:00"
       ]
     },
     {
       "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "14:45",
-        "20:00"
+        "17:40"
+      ]
+    },
+    {
+      "movieId": "2026/focker-in-law",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 60000,
+      "times": [
+        "20:15"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 50000,
+      "price": 60000,
       "times": [
-        "15:45",
-        "19:00"
+        "13:10",
+        "16:20",
+        "19:30"
+      ]
+    },
+    {
+      "movieId": "2026/the-cat-in-the-hat",
+      "cinemaId": "cinemaxx-sidewalk-jimbaran",
+      "format": "Regular 2D",
+      "price": 60000,
+      "times": [
+        "12:30"
       ]
     },
     {
@@ -824,15 +954,6 @@
       ]
     },
     {
-      "movieId": "2026/menang-untuk-kalah",
-      "cinemaId": "denpasar-cineplex",
-      "format": "Deluxe",
-      "price": 25000,
-      "times": [
-        "12:45"
-      ]
-    },
-    {
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "denpasar-cineplex",
       "format": "Deluxe",
@@ -849,7 +970,6 @@
       "format": "Deluxe",
       "price": 25000,
       "times": [
-        "14:55",
         "17:10"
       ]
     },
@@ -860,6 +980,7 @@
       "price": 25000,
       "times": [
         "12:30",
+        "14:55",
         "17:50",
         "19:25",
         "21:50"
@@ -871,8 +992,10 @@
       "format": "Deluxe",
       "price": 25000,
       "times": [
+        "12:45",
         "17:00",
-        "19:25"
+        "19:25",
+        "21:20"
       ]
     },
     {
@@ -882,15 +1005,165 @@
       "price": 25000,
       "times": [
         "15:10",
-        "18:15",
-        "21:20"
+        "18:15"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "galeria-xxi",
       "format": "Reguler 2D",
-      "price": 40000,
+      "price": 50000,
+      "times": [
+        "12:15",
+        "14:30",
+        "16:00",
+        "19:45",
+        "20:45"
+      ]
+    },
+    {
+      "movieId": "2026/godzilla-minus-zero",
+      "cinemaId": "galeria-xxi",
+      "format": "Reguler 2D",
+      "price": 50000,
+      "times": [
+        "12:00",
+        "15:35",
+        "18:15"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "galeria-xxi",
+      "format": "Reguler 2D",
+      "price": 50000,
+      "times": [
+        "12:40",
+        "18:05",
+        "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-directors-cut",
+      "cinemaId": "icon-bali-xxi",
+      "format": "Reguler 2D",
+      "price": 65000,
+      "times": [
+        "12:05",
+        "12:35",
+        "15:50",
+        "16:20",
+        "19:35",
+        "20:05"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "icon-bali-xxi",
+      "format": "IMAX 2D",
+      "price": 75000,
+      "times": [
+        "12:15",
+        "15:10",
+        "18:05",
+        "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "icon-bali-xxi",
+      "format": "Premiere 2D",
+      "price": 200000,
+      "times": [
+        "12:05",
+        "15:00",
+        "17:55",
+        "20:50"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-directors-cut",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 70000,
+      "times": [
+        "12:00",
+        "13:00",
+        "14:50",
+        "15:45",
+        "16:45",
+        "19:30",
+        "20:30",
+        "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-directors-cut",
+      "cinemaId": "level-21-xxi",
+      "format": "Premiere 2D",
+      "price": 200000,
+      "times": [
+        "16:00"
+      ]
+    },
+    {
+      "movieId": "2026/blue-lock",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 70000,
+      "times": [
+        "12:25",
+        "18:35"
+      ]
+    },
+    {
+      "movieId": "2026/hamka-awal-mula-vol-3",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 70000,
+      "times": [
+        "12:05",
+        "16:40",
+        "21:15"
+      ]
+    },
+    {
+      "movieId": "2026/gak-ada-matinya",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 70000,
+      "times": [
+        "14:20",
+        "18:55"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "level-21-xxi",
+      "format": "Reguler 2D",
+      "price": 70000,
+      "times": [
+        "12:20",
+        "15:15",
+        "18:10",
+        "21:05"
+      ]
+    },
+    {
+      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+      "cinemaId": "level-21-xxi",
+      "format": "Premiere 2D",
+      "price": 200000,
+      "times": [
+        "13:05",
+        "19:45"
+      ]
+    },
+    {
+      "movieId": "2026/ramayana-directors-cut",
+      "cinemaId": "living-world-denpasar-xxi",
+      "format": "Reguler 2D",
+      "price": 75000,
       "times": [
         "12:15",
         "16:00",
@@ -898,176 +1171,22 @@
       ]
     },
     {
-      "movieId": "2026/godzilla-minus-zero",
-      "cinemaId": "galeria-xxi",
-      "format": "Reguler 2D",
-      "price": 40000,
-      "times": [
-        "13:05",
-        "15:35",
-        "18:05",
-        "20:35"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "galeria-xxi",
-      "format": "Reguler 2D",
-      "price": 40000,
-      "times": [
-        "12:00",
-        "14:55",
-        "17:50",
-        "20:45"
-      ]
-    },
-    {
-      "movieId": "2026/ramayana-directors-cut",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Reguler 2D",
-      "price": 55000,
-      "times": [
-        "12:05",
-        "15:50",
-        "19:35",
-        "20:45"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Reguler 2D",
-      "price": 55000,
-      "times": [
-        "12:00",
-        "14:55",
-        "17:50"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "icon-bali-xxi",
-      "format": "IMAX 2D",
-      "price": 65000,
-      "times": [
-        "12:15",
-        "15:10",
-        "18:05",
-        "21:00"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "icon-bali-xxi",
-      "format": "Premiere 2D",
-      "price": 150000,
-      "times": [
-        "12:05",
-        "15:00",
-        "17:55",
-        "20:50"
-      ]
-    },
-    {
-      "movieId": "2026/ramayana-directors-cut",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 60000,
-      "times": [
-        "12:00",
-        "12:45",
-        "15:45",
-        "16:30",
-        "19:30",
-        "20:15"
-      ]
-    },
-    {
-      "movieId": "2026/blue-lock",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 60000,
-      "times": [
-        "15:20",
-        "17:45",
-        "20:10"
-      ]
-    },
-    {
-      "movieId": "2026/hamka-awal-mula-vol-3",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 60000,
-      "times": [
-        "12:05",
-        "14:20",
-        "16:35",
-        "18:50",
-        "21:05"
-      ]
-    },
-    {
-      "movieId": "2026/gak-ada-matinya",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 60000,
-      "times": [
-        "13:00"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "level-21-xxi",
-      "format": "Reguler 2D",
-      "price": 60000,
-      "times": [
-        "12:15",
-        "15:10",
-        "18:05",
-        "21:00"
-      ]
-    },
-    {
-      "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
-      "cinemaId": "level-21-xxi",
-      "format": "Premiere 2D",
-      "price": 150000,
-      "times": [
-        "12:05",
-        "15:00",
-        "17:55",
-        "20:50"
-      ]
-    },
-    {
-      "movieId": "2026/ramayana-directors-cut",
-      "cinemaId": "living-world-denpasar-xxi",
-      "format": "Reguler 2D",
-      "price": 65000,
-      "times": [
-        "13:00",
-        "16:45"
-      ]
-    },
-    {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 75000,
       "times": [
-        "18:20",
-        "20:40"
+        "11:50",
+        "16:30"
       ]
     },
     {
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 75000,
       "times": [
-        "11:50",
         "14:10",
-        "16:30",
         "18:50",
         "21:10"
       ]
@@ -1076,26 +1195,27 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 75000,
       "times": [
-        "15:50",
-        "20:30"
+        "15:15",
+        "20:15"
       ]
     },
     {
       "movieId": "2026/laut-bercerita",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 75000,
       "times": [
-        "13:20"
+        "12:45",
+        "17:45"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Reguler 2D",
-      "price": 65000,
+      "price": 75000,
       "times": [
         "12:00",
         "14:55",
@@ -1107,7 +1227,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "living-world-denpasar-xxi",
       "format": "Premiere 2D",
-      "price": 150000,
+      "price": 200000,
       "times": [
         "12:05",
         "15:00",
@@ -1119,64 +1239,63 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "12:15",
+        "14:10",
         "16:00",
-        "19:45"
+        "19:45",
+        "20:15"
       ]
     },
     {
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
-        "11:55",
-        "14:10",
-        "16:25",
-        "18:40",
-        "20:55"
+        "14:25",
+        "18:45",
+        "21:00"
       ]
     },
     {
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
         "12:20",
-        "14:25",
-        "16:30",
-        "18:35",
-        "20:40"
+        "16:40"
       ]
     },
     {
       "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
-        "13:00",
-        "18:15"
+        "11:50",
+        "17:55"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "park-23-xxi",
       "format": "Reguler 2D",
-      "price": 30000,
+      "price": 40000,
       "times": [
-        "15:20",
-        "20:35"
+        "12:00",
+        "14:55",
+        "17:50",
+        "20:45"
       ]
     },
     {
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
         "12:15",
         "16:00",
@@ -1187,55 +1306,60 @@
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "14:10",
-        "18:50",
-        "21:05"
+        "13:15",
+        "18:00"
       ]
     },
     {
       "movieId": "2026/menang-untuk-kalah",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "12:05",
-        "14:20",
-        "16:35"
+        "12:00",
+        "16:20",
+        "20:40"
       ]
     },
     {
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "12:20",
-        "14:25",
-        "16:30",
-        "18:35",
-        "20:40"
+        "14:15",
+        "18:35"
       ]
     },
     {
       "movieId": "2026/ebenezer-a-christmas-carol",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "18:05"
+        "12:10",
+        "14:20",
+        "18:50"
       ]
     },
     {
       "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "11:50",
-        "16:25",
-        "18:45",
+        "16:30",
+        "21:00"
+      ]
+    },
+    {
+      "movieId": "2026/focker-in-law",
+      "cinemaId": "tsm-xxi",
+      "format": "Reguler 2D",
+      "price": 65000,
+      "times": [
         "21:05"
       ]
     },
@@ -1243,26 +1367,29 @@
       "movieId": "2026/gak-ada-matinya",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "13:15",
-        "20:15"
+        "11:45",
+        "14:05",
+        "16:25",
+        "18:45"
       ]
     },
     {
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
-        "15:35"
+        "15:30",
+        "20:15"
       ]
     },
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "tsm-xxi",
       "format": "Reguler 2D",
-      "price": 55000,
+      "price": 65000,
       "times": [
         "12:00",
         "14:55",
@@ -1274,7 +1401,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "tsm-xxi",
       "format": "Premiere 2D",
-      "price": 150000,
+      "price": 200000,
       "times": [
         "12:05",
         "15:00",
