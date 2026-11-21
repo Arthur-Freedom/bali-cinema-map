@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "refreshedAt": "2026-11-21T11:58:03+08:00",
+  "refreshedAt": "2026-11-21T21:27:33+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
@@ -72,7 +72,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-20T03:58:27+00:00"
+        "checkedAt": "2026-11-21T13:27:30+00:00"
       },
       "firstSeenAt": "2026-11-20T11:58:30+08:00"
     },
