@@ -1,135 +1,134 @@
 {
   "schemaVersion": 1,
-  "runId": "45210720196",
-  "startedAt": "2026-11-23T23:56:24+08:00",
-  "scheduleDate": "2026-11-23",
+  "runId": "45344194176",
+  "startedAt": "2026-11-24T14:56:56+08:00",
+  "scheduleDate": "2026-11-24",
   "status": "success",
   "scheduleChecks": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:24+08:00",
+      "checkedAt": "2026-11-24T14:56:56+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 3,
       "showtimeCount": 8
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "checkedAt": "2026-11-23T23:56:25+08:00",
+      "checkedAt": "2026-11-24T14:56:58+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 9,
       "showtimeCount": 20
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "checkedAt": "2026-11-23T23:56:26+08:00",
+      "checkedAt": "2026-11-24T14:56:59+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 8,
       "showtimeCount": 14
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "checkedAt": "2026-11-23T23:56:27+08:00",
+      "checkedAt": "2026-11-24T14:57:01+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 7,
       "showtimeCount": 11
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "checkedAt": "2026-11-23T23:56:28+08:00",
+      "checkedAt": "2026-11-24T14:57:02+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 6,
       "showtimeCount": 10
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "checkedAt": "2026-11-23T23:56:29+08:00",
+      "checkedAt": "2026-11-24T14:57:03+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 8,
-      "showtimeCount": 21
+      "showtimeCount": 20
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:32+08:00",
+      "checkedAt": "2026-11-24T14:57:05+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 3,
       "showtimeCount": 11
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:33+08:00",
+      "checkedAt": "2026-11-24T14:57:07+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 3,
       "showtimeCount": 14
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:34+08:00",
+      "checkedAt": "2026-11-24T14:57:08+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 6,
-      "showtimeCount": 21
+      "showtimeCount": 20
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:36+08:00",
+      "checkedAt": "2026-11-24T14:57:10+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 6,
       "showtimeCount": 18
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:37+08:00",
+      "checkedAt": "2026-11-24T14:57:12+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 4,
       "showtimeCount": 14
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "checkedAt": "2026-11-23T23:56:38+08:00",
+      "checkedAt": "2026-11-24T14:57:13+08:00",
       "status": "ok",
-      "sourceDate": "2026-11-23",
+      "sourceDate": "2026-11-24",
       "formatListingCount": 9,
-      "showtimeCount": 27
+      "showtimeCount": 28
     }
   ],
   "movieChecks": [
     {
-      "movieId": "2026/ramayana-directors-cut",
-      "url": "https://jadwalnonton.com/film/2026/ramayana-directors-cut/",
-      "checkedAt": "2026-11-23T23:56:42+08:00",
+      "movieId": "2026/how-to-rob-a-bank",
+      "url": "https://jadwalnonton.com/film/2026/how-to-rob-a-bank/",
+      "checkedAt": "2026-11-24T14:57:16+08:00",
       "status": "ok",
       "details": {
-        "runtimeMinutes": 208,
-        "ageRating": "Remaja",
+        "runtimeMinutes": 122,
+        "ageRating": "Dewasa 17+",
         "genres": [
-          "Fantasy",
           "Action",
-          "Adventure",
-          "Drama"
+          "Crime",
+          "Thriller"
         ],
-        "sourceReleaseDate": "2026-11-11",
+        "sourceReleaseDate": "2026-09-03",
         "language": null,
         "subtitles": null
       }
@@ -137,7 +136,7 @@
     {
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "url": "https://jadwalnonton.com/film/2026/the-hunger-games-sunrise-on-the-reaping/",
-      "checkedAt": "2026-11-23T23:56:42+08:00",
+      "checkedAt": "2026-11-24T14:57:16+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 158,
@@ -155,9 +154,28 @@
       }
     },
     {
+      "movieId": "2026/ramayana-directors-cut",
+      "url": "https://jadwalnonton.com/film/2026/ramayana-directors-cut/",
+      "checkedAt": "2026-11-24T14:57:16+08:00",
+      "status": "ok",
+      "details": {
+        "runtimeMinutes": 208,
+        "ageRating": "Remaja",
+        "genres": [
+          "Fantasy",
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "sourceReleaseDate": "2026-11-11",
+        "language": null,
+        "subtitles": null
+      }
+    },
+    {
       "movieId": "2026/hamka-awal-mula-vol-3",
       "url": "https://jadwalnonton.com/film/2026/hamka-awal-mula-vol-3/",
-      "checkedAt": "2026-11-23T23:56:42+08:00",
+      "checkedAt": "2026-11-24T14:57:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 116,
@@ -174,7 +192,7 @@
     {
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "url": "https://jadwalnonton.com/film/2026/people-pleaser-si-paling-gak-enakan/",
-      "checkedAt": "2026-11-23T23:56:44+08:00",
+      "checkedAt": "2026-11-24T14:57:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 107,
@@ -192,7 +210,7 @@
     {
       "movieId": "2026/look-back-live-action",
       "url": "https://jadwalnonton.com/film/2026/look-back-live-action/",
-      "checkedAt": "2026-11-23T23:56:44+08:00",
+      "checkedAt": "2026-11-24T14:57:18+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 100,
@@ -206,27 +224,9 @@
       }
     },
     {
-      "movieId": "2026/how-to-rob-a-bank",
-      "url": "https://jadwalnonton.com/film/2026/how-to-rob-a-bank/",
-      "checkedAt": "2026-11-23T23:56:44+08:00",
-      "status": "ok",
-      "details": {
-        "runtimeMinutes": 122,
-        "ageRating": "Dewasa 17+",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "sourceReleaseDate": "2026-09-03",
-        "language": null,
-        "subtitles": null
-      }
-    },
-    {
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "url": "https://jadwalnonton.com/film/2026/seporsi-mie-ayam-sebelum-mati/",
-      "checkedAt": "2026-11-23T23:56:46+08:00",
+      "checkedAt": "2026-11-24T14:57:19+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 125,
@@ -243,7 +243,7 @@
     {
       "movieId": "2026/godzilla-minus-zero",
       "url": "https://jadwalnonton.com/film/2026/godzilla-minus-zero/",
-      "checkedAt": "2026-11-23T23:56:45+08:00",
+      "checkedAt": "2026-11-24T14:57:19+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 135,
@@ -262,7 +262,7 @@
     {
       "movieId": "2026/piye-to-kih",
       "url": "https://jadwalnonton.com/film/2026/piye-to-kih/",
-      "checkedAt": "2026-11-23T23:56:46+08:00",
+      "checkedAt": "2026-11-24T14:57:20+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 108,
@@ -280,7 +280,7 @@
     {
       "movieId": "2026/gak-ada-matinya",
       "url": "https://jadwalnonton.com/film/2026/gak-ada-matinya/",
-      "checkedAt": "2026-11-23T23:56:47+08:00",
+      "checkedAt": "2026-11-24T14:57:20+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 102,
@@ -297,7 +297,7 @@
     {
       "movieId": "2026/laut-bercerita",
       "url": "https://jadwalnonton.com/film/2026/laut-bercerita/",
-      "checkedAt": "2026-11-23T23:56:47+08:00",
+      "checkedAt": "2026-11-24T14:57:21+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 135,
@@ -313,7 +313,7 @@
     {
       "movieId": "2026/blue-lock",
       "url": "https://jadwalnonton.com/film/2026/blue-lock/",
-      "checkedAt": "2026-11-23T23:56:47+08:00",
+      "checkedAt": "2026-11-24T14:57:21+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 128,
@@ -331,7 +331,7 @@
     {
       "movieId": "2026/menang-untuk-kalah",
       "url": "https://jadwalnonton.com/film/2026/menang-untuk-kalah/",
-      "checkedAt": "2026-11-23T23:56:48+08:00",
+      "checkedAt": "2026-11-24T14:57:22+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 116,
@@ -348,7 +348,7 @@
     {
       "movieId": "2026/ebenezer-a-christmas-carol",
       "url": "https://jadwalnonton.com/film/2026/ebenezer-a-christmas-carol/",
-      "checkedAt": "2026-11-23T23:56:49+08:00",
+      "checkedAt": "2026-11-24T14:57:22+08:00",
       "status": "ok",
       "details": {
         "runtimeMinutes": 115,
@@ -368,19 +368,346 @@
     "newMovies": [],
     "missingMovies": [],
     "returnedMovies": [],
-    "newListings": [],
-    "missingListings": [],
+    "newListings": [
+      {
+        "movieId": "2026/how-to-rob-a-bank",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Reguler 2D"
+      }
+    ],
+    "missingListings": [
+      {
+        "movieId": "2026/ramayana-directors-cut",
+        "cinemaId": "beachwalk-xxi",
+        "format": "Reguler 2D"
+      }
+    ],
     "returnedListings": [],
-    "priceChanges": [],
-    "availabilityChanges": [],
+    "priceChanges": [
+      {
+        "movieId": "2026/blue-lock",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/godzilla-minus-zero",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/hamka-awal-mula-vol-3",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/hamka-awal-mula-vol-3",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/how-to-rob-a-bank",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/look-back-live-action",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "Regular 2D",
+        "before": [
+          25000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/people-pleaser-si-paling-gak-enakan",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/people-pleaser-si-paling-gak-enakan",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/ramayana-directors-cut",
+        "cinemaId": "cinemaxx-lippo-mall-kuta",
+        "format": "VIP 2D",
+        "before": [
+          75000
+        ],
+        "after": [
+          40000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/ramayana-directors-cut",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/ramayana-directors-cut",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+        "cinemaId": "cinemaxx-plaza-renon",
+        "format": "Regular 2D",
+        "before": [
+          42000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      },
+      {
+        "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+        "cinemaId": "cinemaxx-sidewalk-jimbaran",
+        "format": "Regular 2D",
+        "before": [
+          40000
+        ],
+        "after": [
+          25000
+        ],
+        "previousSeenAt": "2026-11-23T23:56:51+08:00",
+        "previousScheduleDate": "2026-11-23",
+        "scheduleDate": "2026-11-24"
+      }
+    ],
+    "availabilityChanges": [
+      {
+        "movieId": "2026/blue-lock",
+        "before": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 2
+        },
+        "after": {
+          "cinemaCount": 2,
+          "formatListingCount": 2,
+          "showtimeCount": 3
+        }
+      },
+      {
+        "movieId": "2026/godzilla-minus-zero",
+        "before": {
+          "cinemaCount": 7,
+          "formatListingCount": 7,
+          "showtimeCount": 14
+        },
+        "after": {
+          "cinemaCount": 7,
+          "formatListingCount": 7,
+          "showtimeCount": 10
+        }
+      },
+      {
+        "movieId": "2026/hamka-awal-mula-vol-3",
+        "before": {
+          "cinemaCount": 6,
+          "formatListingCount": 6,
+          "showtimeCount": 12
+        },
+        "after": {
+          "cinemaCount": 6,
+          "formatListingCount": 6,
+          "showtimeCount": 11
+        }
+      },
+      {
+        "movieId": "2026/how-to-rob-a-bank",
+        "before": {
+          "cinemaCount": 3,
+          "formatListingCount": 3,
+          "showtimeCount": 4
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 7
+        }
+      },
+      {
+        "movieId": "2026/menang-untuk-kalah",
+        "before": {
+          "cinemaCount": 1,
+          "formatListingCount": 1,
+          "showtimeCount": 2
+        },
+        "after": {
+          "cinemaCount": 1,
+          "formatListingCount": 1,
+          "showtimeCount": 5
+        }
+      },
+      {
+        "movieId": "2026/people-pleaser-si-paling-gak-enakan",
+        "before": {
+          "cinemaCount": 6,
+          "formatListingCount": 6,
+          "showtimeCount": 11
+        },
+        "after": {
+          "cinemaCount": 6,
+          "formatListingCount": 6,
+          "showtimeCount": 10
+        }
+      },
+      {
+        "movieId": "2026/ramayana-directors-cut",
+        "before": {
+          "cinemaCount": 12,
+          "formatListingCount": 15,
+          "showtimeCount": 64
+        },
+        "after": {
+          "cinemaCount": 11,
+          "formatListingCount": 14,
+          "showtimeCount": 64
+        }
+      },
+      {
+        "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
+        "before": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 9
+        },
+        "after": {
+          "cinemaCount": 4,
+          "formatListingCount": 4,
+          "showtimeCount": 8
+        }
+      },
+      {
+        "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
+        "before": {
+          "cinemaCount": 12,
+          "formatListingCount": 16,
+          "showtimeCount": 49
+        },
+        "after": {
+          "cinemaCount": 12,
+          "formatListingCount": 16,
+          "showtimeCount": 48
+        }
+      }
+    ],
     "metadataChanges": []
   },
-  "completedAt": "2026-11-23T23:56:51+08:00",
-  "snapshotRefreshedAt": "2026-11-23T23:56:51+08:00",
+  "completedAt": "2026-11-24T14:57:30+08:00",
+  "snapshotRefreshedAt": "2026-11-24T14:57:30+08:00",
   "counts": {
     "movies": 14,
     "cinemas": 12,
     "formatListings": 72,
-    "showtimes": 189
+    "showtimes": 188
   }
 }

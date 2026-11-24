@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-23",
-  "refreshedAt": "2026-11-23T23:56:51+08:00",
+  "date": "2026-11-24",
+  "refreshedAt": "2026-11-24T14:57:30+08:00",
   "sources": [
     {
       "cinemaId": "beachwalk-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/beachwalk-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-lippo-mall-kuta-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "lippo-plaza-sunset",
       "url": "https://jadwalnonton.com/bioskop/di-bali/lippo-plaza-sunset-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "cinemaxx-plaza-renon",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-plaza-renon-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "url": "https://jadwalnonton.com/bioskop/di-bali/cinemaxx-sidewalk-jimbaran-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "denpasar-cineplex",
       "url": "https://jadwalnonton.com/bioskop/di-bali/denpasar-cineplex-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "galeria-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/galeria-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "icon-bali-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/icon-bali-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "level-21-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/level-21-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "living-world-denpasar-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/living-world-denpasar-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "park-23-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/park-23-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "cinemaId": "tsm-xxi",
       "url": "https://jadwalnonton.com/bioskop/di-bali/tsm-xxi-bali.html",
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     }
   ],
   "movies": [
@@ -68,11 +68,11 @@
       "id": "2026/blue-lock",
       "title": "Blue Lock",
       "url": "https://jadwalnonton.com/film/2026/blue-lock/",
-      "trailerYouTubeId": "hCECZcvcA5o",
+      "trailerYouTubeId": "9h2mczU9gQc",
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-23T03:43:02+00:00"
+        "checkedAt": "2026-11-24T06:57:22+00:00"
       },
       "firstSeenAt": "2026-11-20T11:58:30+08:00"
     },
@@ -84,7 +84,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-23T03:43:02+00:00"
+        "checkedAt": "2026-11-24T06:57:22+00:00"
       },
       "firstSeenAt": "2026-11-13T11:24:38+08:00"
     },
@@ -96,7 +96,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-23T03:43:02+00:00"
+        "checkedAt": "2026-11-24T06:57:22+00:00"
       },
       "firstSeenAt": "2026-11-05T11:29:03+08:00"
     },
@@ -188,7 +188,7 @@
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-23T03:43:02+00:00"
+        "checkedAt": "2026-11-24T06:57:22+00:00"
       },
       "firstSeenAt": "2026-11-19T12:10:56+08:00"
     },
@@ -196,11 +196,11 @@
       "id": "2026/people-pleaser-si-paling-gak-enakan",
       "title": "People Pleaser: Si Paling Ga Enakan",
       "url": "https://jadwalnonton.com/film/2026/people-pleaser-si-paling-gak-enakan/",
-      "trailerYouTubeId": "_vfMvNhim58",
+      "trailerYouTubeId": "Z_jfCO_MoD8",
       "languageInfo": {
         "status": "unknown",
         "codes": [],
-        "checkedAt": "2026-11-23T03:43:02+00:00"
+        "checkedAt": "2026-11-24T06:57:22+00:00"
       },
       "firstSeenAt": "2026-11-19T12:10:56+08:00"
     },
@@ -270,12 +270,14 @@
   ],
   "screenings": [
     {
-      "movieId": "2026/ramayana-directors-cut",
+      "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "beachwalk-xxi",
       "format": "Reguler 2D",
       "price": 40000,
       "times": [
-        "20:45"
+        "13:00",
+        "15:20",
+        "20:35"
       ]
     },
     {
@@ -284,9 +286,7 @@
       "format": "Reguler 2D",
       "price": 40000,
       "times": [
-        "12:00",
-        "14:55",
-        "17:50"
+        "17:40"
       ]
     },
     {
@@ -316,7 +316,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "VIP 2D",
-      "price": 75000,
+      "price": 40000,
       "times": [
         "11:30",
         "12:00",
@@ -349,7 +349,7 @@
       "movieId": "2026/look-back-live-action",
       "cinemaId": "cinemaxx-lippo-mall-kuta",
       "format": "Regular 2D",
-      "price": 25000,
+      "price": 40000,
       "times": [
         "13:30",
         "18:15"
@@ -475,7 +475,7 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "11:30",
         "15:30",
@@ -486,7 +486,7 @@
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "15:15"
       ]
@@ -495,7 +495,7 @@
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "12:45",
         "17:45",
@@ -515,7 +515,7 @@
       "movieId": "2026/seporsi-mie-ayam-sebelum-mati",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "12:15"
       ]
@@ -524,7 +524,7 @@
       "movieId": "2026/godzilla-minus-zero",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "14:45"
       ]
@@ -533,7 +533,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-plaza-renon",
       "format": "Regular 2D",
-      "price": 42000,
+      "price": 25000,
       "times": [
         "19:45"
       ]
@@ -542,18 +542,18 @@
       "movieId": "2026/ramayana-directors-cut",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
-        "11:45",
-        "15:45",
-        "19:45"
+        "11:40",
+        "15:40",
+        "19:40"
       ]
     },
     {
       "movieId": "2026/blue-lock",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "12:15"
       ]
@@ -562,7 +562,7 @@
       "movieId": "2026/hamka-awal-mula-vol-3",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "15:00"
       ]
@@ -571,7 +571,7 @@
       "movieId": "2026/people-pleaser-si-paling-gak-enakan",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "20:00"
       ]
@@ -580,7 +580,7 @@
       "movieId": "2026/how-to-rob-a-bank",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "17:30"
       ]
@@ -589,7 +589,7 @@
       "movieId": "2026/the-hunger-games-sunrise-on-the-reaping",
       "cinemaId": "cinemaxx-sidewalk-jimbaran",
       "format": "Regular 2D",
-      "price": 40000,
+      "price": 25000,
       "times": [
         "13:00",
         "16:10",
@@ -613,6 +613,7 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
+        "16:15",
         "20:15"
       ]
     },
@@ -623,7 +624,7 @@
       "price": 20000,
       "times": [
         "13:00",
-        "15:25"
+        "15:30"
       ]
     },
     {
@@ -633,8 +634,7 @@
       "price": 20000,
       "times": [
         "12:30",
-        "14:45",
-        "21:50"
+        "14:45"
       ]
     },
     {
@@ -643,7 +643,7 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "17:10"
+        "14:50"
       ]
     },
     {
@@ -653,9 +653,8 @@
       "price": 20000,
       "times": [
         "12:30",
-        "14:55",
-        "17:50",
-        "19:25",
+        "17:05",
+        "19:30",
         "21:50"
       ]
     },
@@ -665,10 +664,10 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "12:45",
+        "13:30",
         "17:00",
         "19:25",
-        "21:20"
+        "21:50"
       ]
     },
     {
@@ -677,8 +676,8 @@
       "format": "Deluxe",
       "price": 20000,
       "times": [
-        "15:10",
-        "18:15"
+        "18:00",
+        "21:15"
       ]
     },
     {
@@ -701,7 +700,6 @@
       "price": 35000,
       "times": [
         "12:00",
-        "15:35",
         "18:15"
       ]
     },
@@ -711,9 +709,10 @@
       "format": "Reguler 2D",
       "price": 35000,
       "times": [
-        "12:40",
-        "18:05",
-        "21:00"
+        "12:05",
+        "15:00",
+        "17:55",
+        "20:50"
       ]
     },
     {
@@ -768,8 +767,7 @@
         "16:45",
         "19:30",
         "20:00",
-        "20:30",
-        "21:00"
+        "20:30"
       ]
     },
     {
@@ -789,7 +787,8 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "15:40"
+        "15:40",
+        "21:00"
       ]
     },
     {
@@ -798,8 +797,7 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "11:55",
-        "16:30"
+        "15:35"
       ]
     },
     {
@@ -808,9 +806,9 @@
       "format": "Reguler 2D",
       "price": 50000,
       "times": [
-        "14:10",
-        "18:45",
-        "21:05"
+        "13:15",
+        "17:50",
+        "20:10"
       ]
     },
     {
@@ -829,11 +827,12 @@
       "format": "Reguler 2D",
       "price": 55000,
       "times": [
-        "12:15",
-        "13:00",
-        "16:00",
-        "19:15",
-        "19:45"
+        "12:00",
+        "12:30",
+        "15:45",
+        "16:15",
+        "19:30",
+        "20:00"
       ]
     },
     {
@@ -853,8 +852,7 @@
       "format": "Reguler 2D",
       "price": 55000,
       "times": [
-        "12:20",
-        "16:45"
+        "15:10"
       ]
     },
     {
@@ -872,9 +870,9 @@
       "format": "Reguler 2D",
       "price": 55000,
       "times": [
-        "14:50",
-        "17:45",
-        "20:40"
+        "12:15",
+        "17:40",
+        "20:35"
       ]
     },
     {
@@ -955,8 +953,11 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "11:55",
-        "14:10"
+        "12:15",
+        "14:30",
+        "16:45",
+        "19:00",
+        "21:15"
       ]
     },
     {
@@ -994,8 +995,8 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "16:25",
-        "21:00"
+        "15:30",
+        "20:20"
       ]
     },
     {
@@ -1004,10 +1005,8 @@
       "format": "Reguler 2D",
       "price": 45000,
       "times": [
-        "12:50",
-        "15:20",
-        "17:50",
-        "20:20"
+        "13:00",
+        "17:50"
       ]
     },
     {
